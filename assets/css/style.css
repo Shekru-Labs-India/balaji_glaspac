@@ -164,32 +164,6 @@ button:focus {
 }
 
 /*-- End Header Top --*/
-.buy-now-btn {
-  left: 20px;
-  z-index: 99;
-  top: 50%;
-  position: fixed;
-  transform: translateY(-50%);
-  border-radius: 30px;
-  display: inline-block;
-  color: #ffffff;
-  background-color: #82b440;
-  padding: 10px 20px 10px 42px;
-  box-shadow: 0 1px 20px 1px #82b440;
-  font-size: 13px;
-  font-weight: 600;
-}
-.buy-now-btn img {
-  top: 50%;
-  left: 20px;
-  width: 15px;
-  position: absolute;
-  transform: translateY(-50%);
-}
-.buy-now-btn:hover {
-  background-color: #fa5f0b;
-  color: #ffffff;
-}
 
 /*-- Navbar --*/
 .navbar-light .navbar-brand {
@@ -587,7 +561,7 @@ button:focus {
 /*-- End About --*/
 /*-- Service --*/
 .service-area {
-  background-image: url("../img/home-one/service-bg.jpg");
+  background-image: url("../img/111.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -920,7 +894,7 @@ button:focus {
 /*-- End Team --*/
 /*-- Benefit --*/
 .benefit-area {
-  background-image: url("../img/home-one/benefit-bg.jpg");
+  background-image: url("../img/img6.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
