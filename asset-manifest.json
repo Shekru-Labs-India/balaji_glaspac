@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/balaji_glaspac/static/css/main.9e9a70d3.css",
+    "main.js": "/balaji_glaspac/static/js/main.14e63a2b.js",
+    "static/js/453.82a865ee.chunk.js": "/balaji_glaspac/static/js/453.82a865ee.chunk.js",
+    "static/media/img6.jpg": "/balaji_glaspac/static/media/img6.d96aaf1fbe3aee70684a.jpg",
+    "static/media/111.jpg": "/balaji_glaspac/static/media/111.c7beebd26531a9be3c39.jpg",
+    "static/media/banner-bg.jpg": "/balaji_glaspac/static/media/banner-bg.0ae10868f0c606414096.jpg",
+    "static/media/banner-main.jpg": "/balaji_glaspac/static/media/banner-main.7bfa72e294bee1a522e8.jpg",
+    "static/media/job1.jpg": "/balaji_glaspac/static/media/job1.59d895d776e5b09a3124.jpg",
+    "static/media/book-main.jpg": "/balaji_glaspac/static/media/book-main.343651ef1e428d69c49d.jpg",
+    "static/media/benefit-main.jpg": "/balaji_glaspac/static/media/benefit-main.d4736b8c36cb91e75ebd.jpg",
+    "static/media/page-title-bg.jpg": "/balaji_glaspac/static/media/page-title-bg.5b290002e1b2ddc7bbf9.jpg",
+    "static/media/social-main.jpg": "/balaji_glaspac/static/media/social-main.943a0b3df93811cc68f3.jpg",
+    "static/media/foreign-bg.jpg": "/balaji_glaspac/static/media/foreign-bg.ba9f6d31cbdb18cb8999.jpg",
+    "static/media/about-job-main.jpg": "/balaji_glaspac/static/media/about-job-main.6f2140cc7803f144e562.jpg",
+    "static/media/footer-bg.jpg": "/balaji_glaspac/static/media/footer-bg.c9dabd5cee4a3750060f.jpg",
+    "static/media/service-bg.jpg": "/balaji_glaspac/static/media/service-bg.52f259518effca935152.jpg",
+    "static/media/team-bg.png": "/balaji_glaspac/static/media/team-bg.ee1d27d3be54e8ddac4d.png",
+    "index.html": "/balaji_glaspac/index.html",
+    "main.9e9a70d3.css.map": "/balaji_glaspac/static/css/main.9e9a70d3.css.map",
+    "main.14e63a2b.js.map": "/balaji_glaspac/static/js/main.14e63a2b.js.map",
+    "453.82a865ee.chunk.js.map": "/balaji_glaspac/static/js/453.82a865ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e9a70d3.css",
+    "static/js/main.14e63a2b.js"
+  ]
+}
