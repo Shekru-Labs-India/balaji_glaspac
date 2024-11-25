@@ -160,14 +160,15 @@ const Contact = () => {
     {/* End Contact */}
     {/* Map */}
     <div className="map-area">
-      <iframe
-        id="map"
-        src="https://www.google.com/maps?q=507,+MAYURA+LANDMARK-I,+1,+Veera+Desai+Industrial+Estate+Rd,+Veera+Desai+Industrial+Estate,+Andheri+West,+Mumbai,+Maharashtra+400053&output=embed"
-        allowFullScreen=""
-        aria-hidden="false"
-        tabIndex={0}
-      />
-    </div>
+  <iframe
+    id="map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.9889398013134!2d72.8313640148992!3d19.13343008707332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b75b5eeb0b03%3A0x5b7e53efc92816de!2sMayura%20Landmark-I!5e0!3m2!1sen!2sin!4v1699109999999!5m2!1sen!2sin"
+    allowFullScreen=""
+    aria-hidden="false"
+    tabIndex={0}
+  />
+</div>
+
     {/* End Map */}
     <Footer/>
   </>

@@ -307,9 +307,9 @@ button:focus {
 
 /*-- End Navbar --*/
 /*-- Banner --*/
-.banner-img-one {
+/* .banner-img-one {
   background-image: url("../img/home-one/banner-main.jpg");
-}
+} */
 
 .banner-area {
   background-size: cover;

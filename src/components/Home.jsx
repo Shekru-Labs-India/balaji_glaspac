@@ -88,7 +88,17 @@ const Home = () => {
       <video loop 
         muted 
         autoPlay
-        playsInline  className="background-video">
+        playsInline  className="background-video"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          zIndex: -1
+        }}
+        >
         <source src={video1} type="video/mp4" />
       </video>
       <div className="d-table">
