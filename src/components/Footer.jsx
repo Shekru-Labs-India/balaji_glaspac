@@ -35,22 +35,22 @@ const Footer = () => {
               <ul>
                 <li>
                   <a href="https://www.facebook.com" target="_blank">
-                    <i className="bx bxl-facebook" />
+                  <i className="fa-brands fa-facebook" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.twitter.com" target="_blank">
-                    <i className="bx bxl-twitter" />
+                  <i className="fa-brands fa-x-twitter" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.pinterest.com" target="_blank">
-                    <i className="bx bxl-pinterest-alt" />
+                  <i className="fa-brands fa-pinterest" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com" target="_blank">
-                    <i className="bx bxl-linkedin" />
+                  <i className="fa-brands fa-linkedin" />
                   </a>
                 </li>
               </ul>
