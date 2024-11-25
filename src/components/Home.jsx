@@ -182,7 +182,7 @@ const Home = () => {
               </div>
               <div className="about-shape">
                 <img src={about2} alt="About" />
-                <img src={about3} alt="About" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Bucher_Emhart_Glass_-_Glasformungsmaschine_in_2022.jpg" width={348} height={297} alt="About" />
                 <img src={about4} alt="About" />
                 <img src={about5} alt="About" />
               </div>
@@ -642,7 +642,7 @@ const Home = () => {
           </div>
           <div className="col-lg-6">
             <div className="cost-img">
-              <img src={img1} alt="Cost" />
+              <img src={img1} className='img-fluid img-thumbnail rounded-4 object-fit-cover' alt="Cost" />
             </div>
           </div>
         </div>
