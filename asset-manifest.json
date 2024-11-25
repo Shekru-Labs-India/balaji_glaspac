@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/balaji_glaspac/static/css/main.495e55bb.css",
-    "main.js": "/balaji_glaspac/static/js/main.ece4a96f.js",
+    "main.css": "/balaji_glaspac/static/css/main.1d6d8bee.css",
+    "main.js": "/balaji_glaspac/static/js/main.7d21a49c.js",
     "static/js/453.82a865ee.chunk.js": "/balaji_glaspac/static/js/453.82a865ee.chunk.js",
     "static/media/manufacturing.mp4": "/balaji_glaspac/static/media/manufacturing.3f3c51032f0c7557e666.mp4",
     "static/media/img1.jpg": "/balaji_glaspac/static/media/img1.97694c926d256a35bbf7.jpg",
@@ -10,7 +10,6 @@
     "static/media/img2.jpg": "/balaji_glaspac/static/media/img2.13933111c57a85f7fcc7.jpg",
     "static/media/111.jpg": "/balaji_glaspac/static/media/111.c7beebd26531a9be3c39.jpg",
     "static/media/banner-bg.jpg": "/balaji_glaspac/static/media/banner-bg.0ae10868f0c606414096.jpg",
-    "static/media/banner-main.jpg": "/balaji_glaspac/static/media/banner-main.7bfa72e294bee1a522e8.jpg",
     "static/media/job1.jpg": "/balaji_glaspac/static/media/job1.59d895d776e5b09a3124.jpg",
     "static/media/book-main.jpg": "/balaji_glaspac/static/media/book-main.343651ef1e428d69c49d.jpg",
     "static/media/benefit-main.jpg": "/balaji_glaspac/static/media/benefit-main.d4736b8c36cb91e75ebd.jpg",
@@ -28,12 +27,12 @@
     "static/media/about3.jpg": "/balaji_glaspac/static/media/about3.b3c99bf43e86d8917eea.jpg",
     "static/media/cost-girl.png": "/balaji_glaspac/static/media/cost-girl.ca6006f20b0db9c2c611.png",
     "index.html": "/balaji_glaspac/index.html",
-    "main.495e55bb.css.map": "/balaji_glaspac/static/css/main.495e55bb.css.map",
-    "main.ece4a96f.js.map": "/balaji_glaspac/static/js/main.ece4a96f.js.map",
+    "main.1d6d8bee.css.map": "/balaji_glaspac/static/css/main.1d6d8bee.css.map",
+    "main.7d21a49c.js.map": "/balaji_glaspac/static/js/main.7d21a49c.js.map",
     "453.82a865ee.chunk.js.map": "/balaji_glaspac/static/js/453.82a865ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.495e55bb.css",
-    "static/js/main.ece4a96f.js"
+    "static/css/main.1d6d8bee.css",
+    "static/js/main.7d21a49c.js"
   ]
 }
