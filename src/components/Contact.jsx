@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
     
     <>
-    {/* <Header/> */}
+    <Header/>
     {/* Page Title */}
     <div className="page-title-area">
       <div className="d-table">
@@ -16,7 +17,7 @@ const Contact = () => {
               <h2>Contact</h2>
               <ul>
                 <li>
-                  <a href="index.html">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <span>/</span>
@@ -168,7 +169,7 @@ const Contact = () => {
       />
     </div>
     {/* End Map */}
-    {/* <Footer/> */}
+    <Footer/>
   </>
   
 

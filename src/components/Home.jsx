@@ -8,6 +8,13 @@ import img2 from '../assets/img/img2.jpg'
 import img3 from '../assets/img/img3.jpg'
 import img4 from '../assets/img/img4.jpg'
 import img6 from '../assets/img/img6.jpg'
+import team1 from '../assets/img/home-one/team1.jpg'
+import team2 from '../assets/img/home-one/team2.jpg'
+import team3 from '../assets/img/home-one/team3.jpg'
+import aboutman from '../assets/img/home-one/about-man.png'
+import aboutsignature from '../assets/img/home-one/about-signature.png'
+import service1 from '../assets/img/home-one/service-shape.png'
+import service2 from '../assets/img/home-one/service-shape2.png'
 
 import about2 from '../assets/img/home-one/about2.png'
 import about3 from '../assets/img/home-one/about3.jpg'
@@ -75,7 +82,7 @@ const Home = () => {
   return (
     
     <>
-    {/* <Header/> */}
+    <Header/>
     {/* Banner */}
     <div className="banner-area banner-img-one banner-area-video">
       <video loop 
@@ -143,8 +150,8 @@ const Home = () => {
                   Virtually Industrial Robotic Need You Have
                 </li>
               </ul>
-              <img src="assets/img/home-one/about-man.png" alt="About" />
-              <img src="assets/img/home-one/about-signature.png" alt="About" />
+              <img src={aboutman} alt="About" />
+              <img src={aboutsignature} alt="About" />
             </div>
           </div>
           <div className="col-lg-6">
@@ -192,8 +199,8 @@ const Home = () => {
         <div className="row">
           <div className="col-sm-6 col-lg-4">
             <div className="service-item">
-              <img src="assets/img/home-one/service-shape.png" alt="Service" />
-              <img src="assets/img/home-one/service-shape2.png" alt="Service" />
+              <img src={service1} alt="Service" />
+              <img src={service2} alt="Service" />
               <i className="flaticon-mechanical-arm" />
               <h3>
                 <a href="service-details.html">Industrial Robot</a>
@@ -209,8 +216,8 @@ const Home = () => {
           </div>
           <div className="col-sm-6 col-lg-4">
             <div className="service-item">
-              <img src="assets/img/home-one/service-shape.png" alt="Service" />
-              <img src="assets/img/home-one/service-shape2.png" alt="Service" />
+              <img src={service1} alt="Service" />
+              <img src={service2} alt="Service" />
               <i className="bx bx-bulb" />
               <h3>
                 <a href="service-details.html">Unique Technology</a>
@@ -226,8 +233,8 @@ const Home = () => {
           </div>
           <div className="col-sm-6 col-lg-4">
             <div className="service-item">
-              <img src="assets/img/home-one/service-shape.png" alt="Service" />
-              <img src="assets/img/home-one/service-shape2.png" alt="Service" />
+              <img src={service1} alt="Service" />
+              <img src={service2} alt="Service" />
               <i className="flaticon-automation" />
               <h3>
                 <a href="service-details.html">Automation Industry</a>
@@ -243,8 +250,8 @@ const Home = () => {
           </div>
           <div className="col-sm-6 col-lg-4">
             <div className="service-item">
-              <img src="assets/img/home-one/service-shape.png" alt="Service" />
-              <img src="assets/img/home-one/service-shape2.png" alt="Service" />
+              <img src={service1} alt="Service" />
+              <img src={service2} alt="Service" />
               <i className="flaticon-lab-tool" />
               <h3>
                 <a href="service-details.html">Chemical Research</a>
@@ -260,8 +267,8 @@ const Home = () => {
           </div>
           <div className="col-sm-6 col-lg-4">
             <div className="service-item">
-              <img src="assets/img/home-one/service-shape.png" alt="Service" />
-              <img src="assets/img/home-one/service-shape2.png" alt="Service" />
+              <img src={service1} alt="Service" />
+              <img src={service2} alt="Service" />
               <i className="flaticon-oil-drill" />
               <h3>
                 <a href="service-details.html">Oil &amp; Gas Industry</a>
@@ -277,8 +284,8 @@ const Home = () => {
           </div>
           <div className="col-sm-6 col-lg-4">
             <div className="service-item">
-              <img src="assets/img/home-one/service-shape.png" alt="Service" />
-              <img src="assets/img/home-one/service-shape2.png" alt="Service" />
+              <img src={service1} alt="Service" />
+              <img src={service2} alt="Service" />
               <i className="flaticon-robotic-arm" />
               <h3>
                 <a href="service-details.html">Mechanical Works</a>
@@ -427,28 +434,28 @@ const Home = () => {
         <div className="row">
           <div className="col-sm-6 col-lg-4">
             <div className="team-item">
-              <img src="assets/img/home-one/team2.jpg" alt="Team" />
+              <img src={team2} alt="Team" />
               <h3>Andres Pedlock</h3>
               <span>CEO, Company</span>
               <ul>
                 <li>
                   <a href="https://www.facebook.com" target="_blank">
-                    <i className="bx bxl-facebook" />
+                  <i className="fa-brands fa-facebook" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.twitter.com" target="_blank">
-                    <i className="bx bxl-twitter" />
+                  <i className="fa-brands fa-x-twitter" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.pinterest.com" target="_blank">
-                    <i className="bx bxl-pinterest-alt" />
+                  <i className="fa-brands fa-pinterest" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com" target="_blank">
-                    <i className="bx bxl-linkedin" />
+                  <i className="fa-brands fa-linkedin" />
                   </a>
                 </li>
               </ul>
@@ -456,28 +463,28 @@ const Home = () => {
           </div>
           <div className="col-sm-6 col-lg-4">
             <div className="team-item">
-              <img src="assets/img/home-one/team3.jpg" alt="Team" />
+              <img src={team3} alt="Team" />
               <h3>Adam Meir</h3>
               <span>Lead Developer</span>
               <ul>
-                <li>
+              <li>
                   <a href="https://www.facebook.com" target="_blank">
-                    <i className="bx bxl-facebook" />
+                  <i className="fa-brands fa-facebook" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.twitter.com" target="_blank">
-                    <i className="bx bxl-twitter" />
+                  <i className="fa-brands fa-x-twitter" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.pinterest.com" target="_blank">
-                    <i className="bx bxl-pinterest-alt" />
+                  <i className="fa-brands fa-pinterest" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com" target="_blank">
-                    <i className="bx bxl-linkedin" />
+                  <i className="fa-brands fa-linkedin" />
                   </a>
                 </li>
               </ul>
@@ -485,28 +492,28 @@ const Home = () => {
           </div>
           <div className="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
             <div className="team-item">
-              <img src="assets/img/home-one/team1.jpg" alt="Team" />
+              <img src={team1} alt="Team" />
               <h3>Jack Farnes</h3>
               <span>Manager of Company</span>
               <ul>
-                <li>
+              <li>
                   <a href="https://www.facebook.com" target="_blank">
-                    <i className="bx bxl-facebook" />
+                  <i className="fa-brands fa-facebook" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.twitter.com" target="_blank">
-                    <i className="bx bxl-twitter" />
+                  <i className="fa-brands fa-x-twitter" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.pinterest.com" target="_blank">
-                    <i className="bx bxl-pinterest-alt" />
+                  <i className="fa-brands fa-pinterest" />
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com" target="_blank">
-                    <i className="bx bxl-linkedin" />
+                  <i className="fa-brands fa-linkedin" />
                   </a>
                 </li>
               </ul>
@@ -632,7 +639,7 @@ const Home = () => {
       </div>
     </section>
     {/* End Cost */}
-    {/* <Footer/> */}
+    <Footer/>
   </>
   
 

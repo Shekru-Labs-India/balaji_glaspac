@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import logo from '../assets/img/balaji_glaspac.png'
-
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -87,48 +87,65 @@ const Header = () => {
       {/* Mobile Device */}
       <div className="mobile-nav mean-container">
   <div className="mean-bar">
-    <a
-      href="#nav"
+  <button
       className="meanmenu-reveal"
       onClick={toggleMobileMenu}
       style={{
+        border: 'none',
+        background: 'none',
         right: 0,
         left: "auto",
         textAlign: "center",
         textIndent: 0,
-        fontSize: 18
+        fontSize: 18,
+        padding: '10px 15px',
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        zIndex: 1000
       }}
     >
-      <span>
-        <span>
-          <span />
-        </span>
+      <span className="hamburger-menu">
+        <span style={{
+          display: 'block',
+          height: '2px',
+          width: '25px',
+          background: '#fff',
+          marginBottom: '5px'
+        }}></span>
+        <span style={{
+          display: 'block',
+          height: '2px',
+          width: '25px',
+          background: '#fff',
+          marginBottom: '5px'
+        }}></span>
+        <span style={{
+          display: 'block',
+          height: '2px',
+          width: '25px',
+          background: '#fff'
+        }}></span>
       </span>
-    </a>
+    </button>
     <nav className="mean-nav">
-    <ul className="navbar-nav" style={{ display: isMobileMenuOpen ? "block" : "none" }}>
+    <ul className="navbar-nav" style={{ 
+        display: isMobileMenuOpen ? "block" : "none",
+        position: 'absolute',
+        top: '100%',
+        left: 0,
+        right: 0,
+        background: '#fff',
+        zIndex: 999,
+        padding: '10px 0',
+        boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
+      }}>
     <li className="nav-item">
-            <a href="#" className="nav-link dropdown-toggle active">
-              Home <i className="bx bx-chevron-down" />
-            </a>
-            <ul className="dropdown-menu" style={{ display: activeDropdowns['home'] ? "block" : "none" }}>
-              <li className="nav-item">
-                <a href="index.html" className="nav-link">
-                  Home Page One
-                </a>
-              </li>
-            </ul>
-            <a 
-              className="mean-expand" 
-              href="#" 
-              onClick={(e) => {
-                e.preventDefault();
-                toggleDropdown('home');
-              }}
-              style={{ fontSize: 18 }}
-            >
-              {activeDropdowns['home'] ? '-' : '+'}
-            </a>
+    <Link to="/" className="nav-link dropdown-toggle active">
+    Home
+  </Link>
+            
+            
           </li>
 
           <li className="nav-item">
@@ -263,7 +280,7 @@ const Header = () => {
 
    
     <li className="nav-item mean-last">
-      <a href="contact.html" className="nav-link">Contact</a>
+    <Link to="/contact" className="nav-link">Contact</Link>
     </li>
         
 
@@ -316,16 +333,10 @@ const Header = () => {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a href="#" className="nav-link dropdown-toggle active">
-                    Home{" "}
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a href="index.html" className="nav-link">
-                        Home Page One
-                      </a>
-                    </li>
-                  </ul>
+                <Link to="/" className="nav-link dropdown-toggle active">
+      Home
+    </Link>
+                 
                 </li>
                 <li className="nav-item">
                   <a href="#" className="nav-link dropdown-toggle">
@@ -441,9 +452,9 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a href="contact.html" className="nav-link">
-                    Contact
-                  </a>
+                <Link to="/contact" className="nav-link">
+      Contact
+    </Link>
                 </li>
               </ul>
               
