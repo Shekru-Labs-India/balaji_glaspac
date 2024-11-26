@@ -38,7 +38,7 @@ Default CSS
 .switch-box .slider:before {
   position: absolute;
   content: "\ec34";
-  font-family: "boxicons" !important;
+  font-family: "Lato" !important;
   color: #000000;
   font-size: 24px;
   font-weight: 700;

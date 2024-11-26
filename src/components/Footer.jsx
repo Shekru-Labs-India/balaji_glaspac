@@ -2,9 +2,22 @@ import React from 'react'
 import logo from '../assets/img/balaji_glaspac.png'
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  const toggleTheme = () => {
+    document.body.classList.toggle('dark-theme');
+  };
+
+
   return (
     
-   <>
+   
    <>
   {/* Footer */}
   <footer className="pt-100 pb-70">
@@ -179,12 +192,29 @@ const Footer = () => {
     </div>
   </div>
   {/* End Copyright */}
+  <div 
+    id="toTop" 
+    className="back-to-top-btn" 
+    style={{ display: "block", cursor: "pointer" }}
+    onClick={scrollToTop}
+  >
+    <i className="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <div className="switch-box">
+        <label id="switch" className="switch">
+          <input type="checkbox" onChange={toggleTheme} id="slider" />
+          <span className="slider round" />
+        </label>
+      </div>
+
+
 </>
 
   {/* End Footer */}
 </>
 
-   </>
+   
 
   )
 }
