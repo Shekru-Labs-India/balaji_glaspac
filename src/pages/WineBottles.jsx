@@ -4,14 +4,36 @@ import Footer from "../components/Footer";
 
 // Import images (you'll need to add these to your assets)
 import wineHero from "../assets/img/WineBottle.jpg";
-import manufacturing1 from "../assets/img/WineBottle.jpg";
-import manufacturing2 from "../assets/img/WineBottle.jpg";
-import bottleType1 from "../assets/img/WineBottle.jpg";
-import bottleType2 from "../assets/img/WineBottle.jpg";
-import bottleType3 from "../assets/img/WineBottle.jpg";
-import process1 from "../assets/img/WineBottle.jpg";
-import process2 from "../assets/img/WineBottle.jpg";
-import process3 from "../assets/img/WineBottle.jpg";
+import wine from "../assets/img/wine.jpg";
+import wine2 from "../assets/img/wine2.jpg";
+import wine3 from "../assets/img/wine3.jpg";
+import wine4 from "../assets/img/wine4.jpg";
+import wine5 from "../assets/img/wine5.jpg";
+import process1 from "../assets/img/wine6.jpg";
+import process2 from "../assets/img/wine7.jpg";
+import process3 from "../assets/img/wine8.jpg";
+
+// Define theme colors object
+const colors = {
+  theme: "#ff5d22", // Main orange theme color
+  themeLight: "#ff8f66", // Lighter shade
+  themeDark: "#e54d1a", // Darker shade
+  themeOpacity: {
+    light: "#ff5d2215", // 15% opacity
+    medium: "#ff5d2230", // 30% opacity
+    high: "#ff5d2250", // 50% opacity
+  },
+  text: {
+    primary: "#2b2b2b", // Dark text
+    secondary: "#6c757d", // Gray text
+    light: "#ffffff", // White text
+  },
+  background: {
+    light: "#f8f9fa", // Light background
+    white: "#ffffff", // White background
+    dark: "#2b2b2b", // Dark background
+  },
+};
 
 const WineBottles = () => {
   return (
@@ -66,27 +88,36 @@ const WineBottles = () => {
                 identity.
               </p>
               <div className="d-flex gap-3">
-                <button className="btn btn-primary">Request Quote</button>
-                <button className="btn btn-outline-primary">
-                  Download Catalog
-                </button>
+                <button className="cmn-btn border-0">Request Quote</button>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="row g-3">
                 <div className="col-6">
-                  <img
-                    src={manufacturing1}
-                    alt="Manufacturing Process"
-                    className="img-fluid rounded shadow"
-                  />
+                  <div style={{ height: "350px" }}>
+                    <img
+                      src={wine}
+                      alt="Manufacturing Process"
+                      className="img-fluid rounded shadow w-100 h-100"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                    />
+                  </div>
                 </div>
                 <div className="col-6">
-                  <img
-                    src={manufacturing2}
-                    alt="Quality Control"
-                    className="img-fluid rounded shadow"
-                  />
+                  <div style={{ height: "350px" }}>
+                    <img
+                      src={wine2}
+                      alt="Quality Control"
+                      className="img-fluid rounded shadow w-100 h-100"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -101,102 +132,68 @@ const WineBottles = () => {
             Our Wine Bottle Collection
           </h2>
           <div className="row g-4">
-            {/* Bordeaux Style */}
-            <div className="col-md-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <img
-                  src={bottleType1}
-                  className="card-img-top"
-                  alt="Bordeaux Bottle"
-                />
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">Bordeaux Style</h5>
-                  <p className="card-text">
-                    Classic straight-sided bottles with high shoulders, perfect
-                    for Cabernet Sauvignon, Merlot, and other Bordeaux-style
-                    wines.
-                  </p>
-                  <ul className="list-unstyled">
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      750ml Standard
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      1.5L Magnum
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>3L
-                      Double Magnum
-                    </li>
-                  </ul>
+            {[
+              {
+                image: wine3,
+                title: "Bordeaux Style",
+                description:
+                  "Classic straight-sided bottles with high shoulders, perfect for Cabernet Sauvignon, Merlot, and other Bordeaux-style wines.",
+                features: ["750ml Standard", "1.5L Magnum", "3L Double Magnum"],
+              },
+              {
+                image: wine4,
+                title: "Burgundy Style",
+                description:
+                  "Gently sloped shoulders and wider bodies, ideal for Pinot Noir, Chardonnay, and other Burgundian varietals.",
+                features: [
+                  "750ml Standard",
+                  "1.5L Magnum",
+                  "Custom Sizes Available",
+                ],
+              },
+              {
+                image: wine5,
+                title: "Specialty Designs",
+                description:
+                  "Custom shapes and designs for unique brand expressions, including proprietary molds and distinctive features.",
+                features: [
+                  "Custom Shapes",
+                  "Embossing Options",
+                  "Unique Colors",
+                ],
+              },
+            ].map((item, index) => (
+              <div key={index} className="col-md-4 d-flex">
+                <div className="card h-100 border-0 shadow-sm w-100">
+                  <div className="card-img-wrapper" style={{ height: "300px" }}>
+                    <img
+                      src={item.image}
+                      className="card-img-top h-100 w-100"
+                      alt={item.title}
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                    />
+                  </div>
+                  <div className="card-body d-flex flex-column">
+                    <h5 className="card-title fw-bold">{item.title}</h5>
+                    <p className="card-text">{item.description}</p>
+                    <ul className="list-unstyled mt-auto">
+                      {item.features.map((feature, idx) => (
+                        <li key={idx} className="mb-2">
+                          <i
+                            className="fa-solid fa-check me-2"
+                            style={{ color: colors.theme }}
+                          ></i>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Burgundy Style */}
-            <div className="col-md-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <img
-                  src={bottleType2}
-                  className="card-img-top"
-                  alt="Burgundy Bottle"
-                />
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">Burgundy Style</h5>
-                  <p className="card-text">
-                    Gently sloped shoulders and wider bodies, ideal for Pinot
-                    Noir, Chardonnay, and other Burgundian varietals.
-                  </p>
-                  <ul className="list-unstyled">
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      750ml Standard
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      1.5L Magnum
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      Custom Sizes Available
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Specialty Bottles */}
-            <div className="col-md-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <img
-                  src={bottleType3}
-                  className="card-img-top"
-                  alt="Specialty Bottle"
-                />
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">Specialty Designs</h5>
-                  <p className="card-text">
-                    Custom shapes and designs for unique brand expressions,
-                    including proprietary molds and distinctive features.
-                  </p>
-                  <ul className="list-unstyled">
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      Custom Shapes
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      Embossing Options
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-check text-success me-2"></i>
-                      Unique Colors
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -270,54 +267,61 @@ const WineBottles = () => {
       </section>
 
       {/* Features & Benefits */}
-      <section className="py-5 bg-light">
+      <section
+        className="py-5"
+        style={{ backgroundColor: colors.background.light }}
+      >
         <div className="container">
           <h2 className="text-center fw-bold mb-5">Features & Benefits</h2>
           <div className="row g-4">
-            <div className="col-md-6 col-lg-3">
-              <div className="d-flex align-items-start">
-                <i className="fa-solid fa-shield-halved text-primary fs-4 me-3 mt-1"></i>
-                <div>
-                  <h5 className="fw-bold">Superior Protection</h5>
-                  <p>
-                    UV protection and optimal thickness for wine preservation
-                  </p>
+            {[
+              {
+                icon: "fa-shield-halved",
+                title: "Superior Protection",
+                desc: "UV protection and optimal thickness for wine preservation",
+              },
+              {
+                icon: "fa-recycle",
+                title: "Eco-Friendly",
+                desc: "Sustainable manufacturing and recyclable materials",
+              },
+              {
+                icon: "fa-palette",
+                title: "Customizable",
+                desc: "Various colors, shapes, and embossing options",
+              },
+              {
+                icon: "fa-certificate",
+                title: "Certified Quality",
+                desc: "Meeting international quality standards",
+              },
+            ].map((item, index) => (
+              <div key={index} className="col-md-6 col-lg-3">
+                <div className="d-flex align-items-start">
+                  <div
+                    className="rounded-circle p-3 me-3"
+                    style={{
+                      backgroundColor: colors.themeOpacity.light,
+                    }}
+                  >
+                    <i
+                      className={`fa-solid ${item.icon} fs-4`}
+                      style={{ color: colors.theme }}
+                    ></i>
+                  </div>
+                  <div>
+                    <h5 className="fw-bold">{item.title}</h5>
+                    <p className="text-secondary mb-0">{item.desc}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="d-flex align-items-start">
-                <i className="fa-solid fa-recycle text-primary fs-4 me-3 mt-1"></i>
-                <div>
-                  <h5 className="fw-bold">Eco-Friendly</h5>
-                  <p>Sustainable manufacturing and recyclable materials</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="d-flex align-items-start">
-                <i className="fa-solid fa-palette text-primary fs-4 me-3 mt-1"></i>
-                <div>
-                  <h5 className="fw-bold">Customizable</h5>
-                  <p>Various colors, shapes, and embossing options</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="d-flex align-items-start">
-                <i className="fa-solid fa-certificate text-primary fs-4 me-3 mt-1"></i>
-                <div>
-                  <h5 className="fw-bold">Certified Quality</h5>
-                  <p>Meeting international quality standards</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-5 bg-primary text-white">
+      <section className="py-5  ">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-8">
@@ -330,7 +334,25 @@ const WineBottles = () => {
               </p>
             </div>
             <div className="col-lg-4 text-lg-end">
-              <button className="btn btn-light btn-lg">Contact Us Now</button>
+              <button
+                className="btn btn-lg px-4"
+                style={{
+                  backgroundColor: colors.text.light,
+                  color: colors.theme,
+                  border: "none",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = colors.themeLight;
+                  e.currentTarget.style.color = colors.text.light;
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = colors.text.light;
+                  e.currentTarget.style.color = colors.theme;
+                }}
+              >
+                Contact Us Now
+              </button>
             </div>
           </div>
         </div>

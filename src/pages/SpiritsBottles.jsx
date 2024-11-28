@@ -5,6 +5,12 @@ import spiritsHero from "../assets/img/spiritBottle.jpg";
 import spiritsHero2 from "../assets/img/spiritBottle2.jpg";
 import spiritsHero3 from "../assets/img/spiritBottle3.jpg";
 import spiritsHero4 from "../assets/img/spiritBottle4.jpg";
+import vodka from "../assets/img/vodka.jpg";
+import vodka2 from "../assets/img/vodka2.jpg";
+import vodka3 from "../assets/img/vodka3.jpg";
+import whiskey from "../assets/img/whiskey.jpg";
+import whiskey2 from "../assets/img/whiskey2.jpg";
+import whiskey3 from "../assets/img/whiskey3.jpg";
 
 const styles = {
   heroSection: {
@@ -134,11 +140,7 @@ const SpiritsBottles = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="product-card">
                     <div className="product-image">
-                      <img
-                        src={spiritsHero2}
-                        alt="Premium Bottle"
-                        className="img-fluid"
-                      />
+                      <img src={spiritsHero2} alt="Premium Bottle" />
                       <div className="product-overlay">
                         <button className="btn btn-light">Quick View</button>
                       </div>
@@ -220,11 +222,7 @@ const SpiritsBottles = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="product-card">
                     <div className="product-image">
-                      <img
-                        src={spiritsHero3}
-                        alt="Vodka Bottle"
-                        className="img-fluid"
-                      />
+                      <img src={vodka} alt="Vodka Bottle" />
                       <div className="product-overlay">
                         <button className="btn btn-light">Quick View</button>
                       </div>
@@ -245,11 +243,7 @@ const SpiritsBottles = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="product-card">
                     <div className="product-image">
-                      <img
-                        src={spiritsHero4}
-                        alt="Vodka Bottle"
-                        className="img-fluid"
-                      />
+                      <img src={vodka2} alt="Vodka Bottle" />
                       <div className="product-overlay">
                         <button className="btn btn-light">Quick View</button>
                       </div>
@@ -270,11 +264,7 @@ const SpiritsBottles = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="product-card">
                     <div className="product-image">
-                      <img
-                        src={spiritsHero2}
-                        alt="Vodka Bottle"
-                        className="img-fluid"
-                      />
+                      <img src={vodka3} alt="Vodka Bottle" />
                       <div className="product-overlay">
                         <button className="btn btn-light">Quick View</button>
                       </div>
@@ -306,11 +296,7 @@ const SpiritsBottles = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="product-card">
                     <div className="product-image">
-                      <img
-                        src={spiritsHero4}
-                        alt="Whiskey Bottle"
-                        className="img-fluid"
-                      />
+                      <img src={whiskey} alt="Whiskey Bottle" />
                       <div className="product-overlay">
                         <button className="btn btn-light">Quick View</button>
                       </div>
@@ -331,11 +317,7 @@ const SpiritsBottles = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="product-card">
                     <div className="product-image">
-                      <img
-                        src={spiritsHero2}
-                        alt="Whiskey Bottle"
-                        className="img-fluid"
-                      />
+                      <img src={whiskey2} alt="Whiskey Bottle" />
                       <div className="product-overlay">
                         <button className="btn btn-light">Quick View</button>
                       </div>
@@ -356,11 +338,7 @@ const SpiritsBottles = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="product-card">
                     <div className="product-image">
-                      <img
-                        src={spiritsHero3}
-                        alt="Whiskey Bottle"
-                        className="img-fluid"
-                      />
+                      <img src={whiskey3} alt="Whiskey Bottle" />
                       <div className="product-overlay">
                         <button className="btn btn-light">Quick View</button>
                       </div>
@@ -386,6 +364,12 @@ const SpiritsBottles = () => {
       {/* Features Section - Added consistent spacing and card styling */}
       <section className="bg-light" style={styles.sectionSpacing}>
         <div className="container">
+          <div className="text-center mb-4">
+            <h2 className="fw-bold">Why Choose Our Bottles</h2>
+            <p className="lead text-muted">
+              Discover the features that set our spirit bottles apart
+            </p>
+          </div>
           <div className="row g-4">
             <div className="col-md-3">
               <div
@@ -393,10 +377,13 @@ const SpiritsBottles = () => {
                 style={styles.featureCard}
               >
                 <div className="feature-icon mb-3">
-                  <i className="fas fa-medal fa-3x text-primary"></i>
+                  <i className="fas fa-award fa-3x text-primary"></i>
                 </div>
                 <h4>Premium Quality</h4>
-                <p>Superior glass quality for premium spirits</p>
+                <p>
+                  Extra flint glass composition for crystal-clear clarity and
+                  premium feel
+                </p>
               </div>
             </div>
             <div className="col-md-3">
@@ -405,10 +392,12 @@ const SpiritsBottles = () => {
                 style={styles.featureCard}
               >
                 <div className="feature-icon mb-3">
-                  <i className="fas fa-medal fa-3x text-primary"></i>
+                  <i className="fas fa-palette fa-3x text-primary"></i>
                 </div>
-                <h4>Premium Quality</h4>
-                <p>Superior glass quality for premium spirits</p>
+                <h4>Customization</h4>
+                <p>
+                  Extensive options for embossing, frosting, and custom designs
+                </p>
               </div>
             </div>
             <div className="col-md-3">
@@ -417,10 +406,12 @@ const SpiritsBottles = () => {
                 style={styles.featureCard}
               >
                 <div className="feature-icon mb-3">
-                  <i className="fas fa-medal fa-3x text-primary"></i>
+                  <i className="fas fa-recycle fa-3x text-primary"></i>
                 </div>
-                <h4>Premium Quality</h4>
-                <p>Superior glass quality for premium spirits</p>
+                <h4>Eco-Friendly</h4>
+                <p>
+                  Sustainable production with recycled glass options available
+                </p>
               </div>
             </div>
             <div className="col-md-3">
@@ -429,14 +420,62 @@ const SpiritsBottles = () => {
                 style={styles.featureCard}
               >
                 <div className="feature-icon mb-3">
-                  <i className="fas fa-medal fa-3x text-primary"></i>
+                  <i className="fas fa-shield-alt fa-3x text-primary"></i>
                 </div>
-                <h4>Premium Quality</h4>
-                <p>Superior glass quality for premium spirits</p>
+                <h4>Quality Assured</h4>
+                <p>Rigorous testing for durability and leak-proof guarantee</p>
               </div>
             </div>
-
-            {/* Add more feature cards */}
+          </div>
+          <div className="row g-4 mt-2">
+            <div className="col-md-3">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
+                <div className="feature-icon mb-3">
+                  <i className="fas fa-box fa-3x text-primary"></i>
+                </div>
+                <h4>Bulk Orders</h4>
+                <p>Flexible quantities with competitive wholesale pricing</p>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
+                <div className="feature-icon mb-3">
+                  <i className="fas fa-truck fa-3x text-primary"></i>
+                </div>
+                <h4>Global Shipping</h4>
+                <p>Secure packaging and worldwide delivery options</p>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
+                <div className="feature-icon mb-3">
+                  <i className="fas fa-tools fa-3x text-primary"></i>
+                </div>
+                <h4>Technical Support</h4>
+                <p>Expert guidance on bottle specifications and requirements</p>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
+                <div className="feature-icon mb-3">
+                  <i className="fas fa-clock fa-3x text-primary"></i>
+                </div>
+                <h4>Quick Turnaround</h4>
+                <p>Fast production and timely delivery commitments</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -444,15 +483,145 @@ const SpiritsBottles = () => {
       {/* Manufacturing Process - Added consistent spacing */}
       <section style={styles.sectionSpacing}>
         <div className="container">
-          <h2 className="text-center mb-5">Our Manufacturing Excellence</h2>
-          <div className="timeline">
-            <div className="timeline-item">
-              <div className="timeline-content">
-                <h4>Raw Material Selection</h4>
-                <p>Premium quality silica and materials</p>
+          <h2 className="text-center fw-bold mb-5">
+            Our Manufacturing Excellence
+          </h2>
+          <div className="row g-4">
+            {/* Step 1 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-flask fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Raw Material Selection</h4>
+                  <p className="card-text text-muted">
+                    Premium quality silica sand and raw materials sourced from
+                    trusted suppliers for exceptional clarity.
+                  </p>
+                  <div className="badge bg-primary">Step 1</div>
+                </div>
               </div>
             </div>
-            {/* Add more timeline items */}
+
+            {/* Step 2 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-temperature-high fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Melting & Refining</h4>
+                  <p className="card-text text-muted">
+                    Advanced furnace technology ensures perfect melting and
+                    removal of impurities.
+                  </p>
+                  <div className="badge bg-primary">Step 2</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-fill-drip fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Molding Process</h4>
+                  <p className="card-text text-muted">
+                    Precision molds and cutting-edge IS machines create
+                    perfectly shaped bottles.
+                  </p>
+                  <div className="badge bg-primary">Step 3</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-temperature-low fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Annealing</h4>
+                  <p className="card-text text-muted">
+                    Controlled cooling process ensures optimal strength and
+                    durability.
+                  </p>
+                  <div className="badge bg-primary">Step 4</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 5 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-microscope fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Quality Inspection</h4>
+                  <p className="card-text text-muted">
+                    Rigorous testing for defects and compliance with industry
+                    standards.
+                  </p>
+                  <div className="badge bg-primary">Step 5</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 6 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-paint-brush fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Surface Treatment</h4>
+                  <p className="card-text text-muted">
+                    Optional decorating, coating, and finishing for enhanced
+                    aesthetics.
+                  </p>
+                  <div className="badge bg-primary">Step 6</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 7 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-box-open fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Packaging</h4>
+                  <p className="card-text text-muted">
+                    Secure packaging solutions to ensure safe transportation
+                    worldwide.
+                  </p>
+                  <div className="badge bg-primary">Step 7</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 8 */}
+            <div className="col-md-6 col-lg-3">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block mb-3">
+                    <i className="fas fa-truck fa-2x text-primary"></i>
+                  </div>
+                  <h4 className="card-title h5 mb-3">Delivery</h4>
+                  <p className="card-text text-muted">
+                    Timely shipping and delivery to meet your production
+                    schedules.
+                  </p>
+                  <div className="badge bg-primary">Step 8</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

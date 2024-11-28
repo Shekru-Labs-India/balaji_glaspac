@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 // Import images
 import service1 from "../assets/img/home-one/service-shape.png";
 import service2 from "../assets/img/home-one/service-shape2.png";
+import vial from "../assets/img/vial.jpg";
+
+// Add theme color at the top of your file
+const themeColor = "#ff5d22"; // Your orange theme color
 
 const VialsAmpoules = () => {
   return (
@@ -13,13 +17,16 @@ const VialsAmpoules = () => {
       <Header />
 
       {/* Hero Section with Floating Cards */}
-      <section className="bg-light py-5">
+      <section className="bg-light pt-5 mt-5">
         <div className="container">
           <div className="row align-items-center min-vh-100">
             <div className="col-lg-6">
               <div className="pe-lg-5">
-                <div className="d-inline-block border border-primary rounded-pill px-3 py-1 mb-4">
-                  <span className="text-primary">Medical Grade Glass</span>
+                <div
+                  className="d-inline-block border rounded-pill px-3 py-1 mb-4"
+                  style={{ borderColor: themeColor + "!important" }}
+                >
+                  <span style={{ color: themeColor }}>Medical Grade Glass</span>
                 </div>
                 <h1 className="display-4 fw-bold mb-4">Vials & Ampoules</h1>
                 <p className="lead mb-5">
@@ -38,9 +45,12 @@ const VialsAmpoules = () => {
                   ].map((cert, index) => (
                     <span
                       key={index}
-                      className="badge bg-white border px-3 py-2"
+                      className="badge bg-white border text-dark px-3 py-2"
                     >
-                      <i className="fa-solid fa-certificate text-primary me-2"></i>
+                      <i
+                        className="fa-solid fa-certificate me-2"
+                        style={{ color: themeColor }}
+                      ></i>
                       {cert}
                     </span>
                   ))}
@@ -81,9 +91,15 @@ const VialsAmpoules = () => {
                     <div key={index} className="col-6">
                       <div className="card border-0 shadow-lg h-100">
                         <div className="card-body p-4">
-                          <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mb-3">
+                          <div
+                            className="rounded-circle p-3 d-inline-flex mb-3"
+                            style={{
+                              backgroundColor: `${themeColor}20`, // 20 is for 12% opacity
+                            }}
+                          >
                             <i
-                              className={`${product.icon} text-primary fs-3`}
+                              className={`${product.icon} fs-3`}
+                              style={{ color: themeColor }}
                             ></i>
                           </div>
                           <h4 className="h5 mb-2">{product.title}</h4>
@@ -135,11 +151,16 @@ const VialsAmpoules = () => {
             ].map((item, index) => (
               <div key={index} className="col-md-6">
                 <div className="benefit-inner h-100 p-4 rounded bg-light">
-                  <h3 className="h4 mb-4">{item.category} Specifications</h3>
+                  <h3 className="h4 mb-4">
+                    {item.category} <span>Specifications</span>
+                  </h3>
                   <ul className="list-unstyled mb-0">
                     {item.specs.map((spec, i) => (
                       <li key={i} className="d-flex align-items-center mb-3">
-                        <i className="fa-solid fa-check text-primary me-3"></i>
+                        <i
+                          className="fa-solid fa-check me-3"
+                          style={{ color: themeColor }}
+                        ></i>
                         <span>{spec}</span>
                       </li>
                     ))}
@@ -191,41 +212,91 @@ const VialsAmpoules = () => {
       </section>
 
       {/* Quality Assurance */}
-      <section className="cost-area">
-        <div className="container">
-          <div className="row align-items-center">
+      <section className="cost-area pt-5 pb-0">
+        <div className="container px-0">
+          <div className="row align-items-center gy-5">
             <div className="col-lg-6">
-              <div className="cost-content">
-                <div className="section-title">
-                  <span className="sub-title">Quality Assurance</span>
-                  <h2>Rigorous Testing & Quality Control</h2>
+              <div className="cost-content pe-lg-4">
+                {/* Title Section */}
+                <div className="section-title mb-5">
+                  {" "}
+                  {/* Increased bottom margin */}
+                  <span
+                    className="sub-title d-inline-block ms-4 mb-3 text-uppercase"
+                    style={{ color: themeColor }}
+                  >
+                    Quality Assurance
+                  </span>
+                  <h2 className="display-6 fw-bold ms-4">
+                    Rigorous Testing & Quality Control
+                  </h2>
                 </div>
-                <ul className="about-content">
-                  <li>
-                    <i className="fa-solid fa-check" />
-                    Dimensional accuracy testing
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check" />
-                    Chemical resistance analysis
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check" />
-                    Hydrolytic resistance testing
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-check" />
-                    Break force verification
-                  </li>
-                </ul>
+
+                {/* Cards Grid */}
+                <div className="row g-4">
+                  {[
+                    {
+                      title: "Dimensional accuracy testing",
+                      icon: "fa-ruler-combined",
+                    },
+                    {
+                      title: "Chemical resistance analysis",
+                      icon: "fa-flask",
+                    },
+                    {
+                      title: "Hydrolytic resistance testing",
+                      icon: "fa-droplet",
+                    },
+                    {
+                      title: "Break force verification",
+                      icon: "fa-gauge-high",
+                    },
+                  ].map((item, index) => (
+                    <div key={index} className="col-md-6">
+                      <div className="card border-0 shadow-sm h-100 hover-shadow transition">
+                        <div className="card-body p-4">
+                          <div className="d-flex align-items-center gap-3">
+                            {" "}
+                            {/* Added gap */}
+                            <div
+                              className="rounded-circle p-3 d-inline-flex align-items-center justify-content-center"
+                              style={{
+                                backgroundColor: `${themeColor}15`,
+                                width: "48px",
+                                height: "48px",
+                              }}
+                            >
+                              <i
+                                className={`fa-solid ${item.icon}`}
+                                style={{
+                                  color: themeColor,
+                                  fontSize: "1.25rem",
+                                }}
+                              />
+                            </div>
+                            <h5 className="card-title mb-0 fs-6 fw-semibold">
+                              {item.title}
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
+
             <div className="col-lg-6">
-              <div className="cost-img">
+              <div className="position-relative h-100">
                 <img
-                  src={service2}
+                  src={vial}
                   alt="Quality Control"
-                  className="img-fluid rounded-4"
+                  className="img-fluid rounded-4 shadow-sm w-100"
+                  style={{
+                    height: "500px",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                  }}
                 />
               </div>
             </div>
