@@ -487,6 +487,15 @@ const Header = () => {
 
                 <li className="nav-item">
                   <Link
+                    to="/clients"
+                    className="nav-link px-3 py-2 border-bottom"
+                  >
+                    Clients
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link
                     to="/about"
                     className="nav-link px-3 py-2 border-bottom"
                   >
@@ -770,6 +779,12 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link to="/clients" className="nav-link">
+                      Clients
+                    </Link>
                   </li>
 
                   <li className="nav-item">

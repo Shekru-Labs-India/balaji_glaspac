@@ -31,6 +31,7 @@ import IndustrialBottles from "./pages/IndustrialBottles";
 import CustomizableBottles from "./pages/CustomizableBottles";
 import PremiumBottles from "./pages/PremiumBottles";
 import EcoFriendlyBottles from "./pages/EcoFriendlyBottles";
+import Clients from "./pages/Clients";
 function App() {
   return (
     <HashRouter>
@@ -66,6 +67,7 @@ function App() {
         <Route path="/customizable-bottles" element={<CustomizableBottles />} />
         <Route path="/premium-bottles" element={<PremiumBottles />} />
         <Route path="/eco-friendly-bottles" element={<EcoFriendlyBottles />} />
+        <Route path="/clients" element={<Clients />} />
       </Routes>
     </HashRouter>
   );
