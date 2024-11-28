@@ -183,14 +183,14 @@ const Footer = () => {
         {/* Copyright */}
         <div className="copyright-area">
           <div className="container">
-            <div className="copyright-item">
+            <div className="copyright-item d-flex justify-content-between align-items-center">
               <p>
-                {" "}
                 Powered by{" "}
                 <a href="https://shekruweb.com/" target="_blank">
                   Shekru Labs India Pvt Ltd
                 </a>
               </p>
+              <p>© 2024 Balaji Glaspac. All Rights Reserved.</p>
             </div>
           </div>
         </div>

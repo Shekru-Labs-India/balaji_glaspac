@@ -217,7 +217,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-wine-bottle" />
                 <h3>
-                  <a href="service-details.html">Wine Bottles</a>
+                  <Link to="/wine-bottles">Wine Bottles</Link>
                 </h3>
                 <p>
                   Premium glass bottles designed specifically for wine
@@ -237,7 +237,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-beer-mug-empty" />
                 <h3>
-                  <a href="service-details.html">Beer Bottles</a>
+                  <Link to="/beer-bottles">Beer Bottles</Link>
                 </h3>
                 <p>
                   Durable glass bottles perfect for beer packaging, available in
@@ -256,7 +256,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-whiskey-glass" />
                 <h3>
-                  <a href="service-details.html">Spirits Bottles</a>
+                  <Link to="/spirits-bottles">Spirits Bottles</Link>
                 </h3>
                 <p>
                   Elegant glass bottles designed for spirits and liquors,
@@ -275,7 +275,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-champagne-glasses" />
                 <h3>
-                  <a href="service-details.html">Champagne Bottles</a>
+                  <Link to="/champagne-bottles">Champagne Bottles</Link>
                 </h3>
                 <p>
                   Specialized bottles designed to withstand pressure, perfect
@@ -294,7 +294,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-bottle-water" />
                 <h3>
-                  <a href="service-details.html">Water Bottles</a>
+                  <Link to="/water-bottles">Water Bottles</Link>
                 </h3>
                 <p>
                   Crystal clear glass bottles for water packaging, available in
@@ -313,7 +313,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-glass-water" />
                 <h3>
-                  <a href="service-details.html">Juice and Soda Bottles</a>
+                  <Link to="/juice-soda-bottles">Juice and Soda Bottles</Link>
                 </h3>
                 <p>
                   Versatile bottles perfect for beverages, featuring various
@@ -332,7 +332,9 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-martini-glass" />
                 <h3>
-                  <a href="service-details.html">Specialty Drink Bottles</a>
+                  <Link to="/specialty-drink-bottles">
+                    Specialty Drink Bottles
+                  </Link>
                 </h3>
                 <p>
                   Custom bottles for cold-pressed juices, kombucha, and other
@@ -351,7 +353,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-jar" />
                 <h3>
-                  <a href="service-details.html">Food Jars</a>
+                  <Link to="/food-jars">Food Jars</Link>
                 </h3>
                 <p>
                   Wide-mouth jars perfect for food packaging, preserves, and
@@ -370,7 +372,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-prescription-bottle-medical" />
                 <h3>
-                  <a href="service-details.html">Oral Liquid Bottles</a>
+                  <Link to="/oral-liquid-bottles">Oral Liquid Bottles</Link>
                 </h3>
                 <p>
                   Pharmaceutical-grade bottles designed for oral medications and
@@ -389,7 +391,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-eye-dropper" />
                 <h3>
-                  <a href="service-details.html">Dropper Bottles</a>
+                  <Link to="/dropper-bottles">Dropper Bottles</Link>
                 </h3>
                 <p>
                   Precision dropper bottles for essential oils, serums, and
@@ -408,7 +410,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-vial" />
                 <h3>
-                  <a href="service-details.html">Vials and Ampoules</a>
+                  <Link to="/vials-ampoules">Vials and Ampoules</Link>
                 </h3>
                 <p>
                   High-quality glass vials and ampoules for pharmaceutical and
@@ -427,7 +429,9 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-pills" />
                 <h3>
-                  <a href="service-details.html">Tablet and Capsule Bottles</a>
+                  <Link to="/tablet-capsule-bottles">
+                    Tablet and Capsule Bottles
+                  </Link>
                 </h3>
                 <p>
                   Specialized bottles for tablets and capsules with
@@ -446,9 +450,9 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-prescription-bottle" />
                 <h3>
-                  <a href="service-details.html">
+                  <Link to="/specialty-pharmaceutical-bottles">
                     Specialty Pharmaceutical Bottles
-                  </a>
+                  </Link>
                 </h3>
                 <p>
                   Custom pharmaceutical bottles designed for specific medical
@@ -470,7 +474,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-spray-can-sparkles" />
                 <h3>
-                  <a href="service-details.html">Perfume Bottles</a>
+                  <Link to="/perfume-bottles">Perfume Bottles</Link>
                 </h3>
                 <p>
                   Elegant and decorative bottles for fragrances, featuring
@@ -489,7 +493,9 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-pump-soap" />
                 <h3>
-                  <a href="service-details.html">Lotion and Serum Bottles</a>
+                  <Link to="/lotion-serum-bottles">
+                    Lotion and Serum Bottles
+                  </Link>
                 </h3>
                 <p>
                   Specialized bottles for cosmetic products with various pump
@@ -508,7 +514,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-industry" />
                 <h3>
-                  <a href="service-details.html">Industrial Bottles</a>
+                  <Link to="/industrial-bottles">Industrial Bottles</Link>
                 </h3>
                 <p>
                   Heavy-duty glass bottles designed for industrial chemicals and
@@ -527,7 +533,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-wand-magic-sparkles" />
                 <h3>
-                  <a href="service-details.html">Customizable Bottles</a>
+                  <Link to="/customizable-bottles">Customizable Bottles</Link>
                 </h3>
                 <p>
                   Bespoke bottle solutions with customizable shapes, colors, and
@@ -546,7 +552,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-crown" />
                 <h3>
-                  <a href="service-details.html">Premium Bottles</a>
+                  <Link to="/premium-bottles">Premium Bottles</Link>
                 </h3>
                 <p>
                   Luxury glass bottles with superior quality and distinctive
@@ -565,7 +571,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-leaf" />
                 <h3>
-                  <a href="service-details.html">Eco-Friendly Bottles</a>
+                  <Link to="/eco-friendly-bottles">Eco-Friendly Bottles</Link>
                 </h3>
                 <p>
                   Sustainable glass bottles made with recycled materials and
@@ -702,103 +708,7 @@ const Home = () => {
       </div>
       {/* End Foreign */}
       {/* Team */}
-      <section className="team-area">
-        <div className="container">
-          <div className="section-title">
-            <span className="sub-title">Team</span>
-            <h2>Our Expert Team</h2>
-          </div>
-          <div className="row">
-            <div className="col-sm-6 col-lg-4">
-              <div className="team-item">
-                <img src={team2} alt="Team" />
-                <h3>Andres Pedlock</h3>
-                <span>CEO, Company</span>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com" target="_blank">
-                      <i className="fa-brands fa-facebook" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.twitter.com" target="_blank">
-                      <i className="fa-brands fa-x-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.pinterest.com" target="_blank">
-                      <i className="fa-brands fa-pinterest" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com" target="_blank">
-                      <i className="fa-brands fa-linkedin" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-sm-6 col-lg-4">
-              <div className="team-item">
-                <img src={team3} alt="Team" />
-                <h3>Adam Meir</h3>
-                <span>Lead Developer</span>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com" target="_blank">
-                      <i className="fa-brands fa-facebook" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.twitter.com" target="_blank">
-                      <i className="fa-brands fa-x-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.pinterest.com" target="_blank">
-                      <i className="fa-brands fa-pinterest" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com" target="_blank">
-                      <i className="fa-brands fa-linkedin" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
-              <div className="team-item">
-                <img src={team1} alt="Team" />
-                <h3>Jack Farnes</h3>
-                <span>Manager of Company</span>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com" target="_blank">
-                      <i className="fa-brands fa-facebook" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.twitter.com" target="_blank">
-                      <i className="fa-brands fa-x-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.pinterest.com" target="_blank">
-                      <i className="fa-brands fa-pinterest" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com" target="_blank">
-                      <i className="fa-brands fa-linkedin" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       {/* End Team */}
       {/* Benefit */}
       <section className="benefit-area">
@@ -887,24 +797,10 @@ const Home = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="cost-content">
-                <div className="section-title">
-                  <span className="sub-title">Project</span>
-                  <h2>Professional, Reliable &amp; Cost Effective</h2>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas.
-                </p>
+                <div className="section-title"></div>
+                <p></p>
                 <ul className="align-items-center">
-                  <li>
-                    <img src={cost} alt="Cost" />
-                  </li>
-                  <li>
-                    <h4>- Teresa Mera</h4>
-                    <span>Developer</span>
-                  </li>
+                  <li></li>
                 </ul>
               </div>
             </div>
