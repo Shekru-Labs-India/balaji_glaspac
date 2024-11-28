@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/balaji_glaspac/static/css/main.160d157d.css",
-    "main.js": "/balaji_glaspac/static/js/main.268b9f0f.js",
+    "main.css": "/balaji_glaspac/static/css/main.2cfb35d2.css",
+    "main.js": "/balaji_glaspac/static/js/main.7873f687.js",
     "static/js/453.d5a9f5a3.chunk.js": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js",
     "static/media/manufacturing.mp4": "/balaji_glaspac/static/media/manufacturing.3f3c51032f0c7557e666.mp4",
+    "static/media/img5.jpg": "/balaji_glaspac/static/media/img5.41ba84ba79a36efae2ed.jpg",
     "static/media/img1.jpg": "/balaji_glaspac/static/media/img1.97694c926d256a35bbf7.jpg",
     "static/media/img3.jpg": "/balaji_glaspac/static/media/img3.eb23a436fdfccc9db82a.jpg",
     "static/media/spiritBottle2.jpg": "/balaji_glaspac/static/media/spiritBottle2.8cc21dd73fd2645f103b.jpg",
@@ -72,14 +73,12 @@
     "static/media/social-main.jpg": "/balaji_glaspac/static/media/social-main.943a0b3df93811cc68f3.jpg",
     "static/media/foreign-bg.jpg": "/balaji_glaspac/static/media/foreign-bg.ba9f6d31cbdb18cb8999.jpg",
     "static/media/about-job-main.jpg": "/balaji_glaspac/static/media/about-job-main.6f2140cc7803f144e562.jpg",
-    "static/media/team2.jpg": "/balaji_glaspac/static/media/team2.d3f56966a632004725ae.jpg",
     "static/media/footer-bg.jpg": "/balaji_glaspac/static/media/footer-bg.c9dabd5cee4a3750060f.jpg",
     "static/media/service-bg.jpg": "/balaji_glaspac/static/media/service-bg.52f259518effca935152.jpg",
-    "static/media/team3.jpg": "/balaji_glaspac/static/media/team3.23502db4776237d8104f.jpg",
-    "static/media/team1.jpg": "/balaji_glaspac/static/media/team1.e542b487bb3b4e04a3a4.jpg",
     "static/media/team-bg.png": "/balaji_glaspac/static/media/team-bg.ee1d27d3be54e8ddac4d.png",
     "static/media/wine7.jpg": "/balaji_glaspac/static/media/wine7.0ab119d41e4eadf87a94.jpg",
     "static/media/img4.jpg": "/balaji_glaspac/static/media/img4.8f6bd2667c34cc8a1b77.jpg",
+    "static/media/about2.png": "/balaji_glaspac/static/media/about2.b93026adf8954bd8f6e9.png",
     "static/media/client19.png": "/balaji_glaspac/static/media/client19.deea91f3b81b4a506479.png",
     "static/media/about3.jpg": "/balaji_glaspac/static/media/about3.b3c99bf43e86d8917eea.jpg",
     "static/media/cost-girl.png": "/balaji_glaspac/static/media/cost-girl.ca6006f20b0db9c2c611.png",
@@ -89,12 +88,12 @@
     "static/media/slick.eot": "/balaji_glaspac/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/balaji_glaspac/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/balaji_glaspac/static/media/slick.295183786cd8a1389865.woff",
-    "main.160d157d.css.map": "/balaji_glaspac/static/css/main.160d157d.css.map",
-    "main.268b9f0f.js.map": "/balaji_glaspac/static/js/main.268b9f0f.js.map",
+    "main.2cfb35d2.css.map": "/balaji_glaspac/static/css/main.2cfb35d2.css.map",
+    "main.7873f687.js.map": "/balaji_glaspac/static/js/main.7873f687.js.map",
     "453.d5a9f5a3.chunk.js.map": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.160d157d.css",
-    "static/js/main.268b9f0f.js"
+    "static/css/main.2cfb35d2.css",
+    "static/js/main.7873f687.js"
   ]
 }
