@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/balaji_glaspac/static/css/main.a958dc8c.css",
-    "main.js": "/balaji_glaspac/static/js/main.dc2f7460.js",
+    "main.css": "/balaji_glaspac/static/css/main.160d157d.css",
+    "main.js": "/balaji_glaspac/static/js/main.268b9f0f.js",
     "static/js/453.d5a9f5a3.chunk.js": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js",
     "static/media/manufacturing.mp4": "/balaji_glaspac/static/media/manufacturing.3f3c51032f0c7557e666.mp4",
     "static/media/img1.jpg": "/balaji_glaspac/static/media/img1.97694c926d256a35bbf7.jpg",
@@ -80,19 +80,21 @@
     "static/media/team-bg.png": "/balaji_glaspac/static/media/team-bg.ee1d27d3be54e8ddac4d.png",
     "static/media/wine7.jpg": "/balaji_glaspac/static/media/wine7.0ab119d41e4eadf87a94.jpg",
     "static/media/img4.jpg": "/balaji_glaspac/static/media/img4.8f6bd2667c34cc8a1b77.jpg",
+    "static/media/client19.png": "/balaji_glaspac/static/media/client19.deea91f3b81b4a506479.png",
     "static/media/about3.jpg": "/balaji_glaspac/static/media/about3.b3c99bf43e86d8917eea.jpg",
     "static/media/cost-girl.png": "/balaji_glaspac/static/media/cost-girl.ca6006f20b0db9c2c611.png",
+    "static/media/client15.png": "/balaji_glaspac/static/media/client15.2647d830e08faf0fcf7e.png",
     "index.html": "/balaji_glaspac/index.html",
     "static/media/slick.svg": "/balaji_glaspac/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/balaji_glaspac/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/balaji_glaspac/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/balaji_glaspac/static/media/slick.295183786cd8a1389865.woff",
-    "main.a958dc8c.css.map": "/balaji_glaspac/static/css/main.a958dc8c.css.map",
-    "main.dc2f7460.js.map": "/balaji_glaspac/static/js/main.dc2f7460.js.map",
+    "main.160d157d.css.map": "/balaji_glaspac/static/css/main.160d157d.css.map",
+    "main.268b9f0f.js.map": "/balaji_glaspac/static/js/main.268b9f0f.js.map",
     "453.d5a9f5a3.chunk.js.map": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a958dc8c.css",
-    "static/js/main.dc2f7460.js"
+    "static/css/main.160d157d.css",
+    "static/js/main.268b9f0f.js"
   ]
 }
