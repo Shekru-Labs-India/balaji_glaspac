@@ -25,6 +25,131 @@ import benefit from "../assets/img/home-one/benefit-shape.png";
 import partner from "../assets/img/home-one/partner-shape.png";
 import video1 from "../assets/img/manufacturing.mp4";
 import { Link } from "react-router-dom";
+import wine from "../assets/img/BeerBottle.jpg";
+import beer from "../assets/img/BeerBottle.jpg";
+import spirits from "../assets/img/BeerBottle.jpg";
+import champagne from "../assets/img/BeerBottle.jpg";
+import water from "../assets/img/BeerBottle.jpg";
+import juiceSoda from "../assets/img/BeerBottle.jpg";
+import specialtyDrink from "../assets/img/BeerBottle.jpg";
+import foodJars from "../assets/img/BeerBottle.jpg";
+import oralLiquid from "../assets/img/BeerBottle.jpg";
+import dropper from "../assets/img/BeerBottle.jpg";
+import vials from "../assets/img/BeerBottle.jpg";
+import tablet from "../assets/img/BeerBottle.jpg";
+import pharma from "../assets/img/BeerBottle.jpg";
+import perfume from "../assets/img/BeerBottle.jpg";
+import lotion from "../assets/img/BeerBottle.jpg";
+import industrial from "../assets/img/BeerBottle.jpg";
+import custom from "../assets/img/BeerBottle.jpg";
+import premium from "../assets/img/BeerBottle.jpg";
+import eco from "../assets/img/BeerBottle.jpg";
+
+// Create products array
+const products = [
+  { id: 1, name: "Wine Bottles", image: wine, path: "/wine-bottles" },
+  { id: 2, name: "Beer Bottles", image: beer, path: "/beer-bottles" },
+  { id: 3, name: "Spirits Bottles", image: spirits, path: "/spirits-bottles" },
+  {
+    id: 4,
+    name: "Champagne Bottles",
+    image: champagne,
+    path: "/champagne-bottles",
+  },
+  { id: 5, name: "Water Bottles", image: water, path: "/water-bottles" },
+  {
+    id: 6,
+    name: "Juice and Soda Bottles",
+    image: juiceSoda,
+    path: "/juice-soda-bottles",
+  },
+  {
+    id: 7,
+    name: "Specialty Drink Bottles",
+    image: specialtyDrink,
+    path: "/specialty-drink-bottles",
+  },
+  { id: 8, name: "Food Jars", image: foodJars, path: "/food-jars" },
+  {
+    id: 9,
+    name: "Oral Liquid Bottles",
+    image: oralLiquid,
+    path: "/oral-liquid-bottles",
+  },
+  { id: 10, name: "Dropper Bottles", image: dropper, path: "/dropper-bottles" },
+  { id: 11, name: "Vials and Ampoules", image: vials, path: "/vials-ampoules" },
+  {
+    id: 12,
+    name: "Tablet and Capsule Bottles",
+    image: tablet,
+    path: "/tablet-capsule-bottles",
+  },
+  {
+    id: 13,
+    name: "Specialty Pharmaceutical Bottles",
+    image: pharma,
+    path: "/specialty-pharmaceutical-bottles",
+  },
+  { id: 14, name: "Perfume Bottles", image: perfume, path: "/perfume-bottles" },
+  {
+    id: 15,
+    name: "Lotion and Serum Bottles",
+    image: lotion,
+    path: "/lotion-serum-bottles",
+  },
+  {
+    id: 16,
+    name: "Industrial Bottles",
+    image: industrial,
+    path: "/industrial-bottles",
+  },
+  {
+    id: 17,
+    name: "Customizable Bottles",
+    image: custom,
+    path: "/customizable-bottles",
+  },
+  { id: 18, name: "Premium Bottles", image: premium, path: "/premium-bottles" },
+  {
+    id: 19,
+    name: "Eco-Friendly Bottles",
+    image: eco,
+    path: "/eco-friendly-bottles",
+  },
+];
+
+// In your component's CSS
+const carouselStyles = {
+  foreign: {
+    width: "100vw",
+    marginLeft: "calc(-50vw + 50%)",
+    marginRight: "calc(-50vw + 50%)",
+    overflow: "hidden",
+  },
+  item: {
+    padding: "10px",
+    height: "100%",
+  },
+  imageContainer: {
+    width: "100%",
+    height: "300px",
+    overflow: "hidden",
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+  },
+  title: {
+    fontSize: "18px",
+    margin: "10px 0",
+    textAlign: "center",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    color: "#fa5f0b",
+  },
+};
 
 const Home = () => {
   useEffect(() => {
@@ -46,31 +171,43 @@ const Home = () => {
         ],
       });
 
-      // Foreign slider initialization
+      // Foreign slider initialization with updated settings
       $(".foreign-slider").owlCarousel({
         loop: true,
-        margin: 0,
-        nav: false,
+        margin: 15,
+        nav: true,
         dots: false,
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 3000,
+        navText: [
+          "<i class='fa-solid fa-chevron-left'></i>",
+          "<i class='fa-solid fa-chevron-right'></i>",
+        ],
         responsive: {
-          0: {
-            items: 1,
-          },
-          576: {
-            items: 2,
-          },
-          768: {
-            items: 3,
-          },
-          992: {
-            items: 4,
-          },
-          1200: {
-            items: 5,
-          },
+          0: { items: 1 },
+          576: { items: 2 },
+          768: { items: 3 },
+          992: { items: 4 },
+          1200: { items: 5 },
+        },
+        onInitialized: function () {
+          // Remove left margin from nav buttons
+          $(".owl-nav").css({
+            margin: "0",
+            position: "absolute",
+            top: "50%",
+            width: "100%",
+            transform: "translateY(-50%)",
+          });
+          $(".owl-prev").css({
+            left: "0",
+            position: "absolute",
+          });
+          $(".owl-next").css({
+            right: "0",
+            position: "absolute",
+          });
         },
       });
     }
@@ -123,7 +260,7 @@ const Home = () => {
       </div>
       {/* End Banner */}
       {/* About */}
-      <section className="about-area ptb-100">
+      <section className="about-area ">
         <div className="container">
           <div className="row align-iems-center">
             <div className="col-lg-6">
@@ -634,75 +771,30 @@ const Home = () => {
       </section>
       {/* End Counter */}
       {/* Foreign */}
-      <div className="foreign-area">
-        <div className="container-fluid">
+      <div className="foreign-area" style={carouselStyles.foreign}>
+        <div className="container-fluid p-0">
           <div className="foreign-slider owl-theme owl-carousel">
-            <div className="foreign-item">
-              <a href="project-details.html">
-                <img src={img1} alt="Foreign" width={354} height={410} />
-              </a>
-              <div className="foreign-bottom">
-                <h3>
-                  <a href="project-details.html">Dronesense</a>
-                </h3>
-                <span>Industrial Company</span>
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="foreign-item"
+                style={carouselStyles.item}
+              >
+                <Link to={product.path}>
+                  <div style={carouselStyles.imageContainer}>
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="img-fluid img-thumbnail rounded-4"
+                      style={carouselStyles.image}
+                    />
+                  </div>
+                  <div className="foreign-bottom">
+                    <h3 style={carouselStyles.title}>{product.name}</h3>
+                  </div>
+                </Link>
               </div>
-            </div>
-            <div className="foreign-item">
-              <a href="project-details.html">
-                <img src={img2} width={354} height={410} alt="Foreign" />
-              </a>
-              <div className="foreign-bottom">
-                <h3>
-                  <a href="project-details.html">Manufecture Robot</a>
-                </h3>
-                <span>Industrial Construction</span>
-              </div>
-            </div>
-            <div className="foreign-item">
-              <a href="project-details.html">
-                <img src={img3} width={354} height={410} alt="Foreign" />
-              </a>
-              <div className="foreign-bottom">
-                <h3>
-                  <a href="project-details.html">Logistic Transport</a>
-                </h3>
-                <span>Industrial Company</span>
-              </div>
-            </div>
-            <div className="foreign-item">
-              <a href="project-details.html">
-                <img src={img1} width={354} height={410} alt="Foreign" />
-              </a>
-              <div className="foreign-bottom">
-                <h3>
-                  <a href="project-details.html">Healthcare</a>
-                </h3>
-                <span>Industrial Management</span>
-              </div>
-            </div>
-            <div className="foreign-item">
-              <a href="project-details.html">
-                <img src={img4} width={354} height={410} alt="Foreign" />
-              </a>
-              <div className="foreign-bottom">
-                <h3>
-                  <a href="project-details.html">Chemical Research</a>
-                </h3>
-                <span>Industrial Research</span>
-              </div>
-            </div>
-            <div className="foreign-item">
-              <a href="project-details.html">
-                <img src={img6} width={354} height={410} alt="Foreign" />
-              </a>
-              <div className="foreign-bottom">
-                <h3>
-                  <a href="project-details.html">Electronic Waste</a>
-                </h3>
-                <span>Industrial Company</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -792,7 +884,7 @@ const Home = () => {
       </section>
       {/* End Partner */}
       {/* Cost */}
-      <section className="cost-area">
+      <section className="cost-area pb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

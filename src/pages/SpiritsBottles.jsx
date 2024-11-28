@@ -2,6 +2,32 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import spiritsHero from "../assets/img/spiritBottle.jpg";
+import spiritsHero2 from "../assets/img/spiritBottle2.jpg";
+import spiritsHero3 from "../assets/img/spiritBottle3.jpg";
+import spiritsHero4 from "../assets/img/spiritBottle4.jpg";
+
+const styles = {
+  heroSection: {
+    clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
+    minHeight: "70vh",
+  },
+  sectionSpacing: {
+    padding: "80px 0",
+  },
+  featureCard: {
+    padding: "30px 20px",
+    height: "100%",
+    backgroundColor: "#fff",
+    borderRadius: "8px",
+    boxShadow: "0 2px 15px rgba(0,0,0,0.05)",
+  },
+  productCard: {
+    height: "100%",
+    borderRadius: "8px",
+    overflow: "hidden",
+    boxShadow: "0 2px 15px rgba(0,0,0,0.05)",
+  },
+};
 
 const SpiritsBottles = () => {
   const [activeTab, setActiveTab] = useState("premium");
@@ -10,14 +36,11 @@ const SpiritsBottles = () => {
     <>
       <Header />
 
-      {/* Hero Section with Diagonal Design */}
-      <div className="position-relative overflow-hidden">
+      {/* Hero Section - Adjusted spacing */}
+      <div className="position-relative overflow-hidden pt-5">
         <div
           className="hero-diagonal bg-dark text-white py-6"
-          style={{
-            clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
-            minHeight: "80vh",
-          }}
+          style={styles.heroSection}
         >
           <div className="container h-100">
             <div className="row h-100 align-items-center">
@@ -55,8 +78,8 @@ const SpiritsBottles = () => {
         </div>
       </div>
 
-      {/* Categories with Interactive Tabs */}
-      <section className="py-5">
+      {/* Categories Section - Added consistent spacing */}
+      <section style={styles.sectionSpacing}>
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold">Our Spirit Bottle Collection</h2>
@@ -112,7 +135,7 @@ const SpiritsBottles = () => {
                   <div className="product-card">
                     <div className="product-image">
                       <img
-                        src={spiritsHero}
+                        src={spiritsHero2}
                         alt="Premium Bottle"
                         className="img-fluid"
                       />
@@ -139,7 +162,7 @@ const SpiritsBottles = () => {
                   <div className="product-card">
                     <div className="product-image">
                       <img
-                        src={spiritsHero}
+                        src={spiritsHero3}
                         alt="Premium Bottle"
                         className="img-fluid"
                       />
@@ -164,7 +187,7 @@ const SpiritsBottles = () => {
                   <div className="product-card">
                     <div className="product-image">
                       <img
-                        src={spiritsHero}
+                        src={spiritsHero4}
                         alt="Premium Bottle"
                         className="img-fluid"
                       />
@@ -186,17 +209,189 @@ const SpiritsBottles = () => {
                 </div>
               </div>
             </div>
-            {/* Add content for other tabs */}
+
+            {/* Vodka Bottles Tab */}
+            <div
+              className={`tab-pane fade ${
+                activeTab === "vodka" ? "show active" : ""
+              }`}
+            >
+              <div className="row g-4">
+                <div className="col-md-6 col-lg-4">
+                  <div className="product-card">
+                    <div className="product-image">
+                      <img
+                        src={spiritsHero3}
+                        alt="Vodka Bottle"
+                        className="img-fluid"
+                      />
+                      <div className="product-overlay">
+                        <button className="btn btn-light">Quick View</button>
+                      </div>
+                    </div>
+                    <div className="product-details p-3">
+                      <h4>Premium Vodka Bottle</h4>
+                      <p>700ml | Frosted Glass Available</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className="badge bg-primary">New Arrival</span>
+                        <button className="btn btn-outline-primary btn-sm">
+                          Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 col-lg-4">
+                  <div className="product-card">
+                    <div className="product-image">
+                      <img
+                        src={spiritsHero4}
+                        alt="Vodka Bottle"
+                        className="img-fluid"
+                      />
+                      <div className="product-overlay">
+                        <button className="btn btn-light">Quick View</button>
+                      </div>
+                    </div>
+                    <div className="product-details p-3">
+                      <h4>Elite Vodka Collection</h4>
+                      <p>1000ml | Premium Finish</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className="badge bg-primary">Popular</span>
+                        <button className="btn btn-outline-primary btn-sm">
+                          Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 col-lg-4">
+                  <div className="product-card">
+                    <div className="product-image">
+                      <img
+                        src={spiritsHero2}
+                        alt="Vodka Bottle"
+                        className="img-fluid"
+                      />
+                      <div className="product-overlay">
+                        <button className="btn btn-light">Quick View</button>
+                      </div>
+                    </div>
+                    <div className="product-details p-3">
+                      <h4>Designer Vodka Bottle</h4>
+                      <p>500ml | Luxury Edition</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className="badge bg-primary">
+                          Limited Edition
+                        </span>
+                        <button className="btn btn-outline-primary btn-sm">
+                          Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Whiskey Bottles Tab */}
+            <div
+              className={`tab-pane fade ${
+                activeTab === "whiskey" ? "show active" : ""
+              }`}
+            >
+              <div className="row g-4">
+                <div className="col-md-6 col-lg-4">
+                  <div className="product-card">
+                    <div className="product-image">
+                      <img
+                        src={spiritsHero4}
+                        alt="Whiskey Bottle"
+                        className="img-fluid"
+                      />
+                      <div className="product-overlay">
+                        <button className="btn btn-light">Quick View</button>
+                      </div>
+                    </div>
+                    <div className="product-details p-3">
+                      <h4>Classic Whiskey Decanter</h4>
+                      <p>750ml | Premium Crystal</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className="badge bg-primary">Best Seller</span>
+                        <button className="btn btn-outline-primary btn-sm">
+                          Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 col-lg-4">
+                  <div className="product-card">
+                    <div className="product-image">
+                      <img
+                        src={spiritsHero2}
+                        alt="Whiskey Bottle"
+                        className="img-fluid"
+                      />
+                      <div className="product-overlay">
+                        <button className="btn btn-light">Quick View</button>
+                      </div>
+                    </div>
+                    <div className="product-details p-3">
+                      <h4>Vintage Whiskey Bottle</h4>
+                      <p>700ml | Antique Finish</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className="badge bg-primary">Exclusive</span>
+                        <button className="btn btn-outline-primary btn-sm">
+                          Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6 col-lg-4">
+                  <div className="product-card">
+                    <div className="product-image">
+                      <img
+                        src={spiritsHero3}
+                        alt="Whiskey Bottle"
+                        className="img-fluid"
+                      />
+                      <div className="product-overlay">
+                        <button className="btn btn-light">Quick View</button>
+                      </div>
+                    </div>
+                    <div className="product-details p-3">
+                      <h4>Square Whiskey Bottle</h4>
+                      <p>1000ml | Heavy Base</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className="badge bg-primary">Premium</span>
+                        <button className="btn btn-outline-primary btn-sm">
+                          Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features with Animated Icons */}
-      <section className="py-5 bg-light">
+      {/* Features Section - Added consistent spacing and card styling */}
+      <section className="bg-light" style={styles.sectionSpacing}>
         <div className="container">
           <div className="row g-4">
             <div className="col-md-3">
-              <div className="feature-card text-center p-4">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
                 <div className="feature-icon mb-3">
                   <i className="fas fa-medal fa-3x text-primary"></i>
                 </div>
@@ -205,7 +400,10 @@ const SpiritsBottles = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <div className="feature-card text-center p-4">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
                 <div className="feature-icon mb-3">
                   <i className="fas fa-medal fa-3x text-primary"></i>
                 </div>
@@ -214,7 +412,10 @@ const SpiritsBottles = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <div className="feature-card text-center p-4">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
                 <div className="feature-icon mb-3">
                   <i className="fas fa-medal fa-3x text-primary"></i>
                 </div>
@@ -223,7 +424,10 @@ const SpiritsBottles = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <div className="feature-card text-center p-4">
+              <div
+                className="feature-card text-center"
+                style={styles.featureCard}
+              >
                 <div className="feature-icon mb-3">
                   <i className="fas fa-medal fa-3x text-primary"></i>
                 </div>
@@ -237,8 +441,8 @@ const SpiritsBottles = () => {
         </div>
       </section>
 
-      {/* Manufacturing Process Timeline */}
-      <section className="py-5">
+      {/* Manufacturing Process - Added consistent spacing */}
+      <section style={styles.sectionSpacing}>
         <div className="container">
           <h2 className="text-center mb-5">Our Manufacturing Excellence</h2>
           <div className="timeline">
@@ -253,8 +457,8 @@ const SpiritsBottles = () => {
         </div>
       </section>
 
-      {/* Customization Options */}
-      <section className="py-5 bg-dark text-white">
+      {/* Customization Section - Added consistent spacing */}
+      <section className="bg-dark text-white" style={styles.sectionSpacing}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -284,49 +488,6 @@ const SpiritsBottles = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 text-center">
-              <h2 className="mb-4">Ready to Order?</h2>
-              <p className="lead mb-4">
-                Contact our team to discuss your requirements and get a custom
-                quote
-              </p>
-              <form className="contact-form">
-                <div className="row g-3">
-                  <div className="col-md-6">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your Name"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Your Email"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <textarea
-                      className="form-control"
-                      rows="4"
-                      placeholder="Your Message"
-                    ></textarea>
-                  </div>
-                  <div className="col-12">
-                    <button type="submit" className="btn btn-primary btn-lg">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Custom CSS */}
 

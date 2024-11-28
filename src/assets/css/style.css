@@ -850,11 +850,11 @@ button:focus {
 .foreign-area {
   overflow: hidden;
   position: relative;
-  top: -70px;
+  top: 100px;
 }
 
 .foreign-area .foreign-slider {
-  left: calc((100% - 510px) / 2);
+
   position: relative;
 }
 
@@ -4730,4 +4730,185 @@ footer:before {
 .slick-dots li.slick-active button:before {
   color: #fff;
   opacity: 1;
+}
+
+
+.mean-nav .dropdown-menu {
+  position: static !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding-left: 15px !important;
+}
+
+.mean-nav .submenu {
+  padding-left: 15px !important;
+}
+
+.mean-nav .nav-link {
+  padding: 10px 15px !important;
+  border-bottom: 1px solid #eee;
+}
+
+.mean-nav .fa-chevron-up,
+.mean-nav .fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.mean-nav .dropdown-menu,
+.mean-nav .submenu {
+  transition: display 0.3s ease;
+}
+
+/* Add this to your CSS */
+.mean-nav .nav-link i {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #333;
+}
+
+.mean-nav .dropdown-menu {
+  margin-left: 0 !important;
+  padding-left: 15px !important;
+}
+
+.mean-nav .nav-link {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+/* Add these specific rules */
+.mean-container {
+  position: relative;
+  width: 100%;
+}
+
+.mean-bar {
+  width: 100%;
+}
+
+.mean-nav {
+  width: 100%;
+}
+
+.mean-nav .navbar-nav {
+  width: 100% !important;
+}
+
+.mean-nav .nav-item {
+  width: 100%;
+}
+
+.mean-nav .show {
+  display: block !important;
+  width: 100% !important;
+}
+
+.mean-nav .d-none {
+  display: none !important;
+}
+
+/* Handle medium devices specifically */
+@media (max-width: 991px) {
+
+  .mean-nav .nav-item,
+  .mean-nav .show,
+  .mean-nav .collapse {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+  }
+
+  .mean-nav .nav-link {
+
+    display: flex !important;
+  }
+}
+
+/* Add to your CSS file */
+.owl-nav button {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-nav button:hover {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.owl-nav button span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Remove any default padding/margin */
+.container-fluid.p-0 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Ensure consistent card heights */
+.foreign-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.foreign-bottom {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Owl Carousel Navigation Styles */
+.owl-nav {
+  margin: 0 !important;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* This allows clicks through to the carousel */
+}
+
+.owl-nav button {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  pointer-events: auto;
+  /* Re-enable clicks for buttons */
+}
+
+.owl-nav button.owl-prev {
+  left: 10px;
+  /* Adjust this value to position from left edge */
+}
+
+.owl-nav button.owl-next {
+  right: 10px;
+  /* Adjust this value to position from right edge */
+}
+
+.owl-nav button:hover {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.owl-nav button span {
+  font-size: 24px;
+  line-height: 1;
 }

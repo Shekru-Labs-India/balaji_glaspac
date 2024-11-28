@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/img/balaji_glaspac.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdowns, setActiveDropdowns] = useState({});
+  const [mobileDropdowns, setMobileDropdowns] = useState({
+    products: false,
+    beverage: false,
+    food: false,
+    pharma: false,
+    cosmetic: false,
+  });
 
   // Add toggle functions
   const toggleMobileMenu = () => {
@@ -17,6 +24,26 @@ const Header = () => {
       [key]: !prev[key],
     }));
   };
+
+  const toggleMobileDropdown = (key) => {
+    setMobileDropdowns((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
+  // Add this effect to handle body class
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add("mobile-menu-open");
+    } else {
+      document.body.classList.remove("mobile-menu-open");
+    }
+
+    return () => {
+      document.body.classList.remove("mobile-menu-open");
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <>
@@ -133,152 +160,347 @@ const Header = () => {
             </button>
             <nav className="mean-nav">
               <ul
-                className="navbar-nav"
+                className="navbar-nav w-100"
                 style={{
                   display: isMobileMenuOpen ? "block" : "none",
+                  background: "#fff",
                   position: "absolute",
-                  top: "100%",
                   left: 0,
                   right: 0,
-                  background: "#fff",
+                  top: "100%",
                   zIndex: 999,
-                  padding: "10px 0",
-                  boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
                 }}
               >
                 <li className="nav-item">
-                  <Link to="/" className="nav-link dropdown-toggle active">
+                  <Link to="/" className="nav-link px-3 py-2 border-bottom">
                     Home
                   </Link>
                 </li>
 
+                {/* Product List Dropdown */}
                 <li className="nav-item">
-                  <a href="#" className="nav-link dropdown-toggle">
-                    Pages <i className="fa-solid fa-chevron-down" />
-                  </a>
-                  <ul
-                    className="dropdown-menu"
-                    style={{
-                      display: activeDropdowns["pages"] ? "block" : "none",
-                    }}
-                  >
-                    <li className="nav-item">
-                      <a href="feature.html" className="nav-link">
-                        Wine Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="team.html" className="nav-link">
-                        Beer Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="testimonial.html" className="nav-link">
-                        Spirits Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="faq.html" className="nav-link">
-                        Champagne Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="404.html" className="nav-link">
-                        Water Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="coming-soon.html" className="nav-link">
-                        Juice and Soda Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="privacy-policy.html" className="nav-link">
-                        Specialty Drink Bottles (Cold-Pressed, Kombucha)
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Food Jars
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Oral Liquid Bottles (Pharmaceuticals)
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Dropper Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Vials and Ampoules
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Tablet and Capsule Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Specialty Pharmaceutical Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Perfume Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Lotion and Serum Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Industrial Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Customizable Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Premium Bottles
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="terms-and-conditions.html" className="nav-link">
-                        Eco-Friendly Bottles
-                      </a>
-                    </li>
-                  </ul>
-                  <a
-                    className="mean-expand"
-                    href="#"
+                  <div
+                    className="nav-link px-3 py-2 border-bottom d-flex justify-content-between align-items-center"
                     onClick={(e) => {
                       e.preventDefault();
-                      toggleDropdown("pages");
+                      toggleMobileDropdown("products");
                     }}
-                    style={{ fontSize: 18 }}
                   >
-                    {activeDropdowns["pages"] ? "-" : "+"}
-                  </a>
+                    <span>Catalogue</span>
+                    <i
+                      className={`fa-solid ${
+                        mobileDropdowns.products
+                          ? "fa-chevron-up"
+                          : "fa-chevron-down"
+                      }`}
+                    />
+                  </div>
+
+                  <div
+                    className={`${
+                      mobileDropdowns.products ? "show" : "d-none"
+                    }`}
+                  >
+                    {/* Beverage Bottles Section */}
+                    <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("beverage");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Beverage Bottles</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.beverage ? "show" : "d-none"
+                        }`}
+                      >
+                        <Link
+                          to="/wine-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Wine Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/beer-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Beer Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/spirits-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Spirits Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/champagne-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Champagne Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/water-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Water Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/juice-and-soda-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Juice and Soda Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/specialty-drink-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Specialty Drink Bottles</span>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Food Containers Section */}
+                    <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("food");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Food Containers</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.food ? "show" : "d-none"
+                        }`}
+                      >
+                        <Link
+                          to="/food-jars"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Food Jars</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/spice-and-seasoning-jars"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Spice and Seasoning Jars</span>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Pharmaceutical Bottles Section */}
+                    <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("pharma");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Pharmaceutical Bottles</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.pharma ? "show" : "d-none"
+                        }`}
+                      >
+                        <Link
+                          to="/oral-liquid-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Oral Liquid Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/dropper-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Dropper Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/vials-and-ampoules"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Vials and Ampoules</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/tablet-and-capsule-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Tablet and Capsule Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/specialty-pharmaceutical-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Specialty Pharmaceutical Bottles</span>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Cosmetic and Personal Care Section */}
+                    <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("cosmetic");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Cosmetic and Personal Care</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.cosmetic ? "show" : "d-none"
+                        }`}
+                      >
+                        <Link
+                          to="/perfume-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Perfume Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/lotion-and-serum-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Lotion and Serum Bottles</span>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Other Categories */}
+                    <Link
+                      to="/industrial-bottles"
+                      className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                    >
+                      <div className="d-flex align-items-center">
+                        <i className="fa-solid fa-arrow-right me-2" />
+                        <span>Industrial Bottles</span>
+                      </div>
+                    </Link>
+                    <Link
+                      to="/customizable-bottles"
+                      className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                    >
+                      <div className="d-flex align-items-center">
+                        <i className="fa-solid fa-arrow-right me-2" />
+                        <span>Customizable Bottles</span>
+                      </div>
+                    </Link>
+                    <Link
+                      to="/premium-bottles"
+                      className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                    >
+                      <div className="d-flex align-items-center">
+                        <i className="fa-solid fa-arrow-right me-2" />
+                        <span>Premium Bottles</span>
+                      </div>
+                    </Link>
+                    <Link
+                      to="/eco-friendly-bottles"
+                      className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                    >
+                      <div className="d-flex align-items-center">
+                        <i className="fa-solid fa-arrow-right me-2" />
+                        <span>Eco-Friendly Bottles</span>
+                      </div>
+                    </Link>
+                  </div>
                 </li>
 
                 <li className="nav-item">
-                  <a href="about.html" className="nav-link">
+                  <Link
+                    to="/about"
+                    className="nav-link px-3 py-2 border-bottom"
+                  >
                     About
-                  </a>
+                  </Link>
                 </li>
 
-                <li className="nav-item mean-last">
-                  <Link to="/contact" className="nav-link">
+                {/* Services dropdown */}
+
+                <li className="nav-item">
+                  <Link
+                    to="/contact"
+                    className="nav-link px-3 py-2 border-bottom"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -335,157 +557,224 @@ const Header = () => {
                       Home
                     </Link>
                   </li>
+
                   <li className="nav-item">
                     <a href="#" className="nav-link dropdown-toggle">
-                      Product List <i className="fa-solid fa-chevron-down" />
+                      Catalogue <i className="fa-solid fa-chevron-down" />
                     </a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a href="feature.html" className="nav-link">
-                          Wine Bottles
+                      {/* Beverage Bottles Section */}
+                      <li className="nav-item dropdown-submenu">
+                        <a href="#" className="nav-link dropdown-toggle">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          Beverage Bottles
                         </a>
+                        <ul className="dropdown-menu submenu">
+                          <li>
+                            <Link to="/wine-bottles" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Wine Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/beer-bottles" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Beer Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/spirits-bottles" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Spirits Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/champagne-bottles" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Champagne Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/water-bottles" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Water Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/juice-and-soda-bottles"
+                              className="nav-link"
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Juice and Soda Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/specialty-drink-bottles"
+                              className="nav-link"
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Specialty Drink Bottles
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
-                      <li className="nav-item">
-                        <a href="team.html" className="nav-link">
-                          Beer Bottles
+
+                      {/* Food Containers Section */}
+                      <li className="nav-item dropdown-submenu">
+                        <a href="#" className="nav-link dropdown-toggle">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          Food Containers
                         </a>
+                        <ul className="dropdown-menu submenu">
+                          <li>
+                            <Link to="/food-jars" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Food Jars
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/spice-and-seasoning-jars"
+                              className="nav-link"
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Spice and Seasoning Jars
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
-                      <li className="nav-item">
-                        <a href="testimonial.html" className="nav-link">
-                          Spirits Bottles
+
+                      {/* Pharmaceutical Bottles Section */}
+                      <li className="nav-item dropdown-submenu">
+                        <a href="#" className="nav-link dropdown-toggle">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          Pharmaceutical Bottles
                         </a>
+                        <ul className="dropdown-menu submenu">
+                          <li>
+                            <Link
+                              to="/oral-liquid-bottles"
+                              className="nav-link"
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Oral Liquid Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/dropper-bottles" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Dropper Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/vials-and-ampoules" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Vials and Ampoules
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/tablet-and-capsule-bottles"
+                              className="nav-link"
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Tablet and Capsule Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/specialty-pharmaceutical-bottles"
+                              className="nav-link"
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Specialty Pharmaceutical Bottles
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
-                      <li className="nav-item">
-                        <a href="faq.html" className="nav-link">
-                          Champagne Bottles
+
+                      {/* Cosmetic and Personal Care Section */}
+                      <li className="nav-item dropdown-submenu">
+                        <a href="#" className="nav-link dropdown-toggle">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          Cosmetic and Personal Care
                         </a>
+                        <ul className="dropdown-menu submenu">
+                          <li>
+                            <Link to="/perfume-bottles" className="nav-link">
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Perfume Bottles
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/lotion-and-serum-bottles"
+                              className="nav-link"
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Lotion and Serum Bottles
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
-                      <li className="nav-item">
-                        <a href="404.html" className="nav-link">
-                          Water Bottles
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="coming-soon.html" className="nav-link">
-                          Juice and Soda Bottles
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="privacy-policy.html" className="nav-link">
-                          Specialty Drink Bottles (Cold-Pressed, Kombucha)
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
+
+                      {/* Other Categories */}
+                      <li>
+                        <Link
+                          to="/industrial-bottles"
+                          className="nav-link text-dark"
                         >
-                          Food Jars
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
-                          Oral Liquid Bottles (Pharmaceuticals)
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
-                          Dropper Bottles
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
-                          Vials and Ampoules
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
-                          Tablet and Capsule Bottles
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
-                          Specialty Pharmaceutical Bottles
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
-                          Perfume Bottles
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
-                          Lotion and Serum Bottles
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
-                        >
+                          <i className="fa-solid fa-arrow-right me-2" />
                           Industrial Bottles
-                        </a>
+                        </Link>
                       </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
+                      <li>
+                        <Link
+                          to="/customizable-bottles"
+                          className="nav-link text-dark"
                         >
+                          <i className="fa-solid fa-arrow-right me-2" />
                           Customizable Bottles
-                        </a>
+                        </Link>
                       </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
+                      <li>
+                        <Link
+                          to="/premium-bottles"
+                          className="nav-link text-dark"
                         >
+                          <i className="fa-solid fa-arrow-right me-2" />
                           Premium Bottles
-                        </a>
+                        </Link>
                       </li>
-                      <li className="nav-item">
-                        <a
-                          href="terms-and-conditions.html"
-                          className="nav-link"
+                      <li>
+                        <Link
+                          to="/eco-friendly-bottles"
+                          className="nav-link text-dark"
                         >
+                          <i className="fa-solid fa-arrow-right me-2" />
                           Eco-Friendly Bottles
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
+
                   <li className="nav-item">
-                    <a href="about.html" className="nav-link">
+                    <Link to="/about" className="nav-link">
                       About
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/" className="nav-link dropdown-toggle ">
-                      Services
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/" className="nav-link dropdown-toggle ">
-                      Projects
                     </Link>
                   </li>
 
