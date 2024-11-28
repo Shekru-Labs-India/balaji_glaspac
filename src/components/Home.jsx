@@ -7,9 +7,6 @@ import img2 from "../assets/img/img2.jpg";
 import img3 from "../assets/img/img3.jpg";
 import img4 from "../assets/img/img4.jpg";
 import img6 from "../assets/img/img6.jpg";
-import team1 from "../assets/img/home-one/team1.jpg";
-import team2 from "../assets/img/home-one/team2.jpg";
-import team3 from "../assets/img/home-one/team3.jpg";
 import aboutman from "../assets/img/home-one/about-man.png";
 import aboutsignature from "../assets/img/home-one/about-signature.png";
 import service1 from "../assets/img/home-one/service-shape.png";
@@ -25,129 +22,91 @@ import benefit from "../assets/img/home-one/benefit-shape.png";
 import partner from "../assets/img/home-one/partner-shape.png";
 import video1 from "../assets/img/manufacturing.mp4";
 import { Link } from "react-router-dom";
-import wine from "../assets/img/BeerBottle.jpg";
-import beer from "../assets/img/BeerBottle.jpg";
-import spirits from "../assets/img/BeerBottle.jpg";
-import champagne from "../assets/img/BeerBottle.jpg";
-import water from "../assets/img/BeerBottle.jpg";
-import juiceSoda from "../assets/img/BeerBottle.jpg";
-import specialtyDrink from "../assets/img/BeerBottle.jpg";
-import foodJars from "../assets/img/BeerBottle.jpg";
-import oralLiquid from "../assets/img/BeerBottle.jpg";
-import dropper from "../assets/img/BeerBottle.jpg";
-import vials from "../assets/img/BeerBottle.jpg";
-import tablet from "../assets/img/BeerBottle.jpg";
-import pharma from "../assets/img/BeerBottle.jpg";
-import perfume from "../assets/img/BeerBottle.jpg";
-import lotion from "../assets/img/BeerBottle.jpg";
-import industrial from "../assets/img/BeerBottle.jpg";
-import custom from "../assets/img/BeerBottle.jpg";
-import premium from "../assets/img/BeerBottle.jpg";
-import eco from "../assets/img/BeerBottle.jpg";
+import wineBottle from "../assets/img/img1.jpg";
+import spiritBottle from "../assets/img/img2.jpg";
+import beerBottle from "../assets/img/img3.jpg";
+import waterBottle from "../assets/img/img4.jpg";
+import juiceBottle from "../assets/img/img5.jpg";
+import foodJar from "../assets/img/img6.jpg";
 
 // Create products array
 const products = [
-  { id: 1, name: "Wine Bottles", image: wine, path: "/wine-bottles" },
-  { id: 2, name: "Beer Bottles", image: beer, path: "/beer-bottles" },
-  { id: 3, name: "Spirits Bottles", image: spirits, path: "/spirits-bottles" },
+  {
+    id: 1,
+    name: "Wine Bottles",
+    image: wineBottle,
+    path: "/wine-bottles",
+    description: "Premium Glass Wine Bottles",
+  },
+  {
+    id: 2,
+    name: "Spirit Bottles",
+    image: spiritBottle,
+    path: "/spirits-bottles",
+    description: "Luxury Spirit Containers",
+  },
+  {
+    id: 3,
+    name: "Beer Bottles",
+    image: beerBottle,
+    path: "/beer-bottles",
+    description: "Quality Beer Packaging",
+  },
   {
     id: 4,
-    name: "Champagne Bottles",
-    image: champagne,
-    path: "/champagne-bottles",
+    name: "Water Bottles",
+    image: waterBottle,
+    path: "/water-bottles",
+    description: "Crystal Clear Water Bottles",
   },
-  { id: 5, name: "Water Bottles", image: water, path: "/water-bottles" },
+  {
+    id: 5,
+    name: "Juice Bottles",
+    image: juiceBottle,
+    path: "/juice-soda-bottles",
+    description: "Beverage Containers",
+  },
   {
     id: 6,
-    name: "Juice and Soda Bottles",
-    image: juiceSoda,
-    path: "/juice-soda-bottles",
-  },
-  {
-    id: 7,
-    name: "Specialty Drink Bottles",
-    image: specialtyDrink,
-    path: "/specialty-drink-bottles",
-  },
-  { id: 8, name: "Food Jars", image: foodJars, path: "/food-jars" },
-  {
-    id: 9,
-    name: "Oral Liquid Bottles",
-    image: oralLiquid,
-    path: "/oral-liquid-bottles",
-  },
-  { id: 10, name: "Dropper Bottles", image: dropper, path: "/dropper-bottles" },
-  { id: 11, name: "Vials and Ampoules", image: vials, path: "/vials-ampoules" },
-  {
-    id: 12,
-    name: "Tablet and Capsule Bottles",
-    image: tablet,
-    path: "/tablet-capsule-bottles",
-  },
-  {
-    id: 13,
-    name: "Specialty Pharmaceutical Bottles",
-    image: pharma,
-    path: "/specialty-pharmaceutical-bottles",
-  },
-  { id: 14, name: "Perfume Bottles", image: perfume, path: "/perfume-bottles" },
-  {
-    id: 15,
-    name: "Lotion and Serum Bottles",
-    image: lotion,
-    path: "/lotion-serum-bottles",
-  },
-  {
-    id: 16,
-    name: "Industrial Bottles",
-    image: industrial,
-    path: "/industrial-bottles",
-  },
-  {
-    id: 17,
-    name: "Customizable Bottles",
-    image: custom,
-    path: "/customizable-bottles",
-  },
-  { id: 18, name: "Premium Bottles", image: premium, path: "/premium-bottles" },
-  {
-    id: 19,
-    name: "Eco-Friendly Bottles",
-    image: eco,
-    path: "/eco-friendly-bottles",
+    name: "Food Jars",
+    image: foodJar,
+    path: "/food-jars",
+    description: "Food Storage Solutions",
   },
 ];
 
 // In your component's CSS
 const carouselStyles = {
   foreign: {
-    width: "100vw",
-    marginLeft: "calc(-50vw + 50%)",
-    marginRight: "calc(-50vw + 50%)",
-    overflow: "hidden",
+    backgroundColor: "#f8f9fa",
+    padding: "60px 0",
   },
   item: {
-    padding: "10px",
-    height: "100%",
+    margin: "0 15px",
+    transition: "transform 0.3s ease",
+    cursor: "pointer",
+    maxWidth: "250px",
+    margin: "0 auto",
   },
   imageContainer: {
-    width: "100%",
-    height: "300px",
     overflow: "hidden",
+    borderRadius: "8px",
+    height: "200px",
+    width: "200px",
+    marginBottom: "15px",
+    margin: "0 auto",
   },
   image: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    transition: "transform 0.3s ease",
   },
   title: {
-    fontSize: "18px",
-    margin: "10px 0",
-    textAlign: "center",
-    whiteSpace: "nowrap",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    color: "#fa5f0b",
+    fontSize: "1.1rem",
+    color: "#333",
+    marginBottom: "5px",
+    fontWeight: "600",
   },
 };
 
@@ -328,7 +287,7 @@ const Home = () => {
                 </div>
                 <div className="about-year">
                   <h2>
-                    35 <span>Years</span>
+                    18 <span>Years</span>
                   </h2>
                 </div>
               </div>
@@ -773,6 +732,9 @@ const Home = () => {
       {/* Foreign */}
       <div className="foreign-area" style={carouselStyles.foreign}>
         <div className="container-fluid p-0">
+          <div className="section-title text-center mb-5">
+            <h2>Featured Products</h2>
+          </div>
           <div className="foreign-slider owl-theme owl-carousel">
             {products.map((product) => (
               <div
@@ -789,8 +751,9 @@ const Home = () => {
                       style={carouselStyles.image}
                     />
                   </div>
-                  <div className="foreign-bottom">
+                  <div className="foreign-bottom text-center">
                     <h3 style={carouselStyles.title}>{product.name}</h3>
+                    <p className="text-muted">{product.description}</p>
                   </div>
                 </Link>
               </div>
@@ -884,24 +847,75 @@ const Home = () => {
       </section>
       {/* End Partner */}
       {/* Cost */}
-      <section className="cost-area pb-100">
+      <section className="py-5 bg-light">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center g-4">
             <div className="col-lg-6">
-              <div className="cost-content">
-                <div className="section-title"></div>
-                <p></p>
-                <ul className="align-items-center">
-                  <li></li>
+              <div className="bg-white rounded-4 shadow-sm p-4 p-lg-5 h-100">
+                <h3
+                  className="display-6 fw-bold mb-4"
+                  style={{ color: "#fa5f0b" }}
+                >
+                  Why Choose Our Glass Products?
+                </h3>
+                <ul className="list-unstyled mb-4">
+                  <li className="d-flex align-items-center mb-3">
+                    <i
+                      className="fa-solid fa-check me-3 fs-5"
+                      style={{ color: "#fa5f0b" }}
+                    ></i>
+                    <span className="fs-5">Premium Quality Materials</span>
+                  </li>
+                  <li className="d-flex align-items-center mb-3">
+                    <i
+                      className="fa-solid fa-check me-3 fs-5"
+                      style={{ color: "#fa5f0b" }}
+                    ></i>
+                    <span className="fs-5">Customizable Designs</span>
+                  </li>
+                  <li className="d-flex align-items-center mb-3">
+                    <i
+                      className="fa-solid fa-check me-3 fs-5"
+                      style={{ color: "#fa5f0b" }}
+                    ></i>
+                    <span className="fs-5">Eco-Friendly Manufacturing</span>
+                  </li>
+                  <li className="d-flex align-items-center mb-3">
+                    <i
+                      className="fa-solid fa-check me-3 fs-5"
+                      style={{ color: "#fa5f0b" }}
+                    ></i>
+                    <span className="fs-5">Competitive Pricing</span>
+                  </li>
+                  <li className="d-flex align-items-center mb-3">
+                    <i
+                      className="fa-solid fa-check me-3 fs-5"
+                      style={{ color: "#fa5f0b" }}
+                    ></i>
+                    <span className="fs-5">Global Shipping</span>
+                  </li>
                 </ul>
+                <p className="lead text-muted mb-4">
+                  Experience excellence in glass manufacturing with our
+                  state-of-the-art facilities and expert craftsmanship. We
+                  deliver quality that exceeds industry standards.
+                </p>
+                <a
+                  href="/contact"
+                  className="cmn-btn px-4 text-white"
+                  style={{ backgroundColor: "#fa5f0b" }}
+                >
+                  Get a Quote <i className="fa-solid fa-arrow-right ms-2"></i>
+                </a>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="cost-img">
+              <div className="h-100">
                 <img
                   src={img1}
-                  className="img-fluid img-thumbnail rounded-4 object-fit-cover"
-                  alt="Cost"
+                  className="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover"
+                  alt="Glass Manufacturing Process"
+                  style={{ maxHeight: "500px" }}
                 />
               </div>
             </div>

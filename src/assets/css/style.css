@@ -1623,7 +1623,7 @@ footer:before {
   font-size: 35px;
   margin-bottom: 15px;
   transition: 0.5s all ease;
-  margin-top: -60px;
+  margin-top: -20px;
 }
 
 .offer-item .offer-bottom h3 {
@@ -4988,4 +4988,59 @@ footer:before {
     width: 120px !important;
     height: 120px !important;
   }
+}
+
+
+.offer-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.offer-item:hover {
+  transform: translateY(-5px);
+}
+
+.offer-top {
+  margin-bottom: 20px;
+}
+
+.offer-top i {
+  font-size: 2.5rem;
+  color: #F15A22;
+}
+
+.offer-bottom h3 {
+  margin-bottom: 15px;
+}
+
+.offer-bottom h3 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.offer-bottom h3 a:hover {
+  color: #F15A22;
+}
+
+.offer-link {
+  display: inline-flex;
+  align-items: center;
+  color: #F15A22;
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.offer-link i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.offer-link:hover i {
+  transform: rotate(90deg);
 }
