@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/img/balaji_glaspac.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -181,9 +181,16 @@ const Header = () => {
                 }}
               >
                 <li className="nav-item">
-                  <Link to="/" className="nav-link px-3 py-2 border-bottom">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link px-3 py-2 border-bottom custom-active"
+                        : "nav-link px-3 py-2 border-bottom"
+                    }
+                  >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
 
                 {/* Product List Dropdown */}
@@ -486,32 +493,42 @@ const Header = () => {
                 </li>
 
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     to="/clients"
-                    className="nav-link px-3 py-2 border-bottom"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link px-3 py-2 border-bottom custom-active"
+                        : "nav-link px-3 py-2 border-bottom"
+                    }
                   >
                     Clients
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     to="/about"
-                    className="nav-link px-3 py-2 border-bottom"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link px-3 py-2 border-bottom custom-active"
+                        : "nav-link px-3 py-2 border-bottom"
+                    }
                   >
                     About
-                  </Link>
+                  </NavLink>
                 </li>
 
-                {/* Services dropdown */}
-
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     to="/contact"
-                    className="nav-link px-3 py-2 border-bottom"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link px-3 py-2 border-bottom custom-active"
+                        : "nav-link px-3 py-2 border-bottom"
+                    }
                   >
                     Contact
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -562,9 +579,14 @@ const Header = () => {
               >
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link to="/" className="nav-link dropdown-toggle active">
+                    <NavLink
+                      to="/"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active custom-active" : "nav-link"
+                      }
+                    >
                       Home
-                    </Link>
+                    </NavLink>
                   </li>
 
                   <li className="nav-item">
@@ -583,52 +605,81 @@ const Header = () => {
                         </a>
                         <ul className="dropdown-menu submenu">
                           <li>
-                            <Link to="/wine-bottles" className="nav-link">
+                            <NavLink
+                              to="/wine-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Wine Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/beer-bottles" className="nav-link">
+                            <NavLink
+                              to="/beer-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Beer Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/spirits-bottles" className="nav-link">
+                            <NavLink
+                              to="/spirits-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Spirits Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/champagne-bottles" className="nav-link">
+                            <NavLink
+                              to="/champagne-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Champagne Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/water-bottles" className="nav-link">
+                            <NavLink
+                              to="/water-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Water Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link
+                            <NavLink
                               to="/juice-and-soda-bottles"
-                              className="nav-link"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Juice and Soda Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link
+                            <NavLink
                               to="/specialty-drink-bottles"
-                              className="nav-link"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Specialty Drink Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                         </ul>
                       </li>
@@ -644,10 +695,15 @@ const Header = () => {
                         </a>
                         <ul className="dropdown-menu submenu">
                           <li>
-                            <Link to="/food-jars" className="nav-link">
+                            <NavLink
+                              to="/food-jars"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Food Jars
-                            </Link>
+                            </NavLink>
                           </li>
                         </ul>
                       </li>
@@ -663,43 +719,59 @@ const Header = () => {
                         </a>
                         <ul className="dropdown-menu submenu">
                           <li>
-                            <Link
+                            <NavLink
                               to="/oral-liquid-bottles"
-                              className="nav-link"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Oral Liquid Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/dropper-bottles" className="nav-link">
+                            <NavLink
+                              to="/dropper-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Dropper Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link to="/vials-and-ampoules" className="nav-link">
+                            <NavLink
+                              to="/vials-and-ampoules"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Vials and Ampoules
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link
+                            <NavLink
                               to="/tablet-and-capsule-bottles"
-                              className="nav-link"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Tablet and Capsule Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link
+                            <NavLink
                               to="/specialty-pharmaceutical-bottles"
-                              className="nav-link"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Specialty Pharmaceutical Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                         </ul>
                       </li>
@@ -715,79 +787,117 @@ const Header = () => {
                         </a>
                         <ul className="dropdown-menu submenu">
                           <li>
-                            <Link to="/perfume-bottles" className="nav-link">
+                            <NavLink
+                              to="/perfume-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Perfume Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                           <li>
-                            <Link
+                            <NavLink
                               to="/lotion-and-serum-bottles"
-                              className="nav-link"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Lotion and Serum Bottles
-                            </Link>
+                            </NavLink>
                           </li>
                         </ul>
                       </li>
 
                       {/* Other Categories */}
                       <li>
-                        <Link
+                        <NavLink
                           to="/industrial-bottles"
-                          className="nav-link text-dark"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
                           Industrial Bottles
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
+                        <NavLink
                           to="/customizable-bottles"
-                          className="nav-link text-dark"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
                           Customizable Bottles
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
+                        <NavLink
                           to="/premium-bottles"
-                          className="nav-link text-dark"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
                           Premium Bottles
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link
+                        <NavLink
                           to="/eco-friendly-bottles"
-                          className="nav-link text-dark"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
                           Eco-Friendly Bottles
-                        </Link>
+                        </NavLink>
                       </li>
                     </ul>
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/clients" className="nav-link">
+                    <NavLink
+                      to="/clients"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active custom-active" : "nav-link"
+                      }
+                    >
                       Clients
-                    </Link>
+                    </NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/about" className="nav-link">
+                    <NavLink
+                      to="/about"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active custom-active" : "nav-link"
+                      }
+                    >
                       About
-                    </Link>
+                    </NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <Link to="/contact" className="nav-link">
+                    <NavLink
+                      to="/contact"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active custom-active" : "nav-link"
+                      }
+                    >
                       Contact
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>

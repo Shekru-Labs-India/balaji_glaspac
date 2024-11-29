@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/img/balaji_glaspac.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -80,75 +81,49 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-3">
+            <div className="col-6 col-md-3 col-lg-3">
               <div className="footer-item">
                 <div className="footer-service">
-                  <h3>Links</h3>
+                  <h3>Products</h3>
                   <ul>
                     <li>
-                      <a href="index.html" target="_blank">
-                        Home
-                      </a>
+                      <Link to="/wine-bottles">Wine Bottles</Link>
                     </li>
                     <li>
-                      <a href="about.html" target="_blank">
-                        About
-                      </a>
+                      <Link to="/beer-bottles">Beer Bottles</Link>
                     </li>
                     <li>
-                      <a href="#" target="_blank">
-                        Products
-                      </a>
+                      <Link to="/spirits-bottles">Spirits Bottles</Link>
                     </li>
                     <li>
-                      <a href="contact.html" target="_blank">
-                        Contact
-                      </a>
+                      <Link to="/water-bottles">Water Bottles</Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-3">
+            <div className="col-6 col-md-3 col-lg-3">
               <div className="footer-item">
                 <div className="footer-service">
-                  <h3>Services</h3>
+                  <h3>Quick Links</h3>
                   <ul>
                     <li>
-                      <a href="service-details.html" target="_blank">
-                        Manufacturing
-                      </a>
+                      <Link to="/">Home</Link>
                     </li>
                     <li>
-                      <a href="service-details.html" target="_blank">
-                        Automation
-                      </a>
+                      <Link to="/about">About</Link>
                     </li>
                     <li>
-                      <a href="service-details.html" target="_blank">
-                        Commercial
-                      </a>
+                      <Link to="/clients">Clients</Link>
                     </li>
                     <li>
-                      <a href="service-details.html" target="_blank">
-                        Healthcare
-                      </a>
-                    </li>
-                    <li>
-                      <a href="service-details.html" target="_blank">
-                        Automatic Machine
-                      </a>
-                    </li>
-                    <li>
-                      <a href="service-details.html" target="_blank">
-                        Upgrade Data
-                      </a>
+                      <Link to="/contact">Contact</Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-3">
+            <div className="col-6 col-lg-3">
               <div className="footer-item">
                 <div className="footer-touch">
                   <h3>Get In Touch</h3>
@@ -156,18 +131,13 @@ const Footer = () => {
                     <li>
                       <i className="fa-solid fa-phone" />
                       <h4>Phone</h4>
-                      <a href="tel:882569756">+91 253 2507474</a>
+                      <a href="tel:+912532507474">+91 253 2507474</a>
                     </li>
                     <li>
                       <i className="fa-solid fa-envelope" />
                       <h4>Email</h4>
-                      <a href="/cdn-cgi/l/email-protection#82ebece4edc2f0ede0f6ebe1ace1edef">
-                        <span
-                          className="__cf_email__"
-                          data-cfemail="5831363e37182a373a2c313b763b3735"
-                        >
-                          info@balajiglaspac.com
-                        </span>
+                      <a href="mailto:info@balajiglaspac.com">
+                        info@balajiglaspac.com
                       </a>
                     </li>
                     <li>
@@ -209,20 +179,6 @@ const Footer = () => {
           onClick={scrollToTop}
         >
           <i className="fa-solid fa-arrow-up"></i>
-        </div>
-
-        <div className="switch-box">
-          <label id="switch" className="switch">
-            <input
-              type="checkbox"
-              onChange={toggleTheme}
-              id="slider"
-              defaultChecked={document.body.classList.contains("theme-dark")}
-            />
-            <span className="slider round">
-              <i id="theme-icon" className="fa-solid fa-sun"></i>
-            </span>
-          </label>
         </div>
       </>
 

@@ -1046,7 +1046,7 @@ button:focus {
   max-width: 905px;
   margin-left: auto;
   position: relative;
-  top: 100px;
+
 }
 
 .benefit-area .benefit-content .section-title {
@@ -5043,4 +5043,55 @@ footer:before {
 
 .offer-link:hover i {
   transform: rotate(90deg);
+}
+
+/* Add these styles to your CSS */
+
+/* Custom active state colors */
+.nav-link.custom-active {
+  color: #221e1e !important;
+  /* Darker shade of the navbar orange */
+  font-weight: 600;
+}
+
+/* Hover state */
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+  color: #221e1e !important;
+}
+
+/* Dropdown active and hover states */
+.dropdown-menu .nav-link.custom-active,
+.dropdown-menu .submenu .nav-link.custom-active {
+  color: #2b2525 !important;
+  background-color: rgba(20, 19, 18, 0.1);
+}
+
+.dropdown-menu .nav-link:hover,
+.dropdown-menu .submenu .nav-link:hover {
+  color: #2b2525 !important;
+  background-color: rgba(20, 19, 18, 0.1);
+  ;
+}
+
+/* Mobile menu active states */
+.mean-nav .nav-link.custom-active {
+  color: #221e1e !important;
+  background-color: rgba(20, 19, 18, 0.1);
+  ;
+}
+
+/* Optional: Add underline for active state */
+.nav-link.custom-active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  margin-top: 2px;
+}
+
+/* Remove underline for dropdown items */
+.dropdown-menu .nav-link.custom-active::after {
+  display: none;
 }

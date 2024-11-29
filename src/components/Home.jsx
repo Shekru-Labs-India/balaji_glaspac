@@ -204,14 +204,16 @@ const Home = () => {
                   Efficiently
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida.
+                  At Balaji Glaspac, we combine traditional glass-making
+                  expertise with modern manufacturing technologies. Our
+                  state-of-the-art facilities and skilled workforce ensure the
+                  highest quality standards while maintaining efficient
+                  production processes and environmental responsibility.
                 </p>
-                <a className="cmn-btn" href="about.html">
+                <Link to="/about" className="cmn-btn">
                   Discover More
                   <i className="fa-solid fa-arrow-right" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -852,10 +854,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <a className="cmn-btn" href="about.html">
+            <Link to="/about" className="cmn-btn">
               Know Details
               <i className="fa-solid fa-arrow-right" />
-            </a>
+            </Link>
             <div className="benefit-shape">
               <img src={benefit} alt="Benefit" />
             </div>
@@ -880,10 +882,10 @@ const Home = () => {
               </div>
               <div className="col-lg-6">
                 <div className="partner-btn">
-                  <a className="cmn-btn" href="contact.html">
+                  <Link to="/contact" className="cmn-btn">
                     Contact Us
                     <i className="fa-solid fa-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -945,13 +947,13 @@ const Home = () => {
                   state-of-the-art facilities and expert craftsmanship. We
                   deliver quality that exceeds industry standards.
                 </p>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="cmn-btn px-4 text-white"
                   style={{ backgroundColor: "#fa5f0b" }}
                 >
                   Get a Quote <i className="fa-solid fa-arrow-right ms-2"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">

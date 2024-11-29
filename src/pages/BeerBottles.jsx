@@ -45,31 +45,32 @@ const BeerBottles = () => {
       <section className="py-5">
         <div className="container">
           <h2 className="text-center my-5">Our Beer Bottle Collection</h2>
-          <div className="row flex-nowrap overflow-auto pb-4">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
             {/* Standard Beer Bottle */}
-            <div className="col-9 col-md-4">
-              <div className="card border-0 shadow-sm">
-                <div className="position-relative">
+            <div className="col">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="position-relative" style={{ height: "300px" }}>
                   <img
                     src={beerHero}
-                    className="card-img-top"
+                    className="card-img-top w-100 h-100"
                     alt="Standard Beer Bottle"
+                    style={{ objectFit: "cover" }}
                   />
                   <span className="position-absolute top-0 end-0 badge bg-primary m-3">
                     Popular
                   </span>
                 </div>
-                <div className="card-body">
-                  <h5 className="card-title">Standard Beer Bottle</h5>
-                  <p className="card-text">
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title fw-bold">Standard Beer Bottle</h5>
+                  <p className="card-text text-muted">
                     Classic design for mainstream beers
                   </p>
-                  <ul className="list-unstyled">
-                    <li>
+                  <ul className="list-unstyled mt-auto mb-0">
+                    <li className="mb-2">
                       <i className="fas fa-check-circle text-success me-2"></i>
                       330ml
                     </li>
-                    <li>
+                    <li className="mb-2">
                       <i className="fas fa-check-circle text-success me-2"></i>
                       500ml
                     </li>
@@ -83,24 +84,27 @@ const BeerBottles = () => {
             </div>
 
             {/* Craft Beer Bottle */}
-            <div className="col-9 col-md-4">
-              <div className="card border-0 shadow-sm">
-                <img
-                  src={BeerBottle3}
-                  className="card-img-top"
-                  alt="Craft Beer Bottle"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Craft Beer Bottle</h5>
-                  <p className="card-text">
+            <div className="col">
+              <div className="card h-100 border-0 shadow-sm">
+                <div style={{ height: "300px" }}>
+                  <img
+                    src={BeerBottle3}
+                    className="card-img-top w-100 h-100"
+                    alt="Craft Beer Bottle"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title fw-bold">Craft Beer Bottle</h5>
+                  <p className="card-text text-muted">
                     Unique designs for craft breweries
                   </p>
-                  <ul className="list-unstyled">
-                    <li>
+                  <ul className="list-unstyled mt-auto mb-0">
+                    <li className="mb-2">
                       <i className="fas fa-check-circle text-success me-2"></i>
                       Custom Shapes
                     </li>
-                    <li>
+                    <li className="mb-2">
                       <i className="fas fa-check-circle text-success me-2"></i>
                       Embossing
                     </li>
@@ -114,22 +118,27 @@ const BeerBottles = () => {
             </div>
 
             {/* Premium Beer Bottle */}
-            <div className="col-9 col-md-4">
-              <div className="card border-0 shadow-sm">
-                <img
-                  src={BeerBottle4}
-                  className="card-img-top"
-                  alt="Premium Beer Bottle"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Premium Beer Bottle</h5>
-                  <p className="card-text">Luxury designs for premium brands</p>
-                  <ul className="list-unstyled">
-                    <li>
+            <div className="col">
+              <div className="card h-100 border-0 shadow-sm">
+                <div style={{ height: "300px" }}>
+                  <img
+                    src={BeerBottle4}
+                    className="card-img-top w-100 h-100"
+                    alt="Premium Beer Bottle"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title fw-bold">Premium Beer Bottle</h5>
+                  <p className="card-text text-muted">
+                    Luxury designs for premium brands
+                  </p>
+                  <ul className="list-unstyled mt-auto mb-0">
+                    <li className="mb-2">
                       <i className="fas fa-check-circle text-success me-2"></i>
                       Unique Shapes
                     </li>
-                    <li>
+                    <li className="mb-2">
                       <i className="fas fa-check-circle text-success me-2"></i>
                       Premium Finish
                     </li>
