@@ -2,6 +2,9 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import beerHero from "../assets/img/BeerBottle.jpg";
+import BeerBottle2 from "../assets/img/BeerBottle2.jpg";
+import BeerBottle3 from "../assets/img/BeerBottle3.jpg";
+import BeerBottle4 from "../assets/img/BeerBottle4.jpg";
 
 const BeerBottles = () => {
   return (
@@ -83,7 +86,7 @@ const BeerBottles = () => {
             <div className="col-9 col-md-4">
               <div className="card border-0 shadow-sm">
                 <img
-                  src={beerHero}
+                  src={BeerBottle3}
                   className="card-img-top"
                   alt="Craft Beer Bottle"
                 />
@@ -114,7 +117,7 @@ const BeerBottles = () => {
             <div className="col-9 col-md-4">
               <div className="card border-0 shadow-sm">
                 <img
-                  src={beerHero}
+                  src={BeerBottle4}
                   className="card-img-top"
                   alt="Premium Beer Bottle"
                 />
@@ -207,33 +210,13 @@ const BeerBottles = () => {
               />
             </div>
             <div className="col-lg-6">
-              <div className="accordion" id="specAccordion">
-                <div className="accordion-item">
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#dimensionsCollapse"
-                    >
-                      Dimensions
-                    </button>
-                  </h2>
-                  <div
-                    id="dimensionsCollapse"
-                    className="accordion-collapse collapse show"
-                    data-bs-parent="#specAccordion"
-                  >
-                    <div className="accordion-body">
-                      <ul className="list-unstyled">
-                        <li>Height: 229mm - 330mm</li>
-                        <li>Diameter: 60mm - 88mm</li>
-                        <li>Capacity: 330ml - 750ml</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                {/* Add more accordion items for other specifications */}
+              <div className="spec-details p-4 border rounded shadow-sm">
+                <h3 className="mb-3">Dimensions</h3>
+                <ul className="list-unstyled">
+                  <li>Height: 229mm - 330mm</li>
+                  <li>Diameter: 60mm - 88mm</li>
+                  <li>Capacity: 330ml - 750ml</li>
+                </ul>
               </div>
             </div>
           </div>

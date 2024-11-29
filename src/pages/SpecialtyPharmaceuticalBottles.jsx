@@ -311,7 +311,7 @@ const SpecialtyPharmaceuticalBottles = () => {
       </section>
 
       {/* Quality Certifications */}
-      <section className="bg-light py-5">
+      <section className="bg-light py-5 ">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">

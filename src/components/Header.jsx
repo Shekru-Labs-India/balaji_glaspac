@@ -79,22 +79,31 @@ const Header = () => {
                 <div className="header-right">
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com" target="_blank">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61569130629576"
+                        target="_blank"
+                      >
                         <i className="fa-brands fa-facebook" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.twitter.com" target="_blank">
+                      <a href="https://x.com/balajiglaspac" target="_blank">
                         <i className="fa-brands fa-x-twitter" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.pinterest.com" target="_blank">
-                        <i className="fa-brands fa-pinterest" />
+                      <a
+                        href="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-instagram" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com" target="_blank">
+                      <a
+                        href="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
+                        target="_blank"
+                      >
                         <i className="fa-brands fa-linkedin" />
                       </a>
                     </li>
@@ -318,15 +327,6 @@ const Header = () => {
                           <div className="d-flex align-items-center">
                             <i className="fa-solid fa-arrow-right me-2" />
                             <span>Food Jars</span>
-                          </div>
-                        </Link>
-                        <Link
-                          to="/spice-and-seasoning-jars"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Spice and Seasoning Jars</span>
                           </div>
                         </Link>
                       </div>
@@ -647,15 +647,6 @@ const Header = () => {
                             <Link to="/food-jars" className="nav-link">
                               <i className="fa-solid fa-arrow-right me-2" />
                               Food Jars
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/spice-and-seasoning-jars"
-                              className="nav-link"
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Spice and Seasoning Jars
                             </Link>
                           </li>
                         </ul>

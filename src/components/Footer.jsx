@@ -43,29 +43,36 @@ const Footer = () => {
                       </h5>
                     </div>
                   </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  <p className="mt-3">
+                    Leading Glass Manufacturing Excellence Since 2007
                   </p>
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com" target="_blank">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61569130629576"
+                        target="_blank"
+                      >
                         <i className="fa-brands fa-facebook" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.twitter.com" target="_blank">
+                      <a href="https://x.com/balajiglaspac" target="_blank">
                         <i className="fa-brands fa-x-twitter" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.pinterest.com" target="_blank">
-                        <i className="fa-brands fa-pinterest" />
+                      <a
+                        href="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-instagram" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com" target="_blank">
+                      <a
+                        href="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
+                        target="_blank"
+                      >
                         <i className="fa-brands fa-linkedin" />
                       </a>
                     </li>

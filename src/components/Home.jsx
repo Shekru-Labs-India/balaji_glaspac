@@ -219,73 +219,118 @@ const Home = () => {
       </div>
       {/* End Banner */}
       {/* About */}
-      <section className="about-area ">
+      <section className="about-area">
         <div className="container">
-          <div className="row align-iems-center">
+          <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="section-title">
                 <span className="sub-title">About Us</span>
-                <h2>
-                  Design, Simulate, and Control Your Robotic System with the
-                  Action SDK
-                </h2>
+                <h2>Leading Glass Manufacturing Excellence Since 2007</h2>
               </div>
               <div className="about-content">
                 <p>
-                  ‘’Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo’’
+                  At Balaji Glaspac, we are committed to delivering premium
+                  glass packaging solutions that combine innovation with
+                  sustainability. Our state-of-the-art manufacturing facilities
+                  and dedicated team ensure we meet the highest standards of
+                  quality while maintaining cost-effectiveness for our clients.
                 </p>
+                <h3 className="mb-3">Our Vision</h3>
                 <ul>
                   <li>
                     <i className="fa-solid fa-check" />
-                    Full-Service Electrical Layout Design
+                    To ensure excellent product design that fully meets customer
+                    requirements
                   </li>
                   <li>
                     <i className="fa-solid fa-check" />
-                    Writing And Installation
+                    To supply quality products, at cost-effective prices
                   </li>
                   <li>
                     <i className="fa-solid fa-check" />
-                    Emergency Power Solution
+                    To ensure timely delivery
                   </li>
                   <li>
                     <i className="fa-solid fa-check" />
-                    Virtually Industrial Robotic Need You Have
+                    To be cost effective and a profitable organisation
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-check" />
+                    To upgrade technology with a system of continuous
+                    improvement
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-check" />
+                    To train and upgrade the skills of the employees on an
+                    ongoing basis
                   </li>
                 </ul>
-                <img src={aboutman} alt="About" />
-                <img src={aboutsignature} alt="About" />
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="about-img-wrap">
-                <div className="about-img-slider owl-theme owl-carousel">
-                  <div className="about-img-item">
-                    <img src={img1} width={450} height={532} alt="About" />
+            <div className="col-lg-6 d-flex align-items-stretch">
+              <div className="about-img-wrap w-100">
+                <div
+                  className="about-img-slider owl-theme owl-carousel"
+                  style={{ height: "450px" }}
+                >
+                  <div className="about-img-item h-100">
+                    <img
+                      src={img1}
+                      alt="About"
+                      className=" "
+                      style={{
+                        height: "450px",
+                        width: "595px",
+                        borderRadius: "8px",
+                      }}
+                    />
                   </div>
-                  <div className="about-img-item">
-                    <img src={img2} width={450} height={532} alt="About" />
+                  <div className="about-img-item h-100">
+                    <img
+                      src={img2}
+                      alt="About"
+                      className=""
+                      style={{
+                        height: "450px",
+                        borderRadius: "8px",
+                        width: "595px",
+                      }}
+                    />
                   </div>
-                  <div className="about-img-item">
-                    <img src={img3} width={450} height={532} alt="About" />
+                  <div className="about-img-item h-100">
+                    <img
+                      src={img3}
+                      alt="About"
+                      className=""
+                      style={{
+                        height: "450px",
+                        borderRadius: "8px",
+                        width: "595px",
+                      }}
+                    />
                   </div>
-                  <div className="about-img-item">
-                    <img src={img4} width={450} height={532} alt="About" />
+                  <div className="about-img-item h-100">
+                    <img
+                      src={img4}
+                      alt="About"
+                      className=""
+                      style={{
+                        height: "450px",
+                        borderRadius: "8px",
+                        width: "595px",
+                      }}
+                    />
                   </div>
                 </div>
-                <div className="about-shape">
-                  <img src={about2} alt="About" />
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Bucher_Emhart_Glass_-_Glasformungsmaschine_in_2022.jpg"
-                    width={348}
-                    height={297}
-                    alt="About"
-                  />
-                  <img src={about4} alt="About" />
-                  <img src={about5} alt="About" />
-                </div>
-                <div className="about-year">
+                <div
+                  className="about-year"
+                  style={{
+                    position: "absolute",
+                    bottom: "0px",
+                    right: "20px",
+                    zIndex: "1",
+                  }}
+                >
                   <h2>
                     18 <span>Years</span>
                   </h2>
