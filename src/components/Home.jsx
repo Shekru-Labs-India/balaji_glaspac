@@ -6,17 +6,9 @@ import img1 from "../assets/img/img1.jpg";
 import img2 from "../assets/img/img2.jpg";
 import img3 from "../assets/img/img3.jpg";
 import img4 from "../assets/img/img4.jpg";
-import img6 from "../assets/img/img6.jpg";
-import aboutman from "../assets/img/home-one/about-man.png";
-import aboutsignature from "../assets/img/home-one/about-signature.png";
 import service1 from "../assets/img/home-one/service-shape.png";
 import service2 from "../assets/img/home-one/service-shape2.png";
 
-import about2 from "../assets/img/home-one/about2.png";
-import about3 from "../assets/img/home-one/about3.jpg";
-import about4 from "../assets/img/home-one/about4.png";
-import about5 from "../assets/img/home-one/about5.png";
-import cost from "../assets/img/home-one/cost-girl.png";
 import benefit from "../assets/img/home-one/benefit-shape.png";
 
 import partner from "../assets/img/home-one/partner-shape.png";

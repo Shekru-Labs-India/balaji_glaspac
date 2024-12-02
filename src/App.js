@@ -1,8 +1,5 @@
-import "./assets/css/dark.css";
-
 import "./assets/css/style.css";
 import "./assets/css/meanmenu.css";
-import "./assets/css/responsive.css";
 
 import { HashRouter, Routes, Route } from "react-router-dom";
 

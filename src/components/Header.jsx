@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdowns, setActiveDropdowns] = useState({});
+  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileDropdowns, setMobileDropdowns] = useState({
     products: false,
     beverage: false,
@@ -12,6 +13,17 @@ const Header = () => {
     pharma: false,
     cosmetic: false,
   });
+
+  // Add scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Add toggle functions
   const toggleMobileMenu = () => {
@@ -116,7 +128,11 @@ const Header = () => {
       </div>
       {/* End Header top */}
       {/* Start Navbar Area */}
-      <div className="navbar-area sticky-top">
+      <div
+        className={`navbar-area sticky-top ${
+          isScrolled ? "navbar-scrolled" : ""
+        }`}
+      >
         {/* Mobile Device */}
         <div className="mobile-nav mean-container">
           <div className="mean-bar">
