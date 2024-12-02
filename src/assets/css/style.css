@@ -2812,3 +2812,17 @@ footer:before {
 .dropdown-menu .nav-link.custom-active::after {
   display: none;
 }
+
+.client-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 2px solid #e9ecef;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.client-logo:hover {
+  transform: scale(1.05);
+}

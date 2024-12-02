@@ -14,12 +14,33 @@ import benefit from "../assets/img/home-one/benefit-shape.png";
 import partner from "../assets/img/home-one/partner-shape.png";
 import video1 from "../assets/img/manufacturing.mp4";
 import { Link } from "react-router-dom";
-import wineBottle from "../assets/img/img1.jpg";
-import spiritBottle from "../assets/img/img2.jpg";
-import beerBottle from "../assets/img/img3.jpg";
-import waterBottle from "../assets/img/img4.jpg";
-import juiceBottle from "../assets/img/img5.jpg";
-import foodJar from "../assets/img/img6.jpg";
+import wineBottle from "../assets/img/wine.jpg";
+import spiritBottle from "../assets/img/spiritBottle.jpg";
+import beerBottle from "../assets/img/BeerBottle.jpg";
+import waterBottle from "../assets/img/waterBottle.jpg";
+import juiceBottle from "../assets/img/juiceSodaBottle.jpg";
+import foodJar from "../assets/img/foodJars.jpg";
+import client1 from "../assets/img/client1.png";
+import client2 from "../assets/img/client2.png";
+import client3 from "../assets/img/client3.png";
+import client4 from "../assets/img/client4.png";
+import client5 from "../assets/img/client5.png";
+import client6 from "../assets/img/client6.png";
+import client7 from "../assets/img/client7.png";
+import client8 from "../assets/img/client8.png";
+import client9 from "../assets/img/client9.png";
+import client10 from "../assets/img/client10.png";
+import client11 from "../assets/img/client11.png";
+import client12 from "../assets/img/client12.png";
+import client13 from "../assets/img/client13.png";
+import client14 from "../assets/img/client14.png";
+import client15 from "../assets/img/client15.png";
+import client16 from "../assets/img/client16.png";
+import client17 from "../assets/img/client17.png";
+import client18 from "../assets/img/client18.png";
+import client19 from "../assets/img/client19.png";
+import client20 from "../assets/img/client20.png";
+import client21 from "../assets/img/client21.png";
 
 // Create products array
 const products = [
@@ -65,6 +86,55 @@ const products = [
     path: "/food-jars",
     description: "Food Storage Solutions",
   },
+];
+
+// Add this array near your other data/imports
+const clients = [
+  { id: 1, name: "NESTLÉ", logo: client1 },
+  { id: 2, name: "RADICO KHAITAN", logo: client2 },
+  { id: 3, name: "DR. REDDY'S LABORATORIES", logo: client3 },
+  { id: 4, name: "SULA VINEYARDS", logo: client4 },
+  { id: 5, name: "GLAXOSMITHKLINE (GSK)", logo: client5 },
+  { id: 6, name: "LAZARO", logo: client6 },
+  { id: 7, name: "UNILEVER", logo: client7 },
+  { id: 8, name: "REVLON", logo: client8 },
+  { id: 9, name: "HALDIRAM'S", logo: client9 },
+  { id: 10, name: "MERCK", logo: client10 },
+  { id: 11, name: "DABUR", logo: client11 },
+  { id: 12, name: "CARLSBERG", logo: client12 },
+  { id: 13, name: "BACARDI", logo: client13 },
+  { id: 14, name: "CHANEL", logo: client14 },
+  { id: 15, name: "COCA-COLA", logo: client15 },
+  { id: 16, name: "JTC GROUP", logo: client16 },
+  { id: 17, name: "UNITED SPIRITS", logo: client17 },
+  { id: 18, name: "AMUL", logo: client18 },
+  { id: 19, name: "DIAGEO", logo: client19 },
+  { id: 20, name: "SAB MILLER", logo: client20 },
+  { id: 21, name: "L'ORÉAL", logo: client21 },
+];
+// Add this array after your other data/constants
+const clientLogos = [
+  { id: 1, name: "SULA VINEYARDS", logo: client1 },
+  { id: 2, name: "RADICO KHAITAN", logo: client2 },
+  { id: 3, name: "DR. REDDY'S LABORATORIES", logo: client3 },
+  { id: 4, name: "NESTLÉ", logo: client4 },
+  { id: 5, name: "GLAXOSMITHKLINE", logo: client5 },
+  { id: 6, name: "LAZARO", logo: client6 },
+  { id: 7, name: "UNILEVER", logo: client7 },
+  { id: 8, name: "REVLON", logo: client8 },
+  { id: 9, name: "HALDIRAM'S", logo: client9 },
+  { id: 10, name: "MERCK", logo: client10 },
+  { id: 11, name: "DABUR", logo: client11 },
+  { id: 12, name: "CARLSBERG", logo: client12 },
+  { id: 13, name: "Client 13", logo: client13 },
+  { id: 14, name: "Client 14", logo: client14 },
+  { id: 15, name: "Client 15", logo: client15 },
+  { id: 16, name: "Client 16", logo: client16 },
+  { id: 17, name: "Client 17", logo: client17 },
+  { id: 18, name: "Client 18", logo: client18 },
+  { id: 19, name: "Client 19", logo: client19 },
+  { id: 20, name: "Client 20", logo: client20 },
+  { id: 21, name: "Client 21", logo: client21 },
 ];
 
 // In your component's CSS
@@ -726,8 +796,8 @@ const Home = () => {
         <div className="container">
           <div className="row align-iems-center">
             <div className="col-lg-5">
-              <div className="counter-text">
-                <h2>We have Completed Some Foreign Clients Project</h2>
+              <div className="counter-text mt-5">
+                <h2>About Balaji Glaspac</h2>
               </div>
             </div>
             <div className="col-lg-7">
@@ -736,7 +806,7 @@ const Home = () => {
                   <div className="counter-item">
                     <h3>
                       <span className="odometer" data-count={1226}>
-                        00
+                        50+
                       </span>
                     </h3>
                     <p>HAPPY CLIENTS</p>
@@ -746,7 +816,7 @@ const Home = () => {
                   <div className="counter-item">
                     <h3>
                       <span className="odometer" data-count={1552}>
-                        00
+                        100+
                       </span>
                     </h3>
                     <p>WORKERS</p>
@@ -756,13 +826,28 @@ const Home = () => {
                   <div className="counter-item">
                     <h3>
                       <span className="odometer" data-count={1000}>
-                        00
+                        10+
                       </span>
                     </h3>
                     <p>EXPERT</p>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="row justify-content-center align-items-center g-4 my-4">
+              {clients.map((client) => (
+                <div key={client.id} className="col-2 text-center my-4">
+                  <img
+                    src={client.logo}
+                    alt={`${client.name} Logo`}
+                    className="img-fluid client-logo rounded-circle"
+                  />
+                  <h5 className="mt-3 fw-bold text-white fs-6">
+                    {client.name}
+                  </h5>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -962,6 +1047,33 @@ const Home = () => {
         </div>
       </section>
       {/* End Cost */}
+      <section className="client-logos py-5">
+        <div className="container">
+          <div className="section-title text-center mb-5">
+            <h2>Our Trusted Partners</h2>
+          </div>
+          <div className="row justify-content-center align-items-center g-4">
+            {clientLogos.map((client) => (
+              <div key={client.id} className="col-2 text-center">
+                <img
+                  src={client.logo}
+                  alt={`${client.name} Logo`}
+                  className="img-fluid client-logo rounded-circle"
+                  style={{
+                    width: "150px",
+                    height: "150px",
+                    objectFit: "cover",
+                    transition: "transform 0.3s ease",
+                    border: "2px solid #e9ecef",
+                    padding: "10px",
+                    backgroundColor: "#fff",
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );
