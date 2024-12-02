@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/balaji_glaspac/static/css/main.6d938a55.css",
-    "main.js": "/balaji_glaspac/static/js/main.8de9bf8f.js",
+    "main.js": "/balaji_glaspac/static/js/main.4b8fa0cb.js",
     "static/js/453.d5a9f5a3.chunk.js": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js",
-    "static/media/manufacturing.mp4": "/balaji_glaspac/static/media/manufacturing.5833673bb8e8a30e36c7.mp4",
     "static/media/img1.jpg": "/balaji_glaspac/static/media/img1.97694c926d256a35bbf7.jpg",
     "static/media/img3.jpg": "/balaji_glaspac/static/media/img3.eb23a436fdfccc9db82a.jpg",
     "static/media/spiritBottle2.jpg": "/balaji_glaspac/static/media/spiritBottle2.8cc21dd73fd2645f103b.jpg",
     "static/media/spiritBottle3.jpg": "/balaji_glaspac/static/media/spiritBottle3.5f153b8bce7209941431.jpg",
+    "static/media/manufacturing2.mp4": "/balaji_glaspac/static/media/manufacturing2.9e9204cd52ed9068ac69.mp4",
     "static/media/img6.jpg": "/balaji_glaspac/static/media/img6.d96aaf1fbe3aee70684a.jpg",
     "static/media/specialityBottle2.jpg": "/balaji_glaspac/static/media/specialityBottle2.0790217d2d35bb3a52a2.jpg",
     "static/media/wine6.jpg": "/balaji_glaspac/static/media/wine6.278720341e70e11d1448.jpg",
@@ -82,11 +82,11 @@
     "static/media/slick.ttf": "/balaji_glaspac/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/balaji_glaspac/static/media/slick.295183786cd8a1389865.woff",
     "main.6d938a55.css.map": "/balaji_glaspac/static/css/main.6d938a55.css.map",
-    "main.8de9bf8f.js.map": "/balaji_glaspac/static/js/main.8de9bf8f.js.map",
+    "main.4b8fa0cb.js.map": "/balaji_glaspac/static/js/main.4b8fa0cb.js.map",
     "453.d5a9f5a3.chunk.js.map": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d938a55.css",
-    "static/js/main.8de9bf8f.js"
+    "static/js/main.4b8fa0cb.js"
   ]
 }
