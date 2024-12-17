@@ -211,22 +211,24 @@ const Header = () => {
 
                 {/* Product List Dropdown */}
                 <li className="nav-item">
-                  <div
-                    className="nav-link px-3 py-2 border-bottom d-flex justify-content-between align-items-center"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      toggleMobileDropdown("products");
-                    }}
-                  >
-                    <span>Catalogue</span>
-                    <i
-                      className={`fa-solid ${
-                        mobileDropdowns.products
-                          ? "fa-chevron-up"
-                          : "fa-chevron-down"
-                      }`}
-                    />
-                  </div>
+                <div
+    className="nav-link px-3 py-2 border-bottom d-flex justify-content-between align-items-center"
+    onClick={(e) => {
+      e.preventDefault();
+      toggleMobileDropdown("products");
+      // Scroll to the target section
+      document.getElementById("our-products").scrollIntoView({ behavior: 'smooth' });
+    }}
+  >
+    <span>Catalogue</span>
+    <i
+      className={`fa-solid ${
+        mobileDropdowns.products
+          ? "fa-chevron-up"
+          : "fa-chevron-down"
+      }`}
+    />
+  </div>
 
                   <div
                     className={`${
@@ -264,6 +266,17 @@ const Header = () => {
                             <span>Wine Bottles</span>
                           </div>
                         </Link>
+
+                        <Link
+                          to="/alcoholbeverage"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Alcohol Beverage</span>
+                          </div>
+                        </Link>
+
                         <Link
                           to="/beer-bottles"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -273,6 +286,7 @@ const Header = () => {
                             <span>Beer Bottles</span>
                           </div>
                         </Link>
+                        
                         <Link
                           to="/spirits-bottles"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -606,9 +620,17 @@ const Header = () => {
                   </li>
 
                   <li className="nav-item">
-                    <a href="#" className="nav-link dropdown-toggle">
-                      Catalogue <i className="fa-solid fa-chevron-down" />
-                    </a>
+                  <a
+    href="#"
+    className="nav-link dropdown-toggle"
+    onClick={(e) => {
+      e.preventDefault();
+      // Scroll to the target section
+      document.getElementById("our-products").scrollIntoView({ behavior: 'smooth' });
+    }}
+  >
+    Catalogue <i className="fa-solid fa-chevron-down" />
+  </a>
                     <ul className="dropdown-menu">
                       {/* Beverage Bottles Section */}
                       <li className="nav-item dropdown-submenu">
@@ -629,6 +651,17 @@ const Header = () => {
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Wine Bottles
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to="/alcoholbeverage"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Alcohol Beverage
                             </NavLink>
                           </li>
                           <li>

@@ -26,6 +26,11 @@ import PremiumBottles from "./pages/PremiumBottles";
 import EcoFriendlyBottles from "./pages/EcoFriendlyBottles";
 import Clients from "./pages/Clients";
 import About from "./pages/About";
+import AlcoholBrevrages from "./pages/AlcoholBeavrage";
+import AlcoholBeverage from "./pages/AlcoholBeavrage";
+
+
+
 function App() {
   return (
     <HashRouter>
@@ -63,6 +68,7 @@ function App() {
         <Route path="/eco-friendly-bottles" element={<EcoFriendlyBottles />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/about" element={<About />} />
+        <Route path="/alcoholbeverage" element={<AlcoholBeverage />} />
       </Routes>
     </HashRouter>
   );

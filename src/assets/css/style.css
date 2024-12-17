@@ -387,7 +387,7 @@ button:focus {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 900px;
+  height: 600px;
   position: relative;
   z-index: 1;
 }
@@ -2825,4 +2825,9 @@ footer:before {
 
 .client-logo:hover {
   transform: scale(1.05);
+}
+
+
+.banner-area {
+  margin-top: 60px; /* Adjust this value based on your header height */
 }

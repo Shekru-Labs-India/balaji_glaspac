@@ -36,13 +36,13 @@ function About() {
                   colors.
                 </p>
                 <p>
-                  Committed to excellence, we stay ahead by embracing the latest
-                  trends in the glass market. Our skilled workforce and
-                  customer-centric approach enable us to meet the precise needs
-                  of our clients. We also offer high-quality glass bottle
-                  printing services, ensuring meticulous quality checks at every
-                  stage.
+                Balaji Glaspac is a trusted global sourcing and distribution partner.
+                 We specialise in delivering high-quality products and tailored solutions to meet our clients’ diverse needs. 
+                 With a deep understanding of market dynamics, robust supply chain networks, and a commitment to excellence,
+                  we bridge the gap between manufacturers and end-users across industries. Our mission is to provide seamless, 
+                  efficient, and value-driven services that empower businesses to thrive in a competitive landscape.
                 </p>
+                
               </div>
             </div>
             <div className="col-lg-6">
@@ -96,6 +96,14 @@ function About() {
                   state-of-the-art facilities and skilled workforce ensure the
                   highest quality standards while maintaining efficient
                   production processes and environmental responsibility.
+                </p>
+                <p>
+                  Committed to excellence, we stay ahead by embracing the latest
+                  trends in the glass market. Our skilled workforce and
+                  customer-centric approach enable us to meet the precise needs
+                  of our clients. We also offer high-quality glass bottle
+                  printing services, ensuring meticulous quality checks at every
+                  stage.
                 </p>
                 <ul>
                   <li>

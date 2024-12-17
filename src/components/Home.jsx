@@ -236,32 +236,33 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header style={{ position: "fixed", width: "100%", zIndex: 1 }} />
       {/* Banner */}
       <div className="banner-area banner-img-one banner-area-video">
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          className="background-video"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: -1,
-          }}
-        >
-          <source src={video1} type="video/mp4" />
-        </video>
-        <div className="d-table">
-          <div className="d-table-cell">
-            <div className="container">
-              <div className="banner-content">
-                <h1>
+        <div className="video-container" style={{ position: "relative", width: "100%", height: "600px", overflow: "hidden" }}>
+          <video
+            loop
+            muted
+            autoPlay
+            playsInline
+            className="background-video"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              position: "absolute",
+              top: 0,
+              left: 0,
+              zIndex: -1,
+            }}
+          >
+            <source src={video1} type="video/mp4" />
+          </video>
+        </div>
+        <div className="overlay-content" style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "#fff", textAlign: "center", zIndex: 1 }}>
+        
+                
+                <h1 className="fw-bold">
                   Our Products To Help Customer To Work Faster, Smarter &amp;
                   Efficiently
                 </h1>
@@ -272,15 +273,10 @@ const Home = () => {
                   highest quality standards while maintaining efficient
                   production processes and environmental responsibility.
                 </p>
-                <Link to="/about" className="cmn-btn">
-                  Discover More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+               
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          
       {/* End Banner */}
       {/* About */}
       <section className="about-area">
@@ -300,6 +296,15 @@ const Home = () => {
                   quality while maintaining cost-effectiveness for our clients.
                 </p>
                 <h3 className="mb-3">Our Vision</h3>
+                <p>
+                "To be a globally recognised leader in sourcing and distribution, 
+                delivering unparalleled value and fostering sustainable partnerships that drive innovation, 
+                efficiency, and growth across industries."
+                </p>
+                <p>
+                This emphasises ambition, sustainability, and value creation, 
+                which are appropriate for a company specialising in sourcing or distribution.
+                </p>
                 <ul>
                   <li>
                     <i className="fa-solid fa-check" />
@@ -407,6 +412,7 @@ const Home = () => {
       {/* End About */}
       {/* Service */}
       <section className="service-area pt-100 pb-70">
+      <div id="our-products">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">Our Products</span>
@@ -789,70 +795,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      {/* End Service */}
-      {/* Counter */}
-      <section className="counter-area pt-100">
-        <div className="container">
-          <div className="row align-iems-center">
-            <div className="col-lg-5">
-              <div className="counter-text mt-5">
-                <h2>About Balaji Glaspac</h2>
-              </div>
-            </div>
-            <div className="col-lg-7">
-              <div className="row">
-                <div className="col-sm-4 col-lg-4">
-                  <div className="counter-item">
-                    <h3>
-                      <span className="odometer" data-count={1226}>
-                        50+
-                      </span>
-                    </h3>
-                    <p>HAPPY CLIENTS</p>
-                  </div>
-                </div>
-                <div className="col-sm-4 col-lg-4">
-                  <div className="counter-item">
-                    <h3>
-                      <span className="odometer" data-count={1552}>
-                        100+
-                      </span>
-                    </h3>
-                    <p>WORKERS</p>
-                  </div>
-                </div>
-                <div className="col-sm-4 col-lg-4">
-                  <div className="counter-item">
-                    <h3>
-                      <span className="odometer" data-count={1000}>
-                        10+
-                      </span>
-                    </h3>
-                    <p>EXPERT</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="row justify-content-center align-items-center g-4 my-4">
-              {clients.map((client) => (
-                <div key={client.id} className="col-2 text-center my-4">
-                  <img
-                    src={client.logo}
-                    alt={`${client.name} Logo`}
-                    className="img-fluid client-logo rounded-circle"
-                  />
-                  <h5 className="mt-3 fw-bold text-white fs-6">
-                    {client.name}
-                  </h5>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
-      {/* End Counter */}
+      {/* End Service */}
+      
       {/* Foreign */}
       <div className="foreign-area" style={carouselStyles.foreign}>
         <div className="container-fluid p-0">
@@ -1047,33 +993,75 @@ const Home = () => {
         </div>
       </section>
       {/* End Cost */}
-      <section className="client-logos py-5">
-        <div className="container">
-          <div className="section-title text-center mb-5">
-            <h2>Our Trusted Partners</h2>
-          </div>
-          <div className="row justify-content-center align-items-center g-4">
-            {clientLogos.map((client) => (
-              <div key={client.id} className="col-2 text-center">
-                <img
-                  src={client.logo}
-                  alt={`${client.name} Logo`}
-                  className="img-fluid client-logo rounded-circle"
-                  style={{
-                    width: "150px",
-                    height: "150px",
-                    objectFit: "cover",
-                    transition: "transform 0.3s ease",
-                    border: "2px solid #e9ecef",
-                    padding: "10px",
-                    backgroundColor: "#fff",
-                  }}
-                />
+
+      <section className="about-area ptb-100">
+              <div className="container">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="section-title">
+                      
+                      <h2>Why Partner with Us?</h2>
+                    </div>
+                    <div className="about-content">
+                      <p>
+                      Choosing to work with Balaji Glaspac offers distinct advantages over engaging directly with manufacturers:
+                      </p>
+                      <p>
+                      Comprehensive Solutions: We simplify your supply chain by offering a curated portfolio of products from multiple trusted sources, saving you the time and effort of dealing with various manufacturers.
+                      </p>
+                      <p>
+                      Market Expertise: Our deep understanding of market trends and industry demands allows us to provide valuable insights and ensure you receive the most suitable and innovative solutions.
+                      </p>
+                      <p>
+                      Customised Services: Unlike manufacturers focused solely on production, we offer personalised services such as flexible quantities, tailored packaging, and logistical support to meet your unique requirements.
+                      </p>
+                      <p>
+                      Cost Efficiency: We secure competitive pricing by leveraging our established relationships and bulk procurement capabilities, which can significantly reduce your business’s costs.
+                      </p>
+                      <p>
+                      Streamlined Communication: With us, you benefit from a single point of contact for all your needs, eliminating the complexity of coordinating with multiple manufacturers.
+                      </p>
+                      <p>
+                      Risk Mitigation: Our rigorous quality checks, dependable logistics, and contingency planning ensure a seamless and reliable experience,even in challenging market conditions.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <img className="rounded-4" src="http://localhost:3000/balaji_glaspac/static/media/img2.13933111c57a85f7fcc7.jpg" alt="" />
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
+            </section>
+      
+            <section className="client-logos py-5">
+  <div className="container">
+    <div className="section-title text-center mb-5">
+      <h2>Our Trusted Partners</h2>
+    </div>
+    <div className="row justify-content-center align-items-center g-4">
+      {clientLogos.map((client) => (
+        <div key={client.id} className="col-6 col-sm-4 col-md-2 text-center">
+          <img
+            src={client.logo}
+            alt={`${client.name} Logo`}
+            className="img-fluid client-logo rounded-circle"
+            style={{
+              width: "150px",
+              height: "150px",
+              objectFit: "cover",
+              transition: "transform 0.3s ease",
+              border: "2px solid #e9ecef",
+              padding: "10px",
+              backgroundColor: "#fff",
+            }}
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+      
       <Footer />
     </>
   );
