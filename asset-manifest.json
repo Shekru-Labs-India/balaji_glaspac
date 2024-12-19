@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/balaji_glaspac/static/css/main.6d938a55.css",
-    "main.js": "/balaji_glaspac/static/js/main.4b8fa0cb.js",
+    "main.css": "/balaji_glaspac/static/css/main.c7f68bb8.css",
+    "main.js": "/balaji_glaspac/static/js/main.f9b7b3a9.js",
     "static/js/453.d5a9f5a3.chunk.js": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js",
+    "static/media/manufacturing.mp4": "/balaji_glaspac/static/media/manufacturing.2c5e947b2ace741ce4ff.mp4",
     "static/media/img1.jpg": "/balaji_glaspac/static/media/img1.97694c926d256a35bbf7.jpg",
     "static/media/img3.jpg": "/balaji_glaspac/static/media/img3.eb23a436fdfccc9db82a.jpg",
     "static/media/spiritBottle2.jpg": "/balaji_glaspac/static/media/spiritBottle2.8cc21dd73fd2645f103b.jpg",
     "static/media/spiritBottle3.jpg": "/balaji_glaspac/static/media/spiritBottle3.5f153b8bce7209941431.jpg",
-    "static/media/manufacturing2.mp4": "/balaji_glaspac/static/media/manufacturing2.9e9204cd52ed9068ac69.mp4",
     "static/media/img6.jpg": "/balaji_glaspac/static/media/img6.d96aaf1fbe3aee70684a.jpg",
     "static/media/specialityBottle2.jpg": "/balaji_glaspac/static/media/specialityBottle2.0790217d2d35bb3a52a2.jpg",
     "static/media/wine6.jpg": "/balaji_glaspac/static/media/wine6.278720341e70e11d1448.jpg",
@@ -61,6 +61,7 @@
     "static/media/vodka3.jpg": "/balaji_glaspac/static/media/vodka3.f7e6f19baaa49154acda.jpg",
     "static/media/type2Glass.jpg": "/balaji_glaspac/static/media/type2Glass.26b91aee13ed06421b4f.jpg",
     "static/media/111.jpg": "/balaji_glaspac/static/media/111.c7beebd26531a9be3c39.jpg",
+    "static/media/coloring-forehearths3.jpg": "/balaji_glaspac/static/media/coloring-forehearths3.88799064282233ddaa7d.jpg",
     "static/media/industrialBottle.jpg": "/balaji_glaspac/static/media/industrialBottle.c81221a5a0751f9bfa33.jpg",
     "static/media/lotionBottle.jpg": "/balaji_glaspac/static/media/lotionBottle.726e2ad3de3220a4f4cc.jpg",
     "static/media/wine2.jpg": "/balaji_glaspac/static/media/wine2.df412d8b63a1463ea899.jpg",
@@ -68,12 +69,21 @@
     "static/media/BeerBottle3.jpg": "/balaji_glaspac/static/media/BeerBottle3.7ea1250127060e73a7c1.jpg",
     "static/media/oralBottle.jpg": "/balaji_glaspac/static/media/oralBottle.1c140ca6c723a24e11fa.jpg",
     "static/media/waterbottle (2).jpg": "/balaji_glaspac/static/media/waterbottle (2).83697cf324a4ab05da05.jpg",
+    "static/media/coating.jpg": "/balaji_glaspac/static/media/coating.b86a0c5bc81b5db94c86.jpg",
     "static/media/page-title-bg.jpg": "/balaji_glaspac/static/media/page-title-bg.5b290002e1b2ddc7bbf9.jpg",
     "static/media/about-job-main.jpg": "/balaji_glaspac/static/media/about-job-main.6f2140cc7803f144e562.jpg",
     "static/media/footer-bg.jpg": "/balaji_glaspac/static/media/footer-bg.c9dabd5cee4a3750060f.jpg",
+    "static/media/wrap-bottle.jpg": "/balaji_glaspac/static/media/wrap-bottle.da8ef1eded800694a6cf.jpg",
     "static/media/wine7.jpg": "/balaji_glaspac/static/media/wine7.0ab119d41e4eadf87a94.jpg",
+    "static/media/design.png": "/balaji_glaspac/static/media/design.07be06483ebebd7ca60f.png",
+    "static/media/applied-ceramic.jpg": "/balaji_glaspac/static/media/applied-ceramic.1f3db29a9d728e881989.jpg",
+    "static/media/Mould.jpg": "/balaji_glaspac/static/media/Mould.1e6d3c7cd13b3bd8b432.jpg",
     "static/media/img4.jpg": "/balaji_glaspac/static/media/img4.8f6bd2667c34cc8a1b77.jpg",
     "static/media/about2.png": "/balaji_glaspac/static/media/about2.b93026adf8954bd8f6e9.png",
+    "static/media/Coloring-Forehearth.png": "/balaji_glaspac/static/media/Coloring-Forehearth.9686678c69f6b2885fb2.png",
+    "static/media/coating1.jpg": "/balaji_glaspac/static/media/coating1.e66478a091b046cf8a75.jpg",
+    "static/media/bottle-package.jpg": "/balaji_glaspac/static/media/bottle-package.3bc758fb37ba086b85af.jpg",
+    "static/media/Coloring-Forehearth1.png": "/balaji_glaspac/static/media/Coloring-Forehearth1.45857481d77571efc905.png",
     "static/media/client19.png": "/balaji_glaspac/static/media/client19.deea91f3b81b4a506479.png",
     "static/media/client15.png": "/balaji_glaspac/static/media/client15.2647d830e08faf0fcf7e.png",
     "index.html": "/balaji_glaspac/index.html",
@@ -81,12 +91,12 @@
     "static/media/slick.eot": "/balaji_glaspac/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/balaji_glaspac/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/balaji_glaspac/static/media/slick.295183786cd8a1389865.woff",
-    "main.6d938a55.css.map": "/balaji_glaspac/static/css/main.6d938a55.css.map",
-    "main.4b8fa0cb.js.map": "/balaji_glaspac/static/js/main.4b8fa0cb.js.map",
+    "main.c7f68bb8.css.map": "/balaji_glaspac/static/css/main.c7f68bb8.css.map",
+    "main.f9b7b3a9.js.map": "/balaji_glaspac/static/js/main.f9b7b3a9.js.map",
     "453.d5a9f5a3.chunk.js.map": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d938a55.css",
-    "static/js/main.4b8fa0cb.js"
+    "static/css/main.c7f68bb8.css",
+    "static/js/main.f9b7b3a9.js"
   ]
 }
