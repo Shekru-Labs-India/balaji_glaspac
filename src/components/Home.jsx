@@ -238,44 +238,53 @@ const Home = () => {
     <>
       <Header style={{ position: "fixed", width: "100%", zIndex: 1 }} />
       {/* Banner */}
-      <div className="banner-area banner-img-one banner-area-video">
-      <div className="video-container" style={{ position: "relative", width: "100%", height: "100%", overflow: "hidden" }}>
-        <video
-    loop
-    muted
-    autoPlay
-    playsInline
-    className="background-video"
+      <div
+    className="banner-area banner-img-one banner-area-video"
+    style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }} // Ensure no overflow
+  >
+<video
+      loop
+      muted
+      autoPlay
+      playsInline
+      className="background-video"
+      style={{
+        width: "100%",
+        height: "100%", // Set height to 100% to fill the container
+        objectFit: "cover", // Ensure the video covers the area without scrolling
+        position: "absolute",
+        top: 0,
+        left: 0,
+        zIndex: -1,
+      }}
+    >
+      <source src={video1} type="video/mp4" />
+    </video>
+
+  <div
+    className="overlay-content"
     style={{
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
       position: "absolute",
-      top: 0,
-      left: 0,
-      zIndex: -1,
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      color: "#fff",
+      textAlign: "center",
+      zIndex: 1,
     }}
   >
-    <source src={video1} type="video/mp4" />
-  </video>
-        </div>
-        <div className="overlay-content" style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "#fff", textAlign: "center", zIndex: 1 }}>
-        
-                
-                <h1 className="fw-bold">
-                  Our Products To Help Customer To Work Faster, Smarter &amp;
-                  Efficiently
-                </h1>
-                <p>
-                  At Balaji Glaspac, we combine traditional glass-making
-                  expertise with modern manufacturing technologies. Our
-                  state-of-the-art facilities and skilled workforce ensure the
-                  highest quality standards while maintaining efficient
-                  production processes and environmental responsibility.
-                </p>
-               
-              </div>
-            </div>
+    <h1 className="fw-bold">
+      Our Products To Help Customer To Work Faster, Smarter &amp; Efficiently
+    </h1>
+    <p>
+      At Balaji Glaspac, we combine traditional glass-making expertise with
+      modern manufacturing technologies. Our state-of-the-art facilities and
+      skilled workforce ensure the highest quality standards while maintaining
+      efficient production processes and environmental responsibility.
+    </p>
+  </div>
+</div>
+
           
       {/* End Banner */}
       {/* About */}
