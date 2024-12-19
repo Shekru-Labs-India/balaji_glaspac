@@ -239,25 +239,25 @@ const Home = () => {
       <Header style={{ position: "fixed", width: "100%", zIndex: 1 }} />
       {/* Banner */}
       <div className="banner-area banner-img-one banner-area-video">
-        <div className="video-container" style={{ position: "relative", width: "100%", height: "600px", overflow: "hidden" }}>
-          <video
-            loop
-            muted
-            autoPlay
-            playsInline
-            className="background-video"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              position: "absolute",
-              top: 0,
-              left: 0,
-              zIndex: -1,
-            }}
-          >
-            <source src={video1} type="video/mp4" />
-          </video>
+      <div className="video-container" style={{ position: "relative", width: "100%", height: "100%", overflow: "hidden" }}>
+        <video
+    loop
+    muted
+    autoPlay
+    playsInline
+    className="background-video"
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      zIndex: -1,
+    }}
+  >
+    <source src={video1} type="video/mp4" />
+  </video>
         </div>
         <div className="overlay-content" style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "#fff", textAlign: "center", zIndex: 1 }}>
         
