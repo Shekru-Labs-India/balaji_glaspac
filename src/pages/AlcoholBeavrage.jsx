@@ -258,13 +258,141 @@ const AlcoholBeverage = () => {
       img: "https://katalog.vetropack.com/static_cache/img/1005811-grid_2.jpg",
     },
 
+    {
+      title: "LN Ret BNR 218H 280g KK2612 330ml",
+      artNo: "22322",
+      description: "330 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1008636-grid_2.jpg",
+    },
+    {
+      title: "LN Ret BNR 245H 355g KK2618 500ml",
+      artNo: "17575",
+      description: "500 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1005812-grid_2.jpg",
+    },
+    {
+      title: "Ale Ret 238H 310g KK2618 330ml",
+      artNo: "30033",
+      description: "330 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1005952-grid_2.jpg",
+    },
 
+    {
+      title: "Ale 233H 302g KK2613 330ml",
+      artNo: "32339",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1011275-grid_1.jpg",
+    },
+    {
+      title: "Ale Ret 238H 310g KK2618 330ml",
+      artNo: "33355",
+      description: "330 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1008923-grid_2.jpg",
+    },
+    {
+      title: "Ale Ret 238H 310g KK2618 330ml",
+      artNo: "31434",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1009867-grid_2.jpg",
+    },
+
+    {
+      title: "Ale Ret 270H 385g KK2618 500ml",
+      artNo: "23630",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1005951-grid_2.jpg",
+    },
+    {
+      title: "Ale Ret 270H 385g KK2618 500ml",
+      artNo: "22870",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1008922-grid_2.jpg",
+    },
+    {
+      title: "Pivo nep. 224H 186g KK2613 330ml",
+      artNo: "28114",
+      description: "330 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1001528-grid_2.jpg",
+    },
+
+    {
+      title: "Pivo nep. 224H 186g KK2613 330ml",
+      artNo: "27563",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1001275-grid_2.jpg",
+    },
+    {
+      title: "Pivo nep. 224H 186g KK2613 330ml",
+      artNo: "30695",
+      description: "330 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1001276-grid_2.jpg",
+    },
+    {
+      title: "Spec. Christmas 166g KK2613 250ml",
+      artNo: "30193",
+      description: "250 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1003277-grid_2.jpg",
+    },
+
+    {
+      title: "Ale Ret 264H 351g KK2612 500ml",
+      artNo: "25144",
+      description: "500 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1009039-grid_2.jpg",
+    },
+    {
+      title: "Ale 196H 164g KK2613 250ml",
+      artNo: "31270",
+      description: "250 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1001910-grid_2.jpg",
+    },
+    {
+      title: "Ale 195H 167g MC281G 250ml",
+      artNo: "30184",
+      description: "250 ml, MCA",
+      img: "https://katalog.vetropack.com/static_cache/img/1001704-grid_2.jpg",
+    },
+
+    {
+      title: "Ale 274H 320g KK2613 660ml",
+      artNo: "24058",
+      description: "660 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1009464-grid_2.jpg",
+    },
+    {
+      title: "Longneck 237H 210g KK2618 330ml",
+      artNo: "27552",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1001267-grid_2.jpg",
+    },
+    {
+      title: "Glass bottle Beer LN 330 ml",
+      artNo: "30419",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1002717-grid_2.jpg",
+    },
+
+    {
+      title: "bottle Beer LM 330 ml",
+      artNo: "32013",
+      description: "330 ml, Swing closer",
+      img: "https://katalog.vetropack.com/static_cache/img/1011119-grid_2.jpg",
+    },
+    {
+      title: "bottle Beer LM 750 ml",
+      artNo: "32014",
+      description: "750 ml, Swing closer",
+      img: "https://katalog.vetropack.com/static_cache/img/1011120-grid_2.jpg",
+    },
     {
       title: "CH III 173g DK2613 330ml",
       artNo: "25761",
       description: "330 ml, Twist crown ",
       img: "	https://katalog.vetropack.com/static_cache/img/1001939-grid_2.jpg",
     },
+   
+
+    
     {
       title: "Gambrinus Ret 255g KK2618 330ml",
       artNo: "31470",
@@ -274,8 +402,128 @@ const AlcoholBeverage = () => {
     {
       title: "Obus Bier 265g DK2613 500ml",
       artNo: "33363",
-      description: "500 ml, Ring Twist crown",
+      description: "500 ml, Twist crown",
       img: "https://katalog.vetropack.com/static_cache/img/1011755-grid_2.jpg",
+    },
+    {
+      title: "Eva light Bier 130g DK2613 250ml",
+      artNo: "31369",
+      description: "250 ml, Twist crown",
+      img: "https://katalog.vetropack.com/static_cache/img/1010811-grid_2.jpg",
+    },
+
+    {
+      title: "Euro Ret 345g KK2618 500ml",
+      artNo: "16931",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1002016-grid_2.jpg",
+    },
+    {
+      title: "EURO RET 345g KK2618 500ml",
+      artNo: "30061",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1001921-grid_2.jpg",
+    },
+    {
+      title: "Euro Ret 345g KK2618 500ml",
+      artNo: "14097",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1003293-grid_2.jpg",
+    },
+
+    {
+      title: "Euro Ret 335g MC287R 500ml",
+      artNo: "26700",
+      description: "500 ml, MCA",
+      img: "	https://katalog.vetropack.com/static_cache/img/1001007-grid_2.jpg",
+    },
+    {
+      title: "Gambrinus 180g KK2618 330ml",
+      artNo: "27840",
+      description: "330 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1001415-grid_2.jpg",
+    },
+    {
+      title: "Gambrinus AW 225g KK2618 330ml",
+      artNo: "30670",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1003001-grid_2.jpg",
+    },
+
+    {
+      title: "Euro pivo 310g KK2618 500ml",
+      artNo: "31167",
+      description: "500 ml,  Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1010729-grid_2.jpg",
+    },
+    {
+      title: "Bottle Evro 2 500 ml",
+      artNo: "30545",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1002129-grid_2.jpg",
+    },
+    {
+      title: "Glass bottle Baltijos Alus 500 ml",
+      artNo: "31053",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1001560-grid_2.jpg",
+    },
+
+    {
+      title: "Tulip light 500ml",
+      artNo: "34120",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1012161-grid_2.jpg",
+    },
+    {
+      title: "bottle NRW mineral light KK 500 ml",
+      artNo: "31782",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1011017-grid_2.jpg",
+    },
+    {
+      title: "Tradition 540g LM3131 750ml",
+      artNo: "34165",
+      description: "750 ml, Swing closer",
+      img: "	https://katalog.vetropack.com/static_cache/img/1012191-grid_2.jpg",
+    },
+
+    {
+      title: "Tradition 520g SK17,6 750ml",
+      artNo: "34342",
+      description: "750 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1012280-grid_1.jpg",
+    },
+    {
+      title: "Birra BG - B - 56 300g sk17,6 330ml",
+      artNo: "28471",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1010241-grid_2.jpg",
+    },
+    {
+      title: "Birra BG - B - 80 600g SK17,6 750ml",
+      artNo: "28430",
+      description: "750 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1010213-grid_2.jpg",
+    },
+
+    {
+      title: "Bügelflasche Ret 485g LM3231 500ml",
+      artNo: "19726",
+      description: "500 ml, Swing closer",
+      img: "https://katalog.vetropack.com/static_cache/img/1007193-grid_2.jpg",
+    },
+    {
+      title: "Bügelbier Ret 320g LM3232 330ml",
+      artNo: "31309",
+      description: "330 ml, Swing closer",
+      img: "https://katalog.vetropack.com/static_cache/img/1010785-grid_2.jpg",
+    },
+    {
+      title: "Vichy Ret 320g LM 330ml",
+      artNo: "31662",
+      description: "330 ml, Swing closer",
+      img: "https://katalog.vetropack.com/static_cache/img/1010956-grid_2.jpg",
     },
 
     {
@@ -295,6 +543,63 @@ const AlcoholBeverage = () => {
       artNo: "26821",
       description: "500 ml, Swing closer",
       img: "https://katalog.vetropack.com/static_cache/img/1001034-grid_4.jpg",
+    },
+
+    {
+      title: "Bottle Litva 2 1000 ml",
+      artNo: "26935",
+      description: "1000 ml, Swing closer ",
+      img: "https://katalog.vetropack.com/static_cache/img/1001106-grid_2.jpg",
+    },
+    {
+      title: "Bottle Litva 2 1000 ml",
+      artNo: "32369",
+      description: "1000 ml, Swing closer",
+      img: "https://katalog.vetropack.com/static_cache/img/1011296-grid_2.jpg",
+    },
+    {
+      title: "Bottle Litva 2 1000 ml",
+      artNo: "26812",
+      description: "1000 ml, Swing closer",
+      img: "https://katalog.vetropack.com/static_cache/img/1001029-grid_2.jpg",
+    },
+
+    {
+      title: "SBV Bier Ret 500g KK2618 580ml",
+      artNo: "26197",
+      description: "580 ml, Swing closer ",
+      img: "https://katalog.vetropack.com/static_cache/img/1003360-grid_2.jpg",
+    },
+    {
+      title: "Vichy 175g KK2613 250ml",
+      artNo: "31658",
+      description: "250 ml, 	Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1010954-grid_2.jpg",
+    },
+    {
+      title: "Vichy 220g KK2618 330ml",
+      artNo: "31659",
+      description: "330 ml, 	Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1010955-grid_2.jpg",
+    },
+
+    {
+      title: "NRW Ret 380g KK2618 500ml",
+      artNo: "13691",
+      description: "500 ml, 	Crown finish ",
+      img: "https://katalog.vetropack.com/static_cache/img/1002066-grid_2.jpg",
+    },
+    {
+      title: "Vichy Ret 320g KK2618 330ml",
+      artNo: "12398",
+      description: "330 ml, Crown finish",
+      img: "	https://katalog.vetropack.com/static_cache/img/1002104-grid_2.jpg",
+    },
+    {
+      title: "Vichy light 260g KK2613 500ml",
+      artNo: "30525",
+      description: "500 ml, Crown finish",
+      img: "https://katalog.vetropack.com/static_cache/img/1002115-grid_3.jpg",
     },
   ];
 
@@ -333,300 +638,45 @@ const AlcoholBeverage = () => {
     <div className="container-fluid mt-4"  >
 
      
-    <div className="container mt-4 mb-5" >
-  <div className="row align-items-center" style={{ marginTop: "150px" }}>
-    
-  <div className="col-md-4 mb-3 mb-md-0">
-        <label className="form-label fw-bold">Search</label>
-        <div className="input-group">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Article name or number"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <button className="btn btn-outline-secondary" type="button">
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
+    <div className="container-fluid mt-4 mb-5">
+  <div className="row align-items-center " style={{ marginTop: "150px" }}>
+    {/* Search field on the left */}
+    <div className="col-md-4 mb-3 mb-md-0 ">
+      <label className="form-label fw-bold">Search</label>
+      <div className="input-group">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Article name or number"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <button className="btn btn-outline-secondary" type="button">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
-
-    <div className="col-md-4 text-center">
-      <p className="mb-0 fw-bold">93 results with your filter setting</p>
     </div>
 
-    <div className="col-md-4 d-flex justify-content-end">
-      <div className="me-3">
-        <label className="form-label fw-bold me-1">Sort by</label>
-        <select className="form-select form-select-sm d-inline-block w-auto">
-          <option>Sort by</option>
-          <option>Sub-Groups</option>
-          <option>Nominal contents</option>
-          <option>Finish type group</option>
-          <option>Colour</option>
-        </select>
-      </div>
-
-      <div className="btn-group" role="group">
-        <button type="button" className="btn btn-outline-secondary active">
-        <i className="fa-solid fa-border-all"></i>
-        </button>
-        <button type="button" className="btn btn-outline-secondary">
-        <i className="fa-solid fa-list"></i>
-        </button>
-        <button type="button" className="btn btn-outline-secondary">
-        <i className="fa-solid fa-arrows-alt"></i>
-        </button>
-      </div>
+    {/* Results text aligned beside search field */}
+    <div className="col-md-4 offset-md-4 text-center text-md-start">
+      <p className="mb-0 fw-bold">93 results with your filter setting</p>
     </div>
   </div>
 </div>
+
 
 
      
 
       <div className="row">
     
-        <div className="col-md-3 mb-4">
-          <div className="p-3 bg-light rounded">
-            <h5 className="mb-3 text-uppercase">SUB-GROUPS</h5>
-            <div className="form-check mb-2">
-              <input type="checkbox" className="form-check-input" id="longNeck" />
-              <label className="form-check-label" for="longNeck">Long Neck (59)</label>
-            </div>
-            <div className="form-check mb-2">
-              <input type="checkbox" className="form-check-input" id="shortNeck" />
-              <label className="form-check-label" for="shortNeck">Short Neck (15)</label>
-            </div>
-            <div className="form-check mb-2">
-              <input
-                type="checkbox"
-                className="form-check-input"
-                id="beerSpecial"
-              />
-              <label className="form-check-label" for="beerSpecial"
-                >Beer Special (4)</label
-              >
-            </div>
-            <div className="form-check mb-2">
-              <input type="checkbox" className="form-check-input" id="swingTop" />
-              <label className="form-check-label" for="swingTop">Swing Top (9)</label>
-            </div>
-            <div className="form-check mb-4">
-              <input type="checkbox" className="form-check-input" id="vichy" />
-              <label className="form-check-label" for="vichy">Vichy (6)</label>
-            </div>
-
-            <h5 className="mb-3 text-uppercase">NOMINAL CONTENTS</h5>
-            <input
-              type="range"
-              className="slider mb-2"
-              min="150"
-              max="1000"
-              value="500"
-            />
-            <p>150 ml - 1000 ml</p>
-
-            <h5 className="mb-3 text-uppercase">BRIMFULL</h5>
-            <input
-              type="range"
-              className="slider mb-2"
-              min="164"
-              max="1020"
-              value="500"
-            />
-            <p>164 ml - 1020 ml</p>
-
-            <h5 className="mb-3 text-uppercase">FILLING LINE</h5>
-            <input
-              type="range"
-              className="slider mb-2"
-              min="34"
-              max="81"
-              value="500"
-            />
-            <p>34 mm - 81 mm</p>
-
-            <h5 className="mb-3 text-uppercase">NET WEIGHT</h5>
-            <input
-              type="range"
-              className="slider mb-2"
-              min="125"
-              max="627"
-              value="500"
-            />
-            <p>125 g - 627 g</p>
-
-            <div>
-      <h5 className="mb-3 text-uppercase">FINISH TYPE GROUP</h5>
-
-      {/* Dropdown for Finish Type Selection */}
-      <select
-        className="form-select mb-2"
-        value={selectedFinish}
-        onChange={handleChange}
-        style={{ width: '200px' }}
-      >
-        <option value="">Select Finish Type</option>
-        <option value="twist_crown">Twist Crown</option>
-        <option value="crown_finish">Crown Finish</option>
-        <option value="swing_closer">Swing Closer</option>
-        <option value="mca">MCA</option>
-        <option value="ring_cork_finish">Ring Cork Finish</option>
-        <option value="crown_finish_spumante">Crown Finish Spumante</option>
-      </select>
-
-      {/* Display the selected finish */}
-      <div style={{ marginTop: '10px', fontWeight: 'bold' }}>
-        Selected Finish Type: {selectedFinish ? selectedFinish.replace('_', ' ') : 'None'}
-      </div>
-    </div>
-
-
-            <div>
-      <h5 className="mb-3 text-uppercase">Colour</h5>
-
-      {/* Dropdown for Color Selection */}
-      <select 
-        className="form-select mb-2" 
-        value={selectedColor} 
-        onChange={handleChange}
-        style={{ width: '200px' }}
-      >
-        <option value="">Select a color</option>
-        <option value="flint">Flint</option>
-        <option value="green">Green</option>
-        <option value="amber">Amber</option>
-        <option value="vetrogreen">Vetrogreen</option>
-      </select>
-
-      
-      
-    </div>
-            
-
-            <h5 className="mb-3 text-uppercase">HEIGHT</h5>
-            <input
-              type="range"
-              className="slider mb-2"
-              min="155"
-              max="312"
-              value="500"
-            />
-            <p>155 mm - 312 mm</p>
-
-            <h5 className="mb-3 text-uppercase">DIAMETER</h5>
-            <input
-              type="range"
-              className="slider mb-2"
-              min="48.5"
-              max="92.9"
-              value="500"
-            />
-            <p>48.5 mm - 92.9 mm</p>
-
-            <div>
-      <h5 className="mb-3 text-uppercase">Circulation Type</h5>
-
-      {/* Radio buttons for Circulation Type */}
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="circulationType"
-            value="any"
-            checked={selectedCirculationType === 'any'}
-            onChange={handleRadioChange}
-          />
-          Any
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="circulationType"
-            value="nonreturnable"
-            checked={selectedCirculationType === 'nonreturnable'}
-            onChange={handleRadioChange}
-          />
-          Nonreturnable
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="circulationType"
-            value="returnable"
-            checked={selectedCirculationType === 'returnable'}
-            onChange={handleRadioChange}
-          />
-          Returnable
-        </label>
-      </div>
-
-      {/* Display the selected circulation type */}
-      <div style={{ marginTop: '10px', fontWeight: 'bold' }}>
-        Selected Circulation Type: {selectedCirculationType ? selectedCirculationType : 'None'}
-      </div>
-    </div>
-
-    <div>
-      <h5 className="mb-3 text-uppercase">New Hits</h5>
-
-      {/* Radio buttons for New Hits */}
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="newHitType"
-            value="any"
-            checked={selectedHitType === 'any'}
-            onChange={handleRadioChanges}
-          />
-          Any
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="newHitType"
-            value="nonreturnable"
-            checked={selectedHitType === 'nonreturnable'}
-            onChange={handleRadioChanges}
-          />
-          Nonreturnable
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="newHitType"
-            value="returnable"
-            checked={selectedHitType === 'returnable'}
-            onChange={handleRadioChanges}
-          />
-          Returnable
-        </label>
-      </div>
-
-      {/* Display the selected new hit type */}
-      <div style={{ marginTop: '10px', fontWeight: 'bold' }}>
-        Selected New Hit Type: {selectedHitType ? selectedHitType : 'None'}
-      </div>
-    </div>
-          </div>
-        </div>
+        
 
         
-        <div className="col-md-9">
+      <div className="col-md-12">
   <div className="row g-4">
     {filteredCards.map((card, index) => (
-      <div className="col-12 col-md-4" key={index}>
+      <div className="col-12 col-md-3" key={index}>
         <div className={`card h-100 p-3 ${index === 1 ? "border-primary" : ""}`}>
           <h6
             className="fw-bold text-truncate-2"

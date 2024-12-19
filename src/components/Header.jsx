@@ -12,6 +12,7 @@ const Header = () => {
     food: false,
     pharma: false,
     cosmetic: false,
+    services: false,
   });
 
   // Add scroll effect
@@ -43,6 +44,15 @@ const Header = () => {
       [key]: !prev[key],
     }));
   };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.warn(`Element with id ${sectionId} not found.`);
+    }
+};
 
   // Add this effect to handle body class
   useEffect(() => {
@@ -214,21 +224,20 @@ const Header = () => {
                 <div
     className="nav-link px-3 py-2 border-bottom d-flex justify-content-between align-items-center"
     onClick={(e) => {
-      e.preventDefault();
-      toggleMobileDropdown("products");
-      // Scroll to the target section
-      document.getElementById("our-products").scrollIntoView({ behavior: 'smooth' });
+        e.preventDefault();
+        toggleMobileDropdown("products");
+        scrollToSection("our-products"); // Updated to use the new function
     }}
-  >
+>
     <span>Catalogue</span>
     <i
-      className={`fa-solid ${
-        mobileDropdowns.products
-          ? "fa-chevron-up"
-          : "fa-chevron-down"
-      }`}
+        className={`fa-solid ${
+            mobileDropdowns.products
+                ? "fa-chevron-up"
+                : "fa-chevron-down"
+        }`}
     />
-  </div>
+</div>
 
                   <div
                     className={`${
@@ -522,6 +531,88 @@ const Header = () => {
                   </div>
                 </li>
 
+
+                 {/* Services Dropdown */}
+    <li className="nav-item">
+      <div
+        className="nav-link px-3 py-2 border-bottom d-flex justify-content-between align-items-center"
+        onClick={(e) => {
+          e.preventDefault();
+          toggleMobileDropdown("services");
+        }}
+      >
+        <span>Services</span>
+        <i
+          className={`fa-solid ${
+            mobileDropdowns.services ? "fa-chevron-up" : "fa-chevron-down"
+          }`}
+        />
+      </div>
+      <div
+        className={`${
+          mobileDropdowns.services ? "show" : "d-none"
+        }`}
+      >
+        <Link
+          to="/appliedceramic"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+           <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+         <span> Applied Ceramic Label</span>
+         </div>
+        </Link>
+        <Link
+          to="/coloring"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+          <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+         <span>Coloring Forehearth Technology </span> 
+         </div>
+        </Link>
+        <Link
+          to="/coating"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+          <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+         <span>Coating </span> 
+         </div>
+        </Link>
+        <Link
+          to="/packagingoptions"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+           <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+          <span>Packaging Options </span>
+          </div>
+        </Link>
+        <Link
+          to="/inhousedesign"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+           <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+         <span>In House Design Studio </span>
+         </div> 
+        </Link>
+        <Link
+          to="/mouldshop"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+          <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+          <span>Mould Shop </span>
+          </div>
+        </Link>
+      </div>
+    </li>
+               
+                
+
+                
                 <li className="nav-item">
                   <NavLink
                     to="/clients"
@@ -915,6 +1006,115 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
+
+                  
+                 {/* services */}
+           
+                 <li className="nav-item">
+                  <a
+    href="#"
+    className="nav-link dropdown-toggle"
+    onClick={(e) => {
+      e.preventDefault();
+      
+     
+    }}
+  >
+    Services <i className="fa-solid fa-chevron-down" />
+  </a>
+                    <ul className="dropdown-menu">
+                      
+
+                      
+
+                      
+
+                     
+
+                      
+                      <li>
+                        <NavLink
+                          to="/appliedceramic"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
+                        >
+                          <i className="fa-solid fa-arrow-right me-2" />
+                          Applied Ceramic Label
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/coloring"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
+                        >
+                          <i className="fa-solid fa-arrow-right me-2" />
+                          Coloring Forehearth Technology
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/coating"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
+                        >
+                          <i className="fa-solid fa-arrow-right me-2" />
+                          Coating
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/packagingoptions"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
+                        >
+                          <i className="fa-solid fa-arrow-right me-2" />
+                          Packaging Options
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/inhousedesign"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
+                        >
+                          <i className="fa-solid fa-arrow-right me-2" />
+                          In House Design Studio
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/mouldshop"
+                          className={({ isActive }) =>
+                            isActive
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
+                          }
+                        >
+                          <i className="fa-solid fa-arrow-right me-2" />
+                          Mould Shop
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+       
+
+
 
                   <li className="nav-item">
                     <NavLink

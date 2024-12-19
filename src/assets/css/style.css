@@ -536,6 +536,11 @@ button:focus {
   padding-bottom: 155px;
 }
 
+.about-area1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .about-area .section-title {
   text-align: left;
   margin-bottom: 30px;

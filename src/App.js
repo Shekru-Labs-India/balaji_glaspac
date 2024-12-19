@@ -28,6 +28,12 @@ import Clients from "./pages/Clients";
 import About from "./pages/About";
 import AlcoholBrevrages from "./pages/AlcoholBeavrage";
 import AlcoholBeverage from "./pages/AlcoholBeavrage";
+import AppliedCeramic from "./pages/AppliedCeramic";
+import Coating from "./pages/Coating";
+import InHouseDesign from "./pages/InHouseDesign";
+import PackagingOptions from "./pages/PackagingOptions";
+import MouldShop from "./pages/MouldShop";
+import ColoringForehearth from "./pages/ColoringForehearth";
 
 
 
@@ -69,6 +75,17 @@ function App() {
         <Route path="/clients" element={<Clients />} />
         <Route path="/about" element={<About />} />
         <Route path="/alcoholbeverage" element={<AlcoholBeverage />} />
+        <Route path="/appliedceramic" element={<AppliedCeramic />} />
+        <Route path="/coating" element={<Coating />} />
+        <Route path="/inhousedesign" element={<InHouseDesign />} />
+        <Route path="/packagingoptions" element={<PackagingOptions />} />
+        <Route path="/mouldshop" element={<MouldShop />} />
+        <Route path="/coloring" element={<ColoringForehearth />} />
+
+
+
+       
+
       </Routes>
     </HashRouter>
   );
