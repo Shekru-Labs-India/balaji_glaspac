@@ -28,7 +28,8 @@ const MouldShop = () => {
                     <div className="d-flex align-items-center justify-content-center h-100">
                       <div className="text-center text-white">
                         <h1 className="display-3 fw-bold mb-4">
-                        Applied Ceramic Label 
+                        Mould Shop  
+							 
                   
                         </h1>
                         
