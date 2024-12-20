@@ -432,6 +432,8 @@ button:focus {
   z-index: 1;
 }
 
+
+
 .banner-area.banner-area-video .background-video {
   position: absolute;
   top: 0;
@@ -2771,7 +2773,7 @@ footer:before {
 
 /* Custom active state colors */
 .nav-link.custom-active {
-  color: #221e1e !important;
+  color:white !important;
   /* Darker shade of the navbar orange */
   font-weight: 600;
 }

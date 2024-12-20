@@ -696,13 +696,7 @@ const AlcoholBeverage = () => {
                 <strong>Art. No. {card.artNo}</strong>
               </p>
               <p className="mb-1">{card.description}</p>
-              <div>
-                <input
-                  type="radio"
-                  name="selectBottle"
-                  className="custom-radio me-2"
-                />
-              </div>
+              
             </div>
           </div>
         </div>

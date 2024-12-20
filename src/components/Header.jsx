@@ -219,6 +219,19 @@ const Header = () => {
                   </NavLink>
                 </li>
 
+                <li className="nav-item">
+                  <NavLink
+                    to="/alcoholbeverage"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "nav-link px-3 py-2 border-bottom custom-active"
+                        : "nav-link px-3 py-2 border-bottom"
+                    }
+                  >
+                    Catalogue
+                  </NavLink>
+                </li>
+
                 {/* Product List Dropdown */}
                 <li className="nav-item">
                 <div
@@ -229,7 +242,7 @@ const Header = () => {
         scrollToSection("our-products"); // Updated to use the new function
     }}
 >
-    <span>Catalogue</span>
+    <span>Products</span>
     <i
         className={`fa-solid ${
             mobileDropdowns.products
@@ -276,15 +289,7 @@ const Header = () => {
                           </div>
                         </Link>
 
-                        <Link
-                          to="/alcoholbeverage"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Alcohol Beverage</span>
-                          </div>
-                        </Link>
+                        
 
                         <Link
                           to="/beer-bottles"
@@ -699,14 +704,25 @@ const Header = () => {
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav">
-                  <li className="nav-item">
+                  <li className="nav-item ">
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active" : "nav-link"
+                        isActive ? "nav-link active custom-active text-white" : "nav-link text-white"
                       }
                     >
                       Home
+                    </NavLink>
+                  </li>
+
+                  <li className="nav-item">
+                    <NavLink
+                      to="/alcoholbeverage"
+                      className={({ isActive }) =>
+                        isActive ? "nav-link active custom-active text-white" : "nav-link text-white"
+                      }
+                    >
+                      Catalogue
                     </NavLink>
                   </li>
 
@@ -720,7 +736,7 @@ const Header = () => {
       document.getElementById("our-products").scrollIntoView({ behavior: 'smooth' });
     }}
   >
-    Catalogue <i className="fa-solid fa-chevron-down" />
+    Products <i className="fa-solid fa-chevron-down" />
   </a>
                     <ul className="dropdown-menu">
                       {/* Beverage Bottles Section */}
@@ -744,17 +760,7 @@ const Header = () => {
                               Wine Bottles
                             </NavLink>
                           </li>
-                          <li>
-                            <NavLink
-                              to="/alcoholbeverage"
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Alcohol Beverage
-                            </NavLink>
-                          </li>
+                         
                           <li>
                             <NavLink
                               to="/beer-bottles"
@@ -957,8 +963,8 @@ const Header = () => {
                           to="/industrial-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
+                              ? "nav-link custom-active text-white"
+                              : "nav-link text-white"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
@@ -970,8 +976,8 @@ const Header = () => {
                           to="/customizable-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
+                              ? "nav-link custom-active text-white"
+                              : "nav-link text-white"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
@@ -983,8 +989,8 @@ const Header = () => {
                           to="/premium-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
+                              ? "nav-link custom-active text-white"
+                              : "nav-link text-white"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
@@ -996,8 +1002,8 @@ const Header = () => {
                           to="/eco-friendly-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
+                              ? "nav-link custom-active text-white"
+                              : "nav-link text-white"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
