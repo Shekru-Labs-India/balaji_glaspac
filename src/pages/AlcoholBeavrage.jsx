@@ -668,7 +668,7 @@ const AlcoholBeverage = () => {
 
      
 
-      <div className="row">
+      <div className="row mb-3">
     
         
 
