@@ -239,35 +239,34 @@ const Home = () => {
       <Header style={{ position: "fixed", width: "100%", zIndex: 1 }} />
       {/* Banner */}
       <div className="position-relative w-100 vh-100 overflow-hidden">
-      {/* Video */}
-      <video
-        loop
-        muted
-        autoPlay
-        playsInline
-        className="position-absolute w-100 h-100"
-        style={{ objectFit: "cover", zIndex: -1 }}
-      >
-        <source src={video1} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        {/* Video */}
+        <video
+          loop
+          muted
+          autoPlay
+          playsInline
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ objectFit: "cover", zIndex: -1 }}
+        >
+          <source src={video1} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      {/* Overlay Content */}
-      <div className="position-absolute top-50 start-50 translate-middle text-center text-white">
-        <h1 className="fw-bold">
-          Our Products To Help Customers Work Faster, Smarter & Efficiently
-        </h1>
-        <p>
-          At Balaji Glaspac, we combine traditional glass-making expertise with
-          modern manufacturing technologies. Our state-of-the-art facilities
-          and skilled workforce ensure the highest quality standards while
-          maintaining efficient production processes and environmental
-          responsibility.
-        </p>
+        {/* Overlay Content */}
+        <div className="position-absolute top-50 start-50 translate-middle text-center text-white">
+          <h1 className="fw-bold">
+            Our Products To Help Customers Work Faster, Smarter & Efficiently
+          </h1>
+          <p>
+            At Balaji Glaspac, we combine traditional glass-making expertise with
+            modern manufacturing technologies. Our state-of-the-art facilities
+            and skilled workforce ensure the highest quality standards while
+            maintaining efficient production processes and environmental
+            responsibility.
+          </p>
+        </div>
       </div>
-    </div>
 
-          
       {/* End Banner */}
       {/* About */}
       <section className="about-area">
