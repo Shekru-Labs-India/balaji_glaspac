@@ -1017,7 +1017,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="col-lg-6">
-                    <img className="rounded-4" src="http://localhost:3000/balaji_glaspac/static/media/img2.13933111c57a85f7fcc7.jpg" alt="" />
+                    <img className="rounded-4" src="http://localhost:3000/balaji_glaspac/static/media/img2.13933111c57a85f7fcc7.jpg" alt="" style={{ maxWidth: "100%", height: "auto" }} />
                   </div>
                 </div>
               </div>
