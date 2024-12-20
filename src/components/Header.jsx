@@ -708,7 +708,7 @@ const Header = () => {
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active text-white" : "nav-link text-white"
+                        isActive ? "nav-link active custom-active " : "nav-link "
                       }
                     >
                       Home
@@ -719,7 +719,7 @@ const Header = () => {
                     <NavLink
                       to="/alcoholbeverage"
                       className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active text-white" : "nav-link text-white"
+                        isActive ? "nav-link active custom-active " : "nav-link "
                       }
                     >
                       Catalogue
@@ -963,8 +963,8 @@ const Header = () => {
                           to="/industrial-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active text-white"
-                              : "nav-link text-white"
+                              ? "nav-link custom-active "
+                              : "nav-link text-dark"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
@@ -976,8 +976,8 @@ const Header = () => {
                           to="/customizable-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active text-white"
-                              : "nav-link text-white"
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
@@ -989,8 +989,8 @@ const Header = () => {
                           to="/premium-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active text-white"
-                              : "nav-link text-white"
+                              ? "nav-link custom-active"
+                              : "nav-link text-dark"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />
@@ -1002,8 +1002,8 @@ const Header = () => {
                           to="/eco-friendly-bottles"
                           className={({ isActive }) =>
                             isActive
-                              ? "nav-link custom-active text-white"
-                              : "nav-link text-white"
+                              ? "nav-link custom-active "
+                              : "nav-link text-dark"
                           }
                         >
                           <i className="fa-solid fa-arrow-right me-2" />

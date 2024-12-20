@@ -830,42 +830,40 @@ const Home = () => {
         <div className="container">
           <div className="benefit-content">
             <div className="section-title">
+              <p>DELIVERING INNOVATION</p>
               <h2>
-                Get Benefits of Using Latest Artificial Intelligence
-                Technologies.
+              Sustainability
+              goals
               </h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
+            We are an integrated container glass manufacturer comprised of agile and experienced engineers .
             </p>
             <div className="row">
               <div className="col-sm-6 col-lg-6">
                 <div className="benefit-inner">
-                  <i className="fa-solid fa-bullseye" />
-                  <h4>Complete Technology Partner</h4>
+                <i className="fa-solid fa-seedling"></i>
+                  <h4>Environment</h4>
                 </div>
               </div>
               <div className="col-sm-6 col-lg-6">
                 <div className="benefit-inner">
-                  <i className="fa-solid fa-users" />
-                  <h4>Backed By 100% Customer References</h4>
+                <i className="fa-solid fa-shield" />
+                  <h4>Health & Safety</h4>
                 </div>
               </div>
               <div className="col-sm-6 col-lg-6">
                 <div className="benefit-inner">
                   <i className="fa-solid fa-shield" />
-                  <h4>Fast, Scalable, &amp; Reliable</h4>
+                  <h4>Integrity</h4>
                 </div>
               </div>
-              <div className="col-sm-6 col-lg-6">
+              {/* <div className="col-sm-6 col-lg-6">
                 <div className="benefit-inner">
                   <i className="fa-solid fa-microchip" />
                   <h4>The Emerging Tech Exparts</h4>
                 </div>
-              </div>
+              </div> */}
             </div>
             <Link to="/about" className="cmn-btn">
               Know Details
