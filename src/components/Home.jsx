@@ -848,7 +848,7 @@ const Home = () => {
               </div>
               <div className="col-sm-6 col-lg-6">
                 <div className="benefit-inner">
-                <i className="fa-solid fa-shield" />
+                <i className="fa-solid fa-hand-holding-heart"></i>
                   <h4>Health & Safety</h4>
                 </div>
               </div>

@@ -34,6 +34,13 @@ import InHouseDesign from "./pages/InHouseDesign";
 import PackagingOptions from "./pages/PackagingOptions";
 import MouldShop from "./pages/MouldShop";
 import ColoringForehearth from "./pages/ColoringForehearth";
+import All from "./pages/All";
+import Wine from "./pages/Wine";
+import SpiritsCatalogue from "./pages/SpiritsCatalogue";
+import SparklingWine from "./pages/SparklingWine";
+import SoftDrinksMineralWater from "./pages/SoftDrinksMineralWater";
+import FruitJuices from "./pages/FruitJuices";
+import Food from "./pages/Food";
 
 
 
@@ -81,9 +88,13 @@ function App() {
         <Route path="/packagingoptions" element={<PackagingOptions />} />
         <Route path="/mouldshop" element={<MouldShop />} />
         <Route path="/coloring" element={<ColoringForehearth />} />
-
-
-
+        <Route path="/all" element={<All />} />
+        <Route path="/wine" element={<Wine />} />
+        <Route path="/spiritscatalogue" element={<SpiritsCatalogue />} />
+        <Route path="/sparklingwine" element={<SparklingWine />} />
+        <Route path="/softdrink" element={<SoftDrinksMineralWater />} />
+        <Route path="/fruitjuices" element={<FruitJuices />} />
+        <Route path="/food" element={<Food />} />
        
 
       </Routes>
