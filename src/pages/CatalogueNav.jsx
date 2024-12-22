@@ -7,7 +7,7 @@ const CatalogueNav = () => {
    <>
  
 
-<div className="container my-3">
+<div className="container mb-5">
   <div className="row justify-content-center">
     <div className="col-auto">
       <ul className="nav">
