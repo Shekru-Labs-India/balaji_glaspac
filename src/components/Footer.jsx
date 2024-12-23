@@ -129,13 +129,13 @@ const Footer = () => {
     <div className="footer-touch">
       <h3>Get In Touch</h3>
       <ul className="list-unstyled">
-        <li className="d-flex align-items-center mb-3">
+        <li className="d-flex align-items-start mb-3">
           <i className="fa-solid fa-phone me-2"></i>
           <div>
             <h4 className="mb-1">Phone</h4>
-            <a  className="text-decoration-none d-block">
-              +91 2532507474
-            </a>
+            <h6 className="text-decoration-none d-block" style={{ color: '#cdcccc', whiteSpace: 'nowrap' }}>
+              +91 253 2507474
+            </h6>
           </div>
         </li>
         <li className="d-flex align-items-center mb-3">
@@ -150,18 +150,22 @@ const Footer = () => {
             </a>
           </div>
         </li>
-        <li className="d-flex align-items-start">
-          <i className="fa-solid fa-location-dot me-2"></i>
-          <div>
-            <h4 className="mb-1">Address</h4>
-            <span className="address-text">
-              Head Office – Office No. 05,<br /> 1st Floor,
-              Nivrutti Complex,<br /> Near Tractor House,
-              New Mumbai-Agra Road,<br /> Dwarka,
-              Nashik – 422011. Maharashtra.
-            </span>
-          </div>
-        </li>
+        <li className="d-flex align-items-center">
+  <i className="fa-solid fa-location-dot me-2"></i>
+  <div className="address-container">
+    <h4 className="mb-1">Address</h4>
+    <h6 className="address-text">
+      Head Office – Office No. 05,
+      1st Floor, Nivrutti Complex,
+      Near Tractor House,
+      New Mumbai-Agra Road,
+      Dwarka,<br />
+      Nashik – 422011.Maharashtra.
+    </h6>
+  </div>
+</li>
+
+
       </ul>
     </div>
   </div>

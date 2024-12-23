@@ -2838,3 +2838,21 @@ footer:before {
 .banner-area {
   margin-top: 60px; /* Adjust this value based on your header height */
 }
+
+.address-container {
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
+
+.address-text {
+  color: #cdcccc;
+  white-space: pre-line; /* Ensures line breaks are respected */
+  word-wrap: break-word; /* Ensures long words break if necessary */
+  font-size: 0.9rem; /* Adjust font size for better readability */
+  line-height: 1.4; /* Increases readability with proper spacing */
+}
+
+@media (max-width: 576px) {
+  .address-text {
+    font-size: 0.7rem; /* Further reduce font size for smaller screens */
+  }
+}
