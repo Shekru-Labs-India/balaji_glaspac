@@ -1296,6 +1296,10 @@ const FoodJars = () => {
    
       <div className="container-fluid mt-4"  >
 
+      <h2 className="text-center fw-bold mb-5">
+                    Our Food Jars Collection
+                  </h2>
+
       <div className="container-fluid  mb-5">
 <div className="row align-items-center " style={{ marginTop: "50px" }}>
 {/* Search field on the left */}

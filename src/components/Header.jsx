@@ -320,15 +320,7 @@ const Header = () => {
                             <span>Spirits Bottles</span>
                           </div>
                         </Link>
-                        <Link
-                          to="/champagne-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Champagne Bottles</span>
-                          </div>
-                        </Link>
+                        
                         <Link
                           to="/water-bottles"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -345,6 +337,15 @@ const Header = () => {
                           <div className="d-flex align-items-center">
                             <i className="fa-solid fa-arrow-right me-2" />
                             <span>Juice and Soda Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/champagne-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Champagne Bottles</span>
                           </div>
                         </Link>
                         <Link
@@ -805,17 +806,7 @@ const Header = () => {
                               Spirits Bottles
                             </NavLink>
                           </li>
-                          <li>
-                            <NavLink
-                              to="/champagne-bottles"
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Champagne Bottles
-                            </NavLink>
-                          </li>
+                         
                           <li>
                             <NavLink
                               to="/water-bottles"
@@ -836,6 +827,17 @@ const Header = () => {
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Juice and Soda Bottles
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink
+                              to="/champagne-bottles"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                              Champagne Bottles
                             </NavLink>
                           </li>
                           <li>
