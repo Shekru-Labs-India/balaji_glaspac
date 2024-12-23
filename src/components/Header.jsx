@@ -219,7 +219,7 @@ const Header = () => {
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <NavLink
                     to="/alcoholbeverage"
                     className={({ isActive }) =>
@@ -230,7 +230,7 @@ const Header = () => {
                   >
                     Catalogue
                   </NavLink>
-                </li>
+                </li> */}
 
                 {/* Product List Dropdown */}
                 <li className="nav-item">
@@ -290,6 +290,16 @@ const Header = () => {
                         </Link>
 
                         
+                        <Link
+                          to="/sparklingwinenew"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Sparkling Wine</span>
+                          </div>
+                        </Link>
+
 
                         <Link
                           to="/beer-bottles"
@@ -715,7 +725,7 @@ const Header = () => {
                     </NavLink>
                   </li>
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <NavLink
                       to="/all"
                       className={({ isActive }) =>
@@ -724,7 +734,7 @@ const Header = () => {
                     >
                       Catalogue
                     </NavLink>
-                  </li>
+                  </li> */}
 
                   <li className="nav-item">
                   <a
@@ -758,6 +768,18 @@ const Header = () => {
                             >
                               <i className="fa-solid fa-arrow-right me-2" />
                               Wine Bottles
+                            </NavLink>
+                          </li>
+
+                          <li>
+                            <NavLink
+                              to="/sparklingwinenew"
+                              className={({ isActive }) =>
+                                isActive ? "nav-link custom-active" : "nav-link"
+                              }
+                            >
+                              <i className="fa-solid fa-arrow-right me-2" />
+                               Sparkling Wine
                             </NavLink>
                           </li>
                          

@@ -41,6 +41,7 @@ import SparklingWine from "./pages/SparklingWine";
 import SoftDrinksMineralWater from "./pages/SoftDrinksMineralWater";
 import FruitJuices from "./pages/FruitJuices";
 import Food from "./pages/Food";
+import SparklingWineNew from "./pages/SparklingWineNew";
 
 
 
@@ -56,7 +57,7 @@ function App() {
         <Route path="/spirits-bottles" element={<SpiritsBottles />} />
         <Route path="/champagne-bottles" element={<ChampagneBottles />} />
         <Route path="/water-bottles" element={<WaterBottles />} />
-        <Route path="/juice-soda-bottles" element={<JuiceSodaBottles />} />
+        <Route path="/juice-and-soda-bottles" element={<JuiceSodaBottles />} />
         <Route
           path="/specialty-drink-bottles"
           element={<SpecialtyDrinkBottles />}
@@ -95,6 +96,7 @@ function App() {
         <Route path="/softdrink" element={<SoftDrinksMineralWater />} />
         <Route path="/fruitjuices" element={<FruitJuices />} />
         <Route path="/food" element={<Food />} />
+        <Route path="/sparklingwinenew" element={<SparklingWineNew />} />
        
 
       </Routes>
