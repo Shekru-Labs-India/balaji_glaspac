@@ -73,7 +73,7 @@ const Header = () => {
       <div className="header-top-area">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-8 mb-2">
               <div className="header-top-item">
                 <div className="header-left">
                   <ul>
@@ -89,7 +89,7 @@ const Header = () => {
                       </a>
                     </li>
                     <li>
-                      <i className="flaticon-phone" />
+                      <i className="flaticon-phone " />
                       <a href="tel:882658506">+91 253 2507474</a>
                     </li>
                   </ul>

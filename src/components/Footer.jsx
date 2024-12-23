@@ -123,36 +123,51 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+           
             <div className="col-6 col-lg-3">
-              <div className="footer-item">
-                <div className="footer-touch">
-                  <h3>Get In Touch</h3>
-                  <ul>
-                    <li>
-                      <i className="fa-solid fa-phone" />
-                      <h4>Phone</h4>
-                      <a href="tel:+912532507474">+91 253 2507474</a>
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-envelope" />
-                      <h4>Email</h4>
-                      <a href="mailto:info@balajiglaspac.com">
-                        info@balajiglaspac.com
-                      </a>
-                    </li>
-                    <li>
-                      <i className="fa-solid fa-location-dot" />
-                      <h4>Address</h4>
-                      <span>
-                        Head Office – Office No. 05 , 1st Floor, Nivrutti
-                        Complex, Near Tractor House, New Mumbai-Agra Road,
-                        Dwarka, Nashik – 422011. Maharashtra.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+  <div className="footer-item">
+    <div className="footer-touch">
+      <h3>Get In Touch</h3>
+      <ul className="list-unstyled">
+        <li className="d-flex align-items-center mb-3">
+          <i className="fa-solid fa-phone me-2"></i>
+          <div>
+            <h4 className="mb-1">Phone</h4>
+            <a  className="text-decoration-none d-block">
+              +91 2532507474
+            </a>
+          </div>
+        </li>
+        <li className="d-flex align-items-center mb-3">
+          <i className="fa-solid fa-envelope me-2"></i>
+          <div>
+            <h4 className="mb-1">Email</h4>
+            <a
+              href="mailto:info@balajiglaspac.com"
+              className="text-decoration-none d-block"
+            >
+              info@balajiglaspac.com
+            </a>
+          </div>
+        </li>
+        <li className="d-flex align-items-start">
+          <i className="fa-solid fa-location-dot me-2"></i>
+          <div>
+            <h4 className="mb-1">Address</h4>
+            <span className="address-text">
+              Head Office – Office No. 05,<br /> 1st Floor,
+              Nivrutti Complex,<br /> Near Tractor House,
+              New Mumbai-Agra Road,<br /> Dwarka,
+              Nashik – 422011. Maharashtra.
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
           </div>
         </div>
       </footer>
