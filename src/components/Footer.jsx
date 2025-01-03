@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/img/balaji_glaspac.png";
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
