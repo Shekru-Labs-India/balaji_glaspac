@@ -691,22 +691,22 @@ const Header = () => {
 
         {/* Desktop Device */}
         <div className="main-nav">
-          <div className="container">
+          <div className="container ms-4">
             <nav className="navbar navbar-expand-md navbar-light">
               <a className="navbar-brand" href="index.html">
                 <div className="d-flex align-items-center">
                   <img
                     src={logo}
-                    width={50}
+                    width={60}
                     height="auto"
                     alt="Logo"
                     className="rounded-4"
                   />
-                  <div className="d-flex flex-column ms-2">
-                    <h5 className="mb-0 fw-bold text-dark">
+                  <div className="d-flex flex-column ms-3">
+                    <h4 className="mb-0 fw-bold text-dark">
                       BALAJI <br />
                       GLASPAC
-                    </h5>
+                    </h4>
                   </div>
                 </div>
               </a>

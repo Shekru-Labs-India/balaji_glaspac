@@ -223,7 +223,7 @@ button:focus {
 .navbar-area .main-nav {
   background-color: #fa5f0b;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   transition: 0.5s all ease;
 }
 
@@ -234,7 +234,7 @@ button:focus {
   top: 0;
   bottom: 39px;
   height: 100%;
-  width: 29%;
+  width: 25%;
   border-left: 0px solid transparent;
   border-top: 90px solid #fff;
   border-right: 130px solid transparent;
