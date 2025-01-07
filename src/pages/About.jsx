@@ -9,7 +9,7 @@ function About() {
     <div className="about-wrapper">
       <Header />
 
-      {/* About Section */}
+      {/* About Section  start*/}
       <section className="about-area ptb-100">
         <div className="container">
           <div className="row align-items-center">
@@ -72,7 +72,7 @@ function About() {
         </div>
       </section>
 
-      {/* Job Section */}
+      {/* Job Section start */}
       <div className="job-area job-area-two job-area-three">
         <div className="container-fluid">
           <div className="row m-0">

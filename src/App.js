@@ -65,10 +65,10 @@ function App() {
         <Route path="/food-jars" element={<FoodJars />} />
         <Route path="/oral-liquid-bottles" element={<OralLiquidBottles />} />
         <Route path="/dropper-bottles" element={<DropperBottles />} />
-        <Route path="/lotion-serum-bottles" element={<LotionSerumBottles />} />
-        <Route path="/vials-ampoules" element={<VialsAmpoules />} />
+        <Route path="/lotion-and-serum-bottles" element={<LotionSerumBottles />} />
+        <Route path="/vials-and-ampoules" element={<VialsAmpoules />} />
         <Route
-          path="/tablet-capsule-bottles"
+          path="/tablet-and-capsule-bottles"
           element={<TabletCapsuleBottles />}
         />
         <Route
@@ -97,6 +97,7 @@ function App() {
         <Route path="/fruitjuices" element={<FruitJuices />} />
         <Route path="/food" element={<Food />} />
         <Route path="/sparklingwinenew" element={<SparklingWineNew />} />
+
        
 
       </Routes>
