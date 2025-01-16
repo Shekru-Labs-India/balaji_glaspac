@@ -79,14 +79,14 @@ const Header = () => {
                   <ul>
                     <li>
                       <i className="flaticon-mail" />
-                      <a href="/cdn-cgi/l/email-protection#eb838e878784ab9984899f8288c5888486">
+                      <Link to="/cdn-cgi/l/email-protection#eb838e878784ab9984899f8288c5888486">
                         <span
                           className="__cf_email__"
                           data-cfemail="3b535e5757547b4954594f525815585456"
                         >
                           info@balajiglaspac.com
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <i className="flaticon-phone " />
@@ -101,33 +101,33 @@ const Header = () => {
                 <div className="header-right">
                   <ul>
                     <li>
-                      <a
-                        href="https://www.facebook.com/profile.php?id=61569130629576"
+                      <Link
+                        to="https://www.facebook.com/profile.php?id=61569130629576"
                         target="_blank"
                       >
                         <i className="fa-brands fa-facebook" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://x.com/balajiglaspac" target="_blank">
+                      <Link to="https://x.com/balajiglaspac" target="_blank">
                         <i className="fa-brands fa-x-twitter" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
+                      <Link
+                        to="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
                         target="_blank"
                       >
                         <i className="fa-brands fa-instagram" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
+                      <Link
+                        to="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
                         target="_blank"
                       >
                         <i className="fa-brands fa-linkedin" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -280,7 +280,7 @@ const Header = () => {
                         }`}
                       >
                         <Link
-                          to="/wine-bottles"
+                          to="/wine-bottles" 
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
                         >
                           <div className="d-flex align-items-center">
@@ -717,7 +717,7 @@ const Header = () => {
                 <ul className="navbar-nav">
                   <li className="nav-item ">
                     <NavLink
-                      to="/"
+                      to="/" onClick={() => window.scrollTo(0, 0)}
                       className={({ isActive }) =>
                         isActive ? "nav-link active custom-active " : "nav-link "
                       }
@@ -762,7 +762,7 @@ const Header = () => {
                         <ul className="dropdown-menu submenu">
                           <li>
                             <NavLink
-                              to="/wine-bottles"
+                              to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -774,7 +774,7 @@ const Header = () => {
 
                           <li>
                             <NavLink
-                              to="/sparklingwinenew"
+                              to="/sparklingwinenew" onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -786,7 +786,7 @@ const Header = () => {
                          
                           <li>
                             <NavLink
-                              to="/beer-bottles"
+                              to="/beer-bottles" onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -797,7 +797,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/spirits-bottles"
+                              to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -809,7 +809,7 @@ const Header = () => {
                          
                           <li>
                             <NavLink
-                              to="/water-bottles"
+                              to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -820,7 +820,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/juice-and-soda-bottles"
+                              to="/juice-and-soda-bottles"   onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -831,7 +831,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/champagne-bottles"
+                              to="/champagne-bottles"   onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -842,7 +842,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/specialty-drink-bottles"
+                              to="/specialty-drink-bottles"  onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -866,7 +866,7 @@ const Header = () => {
                         <ul className="dropdown-menu submenu">
                           <li>
                             <NavLink
-                              to="/food-jars"
+                              to="/food-jars" onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -890,7 +890,7 @@ const Header = () => {
                         <ul className="dropdown-menu submenu">
                           <li>
                             <NavLink
-                              to="/oral-liquid-bottles"
+                              to="/oral-liquid-bottles" onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -901,7 +901,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/dropper-bottles"
+                              to="/dropper-bottles"  onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -912,7 +912,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/vials-and-ampoules"
+                              to="/vials-and-ampoules" onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -923,7 +923,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/tablet-and-capsule-bottles"
+                              to="/tablet-and-capsule-bottles"  onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -934,7 +934,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/specialty-pharmaceutical-bottles"
+                              to="/specialty-pharmaceutical-bottles"  onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -958,7 +958,7 @@ const Header = () => {
                         <ul className="dropdown-menu submenu">
                           <li>
                             <NavLink
-                              to="/perfume-bottles"
+                              to="/perfume-bottles" onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -969,7 +969,7 @@ const Header = () => {
                           </li>
                           <li>
                             <NavLink
-                              to="/lotion-and-serum-bottles"
+                              to="/lotion-and-serum-bottles"  onClick={() => window.scrollTo(0, 0)}
                               className={({ isActive }) =>
                                 isActive ? "nav-link custom-active" : "nav-link"
                               }
@@ -984,7 +984,7 @@ const Header = () => {
                       {/* Other Categories */}
                       <li>
                         <NavLink
-                          to="/industrial-bottles"
+                          to="/industrial-bottles" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active "
@@ -997,7 +997,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/customizable-bottles"
+                          to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1010,7 +1010,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/premium-bottles"
+                          to="/premium-bottles" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1023,7 +1023,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/eco-friendly-bottles"
+                          to="/eco-friendly-bottles"  onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active "
@@ -1064,7 +1064,7 @@ const Header = () => {
                       
                       <li>
                         <NavLink
-                          to="/appliedceramic"
+                          to="/appliedceramic" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1077,7 +1077,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/coloring"
+                          to="/coloring" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1090,7 +1090,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/coating"
+                          to="/coating" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1103,7 +1103,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/packagingoptions"
+                          to="/packagingoptions" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1116,7 +1116,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/inhousedesign"
+                          to="/inhousedesign" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1129,7 +1129,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/mouldshop"
+                          to="/mouldshop" onClick={() => window.scrollTo(0, 0)}
                           className={({ isActive }) =>
                             isActive
                               ? "nav-link custom-active"
@@ -1148,7 +1148,7 @@ const Header = () => {
 
                   <li className="nav-item">
                     <NavLink
-                      to="/clients"
+                      to="/clients" onClick={() => window.scrollTo(0, 0)}
                       className={({ isActive }) =>
                         isActive ? "nav-link active custom-active" : "nav-link"
                       }
@@ -1159,7 +1159,7 @@ const Header = () => {
 
                   <li className="nav-item">
                     <NavLink
-                      to="/about"
+                      to="/about"  onClick={() => window.scrollTo(0, 0)}
                       className={({ isActive }) =>
                         isActive ? "nav-link active custom-active" : "nav-link"
                       }
@@ -1170,7 +1170,7 @@ const Header = () => {
 
                   <li className="nav-item">
                     <NavLink
-                      to="/contact"
+                      to="/contact"  onClick={() => window.scrollTo(0, 0)}
                       className={({ isActive }) =>
                         isActive ? "nav-link active custom-active" : "nav-link"
                       }

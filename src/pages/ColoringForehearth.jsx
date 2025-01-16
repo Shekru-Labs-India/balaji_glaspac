@@ -43,13 +43,13 @@ const ColoringForehearth = () => {
   <div className="container">
 
     <h3>
-    AGI glaspac is the only manufacturer to offer Forehearth coloured glass containers in India, giving customers the scale advantage to enter the market   
+    Balaji glaspac is the only manufacturer to offer Forehearth coloured glass containers in India, giving customers the scale advantage to enter the market   
     </h3>
     {/* Row 1: Left Paragraph, Right Image */}
     <div className="row align-items-center mb-5">
       <div className="col-md-6">
         <p>
-        The AGI’s colouring Forehearth is a favourable method for the production of coloured glass without having to change the colour in the entire furnace. The advantages are having two colours simultaneously and the possibility of a temporary colouring process.
+        The Balaji glaspac colouring Forehearth is a favourable method for the production of coloured glass without having to change the colour in the entire furnace. The advantages are having two colours simultaneously and the possibility of a temporary colouring process.
         </p>
         <p>
         The colour Forehearth technology is very flexible allowing the full range of products in a wide range of colours including container, tableware and cosmetic containers.
@@ -103,13 +103,13 @@ const ColoringForehearth = () => {
                   </li>
         </ul>          
         <p>
-        For the heating and dosing zone, AGI provides an accurate working weighing system to feed the exact quantity of colouring agents onto the glass surface. The subsequent stirrer zone is equipped with several benches of stirrer units to mix the colouring agent with the basic flint glass.
+        For the heating and dosing zone, Balaji glaspac provides an accurate working weighing system to feed the exact quantity of colouring agents onto the glass surface. The subsequent stirrer zone is equipped with several benches of stirrer units to mix the colouring agent with the basic flint glass.
         </p>
         <p>
-        Most important at colouring Forehearths is a stable gas/air mixture heating system in order not to influence the colour especially for colours in reduced atmosphere. Therefore AGI provides the precise mixing CORA system. In addition, a lambda control can be installed to regulate the actual oxygen content in the gas/air mixture.
+        Most important at colouring Forehearths is a stable gas/air mixture heating system in order not to influence the colour especially for colours in reduced atmosphere. Therefore Balaji glaspac provides the precise mixing CORA system. In addition, a lambda control can be installed to regulate the actual oxygen content in the gas/air mixture.
         </p>
         <p>
-        AGI’s colouring Forehearth systems are applied in several glass industries such as container glass, tableware or sheet glass production.
+        Balaji glaspac colouring Forehearth systems are applied in several glass industries such as container glass, tableware or sheet glass production.
         </p>
       </div>
       <div className="col-md-6 text-center">

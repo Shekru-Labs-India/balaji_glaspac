@@ -67,13 +67,13 @@ const AppliedCeramic = () => {
                 {/* Full-width Remaining Paragraph */}
                 <div className="col-12">
                     <p>
-                    AGI has the most modern and advanced screen printing facilities available in the country which involves the use of Strutz, Rosario, and Tecno.5 machines. These machines are state of the art machines and have the capability to print up to six different colors on a single bottle. Today, we can print more than 1.2 Mn plus bottles per day.
+                    Balaji Glaspac has the most modern and advanced screen printing facilities available in the country which involves the use of Strutz, Rosario, and Tecno.5 machines. These machines are state of the art machines and have the capability to print up to six different colors on a single bottle. Today, we can print more than 1.2 Mn plus bottles per day.
                     </p>
                     <p>
                     Our specially-adapted screen printing process lets you utilise a larger print area than paper labels, so you can dream big when it comes to creating striking graphics for your product. Think unusually shaped labels, multiple colours, graphics meant to be seen through transparent liquid or even designs that wrap right around the bottle.
                     </p>
                     <p>
-                    What better way to create a brand that leaps off the shelf? Screen printing is the ideal way to create practical, beautiful packaging solutions. At AGI, we have perfected the unique process of printing onto glass after bottling, which means you only print what you need now. This is great news for your cash flow, but also allows you the flexibility to change the label details as needed – without intrusive over-stickers.
+                    What better way to create a brand that leaps off the shelf? Screen printing is the ideal way to create practical, beautiful packaging solutions. At Balaji Glaspac, we have perfected the unique process of printing onto glass after bottling, which means you only print what you need now. This is great news for your cash flow, but also allows you the flexibility to change the label details as needed – without intrusive over-stickers.
                     </p>
                 </div>
             </div>

@@ -46,9 +46,9 @@ const MouldShop = () => {
                        
                        <div className="about-content">
                          <p>
-                         AGI glaspac assist customers to bring an idea/concept to reality.
+                         Balaji glaspac assist customers to bring an idea/concept to reality.
                           Right from the beginning our design team aims to ensure that the technical quality of the container, as well as the aesthetic requirement is of high standard. 
-                          AGI work with the customer, design agency and glass manufacturer whichever is relevant for the particular assignment following the 5 steps:
+                          Balaji glaspac work with the customer, design agency and glass manufacturer whichever is relevant for the particular assignment following the 5 steps:
                          </p>
                         
                          
@@ -63,12 +63,12 @@ const MouldShop = () => {
                          <p>
                          Mould design: With the container specification clarified the mould manufacturing drawings can be produced for any machine type and process (BB, NNPB, PB). 
                          The design can be made around existing equipment (interchangeable parts, machine set-ups…) or for complete new set-ups.
-                          Either way AGI will work closely with the glass manufacturer considering the machine/equipment base. 
+                          Either way Balaji glaspac will work closely with the glass manufacturer considering the machine/equipment base. 
                          During this design process a list of required accessories will be produced.
                         </p>
                         <p>
-                        Brand identifying engraving or logo will be considered during the concept, AGI understand that the image of the container is of paramount importance as it is representing the brand on a shelf. 
-                        AGI produce container and mould designs for the Blow & Blow (BB), Light Weight Blow & Blow (LWBB), Press & Blow (PB) and Narrow Neck Press & Blow (NNPB) forming processes.
+                        Brand identifying engraving or logo will be considered during the concept, Balaji glaspac understand that the image of the container is of paramount importance as it is representing the brand on a shelf. 
+                        Balaji glaspac produce container and mould designs for the Blow & Blow (BB), Light Weight Blow & Blow (LWBB), Press & Blow (PB) and Narrow Neck Press & Blow (NNPB) forming processes.
                         </p>
                         <p>
                         We have the facility to manage the design process from cradle to grave (initial concept through to the product being on the retailer’s shelf). 

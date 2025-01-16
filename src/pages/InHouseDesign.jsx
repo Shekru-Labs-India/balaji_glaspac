@@ -51,7 +51,7 @@ const InHouseDesign = () => {
                          We work with our customers to develop custom glass packaging that embodies their product idea and marketing strategy in three ways: in its look, feel and materials. Good design gives a product a clear identity and positions it strategically in the market.
                          </p>
                          <p>
-                         The work by the department targets the end-user and involves industrial design, graphic design, and lid and cap technologies, making the AGI glaspac an important solution partner at the design phase for customers seeking innovation. The innovative and creative glass packaging designs, which are the fruit of the work done jointly by a group of industrial designers, engineers, and technical experts as well as the extensive experience of the Group in this area, have won many awards at the national and international level.
+                         The work by the department targets the end-user and involves industrial design, graphic design, and lid and cap technologies, making the Balaji glaspac an important solution partner at the design phase for customers seeking innovation. The innovative and creative glass packaging designs, which are the fruit of the work done jointly by a group of industrial designers, engineers, and technical experts as well as the extensive experience of the Group in this area, have won many awards at the national and international level.
                          </p>
                          
                          

@@ -43,7 +43,7 @@ const PackagingOptions = () => {
                         
                         <div className="about-content">
                           <p>
-                          AGI has an exclusive and specialized in-house design team which ensures that the customers are provided various packaging options to choose from. They are provided with complete support – right from the initial concept stage to the final stage. We use state-of-the-art technology that uses the most modern methods for ensuring proper packaging without damaging the bottles.
+                          Balaji glaspac has an exclusive and specialized in-house design team which ensures that the customers are provided various packaging options to choose from. They are provided with complete support – right from the initial concept stage to the final stage. We use state-of-the-art technology that uses the most modern methods for ensuring proper packaging without damaging the bottles.
 Since ancient times, glass has proved to be a great packaging option for the beverage industry, and it remains true today. Glass bottles provide excellent uses for the food and beverage industry by maintaining the quality of their contents and protecting the product from external factors.
                           </p>
                         
@@ -52,26 +52,26 @@ Since ancient times, glass has proved to be a great packaging option for the bev
                         </p>
 
                           <p>
-                          That’s why AGI is fully equipped to handle every packaging decoration needs including:
+                          That’s why Balaji glaspac is fully equipped to handle every packaging decoration needs including:
                           </p>
                           <ul>
                       <li>
-                        <i className="fa-solid fa-check" />
+                        
                         Labels: Heat Transfer, In-Mold, Pressure-Sensitive
                       </li>
                       <li>
-                        <i className="fa-solid fa-check" />
+                       
                         Shrink Sleeves
                       </li>
                       <li>
-                        <i className="fa-solid fa-check" />
+                        
                         Shrink Bands
                       </li>
                       <li>
-                        <i className="fa-solid fa-check" />
+                        
                         Printing: Silk Screening, Hot Stamp, Offset
 Wax
-AGI understands there is no cookie-cutter solutions that will make your packaging stand out from the crowd. Count on us to bring our experience and industry knowledge to your package decoration needs
+Balaji glaspac understands there is no cookie-cutter solutions that will make your packaging stand out from the crowd. Count on us to bring our experience and industry knowledge to your package decoration needs
                       </li>
                       
                       

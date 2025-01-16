@@ -50,33 +50,33 @@ const Footer = () => {
                   </p>
                   <ul>
                     <li>
-                      <a
-                        href="https://www.facebook.com/profile.php?id=61569130629576"
+                      <Link
+                        to="https://www.facebook.com/profile.php?id=61569130629576"
                         target="_blank"
                       >
                         <i className="fa-brands fa-facebook" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://x.com/balajiglaspac" target="_blank">
+                      <Link to="https://x.com/balajiglaspac" target="_blank">
                         <i className="fa-brands fa-x-twitter" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
+                      <Link
+                        to="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
                         target="_blank"
                       >
                         <i className="fa-brands fa-instagram" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
+                      <Link
+                        to="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
                         target="_blank"
                       >
                         <i className="fa-brands fa-linkedin" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -88,16 +88,16 @@ const Footer = () => {
                   <h3>Products</h3>
                   <ul>
                     <li>
-                      <Link to="/wine-bottles">Wine Bottles</Link>
+                      <Link to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}>Wine Bottles</Link>
                     </li>
                     <li>
-                      <Link to="/beer-bottles">Beer Bottles</Link>
+                      <Link to="/beer-bottles" onClick={() => window.scrollTo(0, 0)}>Beer Bottles</Link>
                     </li>
                     <li>
-                      <Link to="/spirits-bottles">Spirits Bottles</Link>
+                      <Link to="/spirits-bottles" onClick={() => window.scrollTo(0, 0)}>Spirits Bottles</Link>
                     </li>
                     <li>
-                      <Link to="/water-bottles">Water Bottles</Link>
+                      <Link to="/water-bottles" onClick={() => window.scrollTo(0, 0)}>Water Bottles</Link>
                     </li>
                   </ul>
                 </div>
@@ -109,16 +109,16 @@ const Footer = () => {
                   <h3>Quick Links</h3>
                   <ul>
                     <li>
-                      <Link to="/">Home</Link>
+                      <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link>
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link to="/about" onClick={() => window.scrollTo(0, 0)}>About</Link>
                     </li>
                     <li>
-                      <Link to="/clients">Clients</Link>
+                      <Link to="/clients" onClick={() => window.scrollTo(0, 0)}>Clients</Link>
                     </li>
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
                     </li>
                   </ul>
                 </div>
@@ -183,9 +183,9 @@ const Footer = () => {
             <div className="copyright-item d-flex justify-content-between align-items-center">
               <p>
                 Powered by{" "}
-                <a href="https://shekruweb.com/" target="_blank">
+                <Link to="https://shekruweb.com/" target="_blank">
                   Shekru Labs India Pvt Ltd
-                </a>
+                </Link>
               </p>
               <p>© 2024 Balaji Glaspac. All Rights Reserved.</p>
             </div>
