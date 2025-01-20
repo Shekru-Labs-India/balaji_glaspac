@@ -418,14 +418,14 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-wine-bottle" />
                 <h3>
-                  <Link to="/wine-bottles">Wine Bottles</Link>
+                  <Link to="/wine-bottles"  onClick={() => window.scrollTo(0, 0)}>Wine Bottles</Link>
                 </h3>
                 <p>
                   Premium glass bottles designed specifically for wine
                   packaging, featuring various sizes and styles to meet your
                   needs.
                 </p>
-                <Link className="service-link" to="/wine-bottles">
+                <Link className="service-link" to="/wine-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -438,13 +438,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-beer-mug-empty" />
                 <h3>
-                  <Link to="/beer-bottles">Beer Bottles</Link>
+                  <Link to="/beer-bottles"  onClick={() => window.scrollTo(0, 0)}>Beer Bottles</Link>
                 </h3>
                 <p>
                   Durable glass bottles perfect for beer packaging, available in
                   multiple colors and sizes for your brewing needs.
                 </p>
-                <Link className="service-link" to="/beer-bottles">
+                <Link className="service-link" to="/beer-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -457,13 +457,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-whiskey-glass" />
                 <h3>
-                  <Link to="/spirits-bottles">Spirits Bottles</Link>
+                  <Link to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}>Spirits Bottles</Link>
                 </h3>
                 <p>
                   Elegant glass bottles designed for spirits and liquors,
                   featuring premium finishes and distinctive designs.
                 </p>
-                <Link className="service-link" to="/spirits-bottles">
+                <Link className="service-link" to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -476,13 +476,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-champagne-glasses" />
                 <h3>
-                  <Link to="/champagne-bottles">Champagne Bottles</Link>
+                  <Link to="/champagne-bottles"  onClick={() => window.scrollTo(0, 0)}>Champagne Bottles</Link>
                 </h3>
                 <p>
                   Specialized bottles designed to withstand pressure, perfect
                   for champagne and sparkling wines.
                 </p>
-                <Link className="service-link" to="/champagne-bottles">
+                <Link className="service-link" to="/champagne-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -495,13 +495,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-bottle-water" />
                 <h3>
-                  <Link to="/water-bottles">Water Bottles</Link>
+                  <Link to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}>Water Bottles</Link>
                 </h3>
                 <p>
                   Crystal clear glass bottles for water packaging, available in
                   various sizes and designs for pure refreshment.
                 </p>
-                <Link className="service-link" to="/water-bottles">
+                <Link className="service-link" to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -514,13 +514,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-glass-water" />
                 <h3>
-                  <Link to="/juice-soda-bottles">Juice and Soda Bottles</Link>
+                  <Link to="/juice-soda-bottles"  onClick={() => window.scrollTo(0, 0)}>Juice and Soda Bottles</Link>
                 </h3>
                 <p>
                   Versatile bottles perfect for beverages, featuring various
                   neck finishes and closure options.
                 </p>
-                <Link className="service-link" to="/juice-soda-bottles">
+                <Link className="service-link" to="/juice-soda-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -533,7 +533,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-martini-glass" />
                 <h3>
-                  <Link to="/specialty-drink-bottles">
+                  <Link to="/specialty-drink-bottles"  onClick={() => window.scrollTo(0, 0)}>
                     Specialty Drink Bottles
                   </Link>
                 </h3>
@@ -541,7 +541,7 @@ const Home = () => {
                   Custom bottles for cold-pressed juices, kombucha, and other
                   specialty beverages with unique designs.
                 </p>
-                <Link className="service-link" to="/specialty-drink-bottles">
+                <Link className="service-link" to="/specialty-drink-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -554,13 +554,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-jar" />
                 <h3>
-                  <Link to="/food-jars">Food Jars</Link>
+                  <Link to="/food-jars"  onClick={() => window.scrollTo(0, 0)}>Food Jars</Link>
                 </h3>
                 <p>
                   Wide-mouth jars perfect for food packaging, preserves, and
                   condiments with secure sealing options.
                 </p>
-                <Link className="service-link" to="/food-jars">
+                <Link className="service-link" to="/food-jars"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -573,13 +573,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-prescription-bottle-medical" />
                 <h3>
-                  <Link to="/oral-liquid-bottles">Oral Liquid Bottles</Link>
+                  <Link to="/oral-liquid-bottles"  onClick={() => window.scrollTo(0, 0)}>Oral Liquid Bottles</Link>
                 </h3>
                 <p>
                   Pharmaceutical-grade bottles designed for oral medications and
                   supplements with precise dosing features.
                 </p>
-                <Link className="service-link" to="/oral-liquid-bottles">
+                <Link className="service-link" to="/oral-liquid-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -592,13 +592,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-eye-dropper" />
                 <h3>
-                  <Link to="/dropper-bottles">Dropper Bottles</Link>
+                  <Link to="/dropper-bottles"  onClick={() => window.scrollTo(0, 0)}>Dropper Bottles</Link>
                 </h3>
                 <p>
                   Precision dropper bottles for essential oils, serums, and
                   liquid medications with accurate dispensing.
                 </p>
-                <Link className="service-link" to="/dropper-bottles">
+                <Link className="service-link" to="/dropper-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -611,13 +611,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-vial" />
                 <h3>
-                  <Link to="/vials-ampoules">Vials and Ampoules</Link>
+                  <Link to="/vials-ampoules"  onClick={() => window.scrollTo(0, 0)}>Vials and Ampoules</Link>
                 </h3>
                 <p>
                   High-quality glass vials and ampoules for pharmaceutical and
                   laboratory applications with precise specifications.
                 </p>
-                <Link className="service-link" to="/vials-ampoules">
+                <Link className="service-link" to="/vials-ampoules"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -630,7 +630,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-pills" />
                 <h3>
-                  <Link to="/tablet-capsule-bottles">
+                  <Link to="/tablet-capsule-bottles"  onClick={() => window.scrollTo(0, 0)}>
                     Tablet and Capsule Bottles
                   </Link>
                 </h3>
@@ -638,7 +638,7 @@ const Home = () => {
                   Specialized bottles for tablets and capsules with
                   moisture-resistant properties and child-resistant caps.
                 </p>
-                <Link className="service-link" to="/tablet-capsule-bottles">
+                <Link className="service-link" to="/tablet-capsule-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -651,7 +651,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-prescription-bottle" />
                 <h3>
-                  <Link to="/specialty-pharmaceutical-bottles">
+                  <Link to="/specialty-pharmaceutical-bottles"  onClick={() => window.scrollTo(0, 0)}>
                     Specialty Pharmaceutical Bottles
                   </Link>
                 </h3>
@@ -661,7 +661,7 @@ const Home = () => {
                 </p>
                 <Link
                   className="service-link"
-                  to="/specialty-pharmaceutical-bottles"
+                  to="/specialty-pharmaceutical-bottles"  onClick={() => window.scrollTo(0, 0)}
                 >
                   Read More
                 </Link>
@@ -675,13 +675,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-spray-can-sparkles" />
                 <h3>
-                  <Link to="/perfume-bottles">Perfume Bottles</Link>
+                  <Link to="/perfume-bottles"  onClick={() => window.scrollTo(0, 0)}>Perfume Bottles</Link>
                 </h3>
                 <p>
                   Elegant and decorative bottles for fragrances, featuring
                   sophisticated designs and premium finishes.
                 </p>
-                <Link className="service-link" to="/perfume-bottles">
+                <Link className="service-link" to="/perfume-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -694,7 +694,7 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-pump-soap" />
                 <h3>
-                  <Link to="/lotion-serum-bottles">
+                  <Link to="/lotion-serum-bottles"  onClick={() => window.scrollTo(0, 0)}>
                     Lotion and Serum Bottles
                   </Link>
                 </h3>
@@ -702,7 +702,7 @@ const Home = () => {
                   Specialized bottles for cosmetic products with various pump
                   and dispenser options for optimal usage.
                 </p>
-                <Link className="service-link" to="/lotion-serum-bottles">
+                <Link className="service-link" to="/lotion-serum-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -715,13 +715,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-industry" />
                 <h3>
-                  <Link to="/industrial-bottles">Industrial Bottles</Link>
+                  <Link to="/industrial-bottles"  onClick={() => window.scrollTo(0, 0)}>Industrial Bottles</Link>
                 </h3>
                 <p>
                   Heavy-duty glass bottles designed for industrial chemicals and
                   solutions with safety features.
                 </p>
-                <Link className="service-link" to="/industrial-bottles">
+                <Link className="service-link" to="/industrial-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -734,13 +734,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-wand-magic-sparkles" />
                 <h3>
-                  <Link to="/customizable-bottles">Customizable Bottles</Link>
+                  <Link to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}>Customizable Bottles</Link>
                 </h3>
                 <p>
                   Bespoke bottle solutions with customizable shapes, colors, and
                   finishes to match your brand identity.
                 </p>
-                <Link className="service-link" to="/customizable-bottles">
+                <Link className="service-link" to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -753,13 +753,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-crown" />
                 <h3>
-                  <Link to="/premium-bottles">Premium Bottles</Link>
+                  <Link to="/premium-bottles"  onClick={() => window.scrollTo(0, 0)}>Premium Bottles</Link>
                 </h3>
                 <p>
                   Luxury glass bottles with superior quality and distinctive
                   designs for high-end products.
                 </p>
-                <Link className="service-link" to="/premium-bottles">
+                <Link className="service-link" to="/premium-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -772,13 +772,13 @@ const Home = () => {
                 <img src={service2} alt="Service" />
                 <i className="fa-solid fa-leaf" />
                 <h3>
-                  <Link to="/eco-friendly-bottles">Eco-Friendly Bottles</Link>
+                  <Link to="/eco-friendly-bottles"  onClick={() => window.scrollTo(0, 0)}>Eco-Friendly Bottles</Link>
                 </h3>
                 <p>
                   Sustainable glass bottles made with recycled materials and
                   eco-conscious manufacturing processes.
                 </p>
-                <Link className="service-link" to="/eco-friendly-bottles">
+                <Link className="service-link" to="/eco-friendly-bottles"  onClick={() => window.scrollTo(0, 0)}>
                   Read More
                 </Link>
               </div>
@@ -893,7 +893,7 @@ const Home = () => {
               </div>
               <div className="col-lg-6">
                 <div className="partner-btn">
-                  <Link to="/contact" className="cmn-btn">
+                  <Link to="/contact"  onClick={() => window.scrollTo(0, 0)} className="cmn-btn">
                     Contact Us
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
@@ -959,7 +959,7 @@ const Home = () => {
                   deliver quality that exceeds industry standards.
                 </p>
                 <Link
-                  to="/contact"
+                  to="/contact"  onClick={() => window.scrollTo(0, 0)}
                   className="cmn-btn px-4 text-white"
                   style={{ backgroundColor: "#fa5f0b" }}
                 >
