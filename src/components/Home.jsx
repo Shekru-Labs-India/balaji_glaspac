@@ -253,11 +253,16 @@ const Home = () => {
         </video>
 
         {/* Overlay Content */}
-        <div className="position-absolute top-50 start-50 translate-middle text-center text-white">
-          <h1 className="fw-bold">
+        <div className="position-absolute top-50 start-50 translate-middle text-center" style={{ 
+            backgroundColor: 'rgba(33, 37, 41, 0.3)', // bg-dark with 0.5 opacity
+            padding: '2rem',
+            width: '80%',
+            maxWidth: '1200px'
+          }}>
+          <h1 className="fw-bold text-white" style={{ opacity: 1 }}>
             Our Products To Help Customers Work Faster, Smarter & Efficiently
           </h1>
-          <p>
+          <p className="text-white fw-bold" style={{ opacity: 1 }}> 
             At Balaji Glaspac, we combine traditional glass-making expertise with
             modern manufacturing technologies. Our state-of-the-art facilities
             and skilled workforce ensure the highest quality standards while
@@ -403,7 +408,7 @@ const Home = () => {
       {/* Service */}
       <section className="service-area pt-100 pb-70">
       <div id="our-products">
-        <div className="container">
+        <div className="container-fluid">
           <div className="section-title">
             <span className="sub-title">Our Products</span>
             <h2>
@@ -412,7 +417,7 @@ const Home = () => {
           </div>
           <div className="row">
             {/* 1. Wine Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -432,7 +437,7 @@ const Home = () => {
             </div>
 
             {/* 2. Beer Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -451,7 +456,7 @@ const Home = () => {
             </div>
 
             {/* 3. Spirits Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -470,7 +475,7 @@ const Home = () => {
             </div>
 
             {/* 4. Champagne Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -489,7 +494,7 @@ const Home = () => {
             </div>
 
             {/* 5. Water Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -508,7 +513,7 @@ const Home = () => {
             </div>
 
             {/* 6. Juice and Soda Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -527,7 +532,7 @@ const Home = () => {
             </div>
 
             {/* 7. Specialty Drink Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -548,7 +553,7 @@ const Home = () => {
             </div>
 
             {/* 8. Food Jars */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -567,7 +572,7 @@ const Home = () => {
             </div>
 
             {/* 9. Oral Liquid Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -586,7 +591,7 @@ const Home = () => {
             </div>
 
             {/* 10. Dropper Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -605,7 +610,7 @@ const Home = () => {
             </div>
 
             {/* 11. Vials and Ampoules */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -624,7 +629,7 @@ const Home = () => {
             </div>
 
             {/* 12. Tablet and Capsule Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -645,7 +650,7 @@ const Home = () => {
             </div>
 
             {/* 13. Specialty Pharmaceutical Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -669,7 +674,7 @@ const Home = () => {
             </div>
 
             {/* 14. Perfume Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -688,7 +693,7 @@ const Home = () => {
             </div>
 
             {/* 15. Lotion and Serum Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -709,7 +714,7 @@ const Home = () => {
             </div>
 
             {/* 16. Industrial Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -728,7 +733,7 @@ const Home = () => {
             </div>
 
             {/* 17. Customizable Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -747,7 +752,7 @@ const Home = () => {
             </div>
 
             {/* 18. Premium Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -766,7 +771,7 @@ const Home = () => {
             </div>
 
             {/* 19. Eco-Friendly Bottles */}
-            <div className="col-sm-6 col-lg-4">
+            <div className="col-sm-6 col-lg-2">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -1004,7 +1009,7 @@ const Home = () => {
                       Customised Services: Unlike manufacturers focused solely on production, we offer personalised services such as flexible quantities, tailored packaging, and logistical support to meet your unique requirements.
                       </p>
                       <p>
-                      Cost Efficiency: We secure competitive pricing by leveraging our established relationships and bulk procurement capabilities, which can significantly reduce your business’s costs.
+                      Cost Efficiency: We secure competitive pricing by leveraging our established relationships and bulk procurement capabilities, which can significantly reduce your business's costs.
                       </p>
                       <p>
                       Streamlined Communication: With us, you benefit from a single point of contact for all your needs, eliminating the complexity of coordinating with multiple manufacturers.

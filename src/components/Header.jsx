@@ -69,74 +69,7 @@ const Header = () => {
 
   return (
     <>
-      {/* Header top */}
-      <div className="header-top-area">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mb-2">
-              <div className="header-top-item">
-                <div className="header-left">
-                  <ul>
-                    <li>
-                      <i className="flaticon-mail" />
-                      <Link to="/cdn-cgi/l/email-protection#eb838e878784ab9984899f8288c5888486">
-                        <span
-                          className="__cf_email__"
-                          data-cfemail="3b535e5757547b4954594f525815585456"
-                        >
-                          info@balajiglaspac.com
-                        </span>
-                      </Link>
-                    </li>
-                    <li>
-                      <i className="flaticon-phone " />
-                      <a href="tel:882658506">+91 253 2507474</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="header-top-item">
-                <div className="header-right">
-                  <ul>
-                    <li>
-                      <Link
-                        to="https://www.facebook.com/profile.php?id=61569130629576"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-facebook" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://x.com/balajiglaspac" target="_blank">
-                        <i className="fa-brands fa-x-twitter" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-instagram" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-linkedin" />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Header top */}
+     
       {/* Start Navbar Area */}
       <div
         className={`navbar-area sticky-top ${
@@ -219,18 +152,18 @@ const Header = () => {
                   </NavLink>
                 </li>
 
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <NavLink
-                    to="/alcoholbeverage"
+                    to="/about"
                     className={({ isActive }) =>
                       isActive
                         ? "nav-link px-3 py-2 border-bottom custom-active"
                         : "nav-link px-3 py-2 border-bottom"
                     }
                   >
-                    Catalogue
+                    About
                   </NavLink>
-                </li> */}
+                </li>
 
                 {/* Product List Dropdown */}
                 <li className="nav-item">
@@ -239,7 +172,7 @@ const Header = () => {
     onClick={(e) => {
         e.preventDefault();
         toggleMobileDropdown("products");
-        scrollToSection("our-products"); // Updated to use the new function
+        // scrollToSection("our-products"); // Updated to use the new function
     }}
 >
     <span>Products</span>
@@ -642,18 +575,7 @@ const Header = () => {
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
-                  <NavLink
-                    to="/about"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "nav-link px-3 py-2 border-bottom custom-active"
-                        : "nav-link px-3 py-2 border-bottom"
-                    }
-                  >
-                    About
-                  </NavLink>
-                </li>
+                
 
                 <li className="nav-item">
                   <NavLink
@@ -711,10 +633,10 @@ const Header = () => {
                 </div>
               </a>
               <div
-                className="collapse navbar-collapse mean-menu"
+                className="collapse navbar-collapse mean-menu "
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav">
+                <ul className="navbar-nav " style={{ paddingLeft: '120px' }}>
                   <li className="nav-item ">
                     <NavLink
                       to="/" onClick={() => window.scrollTo(0, 0)}
@@ -726,26 +648,26 @@ const Header = () => {
                     </NavLink>
                   </li>
 
-                  {/* <li className="nav-item">
+                  <li className="nav-item">
                     <NavLink
-                      to="/all"
+                      to="/about"  onClick={() => window.scrollTo(0, 0)}
                       className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active " : "nav-link "
+                        isActive ? "nav-link active custom-active" : "nav-link"
                       }
                     >
-                      Catalogue
+                      About
                     </NavLink>
-                  </li> */}
+                  </li>
 
                   <li className="nav-item">
                   <a
     href="#"
     className="nav-link dropdown-toggle"
-    onClick={(e) => {
-      e.preventDefault();
-      // Scroll to the target section
-      document.getElementById("our-products").scrollIntoView({ behavior: 'smooth' });
-    }}
+    // onClick={(e) => {
+    //   e.preventDefault();
+    //   // Scroll to the target section
+    //   document.getElementById("our-products").scrollIntoView({ behavior: 'smooth' });
+    // }}
   >
     Products <i className="fa-solid fa-chevron-down" />
   </a>
@@ -1157,16 +1079,7 @@ const Header = () => {
                     </NavLink>
                   </li>
 
-                  <li className="nav-item">
-                    <NavLink
-                      to="/about"  onClick={() => window.scrollTo(0, 0)}
-                      className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active" : "nav-link"
-                      }
-                    >
-                      About
-                    </NavLink>
-                  </li>
+                 
 
                   <li className="nav-item">
                     <NavLink
@@ -1178,7 +1091,42 @@ const Header = () => {
                       Contact
                     </NavLink>
                   </li>
+                  
                 </ul>
+                {/* Social Media Links on the Right */}
+        <div className="header-right ms-auto" >
+          <ul className="d-flex list-unstyled mb-0 " style={{ paddingLeft: '80px' }}>
+            <li className="mx-3">
+              <Link
+                to="https://www.facebook.com/profile.php?id=61569130629576"
+                target="_blank"
+              >
+                <i className="fa-brands fa-facebook fa-2x text-white" />
+              </Link>
+            </li>
+            <li className="mx-3">
+              <Link to="https://x.com/balajiglaspac" target="_blank">
+                <i className="fa-brands fa-x-twitter fa-2x text-white" />
+              </Link>
+            </li>
+            <li className="mx-3">
+              <Link
+                to="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
+                target="_blank"
+              >
+                <i className="fa-brands fa-instagram fa-2x text-white" />
+              </Link>
+            </li>
+            <li className="mx-3">
+              <Link
+                to="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin fa-2x text-white" />
+              </Link>
+            </li>
+          </ul>
+        </div>
               </div>
             </nav>
           </div>

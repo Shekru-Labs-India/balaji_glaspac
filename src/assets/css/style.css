@@ -2856,3 +2856,38 @@ footer:before {
     font-size: 0.7rem; /* Further reduce font size for smaller screens */
   }
 }
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #F15A22 !important; /* Match theme color */
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #D04C1A !important; /* Darker shade for active bullet */
+}
+
+/* Default order for desktop */
+.order-1, .order-2, .order-3, .order-4, .order-5 {
+  order: initial;
+}
+
+/* Mobile view ordering */
+@media screen and (max-width: 768px) {
+  .mobile-reorder {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-1 { order: 1; }  /* First row, first card */
+  .order-2 { order: 2; }  /* Second row, first card */
+  .order-3 { order: 3; }  /* First row, second card */
+  .order-4 { order: 4; }  /* Second row, second card */
+  .order-5 { order: 5; }  /* Third row cards */
+}
