@@ -116,7 +116,7 @@ const Contact = () => {
         <div className="card">
           <div className="card-body">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.845529368327!2d79.07917471461664!2d21.147872493496244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd57d85c71bb813%3A0x52d3d7db4c81e25d!2sSaurabh%20Apartment%2C%20A-6%2C%202nd%20Floor%2C%20R%20C%20Baxter%20Marg%2C%20New%20Colony%2C%20Nagpur-440001%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1688106193081!5m2!1sen!2sin&markers=color:red%7Clabel:%7C21.147872493496244,79.07917471461664"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.845529368327!2d79.07917471461664!3d21.147872493496244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd57d85c71bb813%3A0x52d3d7db4c81e25d!2sSaurabh%20Apartment%2C%20A-6%2C%202nd%20Floor%2C%20R%20C%20Baxter%20Marg%2C%20New%20Colony%2C%20Nagpur-440001%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1688106193081!5m2!1sen!2sin"
               width="100%"
               height="300"
               style={{ border: 0 }}
@@ -128,7 +128,7 @@ const Contact = () => {
       </div>
 
       {/* Email - Third row */}
-      <div className="grid-item item-5">
+      <div className="grid-item item-5 col-md-4">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">
@@ -140,7 +140,7 @@ const Contact = () => {
       </div>
 
       {/* Phone - Third row */}
-      <div className="grid-item item-5">
+      <div className="grid-item item-5 col-md-4">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">
