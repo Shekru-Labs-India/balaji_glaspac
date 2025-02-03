@@ -407,6 +407,33 @@ const Home = () => {
       {/* End About */}
       {/* Service */}
       <section className="service-area pt-100 pb-70">
+
+      <style>
+    {`
+      @media (min-width: 992px) {
+        .col-lg-custom {
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+      }
+      
+      /* For better mobile responsiveness */
+      @media (max-width: 991px) {
+        .col-sm-6 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+      
+      @media (max-width: 575px) {
+        .col-sm-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    `}
+  </style>
+
       <div id="our-products">
         <div className="container-fluid">
           <div className="section-title">
@@ -417,7 +444,7 @@ const Home = () => {
           </div>
           <div className="row">
             {/* 1. Wine Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -437,7 +464,7 @@ const Home = () => {
             </div>
 
             {/* 2. Beer Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -456,7 +483,7 @@ const Home = () => {
             </div>
 
             {/* 3. Spirits Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -475,7 +502,7 @@ const Home = () => {
             </div>
 
             {/* 4. Champagne Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -494,7 +521,7 @@ const Home = () => {
             </div>
 
             {/* 5. Water Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -513,7 +540,7 @@ const Home = () => {
             </div>
 
             {/* 6. Juice and Soda Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -532,7 +559,7 @@ const Home = () => {
             </div>
 
             {/* 7. Specialty Drink Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -553,7 +580,7 @@ const Home = () => {
             </div>
 
             {/* 8. Food Jars */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -572,7 +599,7 @@ const Home = () => {
             </div>
 
             {/* 9. Oral Liquid Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -591,7 +618,7 @@ const Home = () => {
             </div>
 
             {/* 10. Dropper Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -610,7 +637,7 @@ const Home = () => {
             </div>
 
             {/* 11. Vials and Ampoules */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -629,7 +656,7 @@ const Home = () => {
             </div>
 
             {/* 12. Tablet and Capsule Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -650,7 +677,7 @@ const Home = () => {
             </div>
 
             {/* 13. Specialty Pharmaceutical Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -674,7 +701,7 @@ const Home = () => {
             </div>
 
             {/* 14. Perfume Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -693,7 +720,7 @@ const Home = () => {
             </div>
 
             {/* 15. Lotion and Serum Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -714,7 +741,7 @@ const Home = () => {
             </div>
 
             {/* 16. Industrial Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -733,7 +760,7 @@ const Home = () => {
             </div>
 
             {/* 17. Customizable Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -752,7 +779,7 @@ const Home = () => {
             </div>
 
             {/* 18. Premium Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
@@ -771,7 +798,7 @@ const Home = () => {
             </div>
 
             {/* 19. Eco-Friendly Bottles */}
-            <div className="col-sm-6 col-lg-2">
+            <div className="col-sm-6 col-lg-custom">
               <div className="service-item">
                 <img src={service1} alt="Service" />
                 <img src={service2} alt="Service" />
