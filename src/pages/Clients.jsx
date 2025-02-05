@@ -96,15 +96,7 @@ const Clients = () => {
                   <strong>Our Valued Clients</strong>
                 </h5>
               </div>
-              <h1
-                style={{
-                  fontSize: "clamp(2rem, 5vw, 3.5rem)",
-                  color: "#F15A22",
-                }}
-                className="text-center"
-              >
-                Success Stories & Partnerships
-              </h1>
+              
             </div>
           </div>
         </div>
@@ -116,12 +108,37 @@ const Clients = () => {
   autoplay={{ delay: 2500 }}
   pagination={{ clickable: true, el: ".swiper-pagination" }}
   navigation
-  spaceBetween={20}
-  slidesPerView={5}
+  spaceBetween={30}
+  slidesPerView="auto"
   breakpoints={{
-    320: { slidesPerView: 2 }, // Show 2 logos per slide on small screens
-    768: { slidesPerView: 3 },
-    1024: { slidesPerView: 5 },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 25
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 25
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 30
+    },
+    1400: {
+      slidesPerView: 6,
+      spaceBetween: 30
+    },
+    1600: {
+      slidesPerView: 7,
+      spaceBetween: 30
+    }
   }}
 >
   {clientLogos.map((client) => (
@@ -132,24 +149,75 @@ const Clients = () => {
           alt={`${client.name} Logo`}
           className="img-fluid client-logo"
           style={{
-            width: "150px",
-            height: "150px",
+            width: "clamp(100px, 10vw, 150px)", // Responsive image size
+            height: "clamp(100px, 10vw, 150px)", // Responsive image size
             objectFit: "cover",
             borderRadius: "50%",
             border: "2px solid #e9ecef",
             padding: "10px",
             backgroundColor: "#fff",
             transition: "transform 0.3s ease",
+            margin: "auto"
           }}
         />
       </div>
     </SwiperSlide>
   ))}
+  
+  {/* Add custom navigation buttons if needed */}
+  <div className="swiper-button-prev"></div>
+  <div className="swiper-button-next"></div>
 </Swiper>
 
 {/* Pagination Dots */}
 <div className="swiper-pagination"></div>
 
+<style>
+  {`
+    /* Custom styles for better responsiveness */
+    .swiper {
+      padding: 20px 40px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #333;
+      background: rgba(255, 255, 255, 0.8);
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      &:after {
+        font-size: 18px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #333;
+      opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .swiper {
+        padding: 20px 30px;
+      }
+      
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+        &:after {
+          font-size: 16px;
+        }
+      }
+    }
+  `}
+</style>
 
 
       <Footer />

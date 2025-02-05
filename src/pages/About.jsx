@@ -196,67 +196,125 @@ function About() {
 
       {/* Services Section */}
       <section className="offer-area offer-area-three pb-100 pt-100">
-        <div className="container">
-          <div className="section-title">
-            <span className="sub-title">Services</span>
-            <h2>Services We Offer You From Our Company</h2>
-          </div>
-          <div className="row">
-            {[
-              {
-                icon: "fa-solid fa-flask",
-                title: "Pharmaceutical Packaging",
-                description:
-                  "Specialized glass containers for medicines, vaccines, and healthcare products with highest quality standards.",
-              },
-              {
-                icon: "fa-solid fa-wine-glass",
-                title: "Beverage Bottles",
-                description:
-                  "Premium glass bottles for wines, spirits, beer, and non-alcoholic beverages with custom designs.",
-              },
-              {
-                icon: "fa-solid fa-spray-can",
-                title: "Cosmetic Containers",
-                description:
-                  "Elegant glass packaging solutions for perfumes, lotions, and beauty products with aesthetic appeal.",
-              },
-              {
-                icon: "fa-solid fa-jar",
-                title: "Food Packaging",
-                description:
-                  "Food-grade glass jars and containers ensuring product freshness and safety with reliable sealing.",
-              },
-              {
-                icon: "fa-solid fa-recycle",
-                title: "Sustainable Solutions",
-                description:
-                  "Eco-friendly glass packaging options with recyclable materials and sustainable manufacturing processes.",
-              },
-              {
-                icon: "fa-solid fa-cog",
-                title: "Custom Engineering",
-                description:
-                  "Tailored glass packaging solutions with custom designs, sizes, and specifications for unique requirements.",
-              },
-            ].map((service, index) => (
-              <div key={index} className="col-lg-4 col-md-6">
-                <div className="offer-item">
-                  <div className="offer-top">
-                    <i className={service.icon}></i>
-                  </div>
-                  <div className="offer-bottom">
-                    <h3>
-                      <a href="#">{service.title}</a>
-                    </h3>
-                    <p>{service.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+  <style>
+    {`
+      .offer-item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        min-height: 300px; /* Set minimum height */
+      }
+
+      .offer-top {
+        margin-bottom: 20px;
+      }
+
+      .offer-top i {
+        font-size: 40px;
+        color: #fa5f0b;
+      }
+
+      .offer-bottom {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .offer-bottom h3 {
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+
+      .offer-bottom h3 a {
+        color: #022e6b;
+        text-decoration: none;
+      }
+
+      .offer-bottom p {
+        margin: 0;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      /* Ensure consistent spacing in grid */
+      .row {
+        margin: -15px;
+      }
+
+      .col-lg-4 {
+        padding: 15px;
+      }
+    `}
+  </style>
+
+  <div className="container">
+    <div className="section-title">
+      <span className="sub-title">Services</span>
+      <h2>Services We Offer You From Our Company</h2>
+    </div>
+    <div className="row">
+      {[
+
+{
+  icon: "fa-solid fa-flask",
+  title: "Pharmaceutical Packaging",
+  description:
+    "Specialized glass containers for medicines, vaccines, and healthcare products with highest quality standards.",
+},
+{
+  icon: "fa-solid fa-wine-glass",
+  title: "Beverage Bottles",
+  description:
+    "Premium glass bottles for wines, spirits, beer, and non-alcoholic beverages with custom designs.",
+},
+{
+  icon: "fa-solid fa-spray-can",
+  title: "Cosmetic Containers",
+  description:
+    "Elegant glass packaging solutions for perfumes, lotions, and beauty products with aesthetic appeal.",
+},
+{
+  icon: "fa-solid fa-jar",
+  title: "Food Packaging",
+  description:
+    "Food-grade glass jars and containers ensuring product freshness and safety with reliable sealing.",
+},
+{
+  icon: "fa-solid fa-recycle",
+  title: "Sustainable Solutions",
+  description:
+    "Eco-friendly glass packaging options with recyclable materials and sustainable manufacturing processes.",
+},
+{
+  icon: "fa-solid fa-cog",
+  title: "Custom Engineering",
+  description:
+    "Tailored glass packaging solutions with custom designs, sizes, and specifications for unique requirements.",
+},
+        
+      ].map((service, index) => (
+        <div key={index} className="col-lg-4 col-md-6">
+          <div className="offer-item">
+            <div className="offer-top">
+              <i className={service.icon}></i>
+            </div>
+            <div className="offer-bottom">
+              <h3>
+                <a className="fw-bold" href="#">{service.title}</a>
+              </h3>
+              <p>{service.description}</p>
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>

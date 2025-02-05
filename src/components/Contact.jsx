@@ -36,7 +36,7 @@ const Contact = () => {
     {`
       .contact-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 24px;
       }
 
@@ -49,54 +49,43 @@ const Contact = () => {
         height: 100%;
       }
 
-      @media screen and (max-width: 768px) {
+      /* Tablet View */
+      @media screen and (max-width: 992px) {
+        .contact-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* Mobile View */
+      @media screen and (max-width: 576px) {
         .contact-grid {
           grid-template-columns: 1fr;
+          gap: 16px;
         }
 
-        .item-1 { order: 1; }
-        .item-2 { order: 2; }
-        .item-3 { order: 3; }
-        .item-4 { order: 4; }
-        .item-5 { order: 5; }
+        /* Reordering for mobile view */
+        .grid-item:nth-child(1) { order: 2; } /* Nashik Map */
+        .grid-item:nth-child(2) { order: 1; } /* Head Office */
+        .grid-item:nth-child(3) { order: 3; } /* Branch Office */
+        .grid-item:nth-child(4) { order: 4; } /* Nagpur Map */
+        .grid-item:nth-child(5) { order: 5; } /* Email */
+        .grid-item:nth-child(6) { order: 6; } /* Phone */
+
+        .card {
+          margin-bottom: 0;
+        }
+
+        .card iframe {
+          height: 250px; /* Slightly smaller maps on mobile */
+        }
       }
     `}
   </style>
-
   <div className="container my-5">
     <div className="contact-grid">
       {/* Head Office - First row, first card */}
-      <div className="grid-item item-1">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">
-              <i className="fa fa-location-dot"></i> Head Office
-            </h5>
-            <p className="card-text">
-              Office No. 05, 1st Floor, Nivrutti Complex, Near Tractor House,
-              New Mumbai-Agra Road, Dwarka, Nashik – 422011, Maharashtra.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      {/* Branch Office - First row, second card */}
-      <div className="grid-item item-3">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">
-              <i className="fa fa-location-dot"></i> Branch Office
-            </h5>
-            <p className="card-text">
-              Saurabh Apartment, A-6, 2nd Floor, R C Baxter Marg, New Colony,
-              Nagpur-440001, Maharashtra.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Nashik Map - Second row, first card */}
-      <div className="grid-item item-2">
+      <div className="grid-item ">
         <div className="card">
           <div className="card-body">
             <iframe
@@ -111,7 +100,38 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Nagpur Map - Second row, second card */}
+      <div className="grid-item ">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">
+              <i className="fa fa-location-dot"></i> Head Office
+            </h5>
+            <p className="card-text">
+              Office No. 05, 1st Floor, Nivrutti Complex, Near Tractor House,
+              New Mumbai-Agra Road, Dwarka, Nashik – 422011, Maharashtra.
+            </p>
+          </div>
+        </div>
+      </div>
+
+     
+
+      {/* Branch Office - First row, second card */}
+      <div className="grid-item ">
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">
+              <i className="fa fa-location-dot"></i> Branch Office
+            </h5>
+            <p className="card-text">
+              Saurabh Apartment, A-6, 2nd Floor, R C Baxter Marg, New Colony,
+              Nagpur-440001, Maharashtra.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Nashik Map - Second row, first card */}
       <div className="grid-item item-4">
         <div className="card">
           <div className="card-body">
@@ -127,8 +147,11 @@ const Contact = () => {
         </div>
       </div>
 
+      
+      
+
       {/* Email - Third row */}
-      <div className="grid-item item-5 col-md-4">
+      <div className="grid-item  ">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">
@@ -140,7 +163,7 @@ const Contact = () => {
       </div>
 
       {/* Phone - Third row */}
-      <div className="grid-item item-5 col-md-4">
+      <div className="grid-item ">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">
