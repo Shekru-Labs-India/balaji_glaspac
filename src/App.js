@@ -42,6 +42,7 @@ import SoftDrinksMineralWater from "./pages/SoftDrinksMineralWater";
 import FruitJuices from "./pages/FruitJuices";
 import Food from "./pages/Food";
 import SparklingWineNew from "./pages/SparklingWineNew";
+import OurProducts from "./pages/OurProducts";
 
 
 
@@ -97,7 +98,7 @@ function App() {
         <Route path="/fruitjuices" element={<FruitJuices />} />
         <Route path="/food" element={<Food />} />
         <Route path="/sparklingwinenew" element={<SparklingWineNew />} />
-
+        <Route path="/ourproducts" element={<OurProducts />} />
        
 
       </Routes>

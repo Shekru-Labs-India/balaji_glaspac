@@ -172,7 +172,7 @@ const Header = () => {
     onClick={(e) => {
         e.preventDefault();
         toggleMobileDropdown("products");
-        // scrollToSection("our-products"); // Updated to use the new function
+        
     }}
 >
     <span>Products</span>
@@ -660,17 +660,13 @@ const Header = () => {
                   </li>
 
                   <li className="nav-item">
-                  <a
-    href="#"
+                  <NavLink
+    to="/ourproducts" // Change href to to for NavLink
     className="nav-link dropdown-toggle"
-    // onClick={(e) => {
-    //   e.preventDefault();
-    //   // Scroll to the target section
-    //   document.getElementById("our-products").scrollIntoView({ behavior: 'smooth' });
-    // }}
+    onClick={() => window.scrollTo(0, 0)} // Scroll to top on click
   >
     Products <i className="fa-solid fa-chevron-down" />
-  </a>
+  </NavLink>
                     <ul className="dropdown-menu">
                       {/* Beverage Bottles Section */}
                       <li className="nav-item dropdown-submenu">

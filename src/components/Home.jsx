@@ -477,11 +477,16 @@ const Home = () => {
           flex: 0 0 100%;
           max-width: 100%;
         }
+
+        .service-item {
+          margin-bottom: 20px; /* Add space at the bottom of each service item */
+          padding: 15px; /* Ensure padding is consistent */
+          box-sizing: border-box; /* Include padding in width calculations */
+        }
       }
 
       .service-item {
         height: 100%;
-        padding: 15px;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -524,14 +529,13 @@ const Home = () => {
     `}
   </style>
 
-
       <div id="our-products">
         <div className="container-fluid">
           <div className="section-title">
             <span className="sub-title">Our Products</span>
-            <h2>
+            <h3 className="fw-bold text-white">
               Premium Glass Solutions For Your <span>Business</span>
-            </h2>
+            </h3>
           </div>
           <div className="row">
           

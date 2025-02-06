@@ -49,6 +49,17 @@ const Contact = () => {
         height: 100%;
       }
 
+      .address{
+       width: 100%;
+        height: 62%;
+      }
+
+      .address1{
+      margin-top:10px;
+      width:100%;
+      height:35%
+      }
+
       /* Tablet View */
       @media screen and (max-width: 992px) {
         .contact-grid {
@@ -101,7 +112,7 @@ const Contact = () => {
       </div>
 
       <div className="grid-item ">
-        <div className="card">
+        <div className="address card ">
           <div className="card-body">
             <h5 className="card-title">
               <i className="fa fa-location-dot"></i> Head Office
@@ -112,13 +123,21 @@ const Contact = () => {
             </p>
           </div>
         </div>
+        <div className="address1 card">
+          <div className="card-body">
+            <h5 className="card-title">
+              <i className="fa fa-envelope"></i> Email
+            </h5>
+            <p className="card-text">info@balajiglaspac.com</p>
+          </div>
+        </div>
       </div>
 
      
 
       {/* Branch Office - First row, second card */}
       <div className="grid-item ">
-        <div className="card">
+        <div className="address card">
           <div className="card-body">
             <h5 className="card-title">
               <i className="fa fa-location-dot"></i> Branch Office
@@ -127,6 +146,14 @@ const Contact = () => {
               Saurabh Apartment, A-6, 2nd Floor, R C Baxter Marg, New Colony,
               Nagpur-440001, Maharashtra.
             </p>
+          </div>
+        </div>
+        <div className="address1 card">
+          <div className="card-body">
+            <h5 className="card-title">
+              <i className="fa fa-phone"></i> Phone
+            </h5>
+            <p className="card-text">+91 253 2507474</p>
           </div>
         </div>
       </div>
@@ -150,29 +177,6 @@ const Contact = () => {
       
       
 
-      {/* Email - Third row */}
-      <div className="grid-item  ">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">
-              <i className="fa fa-envelope"></i> Email
-            </h5>
-            <p className="card-text">info@balajiglaspac.com</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Phone - Third row */}
-      <div className="grid-item ">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">
-              <i className="fa fa-phone"></i> Phone
-            </h5>
-            <p className="card-text">+91 253 2507474</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
