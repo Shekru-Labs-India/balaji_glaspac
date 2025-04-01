@@ -14,7 +14,7 @@ const AppliedCeramic = () => {
               className="hero-section position-relative"
               style={{
                 backgroundImage: `url(${label})`,
-                height: "60vh",
+                height: "210px",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -38,7 +38,7 @@ const AppliedCeramic = () => {
 
     <section className="about-area1 ptb-100">
              
-    <div className="container my-5">
+    <div className="container my-0">
             <div className="row">
                 {/* Left Column: Text */}
                 <div className="col-12 col-lg-6">

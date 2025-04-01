@@ -2563,7 +2563,7 @@ const WineBottles = () => {
         className="hero-section position-relative"
         style={{
           backgroundImage: `url(${wineHero})`,
-          height: "60vh",
+          height: "250px",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

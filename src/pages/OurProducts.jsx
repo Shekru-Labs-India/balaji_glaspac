@@ -146,11 +146,11 @@ const OurProducts = () => {
     <div className="row">
     
   {/* 1. Wine Bottles */}
-  <div className="col-sm-6 col-lg-custom">
+  <div className="col-sm-6 col-lg-custom mb-2">
     <div className="service-item">
       <img src={service1} alt="Service" />
       <img src={service2} alt="Service" />
-      <i className="fa-solid fa-wine-bottle " />
+      <i className="fa-solid fa-wine-bottle" />
       <h3>
         <Link to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}>Wine Bottles</Link>
       </h3>
@@ -164,7 +164,7 @@ const OurProducts = () => {
   </div>
 
       {/* 2. Beer Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
     <div className="service-item">
       <img src={service1} alt="Service" />
       <img src={service2} alt="Service" />
@@ -182,7 +182,7 @@ const OurProducts = () => {
   </div>
 
       {/* 3. Spirits Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -202,7 +202,7 @@ const OurProducts = () => {
       </div>
 
       {/* 4. Champagne Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -222,7 +222,7 @@ const OurProducts = () => {
       </div>
 
       {/* 5. Water Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -242,7 +242,7 @@ const OurProducts = () => {
       </div>
 
       {/* 6. Juice and Soda Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -262,7 +262,7 @@ const OurProducts = () => {
       </div>
 
       {/* 7. Specialty Drink Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -284,7 +284,7 @@ const OurProducts = () => {
       </div>
 
       {/* 8. Food Jars */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -304,7 +304,7 @@ const OurProducts = () => {
       </div>
 
       {/* 9. Oral Liquid Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -324,7 +324,7 @@ const OurProducts = () => {
       </div>
 
       {/* 10. Dropper Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -344,7 +344,7 @@ const OurProducts = () => {
       </div>
 
       {/* 11. Vials and Ampoules */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -364,7 +364,7 @@ const OurProducts = () => {
       </div>
 
       {/* 12. Tablet and Capsule Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -386,7 +386,7 @@ const OurProducts = () => {
       </div>
 
       {/* 13. Specialty Pharmaceutical Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -411,7 +411,7 @@ const OurProducts = () => {
       </div>
 
       {/* 14. Perfume Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -431,7 +431,7 @@ const OurProducts = () => {
       </div>
 
       {/* 15. Lotion and Serum Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -453,7 +453,7 @@ const OurProducts = () => {
       </div>
 
       {/* 16. Industrial Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -473,7 +473,7 @@ const OurProducts = () => {
       </div>
 
       {/* 17. Customizable Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -493,7 +493,7 @@ const OurProducts = () => {
       </div>
 
       {/* 18. Premium Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -513,7 +513,7 @@ const OurProducts = () => {
       </div>
 
       {/* 19. Eco-Friendly Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />

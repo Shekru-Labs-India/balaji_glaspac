@@ -57,7 +57,7 @@ const Contact = () => {
       .address1{
       margin-top:10px;
       width:100%;
-      height:35%
+      height:45%
       }
 
       /* Tablet View */
@@ -154,12 +154,13 @@ const Contact = () => {
               <i className="fa fa-phone"></i> Phone
             </h5>
             <p className="card-text">+91 253 2507474</p>
+            <p className="card-text">+91 95611 66665</p>
           </div>
         </div>
       </div>
 
       {/* Nashik Map - Second row, first card */}
-      <div className="grid-item item-4">
+      <div className="grid-item item-4 mt-4">
         <div className="card">
           <div className="card-body">
             <iframe

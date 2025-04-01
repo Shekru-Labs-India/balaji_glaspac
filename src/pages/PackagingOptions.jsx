@@ -14,7 +14,7 @@ const PackagingOptions = () => {
                        className="hero-section position-relative"
                        style={{
                          backgroundImage: `url(${wrapbottle})`,
-                         height: "60vh",
+                         height: "210px",
                          backgroundSize: "cover",
                          backgroundPosition: "center",
                        }}

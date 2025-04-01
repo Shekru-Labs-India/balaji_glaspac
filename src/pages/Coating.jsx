@@ -14,7 +14,7 @@ const Coating = () => {
                  className="hero-section position-relative"
                  style={{
                    backgroundImage: `url(${coating1})`,
-                   height: "60vh",
+                   height: "210px",
                    backgroundSize: "cover",
                    backgroundPosition: "center",
                  }}
