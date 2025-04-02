@@ -637,7 +637,7 @@ const Header = () => {
                 className="collapse navbar-collapse mean-menu "
                 id="navbarSupportedContent"
               >
-                <ul className="navbar-nav " style={{ paddingLeft: '120px' }}>
+                <ul className="navbar-nav " style={{ paddingLeft: '160px' }}>
                   <li className="nav-item ">
                     <NavLink
                       to="/" onClick={() => window.scrollTo(0, 0)}
@@ -1103,8 +1103,8 @@ const Header = () => {
                   
                 </ul>
                 {/* Social Media Links on the Right */}
-        <div className="header-right ms-auto" >
-          <ul className="d-flex list-unstyled mb-0 " style={{ paddingLeft: '80px' }}>
+        <div className="header-right ms-auto " >
+          <ul className="d-flex  list-unstyled mb-0 " style={{ paddingLeft: '270px'}}>
             <li className="mx-3">
               <Link
                 to="https://www.facebook.com/profile.php?id=61569130629576"

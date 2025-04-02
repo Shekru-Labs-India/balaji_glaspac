@@ -2587,7 +2587,7 @@ const WineBottles = () => {
       </div>
 
       {/* Introduction Section */}
-      <section className="py-5">
+      <section className="py-1">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

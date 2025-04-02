@@ -13,10 +13,11 @@ const PackagingOptions = () => {
       <div
                        className="hero-section position-relative"
                        style={{
-                         backgroundImage: `url(${wrapbottle})`,
-                         height: "210px",
+                         backgroundImage: `url(${"https://media.istockphoto.com/id/174911534/photo/stacked-glass-bottles-on-shipping-pallets.jpg?s=1024x1024&w=is&k=20&c=PaP1UOBf1c_a8ipwviMRyKhLOXdaaDBPTi32Fa_TTxg="})`,
+                         height: "160px",
                          backgroundSize: "cover",
                          backgroundPosition: "center",
+                         
                        }}
                      >
                        <div
@@ -25,7 +26,7 @@ const PackagingOptions = () => {
                        ></div>
                        <div className="container position-relative h-100">
                          <div className="d-flex align-items-center justify-content-center h-100">
-                           <div className="text-center text-white">
+                           <div className="text-center text-white mt-5">
                              <h1 className="display-3 fw-bold mb-4">
                              Packaging Options
                        
@@ -36,7 +37,7 @@ const PackagingOptions = () => {
                        </div>
                      </div>
 
-     <section className="about-area1 ptb-100">
+     <section className="about-area1 ptb-100 py-2">
                   <div className="container">
                     <div className="row align-items-center">
                       <div className="col-lg-6">
@@ -81,8 +82,8 @@ Balaji glaspac understands there is no cookie-cutter solutions that will make yo
                           
                         </div>
                       </div>
-                      <div className="col-lg-6">
-                        <img className="rounded-4" src={packaging} alt="" />
+                      <div className="col-lg-6 col-lg-6 mb-5 pb-5">
+                        <img className="rounded-4 mb-5" src={packaging} alt="" />
                       </div>
                     </div>
                   </div>

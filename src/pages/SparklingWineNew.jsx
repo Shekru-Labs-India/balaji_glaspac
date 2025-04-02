@@ -508,7 +508,7 @@ const SparklingWineNew = () => {
           className="hero-section position-relative"
           style={{
             backgroundImage: `url(${wineHero})`,
-            height: "250px",
+            height: "180px",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -519,8 +519,8 @@ const SparklingWineNew = () => {
           ></div>
           <div className="container position-relative h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <div className="text-center text-white">
-                <h1 className="display-3 fw-bold mb-4">
+              <div className="text-center text-white mt-5">
+                <h1 className="display-3 fw-bold">
                   Wine Bottles Manufacturing
                 </h1>
                 <p className="lead mb-0">
@@ -534,16 +534,16 @@ const SparklingWineNew = () => {
          
                   
                  
-      <div className="container-fluid mt-4"  >
+      <div className="container-fluid py-0"  >
 
       <h2 className="text-center fw-bold mb-5">
                     Our Wine Bottle Collection
                   </h2>
 
-<div className="container-fluid  mb-5">
+<div className="container-fluid  py-0">
 <div className="row align-items-center " style={{ marginTop: "50px" }}>
 {/* Search field on the left */}
-<div className="col-md-4 mb-3 mb-md-0 ">
+<div className="col-md-4 mb-3 mb-md-0 py-3 ">
 <label className="form-label fw-bold">Search</label>
 <div className="input-group">
 <input

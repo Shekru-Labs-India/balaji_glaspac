@@ -14,7 +14,7 @@ const InHouseDesign = () => {
                       className="hero-section position-relative"
                       style={{
                         backgroundImage: `url(${inhouse})`,
-                        height: "210px",
+                        height: "180px",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                       }}
@@ -25,7 +25,7 @@ const InHouseDesign = () => {
                       ></div>
                       <div className="container position-relative h-100">
                         <div className="d-flex align-items-center justify-content-center h-100">
-                          <div className="text-center text-white">
+                          <div className="text-center text-white mt-5">
                             <h1 className="display-3 fw-bold mb-4">
                             In House Design Studio
                       
@@ -36,13 +36,13 @@ const InHouseDesign = () => {
                       </div>
                     </div>
 
-   <section className="about-area1 ptb-100">
+   <section className="about-area1 ptb-100 py-2">
                  <div className="container">
                    <div className="row align-items-center">
                      <div className="col-lg-6">
                        
                        <div className="about-content">
-                         <p>
+                         <p className='py-0'>
                          Design is the art of creation. Good design is a blend of functionality and aesthetic appeal. Yet, even familiar objects such as custom glass bottles can change their design. Sometimes they must change to become viable for the future, more environmentally friendly or simply better. Design and innovation go hand-in-hand because every technical development follows a design process.
                          </p>
                          
@@ -58,7 +58,7 @@ const InHouseDesign = () => {
                          
                        </div>
                      </div>
-                     <div className="col-lg-6">
+                     <div className="col-lg-6 pb-5">
                        <img className="rounded-4" src={design} alt="" />
                      </div>
                    </div>

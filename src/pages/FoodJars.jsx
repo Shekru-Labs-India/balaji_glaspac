@@ -1230,7 +1230,7 @@ const FoodJars = () => {
       <Header />
 
       {/* Hero Section - adjusted spacing */}
-      <section className="bg-light position-relative overflow-hidden pt-5 mt-5">
+      <section className="bg-light position-relative overflow-hidden pt-3 mt-3">
         <div className="container min-vh-100 d-flex align-items-center">
           <div className="row align-items-center">
             <div className="col-lg-5">

@@ -45,7 +45,7 @@ function About() {
                 
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6  mb-5 pb-5">
               <div className="about-img-wrap">
                 <div className="about-img">
                   <img

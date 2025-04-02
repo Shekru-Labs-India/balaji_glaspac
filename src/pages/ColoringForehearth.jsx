@@ -16,7 +16,7 @@ const ColoringForehearth = () => {
            className="hero-section position-relative"
            style={{
              backgroundImage: `url(${about2})`,
-             height: "210px",
+             height: "198px",
              backgroundSize: "cover",
              backgroundPosition: "center",
            }}
@@ -28,7 +28,7 @@ const ColoringForehearth = () => {
            <div className="container position-relative h-100">
              <div className="d-flex align-items-center justify-content-center h-100">
                <div className="text-center text-white">
-                 <h1 className="display-3 fw-bold mb-4">
+                 <h1 className="display-3 fw-bold">
                  Coloring  Forehearth Technology
                  </h1>
                  
@@ -38,7 +38,7 @@ const ColoringForehearth = () => {
          </div>
 
 
-   <section className="content-area py-5">
+   <section className="content-area py-0">
 
   <div className="container">
 
