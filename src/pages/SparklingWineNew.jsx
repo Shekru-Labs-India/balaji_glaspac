@@ -508,7 +508,7 @@ const SparklingWineNew = () => {
           className="hero-section position-relative"
           style={{
             backgroundImage: `url(${wineHero})`,
-            height: "180px",
+            height: "230px",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -520,7 +520,7 @@ const SparklingWineNew = () => {
           <div className="container position-relative h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
               <div className="text-center text-white mt-5">
-                <h1 className="display-3 fw-bold">
+                <h1 className="display-3 fw-bold mb-3">
                   Wine Bottles Manufacturing
                 </h1>
                 <p className="lead mb-0">

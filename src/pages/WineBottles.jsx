@@ -2575,7 +2575,7 @@ const WineBottles = () => {
         <div className="container position-relative h-100">
           <div className="d-flex align-items-center justify-content-center h-100">
             <div className="text-center text-white">
-              <h1 className="display-3 fw-bold mb-4">
+              <h1 className="display-3 fw-bold mb-4 mt-5">
                 Wine Bottles Manufacturing
               </h1>
               <p className="lead mb-0">
@@ -2647,7 +2647,7 @@ const WineBottles = () => {
       {/* Bottle Types Section */}
       <section className="py-5 bg-light">
         <div className="container">
-          <h2 className="text-center fw-bold mb-5">
+          <h2 className="text-center fw-bold mb-5 mt-5">
             Our Wine Bottle Collection
           </h2>
           <div className="row g-4">

@@ -44,7 +44,12 @@ import Food from "./pages/Food";
 import SparklingWineNew from "./pages/SparklingWineNew";
 import OurProducts from "./pages/OurProducts";
 import ServicesProduct from "./pages/Services_products";
-
+import PharmaceuticalBottles from "./pages/PharmaceuticalBottles";
+import FoodContainers from "./pages/FoodContainers";
+import LiquorBottles from "./pages/LiquorBottles";
+import BeverageBottles from "./pages/BeverageBottles";
+import Chemicals from "./pages/Chemicals";
+import CosmeticPersonalCare from "./pages/CosmeticPersonalCare";
 
 
 function App() {
@@ -100,7 +105,16 @@ function App() {
         <Route path="/food" element={<Food />} />
         <Route path="/sparklingwinenew" element={<SparklingWineNew />} />
         <Route path="/ourproducts" element={<OurProducts />} />
-        <Route path="/ServicesProduct" element={<ServicesProduct />} />
+        <Route path="/ServicesProduct" element={<ServicesProduct />} />  
+        <Route path="/PharmaceuticalBottles" element={<PharmaceuticalBottles />} />
+        <Route path="/FoodContainers" element={<FoodContainers />} />
+        <Route path="/LiquorBottles" element={<LiquorBottles />} />
+        <Route path="/BeverageBottles" element={<BeverageBottles />} />
+        <Route path="/Chemicals" element={<Chemicals />} />
+        <Route path="/CosmeticPersonalCare" element={<CosmeticPersonalCare />} />
+
+      
+        
        
 
       </Routes>

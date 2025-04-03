@@ -138,106 +138,108 @@ const OurProducts = () => {
 <div id="our-products">
   <div className="container-fluid">
     <div className="section-title">
-      <span className="sub-title">Our Services</span>
+      <span className="sub-title">Our Products</span>
+      <h3 className="fw-bold text-white">
+        Premium Glass Solutions For Your <span>Business</span>
+      </h3>
     </div>
     <div className="row justify-content-center">
     
-  {/* 1. Wine Bottles */}
-  <div className="col-sm-6 col-lg-custom">
-    <div className="service-item">
-      <img src={service1} alt="Service" />
-      <img src={service2} alt="Service" />
-      <i className="fa-solid fa-truck-fast " />
-      <h3>
-        <Link to="/packagingoptions" onClick={() => window.scrollTo(0, 0)}>Packaging Options</Link>
-      </h3>
-      <p title="Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.">
-        Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.
-      </p>
-      <Link className="service-link" to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}>
-        Read More
-      </Link>
-    </div>
-  </div>
-
-      {/* 2. Beer Bottles */}
-      <div className="col-sm-6 col-lg-custom">
-    <div className="service-item">
-      <img src={service1} alt="Service" />
-      <img src={service2} alt="Service" />
-      <i className="fa-solid fa-wine-bottle" />
-      <h3>
-        <Link to="/coloring" onClick={() => window.scrollTo(0, 0)}>Coloring Forehearth Technology</Link>
-      </h3>
-      <p title="Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.">
-        Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.
-      </p>
-      <Link className="service-link" to="/beer-bottles" onClick={() => window.scrollTo(0, 0)}>
-        Read More
-      </Link>
-    </div>
-  </div>
-
-      {/* 3. Spirits Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      {/* 1. Industrial Bottles*/}
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
-          <i className="fa-solid fa-house" />
+          <i className="fa-solid fa-wine-bottle" />
           <h3>
-            <Link to="/inhousedesign"  onClick={() => window.scrollTo(0, 0)}>In House Design Studio</Link>
+            <Link to="/industrial-bottles"  onClick={() => window.scrollTo(0, 0)}>Industrial Bottles</Link>
           </h3>
-          <p title="Elegant glass bottles designed for spirits and liquors,
-            featuring premium finishes and distinctive designs.">
-            Elegant glass bottles designed for spirits and liquors,
-            featuring premium finishes and distinctive designs.
+          <p title="Pharmaceutical-grade bottles designed for oral medications and
+            supplements with precise dosing features.">
+            Pharmaceutical-grade bottles designed for oral medications and
+            supplements with precise dosing features.
           </p>
-          <Link className="service-link" to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}>
+          <Link className="service-link" to="/industrial-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
           </Link>
         </div>
       </div>
 
-      {/* 4. Champagne Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      {/* 2.Customizable Bottles*/}
+      <div className="col-sm-6 col-lg-custom mb-2">
+        <div className="service-item">
+          <img src={service1} alt="Service" />
+          <img src={service2} alt="Service" />
+          <i className="fa-solid fa-wine-bottle" />
+          <h3>
+            <Link to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}>Customizable Bottles</Link>
+          </h3>
+          <p title="Precision dropper bottles for essential oils, serums, and
+            liquid medications with accurate dispensing.">
+            Precision dropper bottles for essential oils, serums, and
+            liquid medications with accurate dispensing.
+          </p>
+          <Link className="service-link" to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}>
+            Read More
+          </Link>
+        </div>
+      </div>
+
+      {/* 3. Premium Bottles*/}
+      <div className="col-sm-6 col-lg-custom mb-2">
+        <div className="service-item">
+          <img src={service1} alt="Service" />
+          <img src={service2} alt="Service" />
+          <i className="fa-solid fa-beer-mug-empty" />
+          <h3>
+            <Link to="/premium-bottles"  onClick={() => window.scrollTo(0, 0)}>Premium Bottles</Link>
+          </h3>
+          <p title="High-quality glass vials and ampoules for pharmaceutical and
+            laboratory applications with precise specifications.">
+            High-quality glass vials and ampoules for pharmaceutical and
+            laboratory applications with precise specifications.
+          </p>
+          <Link className="service-link" to="/premium-bottles"  onClick={() => window.scrollTo(0, 0)}>
+            Read More
+          </Link>
+        </div>
+      </div>
+
+
+      {/* 5. Eco-Friendly Bottles */}
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
           <i className="fa-solid fa-champagne-glasses" />
           <h3>
-            <Link to="/appliedceramic"  onClick={() => window.scrollTo(0, 0)}>Applied Ceramic Label</Link>
+            <Link to="/eco-friendly-bottles"  onClick={() => window.scrollTo(0, 0)}>
+              Eco-Friendly Bottles
+            </Link>
           </h3>
-          <p title="Specialized bottles designed to withstand pressure, perfect
-            for champagne and sparkling wines.">
-            Specialized bottles designed to withstand pressure, perfect
-            for champagne and sparkling wines.
+          <p title="Custom pharmaceutical bottles designed for specific medical
+            applications with strict quality standards.">
+            Custom pharmaceutical bottles designed for specific medical
+            applications with strict quality standards.
           </p>
-          <Link className="service-link" to="/champagne-bottles"  onClick={() => window.scrollTo(0, 0)}>
+          <Link
+            className="service-link"
+            to="/eco-friendly-bottles"  onClick={() => window.scrollTo(0, 0)}
+          >
             Read More
           </Link>
         </div>
       </div>
 
-      {/* 5. Water Bottles */}
-      <div className="col-sm-6 col-lg-custom">
-        <div className="service-item">
-          <img src={service1} alt="Service" />
-          <img src={service2} alt="Service" />
-          <i className="fa-solid fa-bottle-water" />
-          <h3>
-            <Link to="/coating"  onClick={() => window.scrollTo(0, 0)}>Coating</Link>
-          </h3>
-          <p title="Crystal clear glass bottles for water packaging, available in
-            various sizes and designs for pure refreshment.">
-            Crystal clear glass bottles for water packaging, available in
-            various sizes and designs for pure refreshment.
-          </p>
-          <Link className="service-link" to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}>
-            Read More
-          </Link>
-        </div>
-      </div>
+      
 
+      
+      
+
+     
+
+     
+      
       
     </div>
   </div>

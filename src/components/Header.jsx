@@ -614,528 +614,544 @@ const Header = () => {
 
         {/* Desktop Device */}
         <div className="main-nav py-0">
-          <div className="container ms-4 ">
+          <div className="container-fluid px-0">
             <nav className="navbar navbar-expand-md navbar-light py-0">
-              <a className="navbar-brand" href="index.html">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={logo}
-                    width={60}
-                    height="auto"
-                    alt="Logo"
-                    className="rounded-4"
-                  />
-                  <div className="d-flex flex-column ms-3">
-                    <h4 className="mb-0 fw-bold  fs-6 text-dark">
-                      BALAJI <br />
-                      GLASPAC
-                    </h4>
+              <div className="d-flex justify-content-between align-items-center w-100">
+                {/* Logo - Start */}
+                <Link className="navbar-brand ms-0 ps-1 me-auto" to="/">
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={logo}
+                      width={70}
+                      height="auto"
+                      alt="Logo"
+                      className="rounded-4"
+                    />
+                    <div className="d-flex flex-column ms-3">
+                      <h4 className="mb-0 fw-bold fs-6 text-dark">
+                        BALAJI <br />
+                        GLASPAC
+                      </h4>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <div
-                className="collapse navbar-collapse mean-menu "
-                id="navbarSupportedContent"
-              >
-                <ul className="navbar-nav " style={{ paddingLeft: '160px' }}>
-                  <li className="nav-item ">
-                    <NavLink
-                      to="/" onClick={() => window.scrollTo(0, 0)}
-                      className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active " : "nav-link "
-                      }
-                    >
-                      Home
-                    </NavLink>
-                  </li>
+                </Link>
+                
+                {/* Navbar toggler for responsive design */}
+                <button
+                  className="navbar-toggler d-md-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                
+                {/* Navigation - Center */}
+                <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
+                      <NavLink
+                        to="/" onClick={() => window.scrollTo(0, 0)}
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active custom-active" : "nav-link"
+                        }
+                      >
+                        Home
+                      </NavLink>
+                    </li>
 
-                  <li className="nav-item">
-                    <NavLink
-                      to="/about"  onClick={() => window.scrollTo(0, 0)}
-                      className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active" : "nav-link"
-                      }
-                    >
-                      About
-                    </NavLink>
-                  </li>
+                    <li className="nav-item">
+                      <NavLink
+                        to="/about"  onClick={() => window.scrollTo(0, 0)}
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active custom-active" : "nav-link"
+                        }
+                      >
+                        About
+                      </NavLink>
+                    </li>
 
-                  <li className="nav-item">
-                  <NavLink
-    to="/ourproducts" // Change href to to for NavLink
-    className="nav-link dropdown-toggle"
-    onClick={() => window.scrollTo(0, 0)} // Scroll to top on click
-  >
-    Products <i className="fa-solid fa-chevron-down" />
-  </NavLink>
-                    <ul className="dropdown-menu">
-                       {/* Pharmaceutical Bottles Section */}
-                       <li className="nav-item dropdown-submenu">
-                        <a href="#" className="nav-link dropdown-toggle">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          Pharmaceutical Bottles
-                        </a>
-                        <ul className="dropdown-menu submenu">
-                          <li>
-                            <NavLink
-                              to="/oral-liquid-bottles" onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Oral Liquid Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/dropper-bottles"  onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Dropper Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/vials-and-ampoules" onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Vials and Ampoules
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/tablet-and-capsule-bottles"  onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Tablet and Capsule Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/specialty-pharmaceutical-bottles"  onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Specialty Pharmaceutical Bottles
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </li>
+                    <li className="nav-item">
+                      <NavLink
+                        to="/ourproducts"
+                        className="nav-link dropdown-toggle"
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        Products <i className="fa-solid fa-chevron-down" />
+                      </NavLink>
+                      <ul className="dropdown-menu">
+                        {/* Pharmaceutical Bottles Section */}
+                        <li className="nav-item dropdown-submenu">
+                          <a href="#" className="nav-link dropdown-toggle">
+                            <i
+                              className="fa-solid fa-arrow-turn-up me-2"
+                              style={{ transform: "rotate(90deg)" }}
+                            />
+                            Pharmaceutical Bottles
+                          </a>
+                          <ul className="dropdown-menu submenu">
+                            <li>
+                              <NavLink
+                                to="/oral-liquid-bottles" onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Oral Liquid Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/dropper-bottles"  onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Dropper Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/vials-and-ampoules" onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Vials and Ampoules
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/tablet-and-capsule-bottles"  onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Tablet and Capsule Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/specialty-pharmaceutical-bottles"  onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Specialty Pharmaceutical Bottles
+                              </NavLink>
+                            </li>
+                          </ul>
+                        </li>
 
-                      {/* Food Containers Section */}
-                      <li className="nav-item dropdown-submenu">
-                        <a href="#" className="nav-link dropdown-toggle">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          Food Containers
-                        </a>
-                        <ul className="dropdown-menu submenu">
-                          <li>
-                            <NavLink
-                              to="/food-jars" onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Food Jars
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </li>
-                     
+                        {/* Food Containers Section */}
+                        <li className="nav-item dropdown-submenu">
+                          <a href="#" className="nav-link dropdown-toggle">
+                            <i
+                              className="fa-solid fa-arrow-turn-up me-2"
+                              style={{ transform: "rotate(90deg)" }}
+                            />
+                            Food Containers
+                          </a>
+                          <ul className="dropdown-menu submenu">
+                            <li>
+                              <NavLink
+                                to="/food-jars" onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Food Jars
+                              </NavLink>
+                            </li>
+                          </ul>
+                        </li>
+                       
 
                            {/* Liquor Bottles Section */}
-                      <li className="nav-item dropdown-submenu">
-                        <a href="#" className="nav-link dropdown-toggle">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          Liquor Bottles
-                        </a>
-                        <ul className="dropdown-menu submenu">
-                          <li>
-                            <NavLink
-                              to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Wine Bottles
-                            </NavLink>
-                          </li>
+                        <li className="nav-item dropdown-submenu">
+                          <a href="#" className="nav-link dropdown-toggle">
+                            <i
+                              className="fa-solid fa-arrow-turn-up me-2"
+                              style={{ transform: "rotate(90deg)" }}
+                            />
+                            Liquor Bottles
+                          </a>
+                          <ul className="dropdown-menu submenu">
+                            <li>
+                              <NavLink
+                                to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Wine Bottles
+                              </NavLink>
+                            </li>
 
-                          <li>
-                            <NavLink
-                              to="/sparklingwinenew" onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                               Sparkling Wine
-                            </NavLink>
-                          </li>
-                         
-                          <li>
-                            <NavLink
-                              to="/beer-bottles" onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Beer Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Spirits Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/champagne-bottles"   onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Champagne Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/specialty-drink-bottles"  onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Specialty Drink Bottles
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </li>
-
-
-
-                      {/* Beverage Bottles Section */}
-                      <li className="nav-item dropdown-submenu">
-                        <a href="#" className="nav-link dropdown-toggle">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          Beverage Bottles
-                        </a>
-                        <ul className="dropdown-menu submenu">
-                         
-                          <li>
-                            <NavLink
-                              to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Water Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/juice-and-soda-bottles"   onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Juice and Soda Bottles
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </li>
-                      
-                      {/* Cosmetic and Personal Care Section */}
-                      <li className="nav-item dropdown-submenu">
-                        <a href="#" className="nav-link dropdown-toggle">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          Cosmetic and Personal Care
-                        </a>
-                        <ul className="dropdown-menu submenu">
-                          <li>
-                            <NavLink
-                              to="/perfume-bottles" onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Perfume Bottles
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              to="/lotion-and-serum-bottles"  onClick={() => window.scrollTo(0, 0)}
-                              className={({ isActive }) =>
-                                isActive ? "nav-link custom-active" : "nav-link"
-                              }
-                            >
-                              <i className="fa-solid fa-arrow-right me-2" />
-                              Lotion and Serum Bottles
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </li>
+                            <li>
+                              <NavLink
+                                to="/sparklingwinenew" onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                 Sparkling Wine
+                              </NavLink>
+                            </li>
+                           
+                            <li>
+                              <NavLink
+                                to="/beer-bottles" onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Beer Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Spirits Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/champagne-bottles"   onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Champagne Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/specialty-drink-bottles"  onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Specialty Drink Bottles
+                              </NavLink>
+                            </li>
+                          </ul>
+                        </li>
 
 
-                       {/* Chemicals Section */}
-                       <li className="nav-item dropdown-submenu">
-                        <a href="#" className="nav-link dropdown-toggle">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          Chemicals
-                        </a>
-                        <ul className="dropdown-menu submenu">
+
+                        {/* Beverage Bottles Section */}
+                        <li className="nav-item dropdown-submenu">
+                          <a href="#" className="nav-link dropdown-toggle">
+                            <i
+                              className="fa-solid fa-arrow-turn-up me-2"
+                              style={{ transform: "rotate(90deg)" }}
+                            />
+                            Beverage Bottles
+                          </a>
+                          <ul className="dropdown-menu submenu">
+                           
+                            <li>
+                              <NavLink
+                                to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Water Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/juice-and-soda-bottles"   onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Juice and Soda Bottles
+                              </NavLink>
+                            </li>
+                          </ul>
+                        </li>
+                        
+                        {/* Cosmetic and Personal Care Section */}
+                        <li className="nav-item dropdown-submenu">
+                          <a href="#" className="nav-link dropdown-toggle">
+                            <i
+                              className="fa-solid fa-arrow-turn-up me-2"
+                              style={{ transform: "rotate(90deg)" }}
+                            />
+                            Cosmetic and Personal Care
+                          </a>
+                          <ul className="dropdown-menu submenu">
+                            <li>
+                              <NavLink
+                                to="/perfume-bottles" onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Perfume Bottles
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="/lotion-and-serum-bottles"  onClick={() => window.scrollTo(0, 0)}
+                                className={({ isActive }) =>
+                                  isActive ? "nav-link custom-active" : "nav-link"
+                                }
+                              >
+                                <i className="fa-solid fa-arrow-right me-2" />
+                                Lotion and Serum Bottles
+                              </NavLink>
+                            </li>
+                          </ul>
+                        </li>
+
+
+                         {/* Chemicals Section */}
+                         <li className="nav-item dropdown-submenu">
+                          <a href="#" className="nav-link dropdown-toggle">
+                            <i
+                              className="fa-solid fa-arrow-turn-up me-2"
+                              style={{ transform: "rotate(90deg)" }}
+                            />
+                            Chemicals
+                          </a>
+                          <ul className="dropdown-menu submenu">
+                          <li>
+                          <NavLink
+                            to="/industrial-bottles" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active "
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Industrial Bottles
+                          </NavLink>
+                        </li>
                         <li>
-                        <NavLink
-                          to="/industrial-bottles" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active "
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Industrial Bottles
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Customizable Bottles
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/premium-bottles" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Premium Bottles
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/eco-friendly-bottles"  onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active "
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Eco-Friendly Bottles
-                        </NavLink>
-                      </li>
-                        </ul>
-                      </li>
+                          <NavLink
+                            to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Customizable Bottles
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/premium-bottles" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Premium Bottles
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/eco-friendly-bottles"  onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active "
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Eco-Friendly Bottles
+                          </NavLink>
+                        </li>
+                          </ul>
+                        </li>
 
-                      {/* Other Categories */}
-                    </ul>
-                  </li>
+                        {/* Other Categories */}
+                      </ul>
+                    </li>
 
-                {/* Services Dropdown */}
-                <li className="nav-item">
-                  <NavLink
-    to="/ServicesProduct" // Change href to to for NavLink
-    className="nav-link dropdown-toggle"
-    onClick={() => window.scrollTo(0, 0)} // Scroll to top on click
-  >
-    Services <i className="fa-solid fa-chevron-down" />
-  </NavLink>
-  <ul className="dropdown-menu">
-                      
-  <li>
-                        <NavLink
-                          to="/packagingoptions" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Packaging Options
-                        </NavLink>
-                      </li>
+                    {/* Services Dropdown */}
+                    <li className="nav-item">
+                      <NavLink
+                        to="/ServicesProduct"
+                        className="nav-link dropdown-toggle"
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        Services <i className="fa-solid fa-chevron-down" />
+                      </NavLink>
+                      <ul className="dropdown-menu">
+                        
                       <li>
-                        <NavLink
-                          to="/coloring" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Coloring Forehearth Technology
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/inhousedesign" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          In House Design Studio
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/appliedceramic" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Applied Ceramic Label
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/coating" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Coating
-                        </NavLink>
-                      </li>
-                      {/* <li>
-                        <NavLink
-                          to="/mouldshop" onClick={() => window.scrollTo(0, 0)}
-                          className={({ isActive }) =>
-                            isActive
-                              ? "nav-link custom-active"
-                              : "nav-link text-dark"
-                          }
-                        >
-                          <i className="fa-solid fa-arrow-right me-2" />
-                          Mould Shop
-                        </NavLink>
-                      </li> */}
-                    </ul>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink
-                      to="/clients" onClick={() => window.scrollTo(0, 0)}
-                      className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active" : "nav-link"
-                      }
-                    >
-                      Clients
-                    </NavLink>
-                  </li>
+                          <NavLink
+                            to="/packagingoptions" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Packaging Options
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/coloring" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Coloring Forehearth Technology
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/inhousedesign" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            In House Design Studio
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/appliedceramic" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Applied Ceramic Label
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/coating" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Coating
+                          </NavLink>
+                        </li>
+                        {/* <li>
+                          <NavLink
+                            to="/mouldshop" onClick={() => window.scrollTo(0, 0)}
+                            className={({ isActive }) =>
+                              isActive
+                                ? "nav-link custom-active"
+                                : "nav-link text-dark"
+                            }
+                          >
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            Mould Shop
+                          </NavLink>
+                        </li> */}
+                      </ul>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        to="/clients" onClick={() => window.scrollTo(0, 0)}
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active custom-active" : "nav-link"
+                        }
+                      >
+                        Clients
+                      </NavLink>
+                    </li>
 
-                 
+                   
 
-                  <li className="nav-item">
-                    <NavLink
-                      to="/contact"  onClick={() => window.scrollTo(0, 0)}
-                      className={({ isActive }) =>
-                        isActive ? "nav-link active custom-active" : "nav-link"
-                      }
-                    >
-                      Contact
-                    </NavLink>
-                  </li>
-                  
-                </ul>
-                {/* Social Media Links on the Right */}
-        <div className="header-right ms-auto " >
-          <ul className="d-flex  list-unstyled mb-0 " style={{ paddingLeft: '270px'}}>
-            <li className="mx-3">
-              <Link
-                to="https://www.facebook.com/profile.php?id=61569130629576"
-                target="_blank"
-              >
-                <i className="fa-brands fa-facebook fa-2x text-white" />
-              </Link>
-            </li>
-            <li className="mx-3">
-              <Link to="https://x.com/balajiglaspac" target="_blank">
-                <i className="fa-brands fa-x-twitter fa-2x text-white" />
-              </Link>
-            </li>
-            <li className="mx-3">
-              <Link
-                to="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
-                target="_blank"
-              >
-                <i className="fa-brands fa-instagram fa-2x text-white" />
-              </Link>
-            </li>
-            <li className="mx-3">
-              <Link
-                to="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
-                target="_blank"
-              >
-                <i className="fa-brands fa-linkedin fa-2x text-white" />
-              </Link>
-            </li>
-          </ul>
-        </div>
+                    <li className="nav-item">
+                      <NavLink
+                        to="/contact"  onClick={() => window.scrollTo(0, 0)}
+                        className={({ isActive }) =>
+                          isActive ? "nav-link active custom-active" : "nav-link"
+                        }
+                      >
+                        Contact
+                      </NavLink>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+                {/* Social Media Links - End */}
+                <div className="header-right ms-auto">
+                  <ul className="d-flex list-unstyled mb-0">
+                    <li className="mx-3">
+                      <Link
+                        to="https://www.facebook.com/profile.php?id=61569130629576"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-facebook fa-2x text-white" />
+                      </Link>
+                    </li>
+                    <li className="mx-3">
+                      <Link to="https://x.com/balajiglaspac" target="_blank">
+                        <i className="fa-brands fa-x-twitter fa-2x text-white" />
+                      </Link>
+                    </li>
+                    <li className="mx-3">
+                      <Link
+                        to="https://www.instagram.com/balaji_glaspac?igsh=enY3cWdobXpjY2c5"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-instagram fa-2x text-white" />
+                      </Link>
+                    </li>
+                    <li className="mx-3">
+                      <Link
+                        to="https://www.linkedin.com/in/balaji-glaspac-95534533b/"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-linkedin fa-2x text-white" />
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </nav>
           </div>

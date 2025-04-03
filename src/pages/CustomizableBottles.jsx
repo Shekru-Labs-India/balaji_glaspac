@@ -18,7 +18,7 @@ const CustomizableBottles = () => {
       <section className="min-vh-100 d-flex align-items-center bg-light pt-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 py-3">
               <span
                 className="premium-letter-spacing text-uppercase fw-bold px-3 rounded py-2 mb-4"
                 style={{ backgroundColor: "#fa5f0b", color: "white" }}
