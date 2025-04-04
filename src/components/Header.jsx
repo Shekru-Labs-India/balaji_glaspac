@@ -11,7 +11,9 @@ const Header = () => {
     beverage: false,
     food: false,
     pharma: false,
+    liquor: false,
     cosmetic: false,
+    chemicals: false,
     services: false,
   });
 
@@ -191,6 +193,198 @@ const Header = () => {
                       mobileDropdowns.products ? "show" : "d-none"
                     }`}
                   >
+
+
+                  {/* Pharmaceutical Bottles Section */}
+                  <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("pharma");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Pharmaceutical Bottles</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.pharma ? "show" : "d-none"
+                        }`}
+                      >
+                        <Link
+                          to="/oral-liquid-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Oral Liquid Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/dropper-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Dropper Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/vials-and-ampoules"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Vials and Ampoules</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/tablet-and-capsule-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Tablet and Capsule Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/specialty-pharmaceutical-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Specialty Pharmaceutical Bottles</span>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Food Containers Section */}
+                    <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("food");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Food Containers</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.food ? "show" : "d-none"
+                        }`}
+                      >
+                        <Link
+                          to="/food-jars"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Food Jars</span>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Liquor Bottles Section */}
+                    <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("liquor");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Liquor Bottles</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.liquor ? "show" : "d-none"
+                        }`}
+                      >
+                        <Link
+                          to="/wine-bottles" 
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Wine Bottles</span>
+                          </div>
+                        </Link>
+
+                        
+                        <Link
+                          to="/sparklingwinenew"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Sparkling Wine</span>
+                          </div>
+                        </Link>
+
+
+                        <Link
+                          to="/beer-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Beer Bottles</span>
+                          </div>
+                        </Link>
+                        
+                        <Link
+                          to="/spirits-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Spirits Bottles</span>
+                          </div>
+                        </Link>
+                        
+                        <Link
+                          to="/champagne-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Champagne Bottles</span>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/specialty-drink-bottles"
+                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        >
+                          <div className="d-flex align-items-center">
+                            <i className="fa-solid fa-arrow-right me-2" />
+                            <span>Specialty Drink Bottles</span>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+
                     {/* Beverage Bottles Section */}
                     <div className="nav-item">
                       <div
@@ -294,109 +488,10 @@ const Header = () => {
                       </div>
                     </div>
 
-                    {/* Food Containers Section */}
-                    <div className="nav-item">
-                      <div
-                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          toggleMobileDropdown("food");
-                        }}
-                      >
-                        <div className="d-flex align-items-center">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          <span>Food Containers</span>
-                        </div>
-                      </div>
-                      <div
-                        className={`${
-                          mobileDropdowns.food ? "show" : "d-none"
-                        }`}
-                      >
-                        <Link
-                          to="/food-jars"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Food Jars</span>
-                          </div>
-                        </Link>
-                      </div>
-                    </div>
 
-                    {/* Pharmaceutical Bottles Section */}
-                    <div className="nav-item">
-                      <div
-                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          toggleMobileDropdown("pharma");
-                        }}
-                      >
-                        <div className="d-flex align-items-center">
-                          <i
-                            className="fa-solid fa-arrow-turn-up me-2"
-                            style={{ transform: "rotate(90deg)" }}
-                          />
-                          <span>Pharmaceutical Bottles</span>
-                        </div>
-                      </div>
-                      <div
-                        className={`${
-                          mobileDropdowns.pharma ? "show" : "d-none"
-                        }`}
-                      >
-                        <Link
-                          to="/oral-liquid-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Oral Liquid Bottles</span>
-                          </div>
-                        </Link>
-                        <Link
-                          to="/dropper-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Dropper Bottles</span>
-                          </div>
-                        </Link>
-                        <Link
-                          to="/vials-and-ampoules"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Vials and Ampoules</span>
-                          </div>
-                        </Link>
-                        <Link
-                          to="/tablet-and-capsule-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Tablet and Capsule Bottles</span>
-                          </div>
-                        </Link>
-                        <Link
-                          to="/specialty-pharmaceutical-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Specialty Pharmaceutical Bottles</span>
-                          </div>
-                        </Link>
-                      </div>
-                    </div>
+
+                    
+                    
 
                     {/* Cosmetic and Personal Care Section */}
                     <div className="nav-item">
@@ -441,7 +536,28 @@ const Header = () => {
                       </div>
                     </div>
 
-                    {/* Other Categories */}
+                    {/* Chemicals Section */}
+                    <div className="nav-item">
+                      <div
+                        className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          toggleMobileDropdown("chemicals");
+                        }}
+                      >
+                        <div className="d-flex align-items-center">
+                          <i
+                            className="fa-solid fa-arrow-turn-up me-2"
+                            style={{ transform: "rotate(90deg)" }}
+                          />
+                          <span>Chemicals</span>
+                        </div>
+                      </div>
+                      <div
+                        className={`${
+                          mobileDropdowns.chemicals ? "show" : "d-none"
+                        }`}
+                      >
                     <Link
                       to="/industrial-bottles"
                       className="nav-link ps-4 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -478,6 +594,10 @@ const Header = () => {
                         <span>Eco-Friendly Bottles</span>
                       </div>
                     </Link>
+                      </div>
+                    </div>
+
+                    
                   </div>
                 </li>
 
@@ -504,13 +624,13 @@ const Header = () => {
         }`}
       >
         <Link
-          to="/appliedceramic"
+          to="/packagingoptions"
           className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
         >
            <div className="d-flex align-items-center">
           <i className="fa-solid fa-arrow-right me-2" />
-         <span> Applied Ceramic Label</span>
-         </div>
+          <span>Packaging Options </span>
+          </div>
         </Link>
         <Link
           to="/coloring"
@@ -522,24 +642,6 @@ const Header = () => {
          </div>
         </Link>
         <Link
-          to="/coating"
-          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
-        >
-          <div className="d-flex align-items-center">
-          <i className="fa-solid fa-arrow-right me-2" />
-         <span>Coating </span> 
-         </div>
-        </Link>
-        <Link
-          to="/packagingoptions"
-          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
-        >
-           <div className="d-flex align-items-center">
-          <i className="fa-solid fa-arrow-right me-2" />
-          <span>Packaging Options </span>
-          </div>
-        </Link>
-        <Link
           to="/inhousedesign"
           className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
         >
@@ -549,6 +651,27 @@ const Header = () => {
          </div> 
         </Link>
         <Link
+          to="/appliedceramic"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+           <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+         <span> Applied Ceramic Label</span>
+         </div>
+        </Link>
+        
+        <Link
+          to="/coating"
+          className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
+        >
+          <div className="d-flex align-items-center">
+          <i className="fa-solid fa-arrow-right me-2" />
+         <span>Coating </span> 
+         </div>
+        </Link>
+        
+        
+        {/* <Link
           to="/mouldshop"
           className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
         >
@@ -556,7 +679,7 @@ const Header = () => {
           <i className="fa-solid fa-arrow-right me-2" />
           <span>Mould Shop </span>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </li>
                
