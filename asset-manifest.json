@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/balaji_glaspac/static/css/main.1a9e0219.css",
-    "main.js": "/balaji_glaspac/static/js/main.b608c51e.js",
+    "main.js": "/balaji_glaspac/static/js/main.94fe0896.js",
     "static/js/453.d5a9f5a3.chunk.js": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js",
     "static/media/manufacturing.mp4": "/balaji_glaspac/static/media/manufacturing.1697ef979e1487249a85.mp4",
     "static/media/img1.jpg": "/balaji_glaspac/static/media/img1.97694c926d256a35bbf7.jpg",
@@ -92,11 +92,11 @@
     "static/media/slick.ttf": "/balaji_glaspac/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/balaji_glaspac/static/media/slick.295183786cd8a1389865.woff",
     "main.1a9e0219.css.map": "/balaji_glaspac/static/css/main.1a9e0219.css.map",
-    "main.b608c51e.js.map": "/balaji_glaspac/static/js/main.b608c51e.js.map",
+    "main.94fe0896.js.map": "/balaji_glaspac/static/js/main.94fe0896.js.map",
     "453.d5a9f5a3.chunk.js.map": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a9e0219.css",
-    "static/js/main.b608c51e.js"
+    "static/js/main.94fe0896.js"
   ]
 }
