@@ -17,105 +17,118 @@ const VialsAmpoules = () => {
       <Header />
 
       {/* Hero Section with Floating Cards */}
-      <section className="bg-light pt-5 mt-5">
-        <div className="container">
-          <div className="row align-items-center min-vh-100">
-            <div className="col-lg-6">
-              <div className="pe-lg-5">
-                <div
-                  className="d-inline-block border rounded-pill px-3 py-1 mb-4"
-                  style={{ borderColor: themeColor + "!important" }}
-                >
-                  <span style={{ color: themeColor }}>Medical Grade Glass</span>
-                </div>
-                <h1 className="display-4 fw-bold mb-4">Vials & Ampoules</h1>
-                <p className="lead mb-5">
-                  High-precision glass vials and ampoules for pharmaceutical,
-                  medical, and diagnostic applications. Manufactured to meet
-                  stringent industry standards.
-                </p>
+     <section className="bg-light  position-relative overflow-hidden">
+  {/* Blurred Background Layer */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundImage: `url(${vial})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      filter: "blur(8px)",
+      zIndex: 1,
+    }}
+  ></div>
 
-                {/* Certification Badges */}
-                <div className="d-flex flex-wrap gap-3 mb-5">
-                  {[
-                    "ISO 15378",
-                    "USP Type I",
-                    "EP Standards",
-                    "GMP Certified",
-                  ].map((cert, index) => (
-                    <span
-                      key={index}
-                      className="badge bg-white border text-dark px-3 py-2"
+  {/* Foreground Content */}
+  <div className="container position-relative" style={{ zIndex: 2 }}>
+    <div className="row align-items-center min-vh-100">
+      {/* Left Column */}
+      <div className="col-lg-6">
+        <div className="pe-lg-5">
+          <div
+            className="d-inline-block border rounded-pill px-3 py-1 mb-4"
+            style={{ borderColor: themeColor + "!important" }}
+          >
+            <span style={{ color: themeColor }}>Medical Grade Glass</span>
+          </div>
+          <h1 className="display-4 fw-bold mb-4">Vials &amp; Ampoules</h1>
+          <p className="lead mb-5">
+            High-precision glass vials and ampoules for pharmaceutical,
+            medical, and diagnostic applications. Manufactured to meet
+            stringent industry standards.
+          </p>
+
+          {/* Certification Badges */}
+          <div className="d-flex flex-wrap gap-3 mb-5">
+            {["ISO 15378", "USP Type I", "EP Standards", "GMP Certified"].map(
+              (cert, index) => (
+                <span
+                  key={index}
+                  className="badge bg-white border text-dark px-3 py-2"
+                >
+                  <i
+                    className="fa-solid fa-certificate me-2"
+                    style={{ color: themeColor }}
+                  ></i>
+                  {cert}
+                </span>
+              )
+            )}
+          </div>
+
+          <Link to="/contact" className="cmn-btn">
+            Request Technical Documentation
+            <i className="fa-solid fa-arrow-right ms-2"></i>
+          </Link>
+        </div>
+      </div>
+
+      {/* Right Column */}
+      <div className="col-lg-6">
+        <div className="position-relative">
+          <div className="row g-4">
+            {[
+              {
+                title: "Clear Glass Vials",
+                specs: "2ml - 100ml",
+                icon: "fa-solid fa-vial",
+              },
+              {
+                title: "Amber Glass Vials",
+                specs: "2ml - 50ml",
+                icon: "fa-solid fa-vial-circle-check",
+              },
+              {
+                title: "Clear Ampoules",
+                specs: "1ml - 20ml",
+                icon: "fa-solid fa-syringe",
+              },
+              {
+                title: "Amber Ampoules",
+                specs: "1ml - 10ml",
+                icon: "fa-solid fa-prescription-bottle",
+              },
+            ].map((product, index) => (
+              <div key={index} className="col-6">
+                <div className="card border-0 shadow-lg h-100">
+                  <div className="card-body p-4">
+                    <div
+                      className="rounded-circle p-3 d-inline-flex mb-3"
+                      style={{
+                        backgroundColor: `${themeColor}20`,
+                      }}
                     >
                       <i
-                        className="fa-solid fa-certificate me-2"
+                        className={`${product.icon} fs-3`}
                         style={{ color: themeColor }}
                       ></i>
-                      {cert}
-                    </span>
-                  ))}
-                </div>
-
-                <Link to="/contact" className="cmn-btn">
-                  Request Technical Documentation
-                  <i className="fa-solid fa-arrow-right ms-2"></i>
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="position-relative">
-                {/* Floating Product Cards */}
-                <div className="row g-4">
-                  {[
-                    {
-                      title: "Clear Glass Vials",
-                      specs: "2ml - 100ml",
-                      icon: "fa-solid fa-vial",
-                    },
-                    {
-                      title: "Amber Glass Vials",
-                      specs: "2ml - 50ml",
-                      icon: "fa-solid fa-vial-circle-check",
-                    },
-                    {
-                      title: "Clear Ampoules",
-                      specs: "1ml - 20ml",
-                      icon: "fa-solid fa-syringe",
-                    },
-                    {
-                      title: "Amber Ampoules",
-                      specs: "1ml - 10ml",
-                      icon: "fa-solid fa-prescription-bottle",
-                    },
-                  ].map((product, index) => (
-                    <div key={index} className="col-6">
-                      <div className="card border-0 shadow-lg h-100">
-                        <div className="card-body p-4">
-                          <div
-                            className="rounded-circle p-3 d-inline-flex mb-3"
-                            style={{
-                              backgroundColor: `${themeColor}20`, // 20 is for 12% opacity
-                            }}
-                          >
-                            <i
-                              className={`${product.icon} fs-3`}
-                              style={{ color: themeColor }}
-                            ></i>
-                          </div>
-                          <h4 className="h5 mb-2">{product.title}</h4>
-                          <p className="small text-muted mb-0">
-                            Capacity: {product.specs}
-                          </p>
-                        </div>
-                      </div>
                     </div>
-                  ))}
+                    <h4 className="h5 mb-2">{product.title}</h4>
+                    <p className="small text-muted mb-0">
+                      Capacity: {product.specs}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Technical Specifications */}
       <section className="py-5">

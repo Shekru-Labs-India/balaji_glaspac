@@ -74,7 +74,7 @@ const ChampagneBottles = () => {
       {/* Elegant Hero Section */}
       <section className="champagne-hero position-relative">
         <div className="container">
-          <div className="row align-items-center min-vh-100">
+          <div className="row align-items-center min-vh-100" style={{ backgroundImage: 'url("")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
             {/* Left Content Side */}
             <div className="col-lg-6">
               <div className="hero-content py-5">

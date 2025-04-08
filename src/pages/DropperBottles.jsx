@@ -30,60 +30,80 @@ const DropperBottles = () => {
       
 
        {/* Banner Section */}
-       <div className="py-5 overflow-hidden bg-dark text-white vh-100 d-flex align-items-center">
-        <div className="container">
-          <div className="row align-items-center py-4 px-3 gx-5 gy-4">
-            {/* Text */}
-            <div className="col-lg-6 col-md-12">
-  <div className="banner-content text-white">
+       <div
+  className="banner-area banner-img-one py-5 overflow-hidden bg-dark text-white vh-100 d-flex align-items-center position-relative"
+>
+  {/* Blurred Background Image */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundImage: `url(${dropperbottle2})`, // replace with actual image variable
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      filter: "blur(8px)",
+      zIndex: 1,
+    }}
+  ></div>
 
-                <span className="d-block mb-2 text-warning fw-semibold fs-5">Precision Dispensing</span>
-                <h1 className="mb-3 text-break fw-bold">Dropper Bottles</h1>
-                <p className="mb-4">
-                  Premium glass dropper bottles for essential oils, serums, and precise liquid
-                  dispensing. Featuring calibrated droppers and tamper-evident closures.
-                </p>
+  {/* Optional dark overlay for better readability */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100 bg-dark"
+    style={{ opacity: 0.5, zIndex: 2 }}
+  ></div>
+
+  {/* Main Content */}
+  <div className="container position-relative" style={{ zIndex: 3 }}>
+    <div className="row align-items-center py-4 px-3 gx-5 gy-4">
+      {/* Text */}
+      <div className="col-lg-6 col-md-12">
+        <div className="banner-content text-white">
+          <span className="d-block mb-2 text-warning fw-semibold fs-5">Precision Dispensing</span>
+          <h1 className="mb-3 text-break fw-bold">Dropper Bottles</h1>
+          <p className="mb-4">
+            Premium glass dropper bottles for essential oils, serums, and precise liquid
+            dispensing. Featuring calibrated droppers and tamper-evident closures.
+          </p>
+
+          <div className="row text-center g-2">
+            {[
+              { value: "15+", label: "SIZE OPTIONS" },
+              { value: "99.9%", label: "ACCURACY" },
+              { value: "5+", label: "DROPPER TYPES" },
+            ].map((item, i) => (
+              <div key={i} className="col-4">
+                <div
+                  className="counter-item h-100 d-flex flex-column justify-content-center py-3 rounded"
+                  style={{ border: "2px solid orange" }}
+                >
+                  <h3 className="fw-bold text-white mb-1">{item.value}</h3>
+                  <p className="mb-0 text-white-50 small">{item.label}</p>
+                </div>
               </div>
-
-              <div className="row text-center g-2">
-  {[
-    { value: "15+", label: "SIZE OPTIONS" },
-    { value: "99.9%", label: "ACCURACY" },
-    { value: "5+", label: "DROPPER TYPES" }
-  ].map((item, i) => (
-    <div key={i} className="col-4">
-      <div
-        className="counter-item h-100 d-flex flex-column justify-content-center py-3 rounded"
-        style={{ border: "2px solid orange" }}
-      >
-        <h3 className="fw-bold text-white mb-1">{item.value}</h3>
-        <p className="mb-0 text-white-50 small">{item.label}</p>
-      </div>
-    </div>
-  ))}
-</div>
-
-</div>
-
-
-            {/* Slider */}
-            <div className="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
-              <Slider {...sliderSettings}>
-                {[dropperbottle1, dropperbottle2].map((img, idx) => (
-                  <div key={idx}>
-                    <img
-                      src={img}
-                      alt="Dropper"
-                      className="img-fluid w-100 rounded"
-                      style={{ height: "auto", maxHeight: "500px", objectFit: "cover" }}
-                    />
-                  </div>
-                ))}
-              </Slider>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* Slider */}
+      <div className="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
+        <Slider {...sliderSettings}>
+          {[dropperbottle1, dropperbottle2].map((img, idx) => (
+            <div key={idx}>
+              <img
+                src={img}
+                alt="Dropper"
+                className="img-fluid w-100 rounded"
+                style={{ height: "auto", maxHeight: "500px", objectFit: "cover" }}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       {/* Applications Section */}
       <section className="service-area py-5">

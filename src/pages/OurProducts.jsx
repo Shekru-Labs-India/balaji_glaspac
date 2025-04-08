@@ -12,8 +12,7 @@ const OurProducts = () => {
     <Header/>
 
      {/* Service */}
-     <section className="service-area pt-100 pb-70">
-
+     <section className="service-area pt-100 pb-70 vh-100">
 <style>
 {`
 .service-item {

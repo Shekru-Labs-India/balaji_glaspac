@@ -52,6 +52,7 @@ const TabletCapsuleBottles = () => {
 
       {/* Hero Section */}
       <section className="bg-light pt-5 mt-5">
+      
         <div className="container">
           <div className="row align-items-center min-vh-75">
             <div className="col-lg-6 mb-5 mb-lg-0">
