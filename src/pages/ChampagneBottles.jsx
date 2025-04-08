@@ -72,7 +72,7 @@ const ChampagneBottles = () => {
       <Header />
 
       {/* Elegant Hero Section */}
-      <section className="champagne-hero position-relative pt-5 mt-5">
+      <section className="champagne-hero position-relative">
         <div className="container">
           <div className="row align-items-center min-vh-100">
             {/* Left Content Side */}

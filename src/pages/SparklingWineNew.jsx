@@ -566,7 +566,7 @@ onChange={(e) => setSearchQuery(e.target.value)}
 </div>
 </div>
 
-<div className="row mb-3">
+<div className="row mb-3 py-5 my-5">
 
 
 

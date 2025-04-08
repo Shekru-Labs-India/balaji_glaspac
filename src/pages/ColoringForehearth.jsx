@@ -64,7 +64,7 @@ const ColoringForehearth = () => {
     </div>
 
     {/* Row 2: Left Image, Right Paragraph */}
-    <div className="row align-items-center">
+    <div className="row align-items-center vh-100">
       <div className="col-md-6 text-center">
         <img className="img-fluid rounded-4" src={coloring1} alt="Left Image" />
       </div>

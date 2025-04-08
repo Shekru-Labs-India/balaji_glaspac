@@ -16,7 +16,7 @@ const IndustrialBottles = () => {
 
       {/* Hero Section - adjusted spacing */}
       <section className="bg-dark position-relative overflow-hidden pt-5 mt-3">
-        <div className="container-fluid">
+        <div className="container-fluid vh-100">
           <div className="row g-0">
             <div className="col-lg-6">
               <div className="p-5 h-100 d-flex flex-column justify-content-center bg-gradient">

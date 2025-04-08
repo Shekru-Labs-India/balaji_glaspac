@@ -27,144 +27,92 @@ const DropperBottles = () => {
     <>
       <Header />
 
-      {/* Banner with Counter Stats */}
-      <div className="banner-area banner-img-one">
-        <div className="d-table">
-          <div className="d-table-cell">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-lg-6">
-                  <div className="banner-content">
-                    <span className="sub-title fs-5 fw-bold">
-                      Precision Dispensing
-                    </span>
-                    <h1>Dropper Bottles</h1>
-                    <p>
-                      Premium glass dropper bottles for essential oils, serums,
-                      and precise liquid dispensing. Featuring calibrated
-                      droppers and tamper-evident closures.
-                    </p>
-                  </div>
+      
 
-                  {/* Counter Stats */}
-                  <div className="row mt-5">
-                    <div className="col-sm-4">
-                      <div className="counter-item">
-                        <h3>
-                          <span className="odometer">15+</span>
-                        </h3>
-                        <p>SIZE OPTIONS</p>
-                      </div>
-                    </div>
-                    <div className="col-sm-4">
-                      <div className="counter-item">
-                        <h3>
-                          <span className="odometer">99.9%</span>
-                        </h3>
-                        <p>ACCURACY</p>
-                      </div>
-                    </div>
-                    <div className="col-sm-4">
-                      <div className="counter-item">
-                        <h3>
-                          <span className="odometer">5+</span>
-                        </h3>
-                        <p>DROPPER TYPES</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="about-img">
-                    <Slider {...sliderSettings}>
-                      <div>
-                        <img
-                          src={dropperbottle1}
-                          alt="Dropper"
-                          style={{
-                            width: "100%",
-                            height: "500px",
-                            objectFit: "cover",
-                            borderRadius: "8px",
-                          }}
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src={dropperbottle2}
-                          alt="Dropper"
-                          style={{
-                            width: "100%",
-                            height: "500px",
-                            objectFit: "cover",
-                            borderRadius: "8px",
-                          }}
-                        />
-                      </div>
-                    </Slider>
-                  </div>
-                </div>
+       {/* Banner Section */}
+       <div className="py-5 overflow-hidden bg-dark text-white vh-100 d-flex align-items-center">
+        <div className="container">
+          <div className="row align-items-center py-4 px-3 gx-5 gy-4">
+            {/* Text */}
+            <div className="col-lg-6 col-md-12">
+  <div className="banner-content text-white">
+
+                <span className="d-block mb-2 text-warning fw-semibold fs-5">Precision Dispensing</span>
+                <h1 className="mb-3 text-break fw-bold">Dropper Bottles</h1>
+                <p className="mb-4">
+                  Premium glass dropper bottles for essential oils, serums, and precise liquid
+                  dispensing. Featuring calibrated droppers and tamper-evident closures.
+                </p>
               </div>
+
+              <div className="row text-center g-2">
+  {[
+    { value: "15+", label: "SIZE OPTIONS" },
+    { value: "99.9%", label: "ACCURACY" },
+    { value: "5+", label: "DROPPER TYPES" }
+  ].map((item, i) => (
+    <div key={i} className="col-4">
+      <div
+        className="counter-item h-100 d-flex flex-column justify-content-center py-3 rounded"
+        style={{ border: "2px solid orange" }}
+      >
+        <h3 className="fw-bold text-white mb-1">{item.value}</h3>
+        <p className="mb-0 text-white-50 small">{item.label}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+</div>
+
+
+            {/* Slider */}
+            <div className="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
+              <Slider {...sliderSettings}>
+                {[dropperbottle1, dropperbottle2].map((img, idx) => (
+                  <div key={idx}>
+                    <img
+                      src={img}
+                      alt="Dropper"
+                      className="img-fluid w-100 rounded"
+                      style={{ height: "auto", maxHeight: "500px", objectFit: "cover" }}
+                    />
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
         </div>
       </div>
 
       {/* Applications Section */}
-      <section className="service-area pt-100 pb-70">
+      <section className="service-area py-5">
         <div className="container">
-          <div className="section-title">
+          <div className="section-title text-center mb-4">
             <span className="sub-title">Applications</span>
             <h2>
               Perfect For Your <span>Products</span>
             </h2>
           </div>
-          <div className="row">
-            {[
-              {
-                icon: "fa-solid fa-oil-can",
-                title: "Essential Oils",
-                description:
-                  "Perfect for aromatherapy and therapeutic oils. Features precise dispensing mechanism and UV protection.",
-              },
-              {
-                icon: "fa-solid fa-eye-dropper",
-                title: "Cosmetic Serums",
-                description:
-                  "Ideal for skincare and beauty products. Ensures controlled application and product preservation.",
-              },
-              {
-                icon: "fa-solid fa-flask-vial",
-                title: "Laboratory Use",
-                description:
-                  "Designed for scientific applications. Provides accurate measurements and contamination prevention.",
-              },
-            ].map((service, index) => (
-              <div key={index} className="col-sm-6 col-lg-4">
-                <div
-                  className="service-item px-0"
-                  style={{
-                    minHeight: "300px",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    padding: "2rem",
-                    textAlign: "center",
-                  }}
-                >
-                  <img src={service1} alt="Service" />
-                  <img src={service2} alt="Service" />
-                  <i
-                    className={service.icon}
-                    style={{
-                      fontSize: "2.5rem",
-                      marginBottom: "1rem",
-                      display: "block",
-                    }}
-                  />
-                  <h3 style={{ marginBottom: "1rem" }}>{service.title}</h3>
-                  <p style={{ marginBottom: 0 }}>{service.description}</p>
+          <div className="row g-4">
+            {[{
+              icon: "fa-solid fa-oil-can",
+              title: "Essential Oils",
+              description: "Perfect for aromatherapy and therapeutic oils. Features precise dispensing mechanism and UV protection."
+            }, {
+              icon: "fa-solid fa-eye-dropper",
+              title: "Cosmetic Serums",
+              description: "Ideal for skincare and beauty products. Ensures controlled application and product preservation."
+            }, {
+              icon: "fa-solid fa-flask-vial",
+              title: "Laboratory Use",
+              description: "Designed for scientific applications. Provides accurate measurements and contamination prevention."
+            }].map((service, index) => (
+              <div key={index} className="col-sm-6 col-md-4">
+                <div className="service-item h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 shadow-sm rounded">
+                  <i className={`${service.icon} mb-3`} style={{ fontSize: "2rem" }} />
+                  <h5>{service.title}</h5>
+                  <p>{service.description}</p>
                 </div>
               </div>
             ))}
@@ -172,8 +120,9 @@ const DropperBottles = () => {
         </div>
       </section>
 
+      
       {/* Features with Benefits */}
-      <section className="benefit-area mt-5">
+      <section className="benefit-area mt-100">
         <div className="container">
           <div className="benefit-content pe-3">
             <div className="section-title text-center">
@@ -210,29 +159,18 @@ const DropperBottles = () => {
         </div>
       </section>
 
-      {/* Partner Section */}
-      <section className="partner-area pb-100">
+
+      {/* Call-to-Action Section */}
+      <section className="partner-area py-5">
         <div className="container">
-          <div className="partner-wrap">
-            <div className="partner-shape">
-              <img src={service2} alt="Partner" />
+          <div className="row align-items-center">
+            <div className="col-md-6 mb-4 mb-md-0">
+              <h2>Ready to Order Custom Dropper Bottles?</h2>
             </div>
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div className="partner-content">
-                  <div className="section-title">
-                    <h2>Ready to Order Custom Dropper Bottles?</h2>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="partner-btn">
-                  <Link className="cmn-btn" to="/contact">
-                    Contact Us
-                    <i className="fa-solid fa-arrow-right ms-2" />
-                  </Link>
-                </div>
-              </div>
+            <div className="col-md-6 text-md-end">
+              <Link className="cmn-btn btn btn-primary" to="/contact">
+                Contact Us <i className="fa-solid fa-arrow-right ms-2" />
+              </Link>
             </div>
           </div>
         </div>

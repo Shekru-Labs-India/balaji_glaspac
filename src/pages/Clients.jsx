@@ -65,7 +65,7 @@ const Clients = () => {
       <Header />
 
       {/* Page Title */}
-      <div className="page-title-area">
+      <div className="page-title-area display-5">
         <div className="d-table">
           <div className="d-table-cell">
             <div className="container">
@@ -87,90 +87,69 @@ const Clients = () => {
       </div>
       {/* End Page Title */}
 
-      <section className="py-5 ">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 mx-auto text-center mt-5 mb-4 mb-lg-0">
-              <div className="section-heading title-style5 mt-0 text-center">
-                <h5 style={{ color: "#F15A22" }}>
-                  <strong>Our Valued Clients</strong>
-                </h5>
-              </div>
-              
-            </div>
-          </div>
+      <section className="vh-100 justify-content-center">
+  <div className="container-fluid border p-4 rounded shadow">
+    <div className="row align-items-center">
+      <div className="col-lg-6 mx-auto text-center mt-5 mb-4 mb-lg-0">
+        <div className="section-heading title-style5 mt-0 text-center">
+          <h5 style={{ color: "#F15A22" }}>
+            <strong>Our Valued Clients</strong>
+          </h5>
         </div>
-      </section>
-
-      <Swiper
-  modules={[Navigation, Pagination, Autoplay]}
-  loop={true}
-  autoplay={{ delay: 2500 }}
-  pagination={{ clickable: true, el: ".swiper-pagination" }}
-  navigation
-  spaceBetween={30}
-  slidesPerView="auto"
-  breakpoints={{
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    576: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 25
-    },
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 25
-    },
-    1200: {
-      slidesPerView: 5,
-      spaceBetween: 30
-    },
-    1400: {
-      slidesPerView: 6,
-      spaceBetween: 30
-    },
-    1600: {
-      slidesPerView: 7,
-      spaceBetween: 30
-    }
-  }}
->
-  {clientLogos.map((client) => (
-    <SwiperSlide key={client.id}>
-      <div className="text-center">
-        <img
-          src={client.logo}
-          alt={`${client.name} Logo`}
-          className="img-fluid client-logo"
-          style={{
-            width: "clamp(100px, 10vw, 150px)", // Responsive image size
-            height: "clamp(100px, 10vw, 150px)", // Responsive image size
-            objectFit: "cover",
-            borderRadius: "50%",
-            border: "2px solid #e9ecef",
-            padding: "10px",
-            backgroundColor: "#fff",
-            transition: "transform 0.3s ease",
-            margin: "auto"
-          }}
-        />
       </div>
-    </SwiperSlide>
-  ))}
-  
-  {/* Add custom navigation buttons if needed */}
-  <div className="swiper-button-prev"></div>
-  <div className="swiper-button-next"></div>
-</Swiper>
+    </div>
 
-{/* Pagination Dots */}
-<div className="swiper-pagination"></div>
+    {/* Swiper inside the frame */}
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      loop={true}
+      autoplay={{ delay: 2500 }}
+      pagination={{ clickable: true, el: ".swiper-pagination" }}
+      navigation
+      spaceBetween={30}
+      slidesPerView="auto"
+      breakpoints={{
+        320: { slidesPerView: 2, spaceBetween: 20 },
+        576: { slidesPerView: 3, spaceBetween: 20 },
+        768: { slidesPerView: 3, spaceBetween: 25 },
+        992: { slidesPerView: 4, spaceBetween: 25 },
+        1200: { slidesPerView: 5, spaceBetween: 30 },
+        1400: { slidesPerView: 6, spaceBetween: 30 },
+        1600: { slidesPerView: 7, spaceBetween: 30 }
+      }}
+    >
+      {clientLogos.map((client) => (
+        <SwiperSlide key={client.id}>
+          <div className="text-center">
+            <img
+              src={client.logo}
+              alt={`${client.name} Logo`}
+              className="img-fluid client-logo"
+              style={{
+                width: "clamp(100px, 10vw, 150px)",
+                height: "clamp(100px, 10vw, 150px)",
+                objectFit: "cover",
+                borderRadius: "50%",
+                border: "2px solid #e9ecef",
+                padding: "10px",
+                backgroundColor: "#fff",
+                transition: "transform 0.3s ease",
+                margin: "auto"
+              }}
+            />
+          </div>
+        </SwiperSlide>
+      ))}
+
+      {/* Optional navigation */}
+      <div className="swiper-button-prev"></div>
+      <div className="swiper-button-next"></div>
+    </Swiper>
+
+    {/* Pagination Dots */}
+    <div className="swiper-pagination mt-3"></div>
+  </div>
+</section>
 
 <style>
   {`

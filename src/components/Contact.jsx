@@ -30,7 +30,7 @@ const Contact = () => {
       </div>
       {/* End Page Title */}
     {/* Contact */}
-    <section className="contact-area pt-50 pb-50">
+    <section className="contact-area pt-50 pb-50 vh-100">
 
     <style>
     {`
@@ -160,7 +160,7 @@ const Contact = () => {
       </div>
 
       {/* Nashik Map - Second row, first card */}
-      <div className="grid-item item-4 mt-4">
+      <div className="grid-item item-4 mt-0">
         <div className="card">
           <div className="card-body">
             <iframe

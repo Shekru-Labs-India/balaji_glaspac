@@ -37,7 +37,7 @@ const InHouseDesign = () => {
                     </div>
 
    <section className="about-area1 ptb-100 py-2">
-                 <div className="container">
+                 <div className="container vh-100">
                    <div className="row align-items-center">
                      <div className="col-lg-6">
                        

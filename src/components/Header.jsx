@@ -71,7 +71,7 @@ const Header = () => {
 
   return (
     <>
-     
+
       {/* Start Navbar Area */}
       <div
         className={`navbar-area sticky-top ${
@@ -169,17 +169,19 @@ const Header = () => {
 
                 {/* Product List Dropdown */}
                 <li className="nav-item">
+
                 <div
-    className="nav-link px-3 py-2 border-bottom d-flex justify-content-between align-items-center"
-    onClick={(e) => {
-        e.preventDefault();
+
+                  className="nav-link px-3 py-2 border-bottom d-flex justify-content-between align-items-center"
+                  onClick={(e) => {
+               e.preventDefault();
         toggleMobileDropdown("products");
-        
+
+
     }}
->
-    <span>Products</span>
+>  <span>Products</span>
     <i
-      
+
         className={`fa-solid ${
             mobileDropdowns.products
                 ? "fa-chevron-up"
@@ -322,7 +324,7 @@ const Header = () => {
                         }`}
                       >
                         <Link
-                          to="/wine-bottles" 
+                          to="/wine-bottles"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
                         >
                           <div className="d-flex align-items-center">
@@ -331,7 +333,7 @@ const Header = () => {
                           </div>
                         </Link>
 
-                        
+
                         <Link
                           to="/sparklingwinenew"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -352,7 +354,7 @@ const Header = () => {
                             <span>Beer Bottles</span>
                           </div>
                         </Link>
-                        
+
                         <Link
                           to="/spirits-bottles"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -362,7 +364,7 @@ const Header = () => {
                             <span>Spirits Bottles</span>
                           </div>
                         </Link>
-                        
+
                         <Link
                           to="/champagne-bottles"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -407,48 +409,7 @@ const Header = () => {
                           mobileDropdowns.beverage ? "show" : "d-none"
                         }`}
                       >
-                        <Link
-                          to="/wine-bottles" 
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Wine Bottles</span>
-                          </div>
-                        </Link>
 
-                        
-                        <Link
-                          to="/sparklingwinenew"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Sparkling Wine</span>
-                          </div>
-                        </Link>
-
-
-                        <Link
-                          to="/beer-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Beer Bottles</span>
-                          </div>
-                        </Link>
-                        
-                        <Link
-                          to="/spirits-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Spirits Bottles</span>
-                          </div>
-                        </Link>
-                        
                         <Link
                           to="/water-bottles"
                           className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
@@ -467,31 +428,14 @@ const Header = () => {
                             <span>Juice and Soda Bottles</span>
                           </div>
                         </Link>
-                        <Link
-                          to="/champagne-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Champagne Bottles</span>
-                          </div>
-                        </Link>
-                        <Link
-                          to="/specialty-drink-bottles"
-                          className="nav-link ps-5 py-2 border-bottom d-flex justify-content-between align-items-center"
-                        >
-                          <div className="d-flex align-items-center">
-                            <i className="fa-solid fa-arrow-right me-2" />
-                            <span>Specialty Drink Bottles</span>
-                          </div>
-                        </Link>
+
                       </div>
                     </div>
 
 
 
-                    
-                    
+
+
 
                     {/* Cosmetic and Personal Care Section */}
                     <div className="nav-item">
@@ -597,7 +541,7 @@ const Header = () => {
                       </div>
                     </div>
 
-                    
+
                   </div>
                 </li>
 
@@ -638,7 +582,7 @@ const Header = () => {
         >
           <div className="d-flex align-items-center">
           <i className="fa-solid fa-arrow-right me-2" />
-         <span>Coloring Forehearth Technology </span> 
+         <span>Coloring Forehearth Technology </span>
          </div>
         </Link>
         <Link
@@ -648,7 +592,7 @@ const Header = () => {
            <div className="d-flex align-items-center">
           <i className="fa-solid fa-arrow-right me-2" />
          <span>In House Design Studio </span>
-         </div> 
+         </div>
         </Link>
         <Link
           to="/appliedceramic"
@@ -659,18 +603,18 @@ const Header = () => {
          <span> Applied Ceramic Label</span>
          </div>
         </Link>
-        
+
         <Link
           to="/coating"
           className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
         >
           <div className="d-flex align-items-center">
           <i className="fa-solid fa-arrow-right me-2" />
-         <span>Coating </span> 
+         <span>Coating </span>
          </div>
         </Link>
-        
-        
+
+
         {/* <Link
           to="/mouldshop"
           className="nav-link ps-4 py-2 border-bottom d-flex align-items-center"
@@ -682,10 +626,10 @@ const Header = () => {
         </Link> */}
       </div>
     </li>
-               
-                
 
-                
+
+
+
                 <li className="nav-item">
                   <NavLink
                     to="/clients"
@@ -699,7 +643,7 @@ const Header = () => {
                   </NavLink>
                 </li>
 
-                
+
 
                 <li className="nav-item">
                   <NavLink
@@ -738,14 +682,14 @@ const Header = () => {
         {/* Desktop Device */}
         <div className="main-nav py-0">
           <div className="container-fluid px-0">
-            <nav className="navbar navbar-expand-md navbar-light py-0">
-              <div className="d-flex justify-content-between align-items-center w-100">
+            <nav className="navbar navbar-expand-md navbar-light py-0 position-relative">
+              <div className="d-flex justify-content-between align-items-center w-100 mb-1">
                 {/* Logo - Start */}
                 <Link className="navbar-brand ms-0 ps-1 me-auto" to="/">
                   <div className="d-flex align-items-center">
                     <img
                       src={logo}
-                      width={70}
+                      width={40}
                       height="auto"
                       alt="Logo"
                       className="rounded-4"
@@ -758,7 +702,7 @@ const Header = () => {
                     </div>
                   </div>
                 </Link>
-                
+
                 {/* Navbar toggler for responsive design */}
                 <button
                   className="navbar-toggler d-md-none"
@@ -771,9 +715,9 @@ const Header = () => {
                 >
                   <span className="navbar-toggler-icon"></span>
                 </button>
-                
+
                 {/* Navigation - Center */}
-                <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse justify-content-center mt-n4" id="navbarSupportedContent">
                   <ul className="navbar-nav">
                     <li className="nav-item">
                       <NavLink
@@ -897,7 +841,7 @@ const Header = () => {
                             </li>
                           </ul>
                         </li>
-                       
+
 
                            {/* Liquor Bottles Section */}
                         <li className="nav-item dropdown-submenu">
@@ -932,7 +876,7 @@ const Header = () => {
                                  Sparkling Wine
                               </NavLink>
                             </li>
-                           
+
                             <li>
                               <NavLink
                                 to="/beer-bottles" onClick={() => window.scrollTo(0, 0)}
@@ -992,7 +936,7 @@ const Header = () => {
                             Beverage Bottles
                           </a>
                           <ul className="dropdown-menu submenu">
-                           
+
                             <li>
                               <NavLink
                                 to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}
@@ -1017,7 +961,7 @@ const Header = () => {
                             </li>
                           </ul>
                         </li>
-                        
+
                         {/* Cosmetic and Personal Care Section */}
                         <li className="nav-item dropdown-submenu">
                           <a href="#" className="nav-link dropdown-toggle">
@@ -1133,7 +1077,7 @@ const Header = () => {
                         Services <i className="fa-solid fa-chevron-down" />
                       </NavLink>
                       <ul className="dropdown-menu">
-                        
+
                       <li>
                           <NavLink
                             to="/packagingoptions" onClick={() => window.scrollTo(0, 0)}
@@ -1225,7 +1169,7 @@ const Header = () => {
                       </NavLink>
                     </li>
 
-                   
+
 
                     <li className="nav-item">
                       <NavLink
@@ -1237,10 +1181,10 @@ const Header = () => {
                         Contact
                       </NavLink>
                     </li>
-                    
+
                   </ul>
                 </div>
-                
+
                 {/* Social Media Links - End */}
                 <div className="header-right ms-auto">
                   <ul className="d-flex list-unstyled mb-0">

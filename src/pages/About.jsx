@@ -11,7 +11,7 @@ function About() {
 
       {/* About Section  start*/}
       <section className="about-area ptb-100">
-        <div className="container">
+        <div className="container vh-100">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="section-title">
