@@ -154,10 +154,8 @@ const OurProducts = () => {
           <h3>
             <Link to="/wine-bottles"  onClick={() => window.scrollTo(0, 0)}>Wine Bottles</Link>
           </h3>
-          <p title="Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.">
-            Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.
+          <p title="Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.">
+            Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.
           </p>
           <Link className="service-link" to="/wine-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -174,10 +172,8 @@ const OurProducts = () => {
           <h3>
             <Link to="/sparklingwinenew"  onClick={() => window.scrollTo(0, 0)}>Sparkling Wine Bottles</Link>
           </h3>
-          <p title="Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.">
-            Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.
+          <p title="Premium glass bottles designed specifically for sparkling wine packaging, featuring various sizes and styles to meet your needs.">
+            Premium glass bottles designed specifically for sparkling wine packaging, featuring various sizes and styles to meet your needs.
           </p>
           <Link className="service-link" to="/sparklingwinenew"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -194,10 +190,8 @@ const OurProducts = () => {
           <h3>
             <Link to="/beer-bottles"  onClick={() => window.scrollTo(0, 0)}>Beer Bottles</Link>
           </h3>
-          <p title="High-quality glass vials and ampoules for pharmaceutical and
-            laboratory applications with precise specifications.">
-            High-quality glass vials and ampoules for pharmaceutical and
-            laboratory applications with precise specifications.
+          <p title="Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.">
+            Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.
           </p>
           <Link className="service-link" to="/beer-bottle"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -216,10 +210,10 @@ const OurProducts = () => {
               Spirits Bottles
             </Link>
           </h3>
-          <p title=" Specialized bottles for tablets and capsules with
-            moisture-resistant properties and child-resistant caps.">
-            Specialized bottles for tablets and capsules with
-            moisture-resistant properties and child-resistant caps.
+          <p title="Elegant glass bottles designed for spirits and liquors,
+                  featuring premium finishes and distinctive designs.">
+            Elegant glass bottles designed for spirits and liquors,
+            featuring premium finishes and distinctive designs.
           </p>
           <Link className="service-link" to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -238,10 +232,10 @@ const OurProducts = () => {
               Champagne Bottles
             </Link>
           </h3>
-          <p title="Custom pharmaceutical bottles designed for specific medical
-            applications with strict quality standards.">
-            Custom pharmaceutical bottles designed for specific medical
-            applications with strict quality standards.
+          <p title="Specialized bottles designed to withstand pressure, perfect
+                  for champagne and sparkling wines.">
+            Specialized bottles designed to withstand pressure, perfect
+            for champagne and sparkling wines.
           </p>
           <Link
             className="service-link"
@@ -263,10 +257,10 @@ const OurProducts = () => {
               Specialty Drink Bottles
             </Link>
           </h3>
-          <p title="Custom pharmaceutical bottles designed for specific medical
-            applications with strict quality standards.">
-            Custom pharmaceutical bottles designed for specific medical
-            applications with strict quality standards.
+          <p title="Custom bottles for cold-pressed juices, kombucha, and other
+                  specialty beverages with unique designs.">
+            Custom bottles for cold-pressed juices, kombucha, and other
+            specialty beverages with unique designs.
           </p>
           <Link
             className="service-link"

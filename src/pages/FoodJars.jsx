@@ -1231,67 +1231,79 @@ const FoodJars = () => {
 
       {/* Hero Section - adjusted spacing */}
       <section className="bg-light position-relative overflow-hidden pt-3 mt-3">
-        <div className="container min-vh-100 d-flex align-items-center">
-          <div className="row align-items-center">
-            <div className="col-lg-5">
-              <div className="section-title mb-4">
-                <span className="sub-title fs-5 fw-bold">
-                  Food Storage Solutions
-                </span>
-                <h1 className="display-4 fw-bold">Food Jars</h1>
-              </div>
-              <p className="lead mb-4">
-                Wide-mouth jars perfect for food packaging, preserves, and
-                condiments with secure sealing options for maximum freshness.
-              </p>
-              <div className="about-content mb-5">
-                <ul className="list-unstyled">
-                  <li className="d-flex align-items-center mb-3">
-                    <i className="fa-solid fa-check text-primary me-3" />
-                    <span>Airtight Sealing Technology</span>
-                  </li>
-                  <li className="d-flex align-items-center mb-3">
-                    <i className="fa-solid fa-check text-primary me-3" />
-                    <span>Wide-Mouth Design for Easy Filling</span>
-                  </li>
-                  <li className="d-flex align-items-center mb-3">
-                    <i className="fa-solid fa-check text-primary me-3" />
-                    <span>Heat-Resistant Glass</span>
-                  </li>
-                  <li className="d-flex align-items-center mb-3">
-                    <i className="fa-solid fa-check text-primary me-3" />
-                    <span>Multiple Size Options</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="d-flex gap-3">
-                <button className="cmn-btn">
-                  Request Quote
-                  <i className="fa-solid fa-arrow-right ms-2" />
-                </button>
-                <button className="cmn-btn-outline">Download Catalog</button>
-              </div>
-            </div>
-            <div className="col-lg-7">
-              <div className="position-relative">
-                <img
-                  src={foodJar}
-                  alt="Food Jar"
-                  style={{
-                    width: "100%",
-                    height: "400px",
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                    marginTop: "2rem",
-                    marginBottom: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+  {/* Blurred Background Image */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundImage: `url(${foodJar})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(8px)",
+      opacity: 0.5,
+      zIndex: 0,
+    }}
+  ></div>
+
+  {/* Foreground Content */}
+  <div className="container min-vh-100 d-flex align-items-center position-relative" style={{ zIndex: 1 }}>
+    <div className="row align-items-center">
+      <div className="col-lg-5">
+        <div className="section-title mb-4">
+          <span className="sub-title fs-5 fw-bold">Food Storage Solutions</span>
+          <h1 className="display-4 fw-bold">Food Jars</h1>
         </div>
-      </section>
+        <p className="lead mb-4">
+          Wide-mouth jars perfect for food packaging, preserves, and
+          condiments with secure sealing options for maximum freshness.
+        </p>
+        <div className="about-content mb-5">
+          <ul className="list-unstyled">
+            <li className="d-flex align-items-center mb-3">
+              <i className="fa-solid fa-check text-primary me-3" />
+              <span>Airtight Sealing Technology</span>
+            </li>
+            <li className="d-flex align-items-center mb-3">
+              <i className="fa-solid fa-check text-primary me-3" />
+              <span>Wide-Mouth Design for Easy Filling</span>
+            </li>
+            <li className="d-flex align-items-center mb-3">
+              <i className="fa-solid fa-check text-primary me-3" />
+              <span>Heat-Resistant Glass</span>
+            </li>
+            <li className="d-flex align-items-center mb-3">
+              <i className="fa-solid fa-check text-primary me-3" />
+              <span>Multiple Size Options</span>
+            </li>
+          </ul>
+        </div>
+        <div className="d-flex gap-3">
+          <button className="cmn-btn">
+            Request Quote
+            <i className="fa-solid fa-arrow-right ms-2" />
+          </button>
+          <button className="cmn-btn-outline">Download Catalog</button>
+        </div>
+      </div>
+      <div className="col-lg-7">
+        <div className="position-relative">
+          <img
+            src={foodJar}
+            alt="Food Jar"
+            style={{
+              width: "100%",
+              height: "400px",
+              objectFit: "cover",
+              borderRadius: "8px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              marginTop: "2rem",
+              marginBottom: "2rem",
+            }}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
    
       <div className="container-fluid mt-4"  >

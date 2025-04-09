@@ -51,69 +51,82 @@ const TabletCapsuleBottles = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-light pt-5 mt-5">
-      
-        <div className="container">
-          <div className="row align-items-center min-vh-75">
-            <div className="col-lg-6 mb-5 mb-lg-0">
-              <h1 className="display-4 fw-bold mb-4">
-                Tablet & Capsule Bottles
-              </h1>
-              <p className="lead mb-4">
-                Pharmaceutical-grade glass bottles with moisture protection and
-                child-resistant features
-              </p>
-              <div className="d-flex gap-3">
-                <Link
-                  to="/contact"
-                  className="btn btn-lg"
-                  style={{
-                    backgroundColor: themeColor,
-                    borderColor: themeColor,
-                    color: "white",
-                  }}
-                >
-                  Request Samples
-                </Link>
-                <Link
-                  to="#specifications"
-                  className="btn btn-lg"
-                  style={{
-                    color: themeColor,
-                    borderColor: themeColor,
-                    "&:hover": {
-                      backgroundColor: themeColor,
-                      color: "white",
-                    },
-                  }}
-                >
-                  View Specifications
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="row g-4">
-                <div className="col-6">
-                  <img
-                    src={capsule}
-                    alt="Tablet Bottle"
-                    className="img-fluid shadow-sm"
-                    style={styles.bannerImage}
-                  />
-                </div>
-                <div className="col-6">
-                  <img
-                    src={capsule2}
-                    alt="Capsule Bottle"
-                    className="img-fluid shadow-sm"
-                    style={styles.bannerImage}
-                  />
-                </div>
-              </div>
-            </div>
+      <section  className="position-relative pt-5 mt-5 text-dark vh-100" 
+  style={{
+    backgroundImage: `url(${capsule3})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Blurred overlay background */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backdropFilter: "blur(8px)",
+      WebkitBackdropFilter: "blur(8px)",
+      backgroundColor: "rgba(255, 255, 255, 0.6)",
+      zIndex: 1,
+      opacity: 0.8,
+    }}
+  ></div>
+
+  {/* Foreground content */}
+  <div className="container position-relative" style={{ zIndex: 2 }}>
+    <div className="row align-items-center min-vh-75">
+      <div className="col-lg-6 mb-5 mb-lg-0">
+        <h1 className="display-4 fw-bold mb-4">Tablet & Capsule Bottles</h1>
+        <p className="lead mb-4">
+          Pharmaceutical-grade glass bottles with moisture protection and
+          child-resistant features
+        </p>
+        <div className="d-flex gap-3">
+          <Link
+            to="/contact"
+            className="btn btn-lg"
+            style={{
+              backgroundColor: themeColor,
+              borderColor: themeColor,
+              color: "white",
+            }}
+          >
+            Request Samples
+          </Link>
+          <Link
+            to="#specifications"
+            className="btn btn-lg"
+            style={{
+              color: themeColor,
+              borderColor: themeColor,
+            }}
+          >
+            View Specifications
+          </Link>
+        </div>
+      </div>
+      <div className="col-lg-6">
+        <div className="row g-4">
+          <div className="col-6">
+            <img
+              src={capsule}
+              alt="Tablet Bottle"
+              className="img-fluid shadow-sm"
+              style={styles.bannerImage}
+            />
+          </div>
+          <div className="col-6">
+            <img
+              src={capsule2}
+              alt="Capsule Bottle"
+              className="img-fluid shadow-sm"
+              style={styles.bannerImage}
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Features Section */}
       <section className="py-5">

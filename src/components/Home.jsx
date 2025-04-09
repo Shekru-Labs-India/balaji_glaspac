@@ -483,9 +483,9 @@ const Home = () => {
                   <h3 className="fs-6 my-1">
                     <Link to="/PharmaceuticalBottles" onClick={() => window.scrollTo(0, 0)}>Pharmaceutical Bottles</Link>
                   </h3>
-                  <p className="small mb-1" title="Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.">
+                  {/* <p className="small mb-1" title="Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.">
                     Premium glass bottles designed specifically for wine packaging.
-                  </p>
+                  </p> */}
                   <Link className="service-link small" to="/PharmaceuticalBottles" onClick={() => window.scrollTo(0, 0)}>
                     Read More
                   </Link>
@@ -501,9 +501,9 @@ const Home = () => {
                   <h3 className="fs-6 my-1">
                     <Link to="/FoodContainers" onClick={() => window.scrollTo(0, 0)}>Food Containers</Link>
                   </h3>
-                  <p className="small mb-1" title="Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.">
+                  {/* <p className="small mb-1" title="Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.">
                     Durable glass bottles perfect for beer packaging.
-                  </p>
+                  </p> */}
                   <Link className="service-link small" to="/FoodContainers" onClick={() => window.scrollTo(0, 0)}>
                     Read More
                   </Link>
@@ -519,9 +519,9 @@ const Home = () => {
                   <h3 className="fs-6 my-1">
                     <Link to="/LiquorBottles" onClick={() => window.scrollTo(0, 0)}>Liquor Bottles</Link>
                   </h3>
-                  <p className="small mb-1" title="Specialized bottles designed to withstand pressure, perfect for champagne and sparkling wines.">
+                  {/* <p className="small mb-1" title="Specialized bottles designed to withstand pressure, perfect for champagne and sparkling wines.">
                     Specialized bottles designed to withstand pressure.
-                  </p>
+                  </p> */}
                   <Link className="service-link small" to="/LiquorBottles" onClick={() => window.scrollTo(0, 0)}>
                     Read More
                   </Link>
@@ -537,9 +537,9 @@ const Home = () => {
                   <h3 className="fs-6 my-1">
                     <Link to="/BeverageBottles" onClick={() => window.scrollTo(0, 0)}>Beverage Bottles</Link>
                   </h3>
-                  <p className="small mb-1" title="Specialized bottles designed to withstand pressure, perfect for champagne and sparkling wines.">
+                  {/* <p className="small mb-1" title="Specialized bottles designed to withstand pressure, perfect for champagne and sparkling wines.">
                     Specialized bottles for champagne and sparkling wines.
-                  </p>
+                  </p> */}
                   <Link className="service-link small" to="/BeverageBottles" onClick={() => window.scrollTo(0, 0)}>
                     Read More
                   </Link>
@@ -555,9 +555,9 @@ const Home = () => {
                   <h3 className="fs-6 my-1">
                     <Link to="/CosmeticPersonalCare" onClick={() => window.scrollTo(0, 0)}>Cosmetic and Personal Care</Link>
                   </h3>
-                  <p className="small mb-1" title="Crystal clear glass bottles for water packaging, available in various sizes and designs for pure refreshment.">
+                  {/* <p className="small mb-1" title="Crystal clear glass bottles for water packaging, available in various sizes and designs for pure refreshment.">
                     Crystal clear glass bottles for water packaging.
-                  </p>
+                  </p> */}
                   <Link className="service-link small" to="/CosmeticPersonalCare" onClick={() => window.scrollTo(0, 0)}>
                     Read More
                   </Link>
@@ -573,9 +573,9 @@ const Home = () => {
                   <h3 className="fs-6 my-1">
                     <Link to="/Chemicals" onClick={() => window.scrollTo(0, 0)}>Chemicals</Link>
                   </h3>
-                  <p className="small mb-1" title="Versatile bottles perfect for beverages, featuring various neck finishes and closure options.">
+                  {/* <p className="small mb-1" title="Versatile bottles perfect for beverages, featuring various neck finishes and closure options.">
                     Versatile bottles perfect for beverages.
-                  </p>
+                  </p> */}
                   <Link className="service-link small" to="/Chemicals" onClick={() => window.scrollTo(0, 0)}>
                     Read More
                   </Link>

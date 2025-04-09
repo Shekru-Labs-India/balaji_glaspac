@@ -30,69 +30,90 @@ const PerfumeBottles = () => {
 
       {/* Elegant Hero Section */}
       <section className="position-relative bg-black text-white pt-5 mt-3 overflow-hidden">
-        <div className="container-fluid px-lg-4">
-          <div className="row align-items-center" style={{ minHeight: "85vh" }}>
-            <div className="col-lg-5 ps-lg-5">
-              <div className="p-4 p-xl-5" style={{ minHeight: "400px" }}>
-                <div className="d-flex flex-column justify-content-center">
-                  <h1
-                    className="display-4 fw-bold mb-4"
-                    style={{ fontFamily: "Playfair Display, serif" }}
-                  >
-                    Luxury Perfume Bottles
-                  </h1>
-                  <p className="lead opacity-75 mb-4">
-                    Exquisite glass bottles that elevate your fragrance with
-                    sophisticated designs and premium finishes. Each piece is a
-                    work of art.
-                  </p>
-                  <div className="d-flex gap-3">
-                    <Link
-                      to="/contact"
-                      className="btn btn-outline-light btn-lg px-4"
-                    >
-                      Request Catalog
-                    </Link>
-                    <Link
-                      to="#collections"
-                      className="btn btn-light btn-lg px-4"
-                    >
-                      View Collections
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-7">
-              <div className="slider-container" style={{ height: "400px" }}>
-                <Slider {...sliderSettings}>
-                  <div className="px-3">
-                    <img
-                      src={perfumeBottle}
-                      alt="Luxury Perfume Bottle"
-                      style={{
-                        width: "100%",
-                        height: "400px",
-                        objectFit: "contain",
-                      }}
-                    />
-                  </div>
-                  <div className="px-3">
-                    <img
-                      src={perfumeBottle2}
-                      alt="Premium Fragrance Bottle"
-                      style={{
-                        width: "100%",
-                        height: "400px",
-                        objectFit: "contain",
-                      }}
-                    />
-                  </div>
-                </Slider>
-              </div>
+      <div
+  className="container-fluid px-lg-4 position-relative text-white"
+  style={{
+    backgroundImage: `url(${perfumeBottle})`, // Replace with your actual image variable or URL
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Blur Overlay */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backdropFilter: "blur(6px)",
+      backgroundColor: "rgba(0, 0, 0, 0.3)",
+      zIndex: 1,
+    }}
+  ></div>
+
+  {/* Original content, unchanged, with zIndex to appear above the blur */}
+  <div className="position-relative" style={{ zIndex: 2 }}>
+    <div className="row align-items-center" style={{ minHeight: "85vh" }}>
+      <div className="col-lg-5 ps-lg-5">
+        <div className="p-4 p-xl-5" style={{ minHeight: "400px" }}>
+          <div className="d-flex flex-column justify-content-center">
+            <h1
+              className="display-4 fw-bold mb-4"
+              style={{ fontFamily: "Playfair Display, serif" }}
+            >
+              Luxury Perfume Bottles
+            </h1>
+            <p className="lead opacity-75 mb-4">
+              Exquisite glass bottles that elevate your fragrance with
+              sophisticated designs and premium finishes. Each piece is a
+              work of art.
+            </p>
+            <div className="d-flex gap-3">
+              <Link
+                to="/contact"
+                className="btn btn-outline-light btn-lg px-4"
+              >
+                Request Catalog
+              </Link>
+              <Link
+                to="#collections"
+                className="btn btn-light btn-lg px-4"
+              >
+                View Collections
+              </Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className="col-lg-7">
+        <div className="slider-container" style={{ height: "400px" }}>
+          <Slider {...sliderSettings}>
+            <div className="px-3">
+              <img
+                src={perfumeBottle}
+                alt="Luxury Perfume Bottle"
+                style={{
+                  width: "100%",
+                  height: "400px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+            <div className="px-3">
+              <img
+                src={perfumeBottle2}
+                alt="Premium Fragrance Bottle"
+                style={{
+                  width: "100%",
+                  height: "400px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+          </Slider>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </section>
 
       {/* Collections Grid */}

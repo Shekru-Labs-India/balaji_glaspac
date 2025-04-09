@@ -128,7 +128,7 @@ const VialsAmpoules = () => {
       </div>
     </div>
   </div>
-</section>
+      </section>
 
       {/* Technical Specifications */}
       <section className="py-5">

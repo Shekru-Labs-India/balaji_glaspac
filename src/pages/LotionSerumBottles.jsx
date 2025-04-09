@@ -35,49 +35,66 @@ const LotionSerumBottles = () => {
             style={{ minHeight: "85vh" }}
           >
             <div
-              className="col-lg-6 bg-primary d-flex align-items-center"
-              style={{ height: "85vh" }}
-            >
-              <div className="p-5">
-                <div className="mb-4">
-                  <span className="badge bg-light text-primary px-3 py-2">
-                    Premium Packaging
-                  </span>
-                </div>
-                <h1 className="display-3 text-white fw-bold mb-4">
-                  Lotion & Serum Bottles
-                </h1>
-                <p className="lead text-white opacity-75 mb-4">
-                  Specialized glass bottles for cosmetic products with various
-                  pump and dispenser options. Designed for optimal product
-                  preservation and elegant presentation.
-                </p>
+  className="col-lg-6 d-flex align-items-center position-relative text-white"
+  style={{
+    height: "85vh",
+    backgroundImage: `url(${lotionSerumBottle})`, // Replace with your actual image variable or URL
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Blur Overlay */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backdropFilter: "blur(6px)",
+      backgroundColor: "rgba(0, 0, 0, 0.3)",
+      zIndex: 1,
+    }}
+  ></div>
 
-                {/* Quick Stats */}
-                <div className="row g-4 mb-4">
-                  {[
-                    { number: "50+", label: "Designs" },
-                    { number: "15+", label: "Pump Types" },
-                    { number: "100%", label: "Quality Tested" },
-                  ].map((stat, index) => (
-                    <div key={index} className="col-4">
-                      <div className="border-start border-light border-2 ps-3">
-                        <h2 className="text-white mb-0">{stat.number}</h2>
-                        <p className="text-white-50 mb-0">{stat.label}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+  {/* Original Content Unchanged */}
+  <div className="p-5 position-relative" style={{ zIndex: 2 }}>
+    <div className="mb-4">
+      <span className="badge bg-light text-primary px-3 py-2">
+        Premium Packaging
+      </span>
+    </div>
+    <h1 className="display-3 text-white fw-bold mb-4">
+      Lotion & Serum Bottles
+    </h1>
+    <p className="lead text-white opacity-75 mb-4">
+      Specialized glass bottles for cosmetic products with various
+      pump and dispenser options. Designed for optimal product
+      preservation and elegant presentation.
+    </p>
 
-                <Link
-                  to="/contact"
-                  className="btn btn-outline-primary btn-lg px-4 mt-5"
-                >
-                  Request Samples
-                  <i className="fa-solid fa-arrow-right ms-2"></i>
-                </Link>
-              </div>
-            </div>
+    {/* Quick Stats */}
+    <div className="row g-4 mb-4">
+      {[
+        { number: "50+", label: "Designs" },
+        { number: "15+", label: "Pump Types" },
+        { number: "100%", label: "Quality Tested" },
+      ].map((stat, index) => (
+        <div key={index} className="col-4">
+          <div className="border-start border-light border-2 ps-3">
+            <h2 className="text-white mb-0">{stat.number}</h2>
+            <p className="text-white-50 mb-0">{stat.label}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <Link
+      to="/contact"
+      className="btn btn-outline-primary btn-lg px-4 mt-5"
+    >
+      Request Samples
+      <i className="fa-solid fa-arrow-right ms-2"></i>
+    </Link>
+  </div>
+</div>
+
             <div className="col-lg-6" style={{ height: "85vh" }}>
               <div className="h-100">
                 <Slider {...sliderSettings}>

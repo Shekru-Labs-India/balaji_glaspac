@@ -34,40 +34,63 @@ const SpecialtyPharmaceuticalBottles = () => {
       <section className="position-relative pt-5 mt-3 overflow-hidden">
         <div className="container-fluid p-0">
           <div className="row g-0" style={{ minHeight: "85vh" }}>
-            <div className="col-lg-6 bg-primary">
-              <div
-                className="p-5 text-white d-flex align-items-center"
-                style={{ minHeight: "400px" }}
-              >
-                <div>
-                  <div className="d-flex align-items-center mb-4">
-                    <div>
-                      <span className="text-uppercase fw-light mb-2 d-block">
-                        Premium Quality
-                      </span>
-                      <h1 className="display-5 fw-bold mb-0">
-                        Specialty Pharmaceutical Bottles
-                      </h1>
-                    </div>
-                  </div>
-                  <p className="lead opacity-75 mb-4">
-                    Advanced glass packaging solutions designed for specific
-                    medical applications, meeting the highest pharmaceutical
-                    standards.
-                  </p>
+          <div className="col-lg-6 position-relative overflow-hidden">
+  {/* Background Image with Blur */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundImage: `url(${specialtyBottle2})`, // import at top
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(5px)",
+      zIndex: 1,
+      opacity: 10,
+    }}
+  ></div>
 
-                  <div className="d-flex gap-3 mt-4">
-                    <button className="btn btn-light btn-lg px-4">
-                      Get Details
-                      <i className="fa-solid fa-arrow-right ms-2"></i>
-                    </button>
-                    <button className="btn btn-outline-light btn-lg px-4">
-                      View Catalog
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+  {/* Overlay (optional dark tint) */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundColor: "rgba(0,0,0,0.4)",
+      zIndex: 2,
+    }}
+  ></div>
+
+  {/* Foreground Content (not blurred) */}
+  <div
+    className="p-5 text-white d-flex align-items-center position-relative"
+    style={{ minHeight: "400px", zIndex: 3 }}
+  >
+    <div>
+      <div className="d-flex align-items-center mb-4">
+        <div>
+          <span className="text-uppercase fw-light mb-2 d-block">
+            Premium Quality
+          </span>
+          <h1 className="display-5 fw-bold mb-0">
+            Specialty Pharmaceutical Bottles
+          </h1>
+        </div>
+      </div>
+      <p className="lead opacity-75 mb-4">
+        Advanced glass packaging solutions designed for specific medical
+        applications, meeting the highest pharmaceutical standards.
+      </p>
+
+      <div className="d-flex gap-3 mt-4">
+        <button className="btn btn-light btn-lg px-4">
+          Get Details
+          <i className="fa-solid fa-arrow-right ms-2"></i>
+        </button>
+        <button className="btn btn-outline-light btn-lg px-4">
+          View Catalog
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
             <div className="col-lg-6">
               <div style={{ height: "400px" }} className="position-relative">
                 <Slider {...sliderSettings} className="h-100">

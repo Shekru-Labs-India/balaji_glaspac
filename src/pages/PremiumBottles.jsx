@@ -27,78 +27,100 @@ const PremiumBottles = () => {
       <Header />
 
       {/* Luxury Hero Section */}
-      <section className="bg-black text-white position-relative pt-5 mt-3">
-        <div className="container">
-          <div className="row align-items-center" style={{ minHeight: "85vh" }}>
-            <div className="col-lg-6">
-              <div
-                style={{ minHeight: "400px" }}
-                className="d-flex flex-column justify-content-center"
+      <section
+  className="bg-black text-white position-relative pt-5 mt-3"
+  style={{
+    backgroundImage: `url(${premiumBottle2})`, // Replace with your image import or URL
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    
+  }}
+>
+  {/* Blur Overlay */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backdropFilter: "blur(6px)",
+      backgroundColor: "rgba(0, 0, 0, 0.3)",
+      zIndex: 1,
+    }}
+  ></div>
+
+  {/* Content on top of blur */}
+  <div className="position-relative" style={{ zIndex: 2 }}>
+    <div className="container">
+      <div className="row align-items-center" style={{ minHeight: "85vh" }}>
+        <div className="col-lg-6">
+          <div
+            style={{ minHeight: "400px" }}
+            className="d-flex flex-column justify-content-center"
+          >
+            <span className="premium-text-gold text-uppercase premium-letter-spacing mb-3 d-block">
+              Luxury Glass Collection
+            </span>
+            <h1
+              className="display-2 fw-bold mb-4"
+              style={{ fontFamily: "Playfair Display, serif" }}
+            >
+              Premium Glass
+              <span className="premium-text-gold d-block">Excellence</span>
+            </h1>
+            <p className="lead opacity-75 mb-4">
+              Exquisite glass bottles crafted with precision for luxury
+              brands that demand perfection.
+            </p>
+            <div className="d-flex gap-4">
+              <Link
+                to="/contact"
+                className="btn premium-btn-gold btn-lg px-4"
               >
-                <span className="premium-text-gold text-uppercase premium-letter-spacing mb-3 d-block">
-                  Luxury Glass Collection
-                </span>
-                <h1
-                  className="display-2 fw-bold mb-4"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  Premium Glass
-                  <span className="premium-text-gold d-block">Excellence</span>
-                </h1>
-                <p className="lead opacity-75 mb-4">
-                  Exquisite glass bottles crafted with precision for luxury
-                  brands that demand perfection.
-                </p>
-                <div className="d-flex gap-4">
-                  <Link
-                    to="/contact"
-                    className="btn premium-btn-gold btn-lg px-4"
-                  >
-                    Request Collection
-                  </Link>
-                  <button className="btn btn-outline-light btn-lg px-4">
-                    View Catalog
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="slider-container" style={{ height: "400px" }}>
-                <Slider {...sliderSettings}>
-                  <div className="px-3">
-                    <img
-                      src={premiumBottle}
-                      alt="Premium Bottle"
-                      style={{
-                        width: "100%",
-                        height: "400px",
-                        objectFit: "contain",
-                        filter: "brightness(0.9)",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                      }}
-                    />
-                  </div>
-                  <div className="px-3">
-                    <img
-                      src={premiumBottle2}
-                      alt="Luxury Glass"
-                      style={{
-                        width: "100%",
-                        height: "400px",
-                        objectFit: "contain",
-                        filter: "brightness(0.9)",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                      }}
-                    />
-                  </div>
-                </Slider>
-              </div>
+                Request Collection
+              </Link>
+              <button className="btn btn-outline-light btn-lg px-4">
+                View Catalog
+              </button>
             </div>
           </div>
         </div>
-      </section>
+        <div className="col-lg-6">
+          <div className="slider-container" style={{ height: "400px" }}>
+            <Slider {...sliderSettings}>
+              <div className="px-3">
+                <img
+                  src={premiumBottle}
+                  alt="Premium Bottle"
+                  style={{
+                    width: "100%",
+                    height: "400px",
+                    objectFit: "contain",
+                    filter: "brightness(0.9)",
+                    borderRadius: "8px",
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                  }}
+                />
+              </div>
+              <div className="px-3">
+                <img
+                  src={premiumBottle2}
+                  alt="Luxury Glass"
+                  style={{
+                    width: "100%",
+                    height: "400px",
+                    objectFit: "contain",
+                    filter: "brightness(0.9)",
+                    borderRadius: "8px",
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                  }}
+                />
+              </div>
+            </Slider>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Premium Features */}
       <section className="py-5">

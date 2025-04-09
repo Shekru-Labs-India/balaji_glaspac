@@ -30,7 +30,7 @@ const DropperBottles = () => {
       
 
        {/* Banner Section */}
-       <div
+<div
   className="banner-area banner-img-one py-5 overflow-hidden bg-dark text-white vh-100 d-flex align-items-center position-relative"
 >
   {/* Blurred Background Image */}

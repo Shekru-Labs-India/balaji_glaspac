@@ -154,10 +154,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/food-jars"  onClick={() => window.scrollTo(0, 0)}>Food Jars</Link>
           </h3>
-          <p title="Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.">
-            Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.
+          <p title=" Wide-mouth jars perfect for food packaging, preserves, and
+                  condiments with secure sealing options.">
+            Wide-mouth jars perfect for food packaging, preserves, and
+            condiments with secure sealing options.
           </p>
           <Link className="service-link" to="/food-jars"  onClick={() => window.scrollTo(0, 0)}>
             Read More

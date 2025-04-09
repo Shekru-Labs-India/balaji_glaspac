@@ -241,9 +241,9 @@ const JuiceSodaBottles = () => {
       backgroundImage: `url(${juiceSodaBottle})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      filter: "blur(10px)",
+      filter: "blur(1px)",
       zIndex: 0,
-      opacity: 0.4,
+      opacity: 0.5,
     }}
   ></div>
 

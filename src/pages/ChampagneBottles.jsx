@@ -72,112 +72,133 @@ const ChampagneBottles = () => {
       <Header />
 
       {/* Elegant Hero Section */}
-      <section className="champagne-hero position-relative">
-        <div className="container">
-          <div className="row align-items-center min-vh-100" style={{ backgroundImage: 'url("")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-            {/* Left Content Side */}
-            <div className="col-lg-6">
-              <div className="hero-content py-5">
-                {/* Animated Line Above Title */}
-                <div className="title-line mb-4">
-                  <span className="sub-title premium-letter-spacing text-uppercase fw-bold">
-                    Luxury & Elegance
-                  </span>
-                </div>
+      <section className="champagne-hero position-relative overflow-hidden">
+  {/* Blurred Background Image Layer */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundImage: `url(${champagne3})`, // Replace with your actual image
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(1px)",
+      zIndex: 1,
+      opacity: 0.5,
+    }}
+  ></div>
 
-                <h1 className="hero-title display-4 fw-bold mb-4">
-                  Premium Champagne Bottles
-                </h1>
+  {/* Optional dark overlay (for contrast, optional) */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundColor: "rgba(255, 255, 255, 0.3)",
+      zIndex: 2,
+    }}
+  ></div>
 
-                <p className="hero-description lead mb-5">
-                  Crafted for excellence, designed for celebration. Our
-                  champagne bottles combine strength and sophistication.
-                </p>
+  {/* Foreground Content */}
+  <div className="container position-relative" style={{ zIndex: 3 }}>
+    <div className="row align-items-center min-vh-100">
+      {/* Left Content Side */}
+      <div className="col-lg-6">
+        <div className="hero-content py-5">
+          <div className="title-line py-3">
+            <span className="sub-title premium-letter-spacing text-uppercase fw-bold ">
+              Luxury & Elegance
+            </span>
+          </div>
+          <h1 className="hero-title display-4 fw-bold mb-4">
+            Premium Champagne Bottles
+          </h1>
+          <p className="hero-description lead mb-5">
+            Crafted for excellence, designed for celebration. Our champagne bottles
+            combine strength and sophistication.
+          </p>
 
-                {/* Features List with Enhanced Design */}
-                <div className="hero-features mb-5">
-                  {[
-                    {
-                      title: "Pressure Resistant",
-                      desc: "Up to 6 bar pressure capacity",
-                    },
-                    {
-                      title: "Premium Glass Quality",
-                      desc: "Crystal clear finish",
-                    },
-                    {
-                      title: "Custom Engravings",
-                      desc: "Personalized branding options",
-                    },
-                  ].map((feature, index) => (
-                    <div
-                      key={index}
-                      className="feature-item d-flex align-items-center mb-3"
-                    >
-                      <div className="feature-icon me-3">
-                        <i className="fa-solid fa-check-circle text-primary fs-4"></i>
-                      </div>
-                      <div className="feature-text">
-                        <h6 className="mb-0 fw-bold">{feature.title}</h6>
-                        <small className="text-muted">{feature.desc}</small>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* CTA Buttons */}
-                <div className="hero-cta">
-                  <button
-                    className="btn btn-lg px-4 me-3"
-                    style={{ backgroundColor: "#fa5f0b", color: "white" }}
-                  >
-                    Get Quote
-                  </button>
-                  <button className="btn btn-outline-dark btn-lg px-4">
-                    View Catalog
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Image Side */}
-            <div className="col-lg-6">
+          {/* Features */}
+          <div className="hero-features mb-5">
+            {[
+              {
+                title: "Pressure Resistant",
+                desc: "Up to 6 bar pressure capacity",
+              },
+              {
+                title: "Premium Glass Quality",
+                desc: "Crystal clear finish",
+              },
+              {
+                title: "Custom Engravings",
+                desc: "Personalized branding options",
+              },
+            ].map((feature, index) => (
               <div
-                className="hero-image-wrapper position-relative"
-                style={{ height: "600px" }}
+                key={index}
+                className="feature-item d-flex align-items-center mb-3"
               >
-                <img
-                  src={champagne3}
-                  alt="Premium Bottle"
-                  className="img-fluid position-absolute"
-                  style={{
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                    maxHeight: "90%",
-                    objectFit: "contain",
-                  }}
-                />
-                <div
-                  className="bottle-backdrop position-absolute"
-                  style={{
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                    width: "80%",
-                    height: "80%",
-                    background:
-                      "radial-gradient(circle, rgba(250,95,11,0.1) 0%, rgba(250,95,11,0.05) 100%)",
-                    borderRadius: "50%",
-                    filter: "blur(20px)",
-                    zIndex: -1,
-                  }}
-                ></div>
+                <div className="feature-icon me-3">
+                  <i className="fa-solid fa-check-circle text-primary fs-4"></i>
+                </div>
+                <div className="feature-text">
+                  <h6 className="mb-0 fw-bold">{feature.title}</h6>
+                  <small className="text-muted">{feature.desc}</small>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="hero-cta">
+            <button
+              className="btn btn-lg px-4 me-3"
+              style={{ backgroundColor: "#fa5f0b", color: "white" }}
+            >
+              Get Quote
+            </button>
+            <button className="btn btn-outline-dark btn-lg px-4">
+              View Catalog
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Right Image Side */}
+      <div className="col-lg-6">
+        <div
+          className="hero-image-wrapper position-relative"
+          style={{ height: "600px" }}
+        >
+          <img
+            src={champagne3}
+            alt="Premium Bottle"
+            className="img-fluid position-absolute"
+            style={{
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              maxHeight: "90%",
+              objectFit: "contain",
+            }}
+          />
+          <div
+            className="bottle-backdrop position-absolute"
+            style={{
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "80%",
+              height: "80%",
+              background:
+                "radial-gradient(circle, rgba(250,95,11,0.1) 0%, rgba(250,95,11,0.05) 100%)",
+              borderRadius: "50%",
+              filter: "blur(20px)",
+              zIndex: -1,
+            }}
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Product Categories */}
       <section className="product-categories py-5">

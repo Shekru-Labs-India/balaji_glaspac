@@ -154,10 +154,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/perfume-bottles"  onClick={() => window.scrollTo(0, 0)}>Perfume Bottles</Link>
           </h3>
-          <p title="Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.">
-            Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.
+          <p title="Elegant and decorative bottles for fragrances, featuring
+                  sophisticated designs and premium finishes.">
+            Elegant and decorative bottles for fragrances, featuring
+            sophisticated designs and premium finishes.
           </p>
           <Link className="service-link" to="/perfume-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -174,10 +174,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/lotion-and-serum-bottles"  onClick={() => window.scrollTo(0, 0)}>Lotion and Serum Bottles</Link>
           </h3>
-          <p title="Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.">
-            Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.
+          <p title="Specialized bottles for cosmetic products with various pump
+                  and dispenser options for optimal usage.">
+            Specialized bottles for cosmetic products with various pump
+            and dispenser options for optimal usage.
           </p>
           <Link className="service-link" to="/lotion-and-serum-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More

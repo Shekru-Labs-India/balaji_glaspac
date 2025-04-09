@@ -154,10 +154,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}>Water Bottles</Link>
           </h3>
-          <p title="Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.">
-            Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.
+          <p title="Crystal clear glass bottles for water packaging, available in
+                  various sizes and designs for pure refreshment.">
+            Crystal clear glass bottles for water packaging, available in
+                  various sizes and designs for pure refreshment.
           </p>
           <Link className="service-link" to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -174,10 +174,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/juice-soda-bottles"  onClick={() => window.scrollTo(0, 0)}>Juice and Soda Bottles</Link>
           </h3>
-          <p title="Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.">
-            Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.
+          <p title="Versatile bottles perfect for beverages, featuring various
+                  neck finishes and closure options.">
+            Versatile bottles perfect for beverages, featuring various
+            neck finishes and closure options.
           </p>
           <Link className="service-link" to="/juice-soda-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More

@@ -154,10 +154,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/industrial-bottles"  onClick={() => window.scrollTo(0, 0)}>Industrial Bottles</Link>
           </h3>
-          <p title="Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.">
-            Pharmaceutical-grade bottles designed for oral medications and
-            supplements with precise dosing features.
+          <p title="Heavy-duty glass bottles designed for industrial chemicals and
+                  solutions with safety features.">
+            Heavy-duty glass bottles designed for industrial chemicals and
+            solutions with safety features.
           </p>
           <Link className="service-link" to="/industrial-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -174,10 +174,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}>Customizable Bottles</Link>
           </h3>
-          <p title="Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.">
-            Precision dropper bottles for essential oils, serums, and
-            liquid medications with accurate dispensing.
+          <p title="Bespoke bottle solutions with customizable shapes, colors, and
+                  finishes to match your brand identity.">
+            Bespoke bottle solutions with customizable shapes, colors, and
+            finishes to match your brand identity.
           </p>
           <Link className="service-link" to="/customizable-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -194,10 +194,10 @@ const OurProducts = () => {
           <h3>
             <Link to="/premium-bottles"  onClick={() => window.scrollTo(0, 0)}>Premium Bottles</Link>
           </h3>
-          <p title="High-quality glass vials and ampoules for pharmaceutical and
-            laboratory applications with precise specifications.">
-            High-quality glass vials and ampoules for pharmaceutical and
-            laboratory applications with precise specifications.
+          <p title="Bespoke bottle solutions with customizable shapes, colors, and
+                  finishes to match your brand identity.">
+            Bespoke bottle solutions with customizable shapes, colors, and
+            finishes to match your brand identity.
           </p>
           <Link className="service-link" to="/premium-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
@@ -217,10 +217,10 @@ const OurProducts = () => {
               Eco-Friendly Bottles
             </Link>
           </h3>
-          <p title="Custom pharmaceutical bottles designed for specific medical
-            applications with strict quality standards.">
-            Custom pharmaceutical bottles designed for specific medical
-            applications with strict quality standards.
+          <p title="Luxury glass bottles with superior quality and distinctive
+                  designs for high-end products.">
+            Luxury glass bottles with superior quality and distinctive
+            designs for high-end products.
           </p>
           <Link
             className="service-link"
