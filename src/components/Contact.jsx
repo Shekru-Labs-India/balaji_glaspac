@@ -30,7 +30,7 @@ const Contact = () => {
       </div>
       {/* End Page Title */}
     {/* Contact */}
-    <section className="contact-area pt-50 pb-50 vh-100">
+    <section className="contact-area pt-50 pb-50 d-flex flex-column min-vh-100">
 
     <style>
     {`
