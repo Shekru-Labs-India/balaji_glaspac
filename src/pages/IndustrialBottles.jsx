@@ -15,48 +15,69 @@ const IndustrialBottles = () => {
       <Header />
 
       {/* Hero Section - adjusted spacing */}
-      <section className="bg-dark position-relative overflow-hidden pt-5 mt-3">
-        <div className="container-fluid vh-100">
-          <div className="row g-0">
-            <div className="col-lg-6">
-              <div className="p-5 h-100 d-flex flex-column justify-content-center bg-gradient">
-                <div className="d-flex align-items-center mb-4">
-                  <div className="border-3 border-warning border-start ps-3">
-                    <h1 className="display-4 text-white fw-bold mb-0">
-                      Industrial Glass Bottles
-                    </h1>
-                  </div>
-                </div>
-                <div className="row g-4 mt-4">
-                  {[
-                    { number: "500+", label: "Resistant Options" },
-                    { number: "99.9%", label: "Safety Rating" },
-                    { number: "24/7", label: "Technical Support" },
-                  ].map((stat, index) => (
-                    <div key={index} className="col-md-4">
-                      <div className="border border-warning border-2 p-3">
-                        <h2 className="text-warning mb-1">{stat.number}</h2>
-                        <p className="text-white mb-0 small ">{stat.label}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+      <section
+  className="bg-dark position-relative overflow-hidden pt-5 mt-3"
+  style={{
+    backgroundImage: `url(${industrialBottle2})`, // Replace with your actual image
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Blur Overlay */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backdropFilter: "blur(6px)",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      zIndex: 1,
+    }}
+  ></div>
+
+  {/* Main Content with zIndex above the blur */}
+  <div className="position-relative" style={{ zIndex: 2 }}>
+    <div className="container-fluid vh-100">
+      <div className="row g-0">
+        <div className="col-lg-6">
+          <div className="p-5 h-100 d-flex flex-column justify-content-center bg-gradient">
+            <div className="d-flex align-items-center mb-4">
+              <div className="border-3 border-warning border-start ps-3">
+                <h1 className="display-4 text-white fw-bold mb-0">
+                  Industrial Glass Bottles
+                </h1>
               </div>
             </div>
-            <div className="col-lg-6">
-              <img
-                src={industrialBottle}
-                alt="Industrial Bottle"
-                style={{
-                  width: "100%",
-                  height: "500px",
-                  objectFit: "cover",
-                }}
-              />
+            <div className="row g-4 mt-4">
+              {[
+                { number: "500+", label: "Resistant Options" },
+                { number: "99.9%", label: "Safety Rating" },
+                { number: "24/7", label: "Technical Support" },
+              ].map((stat, index) => (
+                <div key={index} className="col-md-4">
+                  <div className="border border-warning border-2 p-3">
+                    <h2 className="text-warning mb-1">{stat.number}</h2>
+                    <p className="text-white mb-0 small ">{stat.label}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </section>
+        <div className="col-lg-6">
+          <img
+            src={industrialBottle}
+            alt="Industrial Bottle"
+            style={{
+              width: "100%",
+              height: "500px",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Safety Features Section - adjusted spacing */}
       <section className="py-5 bg-light">

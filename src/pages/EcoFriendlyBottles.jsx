@@ -15,56 +15,75 @@ const EcoFriendlyBottles = () => {
       <Header />
 
       {/* Nature-Inspired Hero Section */}
-      <section className="bg-light position-relative overflow-hidden pt-5 mt-3">
-        <div className="container min-vh-100 d-flex align-items-center">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <span className="badge bg-success px-3 py-2 mb-4">
-                Eco-Conscious Solutions
-              </span>
-              <h1 className="display-3 fw-bold text-success mb-4">
-                Sustainable Glass
-                <span className="d-block text-dark">For A Better Tomorrow</span>
-              </h1>
-              <div className="eco-stats row g-4 mb-5">
-                {[
-                  { number: "80%", label: "Recycled Materials" },
-                  { number: "100%", label: "Recyclable" },
-                  { number: "-40%", label: "Carbon Footprint" },
-                ].map((stat, index) => (
-                  <div key={index} className="col-auto">
-                    <div className="p-3 bg-white rounded-3 shadow-sm">
-                      <h3 className="h2 fw-bold text-success mb-1">
-                        {stat.number}
-                      </h3>
-                      <p className="text-muted small mb-0">{stat.label}</p>
-                    </div>
-                  </div>
-                ))}
+      <section
+  className="bg-light position-relative overflow-hidden pt-5 mt-3"
+  style={{
+    backgroundImage: `url(${ecoFriendlyBottle2})`, // Replace ecoBg with your background image import
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Blur Overlay */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backdropFilter: "blur(6px)",
+      backgroundColor: "rgba(255, 255, 255, 0.3)",
+      zIndex: 1,
+    }}
+  ></div>
+
+  {/* Main Content */}
+  <div className="position-relative" style={{ zIndex: 2 }}>
+    <div className="container min-vh-100 d-flex align-items-center">
+      <div className="row align-items-center">
+        <div className="col-lg-6">
+          <span className="badge bg-success px-3 py-2 mb-4">
+            Eco-Conscious Solutions
+          </span>
+          <h1 className="display-3 fw-bold text-success mb-4">
+            Sustainable Glass
+            <span className="d-block text-dark">For A Better Tomorrow</span>
+          </h1>
+          <div className="eco-stats row g-4 mb-5">
+            {[
+              { number: "80%", label: "Recycled Materials" },
+              { number: "100%", label: "Recyclable" },
+              { number: "-40%", label: "Carbon Footprint" },
+            ].map((stat, index) => (
+              <div key={index} className="col-auto">
+                <div className="p-3 bg-white rounded-3 shadow-sm">
+                  <h3 className="h2 fw-bold text-success mb-1">{stat.number}</h3>
+                  <p className="text-muted small mb-0">{stat.label}</p>
+                </div>
               </div>
-              <Link to="/contact" className="btn btn-success btn-lg px-4 me-3">
-                Get Started
-                <i className="fa-solid fa-leaf ms-2"></i>
-              </Link>
-            </div>
-            <div className="col-lg-6">
-              <div className="position-relative">
-                <img
-                  src={ecoFriendlyBottle}
-                  alt="Eco Bottles"
-                  style={{
-                    width: "100%",
-                    height: "500px",
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  }}
-                />
-              </div>
-            </div>
+            ))}
+          </div>
+          <Link to="/contact" className="btn btn-success btn-lg px-4 me-3">
+            Get Started
+            <i className="fa-solid fa-leaf ms-2"></i>
+          </Link>
+        </div>
+        <div className="col-lg-6">
+          <div className="position-relative">
+            <img
+              src={ecoFriendlyBottle}
+              alt="Eco Bottles"
+              style={{
+                width: "100%",
+                height: "500px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              }}
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Sustainability Features */}
       <section className="py-5">

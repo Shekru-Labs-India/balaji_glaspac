@@ -15,52 +15,73 @@ const CustomizableBottles = () => {
       <Header />
 
       {/* Creative Hero Section */}
-      <section className="min-vh-100 d-flex align-items-center bg-light pt-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 py-3">
-              <span
-                className="premium-letter-spacing text-uppercase fw-bold px-3 rounded py-2 mb-4"
-                style={{ backgroundColor: "#fa5f0b", color: "white" }}
-              >
-                Design Your Vision
-              </span>
-              <h1 className="display-3 fw-bold mb-4">
-                Custom Glass Solutions
-                <span className="text- d-block">For Your Brand</span>
-              </h1>
-              <div className="row g-4 mb-5">
-                {[
-                  { number: "1000+", label: "Custom Designs Delivered" },
-                  { number: "100%", label: "Design Flexibility" },
-                  { number: "3-5", label: "Weeks Production Time" },
-                ].map((stat, index) => (
-                  <div key={index} className="col-auto">
-                    <h3 className="h2 fw-bold mb-1">{stat.number}</h3>
-                    <p className="text-muted mb-0">{stat.label}</p>
-                  </div>
-                ))}
+      <section
+  className="min-vh-100 d-flex align-items-center bg-light pt-5 position-relative overflow-hidden"
+  style={{
+    backgroundImage: `url(${custombottle})`, // replace `customBg` with your imported image
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Blur Overlay */}
+  <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backdropFilter: "blur(12px)",
+      backgroundColor: "rgba(255, 255, 255, 0.3)",
+      zIndex: 1,
+    }}
+  ></div>
+
+  {/* Main Content */}
+  <div className="position-relative w-100" style={{ zIndex: 2 }}>
+    <div className="container">
+      <div className="row align-items-center">
+        <div className="col-lg-6 py-3">
+          <span
+            className="premium-letter-spacing text-uppercase fw-bold px-3 rounded py-2 mb-4"
+            style={{ backgroundColor: "#fa5f0b", color: "white" }}
+          >
+            Design Your Vision
+          </span>
+          <h1 className="display-3 fw-bold mb-4 text-white">
+            Custom Glass Solutions
+            <span className="text- d-block">For Your Brand</span>
+          </h1>
+          <div className="row g-4 mb-5">
+            {[
+              { number: "1000+", label: "Custom Designs Delivered" },
+              { number: "100%", label: "Design Flexibility" },
+              { number: "3-5", label: "Weeks Production Time" },
+            ].map((stat, index) => (
+              <div key={index} className="col-auto ">
+                <h3 className="h2 fw-bold mb-1">{stat.number}</h3>
+                <p className="text-muted mb-0">{stat.label}</p>
               </div>
-            </div>
-            <div className="col-lg-6 mt-5 pt-2">
-              <div className="position-relative">
-                <div className="about-img-item">
-                  <img
-                    src={custombottle}
-                    alt="Custom Bottle"
-                    className="img-fluid rounded-4 shadow-lg"
-                    style={{
-                      height: "500px",
-                      objectFit: "cover",
-                      width: "100%",
-                    }}
-                  />
-                </div>
-              </div>
+            ))}
+          </div>
+        </div>
+        <div className="col-lg-6 mt-5 pt-2">
+          <div className="position-relative">
+            <div className="about-img-item">
+              <img
+                src={custombottle}
+                alt="Custom Bottle"
+                className="img-fluid rounded-4 shadow-lg"
+                style={{
+                  height: "500px",
+                  objectFit: "cover",
+                  width: "100%",
+                }}
+              />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Customization Options */}
       <section className="py-5">
