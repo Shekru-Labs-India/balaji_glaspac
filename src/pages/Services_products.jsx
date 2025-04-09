@@ -12,7 +12,7 @@ const OurProducts = () => {
     <Header/>
 
      {/* Service */}
-     <section className="service-area pt-100 pb-70">
+     <section className="service-area pt-100 pb-70 d-flex flex-column min-vh-100">
 
 <style>
 {`
@@ -143,7 +143,7 @@ const OurProducts = () => {
     <div className="row justify-content-center">
     
   {/* 1. Wine Bottles */}
-  <div className="col-sm-6 col-lg-custom">
+  <div className="col-sm-6 col-lg-custom mb-2">
     <div className="service-item">
       <img src={service1} alt="Service" />
       <img src={service2} alt="Service" />
@@ -161,7 +161,7 @@ const OurProducts = () => {
   </div>
 
       {/* 2. Beer Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
     <div className="service-item">
       <img src={service1} alt="Service" />
       <img src={service2} alt="Service" />
@@ -179,7 +179,7 @@ const OurProducts = () => {
   </div>
 
       {/* 3. Spirits Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -199,7 +199,7 @@ const OurProducts = () => {
       </div>
 
       {/* 4. Champagne Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
@@ -219,7 +219,7 @@ const OurProducts = () => {
       </div>
 
       {/* 5. Water Bottles */}
-      <div className="col-sm-6 col-lg-custom">
+      <div className="col-sm-6 col-lg-custom mb-2">
         <div className="service-item">
           <img src={service1} alt="Service" />
           <img src={service2} alt="Service" />
