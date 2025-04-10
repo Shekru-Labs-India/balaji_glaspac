@@ -17,7 +17,7 @@ const SpecialtyPharmaceuticalBottles = () => {
   const [activeTab, setActiveTab] = useState("type1");
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -39,7 +39,7 @@ const SpecialtyPharmaceuticalBottles = () => {
   <div
     className="position-absolute top-0 start-0 w-100 h-100"
     style={{
-      backgroundImage: `url(${specialtyBottle2})`, // import at top
+      backgroundImage: `url(${type1})`, // import at top
       backgroundSize: "cover",
       backgroundPosition: "center",
       filter: "blur(5px)",
@@ -100,7 +100,7 @@ const SpecialtyPharmaceuticalBottles = () => {
                       alt="Pharmaceutical Bottle"
                       style={{
                         width: "100%",
-                        height: "400px",
+                        height: "100%",
                         objectFit: "cover",
                       }}
                     />
@@ -111,7 +111,7 @@ const SpecialtyPharmaceuticalBottles = () => {
                       alt="Medical Bottle"
                       style={{
                         width: "100%",
-                        height: "400px",
+                        height: "100%",
                         objectFit: "cover",
                       }}
                     />
