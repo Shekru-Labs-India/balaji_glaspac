@@ -38,7 +38,7 @@ const SpecialtyDrinkBottles = () => {
   <div className="container-fluid position-relative" style={{ zIndex: 2 }}>
     <div
       className="row align-items-center g-0"
-      style={{ minHeight: "85vh" }}
+      style={{ minHeight: "100vh" }}
     >
       <div className="col-lg-7">
         <div className="p-5" style={{ minHeight: "400px" }}>

@@ -33,8 +33,8 @@ const SpecialtyPharmaceuticalBottles = () => {
       {/* Innovative Split Hero Section */}
       <section className="position-relative pt-5 mt-3 overflow-hidden">
         <div className="container-fluid p-0">
-          <div className="row g-0" style={{ minHeight: "85vh" }}>
-          <div className="col-lg-6 position-relative overflow-hidden">
+          <div className="row g-0" style={{ minHeight: "100vh" }}>
+          <div className="col-lg-12 position-relative overflow-hidden">
   {/* Background Image with Blur */}
   <div
     className="position-absolute top-0 start-0 w-100 h-100"
@@ -42,7 +42,7 @@ const SpecialtyPharmaceuticalBottles = () => {
       backgroundImage: `url(${type1})`, // import at top
       backgroundSize: "cover",
       backgroundPosition: "center",
-      filter: "blur(5px)",
+      filter: "blur(2px)",
       zIndex: 1,
       opacity: 10,
     }}
@@ -87,46 +87,8 @@ const SpecialtyPharmaceuticalBottles = () => {
           View Catalog
         </button>
       </div>
-    </div>
-  </div>
-</div>
-
-            <div className="col-lg-6">
-              <div style={{ height: "400px" }} className="position-relative">
-                <Slider {...sliderSettings} className="h-100">
-                  <div>
-                    <img
-                      src={specialtyBottle}
-                      alt="Pharmaceutical Bottle"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src={specialtyBottle2}
-                      alt="Medical Bottle"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                </Slider>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Features Grid */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row g-4">
+      <div className="container">
+          <div className="row g-4 mt-5">
             {[
               {
                 icon: "fa-solid fa-shield-virus",
@@ -163,6 +125,45 @@ const SpecialtyPharmaceuticalBottles = () => {
             ))}
           </div>
         </div>
+    </div>
+  </div>
+</div>
+</div>
+ </div>
+  {/* 
+  <div className="col-lg-6">
+              <div style={{ height: "400px" }} className="position-relative">
+                <Slider {...sliderSettings} className="h-100">
+                  <div>
+                    <img
+                      src={specialtyBottle}
+                      alt="Pharmaceutical Bottle"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={specialtyBottle2}
+                      alt="Medical Bottle"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                </Slider>
+              </div>
+            </div> */}
+ </section>
+
+      {/* Key Features Grid */}
+      <section className="py-5 bg-light">
+        
       </section>
 
       {/* Technical Specifications with Tabs */}

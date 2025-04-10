@@ -51,7 +51,7 @@ const TabletCapsuleBottles = () => {
       <Header />
 
       {/* Hero Section */}
-      <section  className="position-relative pt-5 mt-5 text-dark vh-100" 
+      <section  className="position-relative pt-5 mt-5 text-dark"
   style={{
     backgroundImage: `url(${capsule3})`,
     backgroundSize: "cover",
@@ -72,7 +72,8 @@ const TabletCapsuleBottles = () => {
 
   {/* Foreground content */}
   <div className="container position-relative" style={{ zIndex: 2 }}>
-    <div className="row align-items-center min-vh-75">
+    {/* Hero Section */}
+    <div className="row align-items-center pt-5">
       <div className="col-lg-6 mb-5 mb-lg-0">
         <h1 className="display-4 fw-bold mb-4">Tablet & Capsule Bottles</h1>
         <p className="lead mb-4">
@@ -103,8 +104,10 @@ const TabletCapsuleBottles = () => {
           </Link>
         </div>
       </div>
+
+      {/* Hero Images */}
       <div className="col-lg-6">
-        <div className="row g-4">
+        <div className="row g-4 mt-3 pt-4">
           <div className="col-6">
             <img
               src={capsule}
@@ -124,63 +127,61 @@ const TabletCapsuleBottles = () => {
         </div>
       </div>
     </div>
+
+    {/* Features Section */}
+    <div className="mt-5 pb-5">
+      <div className="text-center mb-5">
+        <h6 style={{ color: themeColor }} className="fw-bold mb-3">
+          Product Features
+        </h6>
+        <h2 className="display-5 mb-4">
+          Pharmaceutical Excellence in Every Detail
+        </h2>
+      </div>
+      <div className="row g-4">
+        {[
+          {
+            icon: "fa-shield-virus",
+            title: "Moisture Protection",
+            description:
+              "Advanced barrier properties to protect medicine integrity",
+          },
+          {
+            icon: "fa-lock",
+            title: "Child-Resistant Caps",
+            description:
+              "Safety-first design with certified child-resistant closures",
+          },
+          {
+            icon: "fa-flask",
+            title: "USP Type III Glass",
+            description:
+              "Meets pharmaceutical industry standards for chemical stability",
+          },
+          {
+            icon: "fa-qrcode",
+            title: "Tracking Features",
+            description: "Built-in lot number and expiry date areas",
+          },
+        ].map((feature, index) => (
+          <div key={index} className="col-md-6 col-lg-3">
+            <div className="card h-100 border-0 shadow-sm p-4 text-center">
+              <div className="card-body">
+                <i
+                  className={`fas ${feature.icon}`}
+                  style={{ ...styles.featureIcon, color: themeColor }}
+                ></i>
+                <h4 className="h5 mb-3">{feature.title}</h4>
+                <p className="text-muted mb-0">{feature.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   </div>
 </section>
 
-
-      {/* Features Section */}
-      <section className="py-5">
-        <div className="container">
-          <div className="text-center mb-5">
-            <h6 style={{ color: themeColor }} className="fw-bold mb-3">
-              Product Features
-            </h6>
-            <h2 className="display-5 mb-4">
-              Pharmaceutical Excellence in Every Detail
-            </h2>
-          </div>
-          <div className="row g-4">
-            {[
-              {
-                icon: "fa-shield-virus",
-                title: "Moisture Protection",
-                description:
-                  "Advanced barrier properties to protect medicine integrity",
-              },
-              {
-                icon: "fa-lock",
-                title: "Child-Resistant Caps",
-                description:
-                  "Safety-first design with certified child-resistant closures",
-              },
-              {
-                icon: "fa-flask",
-                title: "USP Type III Glass",
-                description:
-                  "Meets pharmaceutical industry standards for chemical stability",
-              },
-              {
-                icon: "fa-qrcode",
-                title: "Tracking Features",
-                description: "Built-in lot number and expiry date areas",
-              },
-            ].map((feature, index) => (
-              <div key={index} className="col-md-6 col-lg-3">
-                <div className="card h-100 border-0 shadow-sm p-4 text-center">
-                  <div className="card-body">
-                    <i
-                      className={`fas ${feature.icon}`}
-                      style={{ ...styles.featureIcon, color: themeColor }}
-                    ></i>
-                    <h4 className="h5 mb-3">{feature.title}</h4>
-                    <p className="text-muted mb-0">{feature.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Specifications Section */}
       <section id="specifications" className="py-5 bg-light">

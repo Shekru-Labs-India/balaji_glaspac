@@ -31,7 +31,7 @@ const OralLiquidBottles = () => {
 
   {/* Foreground content */}
   <div className="container position-relative" style={{ zIndex: 1 }}>
-    <div className="row align-items-center" style={{ minHeight: "85vh" }}>
+    <div className="row align-items-center" style={{ minHeight: "100vh" }}>
       <div className="col-lg-6 order-lg-2">
         <div className="p-lg-5 p-4" style={{ minHeight: "400px" }}>
           <div className="mb-4">

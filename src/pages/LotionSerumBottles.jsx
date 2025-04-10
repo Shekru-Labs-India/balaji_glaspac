@@ -32,7 +32,7 @@ const LotionSerumBottles = () => {
         <div className="container-fluid p-0">
           <div
             className="row g-0 align-items-center"
-            style={{ minHeight: "85vh" }}
+            style={{ minHeight: "100vh" }}
           >
             <div
   className="col-lg-6 d-flex align-items-center position-relative text-white"

@@ -55,7 +55,7 @@ const Coating = () => {
         />
       </div>
     </div>
-        <p className='py-0'>
+        <p className='mt-0'>
           Coating is a cost-effective and flexible way to achieve outstanding colour, to provide a premium look and feel.
           The technique can give a wide range of effects: matte, gloss, eggshell, acid etch, organic, metallic, and pearlescent.
           Coating is often combined with other decoration techniques such as pressure-sensitive labelling (PSL), printing, or embossing, offering unlimited options and uniquely tailored branding.
@@ -70,7 +70,7 @@ const Coating = () => {
     {/* Bottom Paragraphs */}
     <div className="row">
       <div className="col-12">
-        <p>
+        <p className='mt-5'>
           Coating is a process that prevents mechanical damage to bottles during production, packing, and transportation.
           We have the necessary facilities for applying hot-end and cold-end coating on bottles which not only prevents damage to customer filling lines but also enhances the overall utility and safety till it reaches the end consumer.
         </p>

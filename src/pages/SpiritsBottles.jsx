@@ -14,8 +14,8 @@ import whiskey3 from "../assets/img/whiskey3.jpg";
 
 const styles = {
   heroSection: {
-    clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
-    minHeight: "70vh",
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    minHeight: "100vh",
   },
   sectionSpacing: {
     padding: "80px 0",

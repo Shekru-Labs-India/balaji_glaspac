@@ -50,7 +50,7 @@ const PerfumeBottles = () => {
 
   {/* Original content, unchanged, with zIndex to appear above the blur */}
   <div className="position-relative" style={{ zIndex: 2 }}>
-    <div className="row align-items-center" style={{ minHeight: "85vh" }}>
+    <div className="row align-items-center" style={{ minHeight: "100vh" }}>
       <div className="col-lg-5 ps-lg-5">
         <div className="p-4 p-xl-5" style={{ minHeight: "400px" }}>
           <div className="d-flex flex-column justify-content-center">

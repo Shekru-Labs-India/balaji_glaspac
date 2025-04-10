@@ -49,7 +49,7 @@ const PremiumBottles = () => {
   {/* Content on top of blur */}
   <div className="position-relative" style={{ zIndex: 2 }}>
     <div className="container">
-      <div className="row align-items-center" style={{ minHeight: "85vh" }}>
+      <div className="row align-items-center" style={{ minHeight: "100vh" }}>
         <div className="col-lg-6">
           <div
             style={{ minHeight: "400px" }}
