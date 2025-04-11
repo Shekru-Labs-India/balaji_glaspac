@@ -74,7 +74,7 @@ const Header = () => {
 
       {/* Start Navbar Area */}
       <div
-        className={`navbar-area sticky-top ${
+        className={`navbar-area${
           isScrolled ? "navbar-scrolled" : ""
         }`}
       >

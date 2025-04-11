@@ -28,7 +28,7 @@ const LotionSerumBottles = () => {
       <Header />
 
       {/* Hero Section with Split Design */}
-      <section className="position-relative pt-5 mt-5">
+      <section className="position-relative mt-4">
         <div className="container-fluid p-0">
           <div
             className="row g-0 align-items-center"
@@ -37,7 +37,7 @@ const LotionSerumBottles = () => {
             <div
   className="col-lg-6 d-flex align-items-center position-relative text-white"
   style={{
-    height: "85vh",
+    height: "100vh",
     backgroundImage: `url(${lotionSerumBottle})`, // Replace with your actual image variable or URL
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -60,7 +60,7 @@ const LotionSerumBottles = () => {
         Premium Packaging
       </span>
     </div>
-    <h1 className="display-3 text-white fw-bold mb-4">
+    <h1 className="display-3 text-light fw-bold mb-4">
       Lotion & Serum Bottles
     </h1>
     <p className="lead text-white opacity-75 mb-4">
@@ -87,15 +87,15 @@ const LotionSerumBottles = () => {
 
     <Link
       to="/contact"
-      className="btn btn-outline-primary btn-lg px-4 mt-5"
+      className="btn btn-outline-primary text-white btn-lg px-4 mt-5"
     >
       Request Samples
-      <i className="fa-solid fa-arrow-right ms-2"></i>
+      <i className="fa-solid text-primary fa-arrow-right ms-2"></i>
     </Link>
   </div>
 </div>
 
-            <div className="col-lg-6" style={{ height: "85vh" }}>
+            <div className="col-lg-6 overflow-hidden" style={{ height: "100vh", }}>
               <div className="h-100">
                 <Slider {...sliderSettings}>
                   <div>
@@ -104,7 +104,7 @@ const LotionSerumBottles = () => {
                       alt="Lotion Bottle"
                       style={{
                         width: "100%",
-                        height: "85vh",
+                        height: "100vh",
                         objectFit: "cover",
                       }}
                     />
@@ -115,7 +115,7 @@ const LotionSerumBottles = () => {
                       alt="Serum Bottle"
                       style={{
                         width: "100%",
-                        height: "85vh",
+                        height: "100vh",
                         objectFit: "cover",
                       }}
                     />
