@@ -71,7 +71,7 @@ const TabletCapsuleBottles = () => {
   ></div>
 
   {/* Foreground content */}
-  <div className="container position-relative pt-3" style={{ zIndex: 2 }}>
+  <div className="container position-relative pt-3 min-vh-100" style={{ zIndex: 2 }}>
     {/* Hero Section */}
     <div className="row align-items-center pt-4">
       <div className="col-lg-6 mb-2 mb-lg-0">
@@ -221,7 +221,7 @@ const TabletCapsuleBottles = () => {
                   </h6>
                   <h2 className="display-6 fw-bold mb-4">Technical Details</h2>
                 </div>
-                <div className="row g-4 py-5 my-5">
+                <div className="row g-4">
                   {" "}
                   {/* Added gap between specification items */}
                   {[
