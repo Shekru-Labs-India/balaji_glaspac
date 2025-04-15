@@ -17,7 +17,7 @@ const themeColor = "#ff5d22"; // Your orange theme color
 // Update styles object
 const styles = {
   bannerImage: {
-    height: "400px",
+    height: "310px",
     objectFit: "cover",
     borderRadius: "8px",
   },
@@ -51,7 +51,7 @@ const TabletCapsuleBottles = () => {
       <Header />
 
       {/* Hero Section */}
-      <section  className="position-relative pt-5 mt-5 text-dark"
+      <section  className="position-relative  text-dark"
   style={{
     backgroundImage: `url(${capsule3})`,
     backgroundSize: "cover",
@@ -71,12 +71,12 @@ const TabletCapsuleBottles = () => {
   ></div>
 
   {/* Foreground content */}
-  <div className="container position-relative" style={{ zIndex: 2 }}>
+  <div className="container position-relative pt-3" style={{ zIndex: 2 }}>
     {/* Hero Section */}
-    <div className="row align-items-center pt-5">
-      <div className="col-lg-6 mb-5 mb-lg-0">
-        <h1 className="display-4 fw-bold mb-4">Tablet & Capsule Bottles</h1>
-        <p className="lead mb-4">
+    <div className="row align-items-center pt-4">
+      <div className="col-lg-6 mb-2 mb-lg-0">
+        <h1 className="display-4 fw-bold mb-1 pt-4">Tablet & Capsule Bottles</h1>
+        <p className="lead mb-1">
           Pharmaceutical-grade glass bottles with moisture protection and
           child-resistant features
         </p>
@@ -107,12 +107,12 @@ const TabletCapsuleBottles = () => {
 
       {/* Hero Images */}
       <div className="col-lg-6">
-        <div className="row g-4 mt-3 pt-4">
+        <div className="row g-4 mt-3">
           <div className="col-6">
             <img
               src={capsule}
               alt="Tablet Bottle"
-              className="img-fluid shadow-sm"
+              className="img-fluid shadow-sm w-100"
               style={styles.bannerImage}
             />
           </div>
@@ -120,7 +120,7 @@ const TabletCapsuleBottles = () => {
             <img
               src={capsule2}
               alt="Capsule Bottle"
-              className="img-fluid shadow-sm"
+              className="img-fluid shadow-sm w-100"
               style={styles.bannerImage}
             />
           </div>
@@ -129,16 +129,16 @@ const TabletCapsuleBottles = () => {
     </div>
 
     {/* Features Section */}
-    <div className="mt-5 pb-5">
-      <div className="text-center mb-5">
-        <h6 style={{ color: themeColor }} className="fw-bold mb-3">
+    <div className="">
+      <div className="text-center">
+        <h6 style={{ color: themeColor }} className="fw-bold mb-3 pt-3">
           Product Features
         </h6>
-        <h2 className="display-5 mb-4">
+        <h2 className="display-5 mb-1">
           Pharmaceutical Excellence in Every Detail
         </h2>
       </div>
-      <div className="row g-4">
+      <div className="row g-4 py-5">
         {[
           {
             icon: "fa-shield-virus",
@@ -165,7 +165,7 @@ const TabletCapsuleBottles = () => {
           },
         ].map((feature, index) => (
           <div key={index} className="col-md-6 col-lg-3">
-            <div className="card h-100 border-0 shadow-sm p-4 text-center">
+            <div className="card h-100 border-0 shadow-sm p-4 text-center pb-3">
               <div className="card-body">
                 <i
                   className={`fas ${feature.icon}`}
@@ -221,7 +221,7 @@ const TabletCapsuleBottles = () => {
                   </h6>
                   <h2 className="display-6 fw-bold mb-4">Technical Details</h2>
                 </div>
-                <div className="row g-4">
+                <div className="row g-4 py-5 my-5">
                   {" "}
                   {/* Added gap between specification items */}
                   {[
