@@ -1,8 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
-import Slider from "react-slick";
 
 // Import images
 import service1 from "../assets/img/home-one/service-shape.png";
@@ -12,83 +11,129 @@ import specialtyBottle2 from "../assets/img/Pharmaceutical2.jpg";
 import type1 from "../assets/img/type1Glass.jpg";
 import type2 from "../assets/img/type2Glass.jpg";
 import type3 from "../assets/img/type3Glass.jpg";
+// At the top of your file, add the theme color
+const themeColor = "#ff5d22"; // Your orange theme color
+
+// Update styles object
+const styles = {
+  bannerImage: {
+    height: "310px",
+    objectFit: "cover",
+    borderRadius: "8px",
+  },
+  featureIcon: {
+    fontSize: "2.5rem",
+    color: themeColor,
+    marginBottom: "1rem",
+  },
+  // Add custom button styles to match template
+  templateBtn: {
+    backgroundColor: themeColor,
+    borderColor: themeColor,
+    "&:hover": {
+      backgroundColor: themeColor,
+      borderColor: themeColor,
+    },
+  },
+  templateBtnOutline: {
+    color: themeColor,
+    borderColor: themeColor,
+    "&:hover": {
+      backgroundColor: themeColor,
+      borderColor: themeColor,
+    },
+  },
+};
 
 const SpecialtyPharmaceuticalBottles = () => {
-  const [activeTab, setActiveTab] = useState("type1");
-
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
-
+   const [activeTab, setActiveTab] = useState("type1");
   return (
     <>
       <Header />
 
-      {/* Innovative Split Hero Section */}
-      <section className="position-relative pt-5 mt-3 overflow-hidden">
-        <div className="container-fluid p-0">
-          <div className="row g-0" style={{ minHeight: "100vh" }}>
-          <div className="col-lg-12 position-relative overflow-hidden">
-  {/* Background Image with Blur */}
+      {/* Hero Section */}
+      <section  className="position-relative  text-dark"
+  style={{
+    backgroundImage: `url(${type1})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    
+    
+  }}
+>
+  {/* Blurred overlay background */}
   <div
     className="position-absolute top-0 start-0 w-100 h-100"
     style={{
-      backgroundImage: `url(${type1})`, // import at top
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      filter: "blur(2px)",
+      backgroundColor: "rgba(255, 255, 255, 0.08)",
       zIndex: 1,
-      opacity: 10,
     }}
   ></div>
 
-  {/* Overlay (optional dark tint) */}
-  <div
-    className="position-absolute top-0 start-0 w-100 h-100"
-    style={{
-      backgroundColor: "rgba(0,0,0,0.4)",
-      zIndex: 2,
-    }}
-  ></div>
-
-  {/* Foreground Content (not blurred) */}
-  <div
-    className="p-5 text-white d-flex align-items-center position-relative"
-    style={{ minHeight: "400px", zIndex: 3 }}
-  >
-    <div>
-      <div className="d-flex align-items-center mb-4">
-        <div>
-          <span className="text-uppercase fw-light mb-2 d-block">
-            Premium Quality
-          </span>
-          <h1 className="display-5 fw-bold mb-0">
-            Specialty Pharmaceutical Bottles
-          </h1>
+  {/* Foreground content */}
+  <div className="container position-relative min-vh-100 my-5 py-5" style={{ zIndex: 2 }}>
+    {/* Hero Section */}
+    <div className="row align-items-center">
+      <div className="col-lg-6  mb-lg-0 text-white">
+        <h1 className="display-4 fw-bold mb-1">Specialty Pharmaceutical Bottles</h1>
+        <p className="lead ">
+          Pharmaceutical-grade glass bottles with moisture protection and
+          child-resistant features
+        </p>
+        <div className="d-flex gap-3 py-4">
+          <Link
+            to="/contact"
+            className="btn btn-lg"
+            style={{
+              backgroundColor: themeColor,
+              borderColor: themeColor,
+              color: "white",
+            }}
+          >
+            Request Samples
+          </Link>
+          <Link
+            to="#specifications"
+            className="btn btn-lg"
+            style={{
+              color: themeColor,
+              borderColor: themeColor,
+            }}
+          >
+            View Specifications
+          </Link>
         </div>
       </div>
-      <p className="lead opacity-75 mb-4">
-        Advanced glass packaging solutions designed for specific medical
-        applications, meeting the highest pharmaceutical standards.
-      </p>
+      
 
-      <div className="d-flex gap-3 mt-4">
-        <button className="btn btn-light btn-lg px-4">
-          Get Details
-          <i className="fa-solid fa-arrow-right ms-2"></i>
-        </button>
-        <button className="btn btn-outline-light btn-lg px-4">
-          View Catalog
-        </button>
+      {/* Hero Images */}
+      <div className="col-lg-6">
+        <div className="row g-4">
+          <div className="col-lg-6">
+            {/* <img
+              src={type1}
+              alt="Capsule Bottle"
+              className="img-fluid shadow-sm w-100"
+              style={styles.bannerImage}
+            /> */}
+          </div>
+          <div className="col-lg-6">
+            <img
+              src={type1}
+              alt="Capsule Bottle"
+              className="img-fluid shadow-sm w-100"
+              style={styles.bannerImage}
+            />
+          </div>
+        </div>
       </div>
-      <div className="container">
-          <div className="row g-4 mt-5">
+      
+    </div>
+     {/* Features Section */}
+     <div className="col-lg-12 py-5 my-5">
+      <div className="text-center">
+      </div>
+      <div className="row g-4">
             {[
               {
                 icon: "fa-solid fa-shield-virus",
@@ -112,8 +157,8 @@ const SpecialtyPharmaceuticalBottles = () => {
               },
             ].map((feature, index) => (
               <div key={index} className="col-md-6 col-lg-3">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body text-center p-4">
+                <div className="card h-100 border-0 shadow-sm w-100">
+                  <div className="card-body text-center">
                     <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mb-3">
                       <i className={`${feature.icon} text-primary fs-3`}></i>
                     </div>
@@ -124,50 +169,18 @@ const SpecialtyPharmaceuticalBottles = () => {
               </div>
             ))}
           </div>
-        </div>
     </div>
+
+
+    
+          
+         
+
+    
   </div>
-</div>
-</div>
- </div>
-  {/* 
-  <div className="col-lg-6">
-              <div style={{ height: "400px" }} className="position-relative">
-                <Slider {...sliderSettings} className="h-100">
-                  <div>
-                    <img
-                      src={specialtyBottle}
-                      alt="Pharmaceutical Bottle"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src={specialtyBottle2}
-                      alt="Medical Bottle"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                </Slider>
-              </div>
-            </div> */}
- </section>
+</section>
 
-      {/* Key Features Grid */}
-      <section className="py-5 bg-light">
-        
-      </section>
-
-      {/* Technical Specifications with Tabs */}
-      <section className="py-5 bg-light">
+<section className="py-5 bg-light">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -258,38 +271,23 @@ const SpecialtyPharmaceuticalBottles = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div
-                className="bg-white rounded-4 p-3"
-                style={{ height: "400px" }}
-              >
+            <div className="col-lg-6 text-center">
+              <h2 className="mb-4">Quality Certifications</h2>
+              <div className="row g-4">
                 {[
-                  {
-                    id: "type1",
-                    image: type1,
-                  },
-                  {
-                    id: "type2",
-                    image: type2,
-                  },
-                  {
-                    id: "type3",
-                    image: type3,
-                  },
-                ].map((item, index) => (
-                  <img
-                    key={index}
-                    src={item.image}
-                    alt={`Type ${index + 1} Glass`}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                      borderRadius: "8px",
-                      display: activeTab === item.id ? "block" : "none",
-                      transition: "opacity 0.3s ease",
-                    }}
-                  />
+                  "ISO 15378",
+                  "USP <660>",
+                  "EP 3.2.1",
+                  "FDA DMF",
+                  "JP Standards",
+                  "GMP Certified",
+                ].map((cert, index) => (
+                  <div key={index} className="col-6 col-md-4">
+                    <div className="border rounded p-3 h-100">
+                      <i className="fa-solid fa-certificate text-primary mb-2"></i>
+                      <h5 className="mb-0">{cert}</h5>
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -297,8 +295,8 @@ const SpecialtyPharmaceuticalBottles = () => {
         </div>
       </section>
 
-      {/* Applications Grid */}
-      <section className="service-area pt-100 pb-70">
+{/* Applications Grid */}
+<section className="service-area pt-100 pb-70">
         <div className="container">
           <div className="section-title text-center mb-5">
             <span className="sub-title">Applications</span>
@@ -338,26 +336,7 @@ const SpecialtyPharmaceuticalBottles = () => {
       <section className="bg-light py-5 ">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8 text-center">
-              <h2 className="mb-4">Quality Certifications</h2>
-              <div className="row g-4">
-                {[
-                  "ISO 15378",
-                  "USP <660>",
-                  "EP 3.2.1",
-                  "FDA DMF",
-                  "JP Standards",
-                  "GMP Certified",
-                ].map((cert, index) => (
-                  <div key={index} className="col-6 col-md-4">
-                    <div className="border rounded p-3 h-100">
-                      <i className="fa-solid fa-certificate text-primary mb-2"></i>
-                      <h5 className="mb-0">{cert}</h5>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -387,6 +366,10 @@ const SpecialtyPharmaceuticalBottles = () => {
         </div>
       </section>
 
+      
+     
+
+      
       <Footer />
     </>
   );

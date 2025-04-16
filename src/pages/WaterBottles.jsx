@@ -396,6 +396,17 @@ const WaterBottles = () => {
 
       {/* Hero Section */}
       <section className="pt-5 mt-5">
+      <div
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{
+      backgroundImage: `url(https://t3.ftcdn.net/jpg/07/86/76/06/360_F_786760607_IwcScz3k7Efj42i1S7mnewhWQXrhAa0o.jpg)`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(1px)",
+      opacity: 0.3,
+      zIndex: 0,
+    }}
+  ></div>
         <div className="container ">
           <div className="row align-items-center min-vh-100">
             <div className="col-lg-6">

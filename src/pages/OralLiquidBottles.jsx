@@ -15,8 +15,8 @@ const OralLiquidBottles = () => {
       <Header />
 
       {/* Hero Section with Split Design */}
-      <section className="text-dark position-relative pt-5 mt-3">
-  {/* Blurred background image layer */}
+      <section className="text-dark position-relative  mt-3 vh-100">
+  {/* Blurred background image */}
   <div
     className="position-absolute top-0 start-0 w-100 h-100"
     style={{
@@ -31,19 +31,17 @@ const OralLiquidBottles = () => {
 
   {/* Foreground content */}
   <div className="container position-relative" style={{ zIndex: 1 }}>
-    <div className="row align-items-center" style={{ minHeight: "100vh" }}>
+    <div className="row align-items-center mt-4 pt-4">
       <div className="col-lg-6 order-lg-2">
-        <div className="p-lg-5 p-4" style={{ minHeight: "400px" }}>
+        <div className="p-lg-5 p-4">
           <div className="mb-4">
-            <span className="badge bg-light text-primary px-3 py-2">
+            <span className="badge bg-light text-primary px-3 py-2 mt-3">
               Pharmaceutical Grade
             </span>
           </div>
           <h1 className="display-4 fw-bold mb-4">Oral Liquid Bottles</h1>
           <p className="lead opacity-75 mb-4">
-            Pharmaceutical-grade glass bottles designed specifically for
-            oral medications and supplements, featuring precise dosing
-            capabilities and child-resistant closures.
+            Pharmaceutical-grade glass bottles designed specifically for oral medications and supplements, featuring precise dosing capabilities and child-resistant closures.
           </p>
 
           {/* Certifications */}
@@ -85,64 +83,61 @@ const OralLiquidBottles = () => {
         </div>
       </div>
     </div>
+
+    {/* Merged Feature Cards */}
+    <div className="row g-3 py-4">
+  {[
+    {
+      icon: "fa-solid fa-shield-virus",
+      title: "Safety Features",
+      points: [
+        "Child-resistant closures",
+        "Tamper-evident seals",
+        "Break-resistant glass",
+      ],
+    },
+    {
+      icon: "fa-solid fa-flask",
+      title: "Material Quality",
+      points: [
+        "Type III glass",
+        "Chemical resistant",
+        "USP compliant",
+      ],
+    },
+    {
+      icon: "fa-solid fa-droplet",
+      title: "Dosing Accuracy",
+      points: [
+        "Precise measurements",
+        "Multiple size options",
+        "Calibrated droppers",
+      ],
+    },
+  ].map((feature, index) => (
+    <div key={index} className="col-md-4">
+      <div className="card h-100 border-0 shadow-sm" style={{ fontSize: "0.9rem" }}>
+        <div className="card-body text-center p-4">
+          <div className="rounded-circle bg-primary bg-opacity-10 p-2 d-inline-flex mb-3">
+            <i className={`${feature.icon} text-primary fs-4`}></i>
+          </div>
+          <h3 className="h5 mb-2">{feature.title}</h3>
+          <ul className="list-unstyled text-start mb-0">
+            {feature.points.map((point, i) => (
+              <li key={i} className="mb-1 d-flex align-items-center">
+                <i className="fa-solid fa-check text-primary me-2" style={{ fontSize: "0.9rem" }}></i>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
   </div>
 </section>
-
-      {/* Features Section */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row g-4">
-            {[
-              {
-                icon: "fa-solid fa-shield-virus",
-                title: "Safety Features",
-                points: [
-                  "Child-resistant closures",
-                  "Tamper-evident seals",
-                  "Break-resistant glass",
-                ],
-              },
-              {
-                icon: "fa-solid fa-flask",
-                title: "Material Quality",
-                points: [
-                  "Type III glass",
-                  "Chemical resistant",
-                  "USP compliant",
-                ],
-              },
-              {
-                icon: "fa-solid fa-droplet",
-                title: "Dosing Accuracy",
-                points: [
-                  "Precise measurements",
-                  "Multiple size options",
-                  "Calibrated droppers",
-                ],
-              },
-            ].map((feature, index) => (
-              <div key={index} className="col-md-4">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body text-center p-4">
-                    <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mb-4">
-                      <i className={`${feature.icon} text-primary fs-2`}></i>
-                    </div>
-                    <h3 className="h4 mb-3">{feature.title}</h3>
-                    <ul className="list-unstyled text-start">
-                      {feature.points.map((point, i) => (
-                        <li key={i} className="mb-2 d-flex align-items-center">
-                          <i className="fa-solid fa-check text-primary me-2"></i>
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Specifications Table */}
       <section className="py-5 bg-light">
