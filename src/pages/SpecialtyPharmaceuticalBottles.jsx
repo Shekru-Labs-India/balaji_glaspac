@@ -110,16 +110,16 @@ const SpecialtyPharmaceuticalBottles = () => {
       <div className="col-lg-6">
         <div className="row g-4">
           <div className="col-lg-6">
-            {/* <img
-              src={type1}
+            <img
+              src={specialtyBottle}
               alt="Capsule Bottle"
               className="img-fluid shadow-sm w-100"
               style={styles.bannerImage}
-            /> */}
+            />
           </div>
           <div className="col-lg-6">
             <img
-              src={type1}
+              src={specialtyBottle2}
               alt="Capsule Bottle"
               className="img-fluid shadow-sm w-100"
               style={styles.bannerImage}
