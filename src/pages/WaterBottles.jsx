@@ -427,7 +427,7 @@ const WaterBottles = () => {
                     Crystal Clear Water Bottles
                   </h1>
 
-                  <p className="lead text-secondary mb-5">
+                  <p className="lead text-black  mb-5">
                     Premium glass water bottles that combine purity,
                     sustainability, and elegant design for the perfect water
                     drinking experience.

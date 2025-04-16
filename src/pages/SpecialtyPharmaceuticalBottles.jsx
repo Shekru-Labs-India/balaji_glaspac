@@ -76,33 +76,18 @@ const SpecialtyPharmaceuticalBottles = () => {
     <div className="row align-items-center">
       <div className="col-lg-6  mb-lg-0 text-white">
         <h1 className="display-4 fw-bold mb-1">Specialty Pharmaceutical Bottles</h1>
-        <p className="lead ">
-          Pharmaceutical-grade glass bottles with moisture protection and
-          child-resistant features
+        <p className="lead">
+        Advanced glass packaging solutions designed for specific medical applications, meeting the highest pharmaceutical standards.
         </p>
-        <div className="d-flex gap-3 py-4">
-          <Link
-            to="/contact"
-            className="btn btn-lg"
-            style={{
-              backgroundColor: themeColor,
-              borderColor: themeColor,
-              color: "white",
-            }}
-          >
-            Request Samples
-          </Link>
-          <Link
-            to="#specifications"
-            className="btn btn-lg"
-            style={{
-              color: themeColor,
-              borderColor: themeColor,
-            }}
-          >
-            View Specifications
-          </Link>
-        </div>
+        <div className="d-flex gap-3 mt-4">
+                    <button className="btn btn-light btn-lg px-4">
+                      Get Details
+                      <i className="fa-solid fa-arrow-right ms-2"></i>
+                    </button>
+                    <button className="btn btn-outline-light btn-lg px-4">
+                      View Catalog
+                    </button>
+                  </div>
       </div>
       
 
