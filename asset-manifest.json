@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/balaji_glaspac/static/css/main.1a9e0219.css",
-    "main.js": "/balaji_glaspac/static/js/main.5fb6f2a8.js",
+    "main.js": "/balaji_glaspac/static/js/main.62582642.js",
     "static/js/453.d5a9f5a3.chunk.js": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js",
     "static/media/manufacturing.mp4": "/balaji_glaspac/static/media/manufacturing.1697ef979e1487249a85.mp4",
     "static/media/img1.jpg": "/balaji_glaspac/static/media/img1.97694c926d256a35bbf7.jpg",
@@ -69,6 +69,7 @@
     "static/media/BeerBottle3.jpg": "/balaji_glaspac/static/media/BeerBottle3.7ea1250127060e73a7c1.jpg",
     "static/media/oralBottle.jpg": "/balaji_glaspac/static/media/oralBottle.1c140ca6c723a24e11fa.jpg",
     "static/media/waterbottle (2).jpg": "/balaji_glaspac/static/media/waterbottle (2).83697cf324a4ab05da05.jpg",
+    "static/media/sparkling-wine.jpeg": "/balaji_glaspac/static/media/sparkling-wine.1006b32fdd985f9a0e4c.jpeg",
     "static/media/coating.jpg": "/balaji_glaspac/static/media/coating.b86a0c5bc81b5db94c86.jpg",
     "static/media/page-title-bg.jpg": "/balaji_glaspac/static/media/page-title-bg.5b290002e1b2ddc7bbf9.jpg",
     "static/media/about-job-main.jpg": "/balaji_glaspac/static/media/about-job-main.6f2140cc7803f144e562.jpg",
@@ -92,11 +93,11 @@
     "static/media/slick.ttf": "/balaji_glaspac/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/balaji_glaspac/static/media/slick.295183786cd8a1389865.woff",
     "main.1a9e0219.css.map": "/balaji_glaspac/static/css/main.1a9e0219.css.map",
-    "main.5fb6f2a8.js.map": "/balaji_glaspac/static/js/main.5fb6f2a8.js.map",
+    "main.62582642.js.map": "/balaji_glaspac/static/js/main.62582642.js.map",
     "453.d5a9f5a3.chunk.js.map": "/balaji_glaspac/static/js/453.d5a9f5a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a9e0219.css",
-    "static/js/main.5fb6f2a8.js"
+    "static/js/main.62582642.js"
   ]
 }
