@@ -2559,35 +2559,37 @@ const WineBottles = () => {
       <Header />
 
       {/* Hero Section */}
-      <div
-        className="hero-section position-relative"
-        style={{
-          backgroundImage: `url(${wineHero})`,
-          height: "250px",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="position-relative vh-100 pt-5">
+        <img
+          src={wineHero}
+          alt="Wine Bottle"
+          className="position-absolute w-100 h-100"
+          style={{ objectFit: "cover" }}
+        />
         <div
-          className="position-absolute top-0 start-0 w-100 h-100 bg-dark"
-          style={{ opacity: "0.5" }}
+          className="position-absolute w-100 h-100 bg-dark"
+          style={{ opacity: 0.6 }}
         ></div>
         <div className="container position-relative h-100">
-          <div className="d-flex align-items-center justify-content-center h-100">
-            <div className="text-center text-white">
-              <h1 className="display-3 fw-bold mb-4 mt-5">
-                Wine Bottles Manufacturing
+          <div className="d-flex align-items-center justify-content-center h-100 text-white text-center">
+            <div>
+              <h1 className="display-2 fw-bold mb-4">
+                Wine Bottles
               </h1>
-              <p className="lead mb-0">
-                Premium Glass Solutions for the Wine Industry
-              </p>
+              <p className="lead mb-4">Premium Glass Solutions for the Wine Industry</p>
+              <button
+                className="btn btn-lg px-5"
+                style={{ backgroundColor: "#fa5f0b", color: "white" }}
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
       </div>
 
       {/* Introduction Section */}
-      <section className="py-1 vh-100">
+      <section className="py-5">
         <div className="container pt-5">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -2643,6 +2645,7 @@ const WineBottles = () => {
         </div>
       </section>
 
+      
 
       {/* Bottle Types Section */}
       <section className="py-5 bg-light">

@@ -9,160 +9,137 @@ import service2 from "../assets/img/home-one/service-shape2.png";
 import specialtyBottle from "../assets/img/specialityBottle.jpg";
 import specialtyBottle2 from "../assets/img/specialityBottle2.jpg";
 
+
+
 const SpecialtyDrinkBottles = () => {
+
+  // Update styles object
+const styles = {
+  bannerImage: {
+    height: "310px",
+    objectFit: "cover",
+    borderRadius: "8px",
+  },
+  
+  
+  
+};
+
+  
   return (
     <>
       <Header />
 
       {/* Hero Section with Diagonal Design */}
-      <section
-  className="position-relative overflow-hidden bg-dark text-white pt-5 mt-3"
+      <section  className="position-relative  text-dark"
   style={{
-    backgroundImage: `url(${specialtyBottle2})`, // Replace with your actual image
+    backgroundImage: `url(${specialtyBottle})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
+    
+    
   }}
+
+  
+
+
 >
-  {/* Blur overlay to affect background only */}
+  {/* Blurred overlay background */}
   <div
     className="position-absolute top-0 start-0 w-100 h-100"
     style={{
-      backdropFilter: "blur(10px)",
-      WebkitBackdropFilter: "blur(10px)",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      backgroundColor: "rgba(255, 255, 255, 0.08)",
       zIndex: 1,
     }}
+    
   ></div>
 
-  {/* Main content (sharp and above blur) */}
-  <div className="container-fluid position-relative" style={{ zIndex: 2 }}>
-    <div
-      className="row align-items-center g-0"
-      style={{ minHeight: "100vh" }}
-    >
-      <div className="col-lg-7">
-        <div className="p-5" style={{ minHeight: "400px" }}>
-          <div className="pe-lg-5">
-            <div className="d-inline-block border border-warning rounded-pill px-3 py-1 mb-4">
-              <span className="text-warning">Artisanal Excellence</span>
-            </div>
-            <h1 className="display-3 fw-bold mb-4">
-              Specialty Drink Bottles
-            </h1>
-            <p className="lead mb-4">
-              Custom bottles for cold-pressed juices, kombucha, and other
-              specialty beverages. Designed to preserve unique flavors and
-              enhance shelf presence.
-            </p>
-
-            {/* Key Features Grid */}
-            <div className="row g-4 mb-4">
-              <div className="col-md-6">
-                <div
-                  className="d-flex p-4 rounded h-100"
-                  style={{
-                    background: "rgba(255,255,255,0.1)",
-                    minHeight: "100px",
-                  }}
-                >
-                  <i className="fa-solid fa-flask-vial fs-2 text-warning me-3"></i>
-                  <div className="d-flex flex-column justify-content-center">
-                    <h5 className="mb-1">UV Protection</h5>
-                    <p className="mb-0 small">
-                      Preserves natural ingredients
-                    </p>
+  {/* Foreground content */}
+  <div className="container position-relative min-vh-100 my-5 py-4" style={{ zIndex: 2 }}>
+    {/* Hero Section */}
+    <div className="row align-items-center">
+      <div className="col-lg-6  mb-lg-0 text-white">
+      <span className="d-inline-block border border-warning rounded-pill px-3 py-1 mb-4 text-warning">Artisanal Excellence</span>
+        <h1 className="display-4 fw-bold mb-1">Specialty Drink Bottles</h1>
+        <p className="lead">
+        Custom bottles for cold-pressed juices, kombucha, and other specialty beverages. 
+        Designed to preserve unique flavors and enhance shelf presence.
+        </p>
+        {/* Key Features Grid */}
+        <div className="row g-4 mb-4">
+                    <div className="col-md-6">
+                      <div
+                        className="d-flex p-4 rounded h-100"
+                        style={{
+                          background: "rgba(255,255,255,0.1)",
+                          minHeight: "100px",
+                        }}
+                      >
+                        <i className="fa-solid fa-flask-vial fs-2 text-warning me-3"></i>
+                        <div className="d-flex flex-column justify-content-center">
+                          <h5 className="mb-1">UV Protection</h5>
+                          <p className="mb-0 small">
+                            Preserves natural ingredients
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div
+                        className="d-flex p-4 rounded h-100"
+                        style={{
+                          background: "rgba(255,255,255,0.1)",
+                          minHeight: "100px",
+                        }}
+                      >
+                        <i className="fa-solid fa-temperature-low fs-2 text-warning me-3"></i>
+                        <div className="d-flex flex-column justify-content-center">
+                          <h5 className="mb-1">Temperature Stable</h5>
+                          <p className="mb-0 small">
+                            Suitable for cold storage
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+        <div className="d-flex flex-wrap gap-3">
+                    <button className="btn btn-warning btn-lg px-4">
+                      Request Samples
+                    </button>
+                    <button className="btn btn-outline-light btn-lg px-4">
+                      View Catalog
+                    </button>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div
-                  className="d-flex p-4 rounded h-100"
-                  style={{
-                    background: "rgba(255,255,255,0.1)",
-                    minHeight: "100px",
-                  }}
-                >
-                  <i className="fa-solid fa-temperature-low fs-2 text-warning me-3"></i>
-                  <div className="d-flex flex-column justify-content-center">
-                    <h5 className="mb-1">Temperature Stable</h5>
-                    <p className="mb-0 small">
-                      Suitable for cold storage
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+      
 
-            <div className="d-flex flex-wrap gap-3">
-              <button className="btn btn-warning btn-lg px-4">
-                Request Samples
-              </button>
-              <button className="btn btn-outline-light btn-lg px-4">
-                View Catalog
-              </button>
-            </div>
+      {/* Hero Images */}
+      <div className="col-lg-6">
+        <div className="row g-4">
+          <div className="col-lg-6">
+            <img
+              src={specialtyBottle2}
+              alt="Capsule Bottle"
+              className="img-fluid shadow-sm w-100"
+              style={styles.bannerImage}
+            />
+          </div>
+          <div className="col-lg-6">
+            <img
+              src={specialtyBottle}
+              alt="Capsule Bottle"
+              className="img-fluid shadow-sm w-100"
+              style={styles.bannerImage}
+            />
           </div>
         </div>
       </div>
-
-      <div className="col-lg-5">
-        <div
-          className="position-relative"
-          style={{
-            height: "500px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={specialtyBottle}
-            alt="Specialty Bottle"
-            style={{
-              width: "auto",
-              height: "500px",
-              objectFit: "contain",
-              padding: "2rem",
-              transition: "transform 0.3s ease",
-              zIndex: 2,
-              position: "relative",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "scale(1.05)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          />
-          {/* Decorative glow effect */}
-          <div
-            className="position-absolute"
-            style={{
-              width: "200px",
-              height: "200px",
-              background:
-                "radial-gradient(circle, rgba(255,193,7,0.1) 0%, rgba(255,193,7,0) 70%)",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              zIndex: 1,
-            }}
-          ></div>
-        </div>
-      </div>
+      
     </div>
-  </div>
-</section>
-
-
-      {/* Applications Section */}
-      <section className="py-5">
+     {/* Speciality Features Section */}
+     {/* Applications Section */}
+     <section className="py-5">
         <div className="container">
-          <div className="text-center mb-5">
-            <h6 className="text-primary fw-bold mb-2">PERFECT FOR</h6>
-            <h2 className="display-5 fw-bold">Specialty Applications</h2>
-          </div>
-
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             {[
               {
@@ -181,6 +158,36 @@ const SpecialtyDrinkBottles = () => {
                 title: "Plant-Based Drinks",
                 description: "Sustainable packaging for eco-conscious brands",
               },
+            ].map((item, index) => (
+              <div key={index} className="col">
+                <div className="card h-100 border-0 shadow-sm">
+                  <div className="card-body p-4">
+                    <div className="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mb-3">
+                      <i className={`${item.icon} text-primary fs-4`}></i>
+                    </div>
+                    <h4 className="mb-3">{item.title}</h4>
+                    <p className="text-muted">{item.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+  </div>
+</section>
+
+{/* Applications Section */}
+<section className="py-5">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h6 className="text-primary fw-bold mb-2">PERFECT FOR</h6>
+            <h2 className="display-5 fw-bold">Specialty Applications</h2>
+          </div>
+
+          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {[
               {
                 icon: "fa-solid fa-fire",
                 title: "Hot-Fill Capable",
@@ -214,6 +221,8 @@ const SpecialtyDrinkBottles = () => {
         </div>
       </section>
 
+
+      
       {/* Technical Specifications */}
       <section className="py-5 bg-light">
         <div className="container">

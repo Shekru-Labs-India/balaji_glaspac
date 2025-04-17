@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import wineHero from "../assets/img/WineBottle.jpg";
+import SparklingWine from "../assets/img/sparkling-wine.jpeg";
 
 const SparklingWineNew = () => {
  
@@ -504,46 +505,47 @@ const SparklingWineNew = () => {
   <>
   <Header/>
 
-  <div
-          className="hero-section position-relative"
-          style={{
-            backgroundImage: `url(${wineHero})`,
-            height: "230px",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div
-            className="position-absolute top-0 start-0 w-100 h-100 bg-dark"
-            style={{ opacity: "0.5" }}
-          ></div>
-          <div className="container position-relative h-100">
-            <div className="d-flex align-items-center justify-content-center h-100">
-              <div className="text-center text-white mt-5">
-                <h1 className="display-3 fw-bold mb-3">
-                  Wine Bottles Manufacturing
-                </h1>
-                <p className="lead mb-0">
-                  Premium Glass Solutions for the Wine Industry
-                </p>
-              </div>
+  <div className="position-relative vh-100 pt-5">
+        <img
+          src={SparklingWine}
+          alt="Wine Bottle"
+          className="position-absolute w-100 h-100"
+          style={{ objectFit: "cover" }}
+        />
+        <div
+          className="position-absolute w-100 h-100 bg-dark"
+          style={{ opacity: 0.6 }}
+        ></div>
+        <div className="container position-relative h-100">
+          <div className="d-flex align-items-center justify-content-center h-100 text-white text-center">
+            <div>
+              <h1 className="display-2 fw-bold mb-4">
+                Sparkling Wine Bottles
+              </h1>
+              <p className="lead mb-4">Premium Glass Solutions for the Wine Industry</p>
+              <button
+                className="btn btn-lg px-5"
+                style={{ backgroundColor: "#fa5f0b", color: "white" }}
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
-
+      </div>
          
                   
                  
-      <div className="container-fluid py-0"  >
+      <div className="container-fluid py-5 mt-5"  >
 
-      <h2 className="text-center fw-bold mb-5">
+      <h2 className="text-center fw-bold mb-5 ">
                     Our Wine Bottle Collection
                   </h2>
 
-<div className="container-fluid  py-0">
+<div className="container-fluid">
 <div className="row align-items-center " style={{ marginTop: "50px" }}>
 {/* Search field on the left */}
-<div className="col-md-4 mb-3 mb-md-0 py-3 ">
+<div className="col-md-4 mb-3 mb-md-0">
 <label className="form-label fw-bold">Search</label>
 <div className="input-group">
 <input
@@ -566,11 +568,7 @@ onChange={(e) => setSearchQuery(e.target.value)}
 </div>
 </div>
 
-<div className="row mb-3 py-5 my-5">
-
-
-
-
+<div className="row mb-3 py-5">
 <div className="col-md-12">
 <div className="row g-4">
 {filteredCards.map((card, index) => (
