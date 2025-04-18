@@ -14,133 +14,62 @@ const OurProducts = () => {
      {/* Service */}
      <section className="service-area pt-100 pb-70 d-flex flex-column min-vh-100">
 
-<style>
-{`
-/* Desktop view - 10 items per row */
-@media (min-width: 1400px) {
-  .col-lg-custom {
-    flex: 0 0 10%;
-    max-width: 10%;
-    padding: 8px;
-  }
+     <style>
+          {`
+          .service-item {
+            height: 100%;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+          }
 
-  .service-item {
-    padding: 12px;
-  }
+          .service-item p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 15px;
+            max-width: 100%;
+            line-height: 1.5;
+            text-align: center;
+          }
 
-  .service-item i {
-    font-size: 20px;
-    margin: 8px 0;
-    display: flex; /* Centering the icon */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 40px; /* Set a height for centering */
-  }
+          .service-item h3 {
+            margin: 12px 0;
+            text-align: center;
+          }
 
-  .service-item h3 {
-    font-size: 14px;
-    margin: 8px 0;
-    text-align: center; /* Center the title */
-  }
+          .service-item i {
+            margin: 8px 0;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+          }
 
-  .service-item p {
-    font-size: 12px;
-    line-height: 1.4;
-    margin-bottom: 8px;
-    text-align: center; /* Center the paragraph text */
-  }
+          .service-link {
+            margin-top: auto;
+            text-align: center;
+          }
 
-  .service-item .service-link {
-    font-size: 12px;
-    text-align: center; /* Center the link */
-  }
-
-  .service-item img {
-    max-height: 30px;
-    width: auto;
-  }
-}
-
-/* Laptop view - 5 items per row */
-@media (min-width: 992px) and (max-width: 1399px) {
-  .col-lg-custom {
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-}
-
-/* Tablet view */
-@media (max-width: 991px) {
-  .col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-/* Mobile view */
-@media (max-width: 575px) {
-  .col-sm-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .service-item {
-    margin-bottom: 20px; /* Add space at the bottom of each service item */
-    padding: 15px; /* Ensure padding is consistent */
-    box-sizing: border-box; /* Include padding in width calculations */
-  }
-}
-
-.service-item {
-  height: 100%;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items in the column */
-}
-
-.service-item p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 15px;
-  max-width: 100%;
-  line-height: 1.5;
-}
-
-.service-item h3 {
-  margin: 12px 0;
-}
-
-.service-item i {
-  margin: 8px 0;
-}
-
-.service-link {
-  margin-top: auto;
-}
-
-.container-fluid {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.row {
-  margin-left: -8px;
-  margin-right: -8px;
-}
-`}
+          .service-item img {
+            max-height: 30px;
+            width: auto;
+          }
+          `}
 </style>
 
 <div id="our-products">
-  <div className="container-fluid">
+  <div className="container">
     <div className="section-title">
       <span className="sub-title">Our Services</span>
     </div>
-    <div className="row justify-content-center">
+    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-3 justify-content-center">
     
   {/* 1. Wine Bottles */}
   <div className="col-sm-6 col-lg-custom mb-2">
@@ -151,9 +80,7 @@ const OurProducts = () => {
       <h3>
         <Link to="/packagingoptions" onClick={() => window.scrollTo(0, 0)}>Packaging Options</Link>
       </h3>
-      <p title="Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.">
-        Premium glass bottles designed specifically for wine packaging, featuring various sizes and styles to meet your needs.
-      </p>
+      
       <Link className="service-link" to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}>
         Read More
       </Link>
@@ -169,9 +96,7 @@ const OurProducts = () => {
       <h3>
         <Link to="/coloring" onClick={() => window.scrollTo(0, 0)}>Coloring Forehearth Technology</Link>
       </h3>
-      <p title="Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.">
-        Durable glass bottles perfect for beer packaging, available in multiple colors and sizes for your brewing needs.
-      </p>
+      
       <Link className="service-link" to="/beer-bottles" onClick={() => window.scrollTo(0, 0)}>
         Read More
       </Link>
@@ -187,11 +112,7 @@ const OurProducts = () => {
           <h3>
             <Link to="/inhousedesign"  onClick={() => window.scrollTo(0, 0)}>In House Design Studio</Link>
           </h3>
-          <p title="Elegant glass bottles designed for spirits and liquors,
-            featuring premium finishes and distinctive designs.">
-            Elegant glass bottles designed for spirits and liquors,
-            featuring premium finishes and distinctive designs.
-          </p>
+          
           <Link className="service-link" to="/spirits-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
           </Link>
@@ -207,11 +128,7 @@ const OurProducts = () => {
           <h3>
             <Link to="/appliedceramic"  onClick={() => window.scrollTo(0, 0)}>Applied Ceramic Label</Link>
           </h3>
-          <p title="Specialized bottles designed to withstand pressure, perfect
-            for champagne and sparkling wines.">
-            Specialized bottles designed to withstand pressure, perfect
-            for champagne and sparkling wines.
-          </p>
+          
           <Link className="service-link" to="/champagne-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
           </Link>
@@ -227,11 +144,7 @@ const OurProducts = () => {
           <h3>
             <Link to="/coating"  onClick={() => window.scrollTo(0, 0)}>Coating</Link>
           </h3>
-          <p title="Crystal clear glass bottles for water packaging, available in
-            various sizes and designs for pure refreshment.">
-            Crystal clear glass bottles for water packaging, available in
-            various sizes and designs for pure refreshment.
-          </p>
+          
           <Link className="service-link" to="/water-bottles"  onClick={() => window.scrollTo(0, 0)}>
             Read More
           </Link>
