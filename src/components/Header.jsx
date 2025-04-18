@@ -819,28 +819,22 @@ const Header = () => {
                         </li>
 
                         {/* Food Containers Section */}
-                        <li className="nav-item dropdown-submenu">
-                          <a href="#" className="nav-link dropdown-toggle">
-                            <i
-                              className="fa-solid fa-arrow-turn-up me-2"
-                              style={{ transform: "rotate(90deg)" }}
-                            />
-                            Food Containers
-                          </a>
-                          <ul className="dropdown-menu submenu">
-                            <li>
-                              <NavLink
-                                to="/food-jars" onClick={() => window.scrollTo(0, 0)}
-                                className={({ isActive }) =>
-                                  isActive ? "nav-link custom-active" : "nav-link"
-                                }
-                              >
-                                <i className="fa-solid fa-arrow-right me-2" />
-                                Food Jars
-                              </NavLink>
-                            </li>
-                          </ul>
-                        </li>
+                        <li className="nav-item">
+                        <NavLink
+                              to="/FoodContainers"
+                             onClick={() => window.scrollTo(0, 0)}
+                        className={({ isActive }) =>
+                       isActive ? "nav-link custom-active" : "nav-link"
+    }
+  >
+    <i
+      className="fa-solid fa-arrow-turn-up me-2"
+      style={{ transform: "rotate(90deg)" }}
+    />
+    Food Containers
+  </NavLink>
+</li>
+
 
 
                            {/* Liquor Bottles Section */}

@@ -28,8 +28,8 @@ const LotionSerumBottles = () => {
       <Header />
 
       {/* Hero Section with Split Design */}
-      <section className="position-relative mt-4">
-        <div className="container-fluid p-0">
+      <section className="position-relative mt-4 ">
+        <div className="container-fluid p-0 ">
           <div
             className="row g-0 align-items-center"
             style={{ minHeight: "100vh" }}
