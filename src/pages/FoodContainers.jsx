@@ -1250,7 +1250,7 @@ const FoodJars = () => {
       <div className="col-lg-5">
         <div className="section-title mb-4">
           <span className="sub-title fs-5 fw-bold">Food Storage Solutions</span>
-          <h1 className="display-4 fw-bold">Food Jars</h1>
+          <h1 className="display-4 fw-bold">Food Containers</h1>
         </div>
         <p className="lead mb-4">
           Wide-mouth jars perfect for food packaging, preserves, and
@@ -1309,7 +1309,7 @@ const FoodJars = () => {
       <div className="container-fluid mt-4"  >
 
       <h2 className="text-center fw-bold mb-5">
-                    Our Food Jars Collection
+                    Our Food Containers Collection
                   </h2>
 
       <div className="container-fluid  mb-5">

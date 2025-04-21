@@ -137,6 +137,9 @@ const Footer = () => {
             <h6 className="text-decoration-none d-block" style={{ color: '#cdcccc', whiteSpace: 'nowrap' }}>
               +91 253 2507474
             </h6>
+            <h6 className="text-decoration-none d-block" style={{ color: '#cdcccc', whiteSpace: 'nowrap' }}>
+              +91 95611 66665
+            </h6>
           </div>
         </li>
         <li className="d-flex align-items-center mb-3">
