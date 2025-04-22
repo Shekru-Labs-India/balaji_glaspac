@@ -8,9 +8,7 @@ import img3 from "../assets/img/img3.jpg";
 import img4 from "../assets/img/img4.jpg";
 import service1 from "../assets/img/home-one/service-shape.png";
 import service2 from "../assets/img/home-one/service-shape2.png";
-
 import benefit from "../assets/img/home-one/benefit-shape.png";
-
 import partner from "../assets/img/home-one/partner-shape.png";
 import video1 from "../assets/img/manufacturing.mp4";
 import { Link } from "react-router-dom";
@@ -141,7 +139,8 @@ const clientLogos = [
 const carouselStyles = {
   foreign: {
     backgroundColor: "#f8f9fa",
-    padding: "60px 0",
+    padding:20
+    
   },
   item: {
     margin: "0 15px",
@@ -238,7 +237,7 @@ const Home = () => {
     <>
       <Header style={{ position: "fixed", width: "100%", zIndex: 1 }} />
       {/* Banner */}
-      <div className="position-relative w-100 vh-100 overflow-hidden">
+      <div className="position-relative w-100 min-vh-100 overflow-hidden">
         {/* Video */}
         <video
           loop
@@ -274,7 +273,7 @@ const Home = () => {
 
       {/* End Banner */}
       {/* About */}
-      <section className="about-area">
+      <section className="about-area pb-3">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -466,7 +465,7 @@ const Home = () => {
 
         <div id="our-products">
           <div className="container">
-            <div className="section-title mb-3">
+            <div className="section-title ">
               <span className="sub-title">Our Products</span>
               <h3 className="fw-bold text-white">
                 Premium Glass Solutions For Your <span>Business</span>
@@ -588,8 +587,8 @@ const Home = () => {
       {/* End Service */}
       
       {/* Foreign */}
-      <div className="foreign-area" style={carouselStyles.foreign}>
-        <div className="container-fluid p-0">
+      <div className="foreign-area mt-10" style={carouselStyles.foreign}>
+        <div className="container-fluid">
           <div className="section-title text-center mb-5">
             <h2>Featured Products</h2>
           </div>
@@ -819,7 +818,7 @@ const Home = () => {
               </div>
             </section>
       
-            <section className="client-logos py-5">
+            <section className="client-logos py-5 my-5">
   <div className="container">
     <div className="section-title text-center mb-5">
       <h2>Our Trusted Partners</h2>

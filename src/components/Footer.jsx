@@ -24,11 +24,11 @@ const Footer = () => {
   return (
     <>
       {/* Footer */}
-      <footer className="pt-100 pb-70">
-        <div className="container">
+      <footer className="py-5  min-vh-100">
+        <div className="container py-5">
           <div className="row">
             <div className="col-sm-6 col-lg-3">
-              <div className="footer-item">
+              <div className="footer-item py-5">
                 <div className="footer-logo">
                   <div className="d-flex align-items-center">
                     <img
@@ -39,13 +39,13 @@ const Footer = () => {
                       className="rounded-4"
                     />
                     <div className="d-flex flex-column ms-2">
-                      <h5 className="mb-0 fw-bold text-white">
+                      <h5 className="mb-0 fw-bold text-white fs-1">
                         BALAJI <br />
                         GLASPAC
                       </h5>
                     </div>
                   </div>
-                  <p className="mt-3">
+                  <p className="mt-3 fs-5 py-5">
                     Leading Glass Manufacturing Excellence Since 2007
                   </p>
                   <ul>
@@ -83,9 +83,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-6 col-md-3 col-lg-3">
-              <div className="footer-item">
-                <div className="footer-service">
-                  <h3>Products</h3>
+              <div className="footer-item py-5">
+                <div className="footer-service fs-5 py-5">
+                  <h3 className="fs-1">Products</h3>
                   <ul>
                     <li>
                       <Link to="/wine-bottles" onClick={() => window.scrollTo(0, 0)}>Wine Bottles</Link>
@@ -104,9 +104,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-6 col-md-3 col-lg-3">
-              <div className="footer-item">
-                <div className="footer-service">
-                  <h3>Quick Links</h3>
+              <div className="footer-item py-5">
+                <div className="footer-service fs-5 py-5">
+                  <h3 className="fs-1">Quick Links</h3>
                   <ul>
                     <li>
                       <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link>
@@ -126,9 +126,9 @@ const Footer = () => {
             </div>
            
             <div className="col-6 col-lg-3">
-  <div className="footer-item">
-    <div className="footer-touch">
-      <h3>Get In Touch</h3>
+  <div className="footer-item py-5">
+    <div className="footer-touch fs-5 py-5">
+      <h3 className="fs-1">Get In Touch</h3>
       <ul className="list-unstyled">
         <li className="d-flex align-items-start mb-3">
           <i className="fa-solid fa-phone me-2"></i>
